@@ -13,6 +13,48 @@ body {
     color: #222;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
     color: #ff2c2c;
 }
+
+img.site-logo {
+    height: 150px;
+    width: 150px;
+    
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+ul{
+    list-style-type: none;
+
+    margin: 0px;
+
+    padding: 0px;
+
+    overflow: hidden;
+
+    border: 6px solid #ff2c2c;
+
+    display: flex;
+
+}
+
+ul li{
+    float:left;
+
+    border: 1px solid #222;
+
+
+}
+
+ul li a{
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
