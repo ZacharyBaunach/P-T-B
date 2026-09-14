@@ -34,27 +34,33 @@ ul{
 
     padding: 0px;
 
-    overflow: hidden;
-
     border: 6px solid #ff2c2c;
 
     display: flex;
 
+    justify-content: center;
+
 }
 
-ul li{
-    float:left;
+li{
+    display: flex;
 
     border: 1px solid #222;
-
 
 }
 
 ul li a{
-    display: block;
+    
+    display: flex;
+
+    justify-content: space-evenly;
+
     color: #222;
+
     text-align: center;
+
     padding: 14px 16px;
+
     text-decoration: none;
 }
 
