@@ -64,3 +64,11 @@ ul li a{
     text-decoration: none;
 }
 
+.selection-box {
+    min-height: 150px;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 3px solid #222222;
+    box-sizing: border-box;
+}
+
