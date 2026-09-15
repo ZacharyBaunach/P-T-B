@@ -23,6 +23,15 @@ img.site-logo {
     
 }
 
+.pageBox {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 30px;
+    border: solid 20px red;
+    border-radius: 60px;
+    height: auto
+}
+
 img {
     height: 250px;
     width: 250px;
