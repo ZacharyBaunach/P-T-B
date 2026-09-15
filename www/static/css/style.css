@@ -27,7 +27,7 @@ img {
     height: 250px;
     width: 250px;
 }
-ul{
+.nav{
     list-style-type: none;
 
     margin: 0px;
@@ -42,18 +42,16 @@ ul{
 
 }
 
-li{
+.nav_list{
     display: flex;
 
     border: 1px solid #222;
 
 }
 
-ul li a{
+.nav_link{
     
     display: flex;
-
-   
 
     color: #222;
 
@@ -64,3 +62,64 @@ ul li a{
     text-decoration: none;
 }
 
+.battle_moves_ally_container{
+    display:flex;
+}
+
+.battle_moves_ally{
+    display: flex;
+
+    list-style-type: none;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+}
+
+.battle_moves_enemy{
+    display: flex;
+
+    list-style-type: none;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+}
+
+.BattleMovesA{
+    display: flex;
+
+    list-style-type: none;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+
+    border: 5px solid #222;
+
+    padding: 10px 10px;
+
+    color: #222;
+}
+
+.BattleMovesE{
+    display: flex;
+
+    list-style-type: none;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+
+    border: 5px solid #222;
+
+    padding: 10px 10px;
+
+    color: #222;
+}
+
+.AllySprite{
+    width: 50px;
+    height: 50px;
+}
