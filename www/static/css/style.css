@@ -65,6 +65,8 @@ ul li a{
 }
 
 .selection-box {
+    display: flex;
+    flex-direction: column;
     min-height: 150px;
     margin: 80px;
     padding: 250px;
