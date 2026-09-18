@@ -7,7 +7,7 @@
 
 body {
     font-family: "Press Start 2P", system-ui;
-    max-width: 700px;
+    max-width: 900px;
     margin: 4rem auto;
     padding: 0 1rem;
     color: #222;
@@ -19,7 +19,17 @@ h1,h2,h3,h4,h5,h6 {
 
 img.site-logo {
     height: 150px;
-    width: 150px;  
+    width: 150px;
+    
+}
+
+.pageBox {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 30px;
+    border: solid 20px red;
+    border-radius: 60px;
+    height: auto
 }
 
 img {
@@ -56,77 +66,18 @@ img {
 
     text-align: center;
 
-    padding: 14px 16px;
+    padding: 14px 31px;
 
     text-decoration: none;
 }
 
-.battle_moves_ally_container{
-    display:flex;
-}
-
-.battle_moves_ally{
+.BattleContainer{
     display: flex;
-
-    list-style-type: none;
-
-    align-items: flex-start;
-
-    flex-direction: column;
-
+    flex-direction: row;
+    align-items: center;
 }
 
-.battle_moves_enemy{
-    display: flex;
-
-    list-style-type: none;
-
-    align-items: flex-end;
-
-    flex-direction: column;
-}
-
-.BattleMovesA{
-    display: flex;
-
-    list-style-type: none;
-
-    align-items: flex-end;
-
-    flex-direction: column;
-
-    border: 5px solid #222;
-
-    padding: 10px 10px;
-
-    color: #222;
-}
-
-.BattleMovesE{
-    display: flex;
-
-    list-style-type: none;
-
-    align-items: flex-end;
-
-    flex-direction: column;
-
-    border: 5px solid #222;
-
-    padding: 10px 10px;
-
-    color: #222;
-}
-
-.AllySprite{
+.Sprite{
     width: 50px;
     height: 50px;
-}
-
-.selection-box {
-    min-height: 150px;
-    margin: 2rem 0;
-    padding: 1rem;
-    border: 3px solid #222;
-    box-sizing: border-box;
 }
