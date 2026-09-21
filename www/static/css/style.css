@@ -1,3 +1,12 @@
+/* ********** @media queries ********** */
+
+
+
+
+
+
+/* ********** @media queries ********** */
+
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -24,12 +33,13 @@ img.site-logo {
 }
 
 .pageBox {
-    background-color: aquamarine;
+    background-color: #84dbf0;
     padding: 20px;
     margin: 30px;
-    border: solid 20px red;
+    border: solid 20px #ff2c2c;
     border-radius: 60px;
-    height: auto
+    height: auto;
+
 }
 
 img {
@@ -78,10 +88,12 @@ img {
 }
 
 .BattleContainer{
+    padding: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+
 }
 
 .Sprite{
@@ -98,10 +110,20 @@ img {
 
 .PSpriteA{
     justify-content: flex-start;
+
+    margin: 0px;
+
+    padding: 0px
 }
 
 .ActiveMoveA, .ActiveMoveE{
-    padding: 15px
+    margin:15px;
+
+    padding: 10px;
+
+    border: 5px solid #222;
+
+    border-radius: 60px;
 }
 
 .BattleWindowContainer{
