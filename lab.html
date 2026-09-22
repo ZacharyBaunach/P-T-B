@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Maker</title>
+  <style> 
+
+    .flex-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="flex-row">
+    <input type="text" id="input">
+    <button onclick="addItem()">add to list</button>
+  </div>
+
+  
+  <ul id="list"></ul>
+
+  <script>
+    function addItem() {
+      const val = document.getElementById('input').value;
+      if (!val) return;
+
+      const li = document.createElement('li');
+      li.innerHTML = `${val} <button onclick="this.parentElement.remove()">Remove</button>`;
+      
+      document.getElementById('list').appendChild(li);
+      document.getElementById('input').value = '';
+    }
+  </script>
+
+</body>
+</html>
