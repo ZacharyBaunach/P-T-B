@@ -39,8 +39,32 @@
         </p>
 
         <div class="selection-box">
-            <p></p>
+            <input id= "pokemonInput" type = "text">
+            <button onclick="listAdd()">Add Pokemon</button>
+            <div class ="pokemonList">
+
+            </div>
         </div>
+
+        <script>
+            function listAdd() {
+                // grab pokemonList container
+                let pokemonEntry = document.getElementsByClassName("pokemonList")[0];
+                if (pokemonEntry.childElementCount >5)
+                    return
+                //get pokemon text box entry
+                let pokemon = document.getElementById("pokemonInput").value;
+                // crete empty div container
+                const pokemonContainer = document.createElement("div");
+                //creates and appends remove button
+                const removeButton = document.createElement("button");
+                removeButton.textContent="Remove";
+                removeButton.onclick = function() { this.parentNode.remove()
+                }
+                //add empty div to pokemonList container, add pokemon name/object, then add remove button
+                pokemonEntry.appendChild(pokemonContainer).append(pokemon,'',removeButton);
+            }
+        </script>
 
     </body>
     </div>
