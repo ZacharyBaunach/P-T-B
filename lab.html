@@ -19,9 +19,8 @@
 
   <div class="flex-row">
     <input type="text" id="input">
-    <button onclick="addItem()">add to list</button>
+    <button onclick="addItem()">add box</button>
   </div>
-
   
   <ul id="list"></ul>
 
@@ -34,7 +33,7 @@
       li.innerHTML = `${val} <button onclick="this.parentElement.remove()">Remove</button>`;
       
       document.getElementById('list').appendChild(li);
-      document.getElementById('input').value = '';
+      document.getElementById('input').value = ' ';
     }
   </script>
 
