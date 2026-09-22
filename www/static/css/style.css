@@ -116,6 +116,14 @@ img {
     padding: 0px
 }
 
+.PSpriteE{
+    justify-content: flex-end;
+
+    margin: 0px;
+
+    padding: 0px
+}
+
 .ActiveMoveA, .ActiveMoveE{
     margin:15px;
 
