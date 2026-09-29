@@ -1,11 +1,4 @@
-/* ********** @media queries ********** */
 
-
-
-
-
-
-/* ********** @media queries ********** */
 
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
@@ -46,6 +39,9 @@ img {
     height: 250px;
     width: 250px;
 }
+
+/* ********** Navigation Bar ********** */
+
 .nav{
     list-style-type: none;
 
@@ -61,9 +57,11 @@ img {
 
     justify-content: center;
 
+    flex-wrap: wrap;
+
 }
 
-.nav_list{
+.nav_list:hover{
     display: flex;
 
     border: 1px solid #222;
@@ -86,6 +84,18 @@ img {
 
     text-decoration: none;
 }
+
+/* ********** Navigation Bar ********** */
+
+/* ********** Mobile Navigation Bar ********** */
+
+.mobileContainer{
+    display: none;
+}
+
+/* ********** Mobile Navigation Bar ********** */
+
+/* ********** Battle Box ********** */
 
 .BattleContainer{
     padding: 0px;
@@ -139,3 +149,69 @@ img {
     padding: 15px;
     list-style-type: none;
 }
+
+/* ********** Battle Box ********** */
+
+/* ********** @media queries ********** */
+@media screen and (max-width: 930px) {
+    .ASprite, .ESprite{
+        width: 75px;
+        height: 75px;
+    }
+
+    /* Hide normal navigation bar and build hamburger menu */
+    .nav, .nav_list:hover, .nav_link {
+        display: none;
+    }
+
+    .mobileContainer{
+        list-style-type: none;
+
+        margin: 0px;
+
+        padding: 0px;
+
+        border: 6px solid #ff2c2c;
+
+        display: flex;
+
+        border-radius: 60px;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+    
+    .mobileContainer a.icon{
+    display: block;
+
+    border-radius: 60px;
+
+    justify-content: center;
+
+    align-items: center;
+    }
+
+    .mobileNav{
+        display: block;
+
+        color: #222;
+
+        text-align: center;
+
+        padding: 14px 31px;
+
+        text-decoration: none;
+
+        
+
+    }
+
+}
+
+
+
+
+
+/* ********** @media queries ********** */
