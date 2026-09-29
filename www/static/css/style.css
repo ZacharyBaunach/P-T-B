@@ -236,7 +236,13 @@ img {
         flex-direction: row;
     }
 
-    .ActiveMoveA {
+    .MovesA {
+        display: flex;
+
+        flex-direction: row;
+    }
+
+    .MovesE {
         display: flex;
 
         flex-direction: row;
@@ -247,17 +253,7 @@ img {
 
     /* Change size of battle page images */
 
-    .ActiveMoveA, .ActiveMoveE{
-
-        margin:7px;
-
-        padding: 5px;
-
-        border: 5px solid #222;
-
-        border-radius: 60px;
-
-    }
+    
 
     .ASprite, .ESprite{
         width: 150px;
@@ -303,7 +299,7 @@ img {
     align-items: center;
     }
 
-    .mobileNav{
+    #mobileNav{
         display: flex;
 
         color: #222;
