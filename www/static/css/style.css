@@ -154,6 +154,37 @@ img {
 
 /* ********** @media queries ********** */
 @media screen and (max-width: 930px) {
+
+/* Changes the direction of the flexboxes to fit better on the page */
+    .BattleContainer{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+    .PSpriteA {
+        display: flex;
+
+        flex-direction: row;
+    }
+
+    .PSpriteE{
+        display: flex;
+
+        flex-direction: row;
+    }
+
+    .ActiveMoveA {
+        display: flex;
+
+        flex-direction: row;
+    }
+    
+
+
+
     /* Change size of battle page images */
 
     .ActiveMoveA, .ActiveMoveE{
@@ -169,8 +200,9 @@ img {
     }
 
     .ASprite, .ESprite{
-        width: 75px;
-        height: 75px;
+        width: 150px;
+        height: 150px;
+        
     }
 
     /* Hide normal navigation bar and builds hamburger menu */
