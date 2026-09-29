@@ -38,34 +38,101 @@
             />
         </p>
 
+        <!-- Team Box -->
         <div class="selection-box">
-            <input id= "pokemonInput" type = "text">
+            <input id= "pokeSearch", type = "text", placeholder="Search..">
             <button onclick="listAdd()">Add Pokemon</button>
-            <div class ="pokemonList">
-
-            </div>
+            <ul class=" BattleContainer">
+                
+                    <li>
+                        <a class="pokeEntry">
+                            <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
+                            <span class="poke-name"> text </span>
+                            <span class="poke-abilities"> text </span>
+                            <span class="poke-stats"> text </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pokeEntry">
+                            <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
+                            <span class="poke-name"> text </span>
+                            <span class="poke-abilities"> text </span>
+                            <span class="poke-stats"> text </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pokeEntry">
+                            <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
+                            <span class="poke-name"> text </span>
+                            <span class="poke-abilities"> text </span>
+                            <span class="poke-stats"> text </span>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a class="pokeEntry">
+                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
+                        <span class="poke-name"> text </span>
+                        <span class="poke-abilities"> text </span>
+                        <span class="poke-stats"> text </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="pokeEntry">
+                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
+                        <span class="poke-name"> text </span>
+                        <span class="poke-abilities"> text </span>
+                        <span class="poke-stats"> text </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="pokeEntry">
+                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
+                        <span class="poke-name"> text </span>
+                        <span class="poke-abilities"> text </span>
+                        <span class="poke-stats"> text </span>
+                    </a>
+                </li>
+            </ul>
         </div>
 
+        <ul id="resultList"></ul>
+
+
+        <!-- List
         <script>
             function listAdd() {
                 // grab pokemonList container
                 let pokemonEntry = document.getElementsByClassName("pokemonList")[0];
                 if (pokemonEntry.childElementCount >5)
                     return
-                //get pokemon text box entry
-                let pokemon = document.getElementById("pokemonInput").value;
                 // crete empty div container
                 const pokemonContainer = document.createElement("div");
-                //creates and appends remove button
+                //get pokemon text box entry
+                let pokemon = document.getElementById("pokemonInput").value;
+                //creates remove button
                 const removeButton = document.createElement("button");
                 removeButton.textContent="Remove";
-                removeButton.onclick = function() { this.parentNode.remove()
-                }
+                removeButton.onclick = function() {this.parentNode.remove()}
                 //add empty div to pokemonList container, add pokemon name/object, then add remove button
                 pokemonEntry.appendChild(pokemonContainer).append(pokemon,'',removeButton);
             }
         </script>
+        -->
 
+        <!--
+        <script>
+            document.getElementsByClassName("pokeEntry").addEventListener("click", populateEntry())
+
+            function populateEntry() {
+                console.log("clicked")
+            }
+        </script>
+        -->
+        <script>
+            console.log("ready to load .js")
+            src="static/js/main.js"
+        </script>
     </body>
     </div>
 </html>

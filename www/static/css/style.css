@@ -142,8 +142,67 @@ img {
 
 /* Pokemon Container */
 
-.pokemonList{
+/* Search funtion */
+.pokemonSearch {
+    background-color: antiquewhite;
+}
+
+.pokeSearch .a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_list:hover {
+    display:flex;
+    background-color: #65cbe4;
+    border-radius: 60px;
+    color: rgb(37, 36, 36);
+}
+
+.selection-box{
     border: 5px solid #222;
     padding: 15px;
     list-style-type: none;
+}
+
+.pokeEntry{
+    display: block;
+    background: rgb(220, 220, 220);
+    border: 2px solid #222;
+    float:left;
+    cursor: pointer;
+}
+
+/* Try to get pokemon sprite overlade pokeball?
+.poke-image{
+    display: block;
+    height:auto;
+    width:auto;
+    background-image:  "static/img/Pokeball.png";
+}
+*/
+.poke-name{
+    display: block;
+    height:auto;
+    width:auto;
+    text-align: center;
+}
+
+.poke-abilities{
+    display: block;
+    height:auto;
+    width:auto;
+    text-align: center;
+}
+
+.poke-stats{
+    display: block;
+    height:auto;
+    width:auto;
+    text-align: center;
 }
