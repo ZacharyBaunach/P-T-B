@@ -39,13 +39,13 @@
                 
                 <!-- Navigation links (hidden by default) -->
                 <div id="mobileNav">
-                    <a href="ptb.html">Home</a>
-                    <a href="battle.html">Battle</a>
-                    <a href="about.html">About Us</a>
-                    <a href="#">Give Feedback</a>
+                    <a class="mobileLink" href="ptb.html">Home</a>
+                    <a class="mobileLink" href="battle.html">Battle</a>
+                    <a class="mobileLink" href="about.html">About Us</a>
+                    <a class="mobileLink" href="#">Give Feedback</a>
                 </div>
                 
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <!-- Hamburger menu toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -72,6 +72,8 @@
         </div>
        
         <script>
+            //Makes Hamburger menu appear and disappear// 
+            
             function collapseMenu(){
                 let mobileNavList = document.getElementById("mobileNav");
                 if (mobileNavList.style.display === "block") {

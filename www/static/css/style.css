@@ -154,12 +154,26 @@ img {
 
 /* ********** @media queries ********** */
 @media screen and (max-width: 930px) {
+    /* Change size of battle page images */
+
+    .ActiveMoveA, .ActiveMoveE{
+
+        margin:7px;
+
+        padding: 5px;
+
+        border: 5px solid #222;
+
+        border-radius: 60px;
+
+    }
+
     .ASprite, .ESprite{
         width: 75px;
         height: 75px;
     }
 
-    /* Hide normal navigation bar and build hamburger menu */
+    /* Hide normal navigation bar and builds hamburger menu */
     .nav, .nav_list:hover, .nav_link {
         display: none;
     }
@@ -173,7 +187,7 @@ img {
 
         border: 6px solid #ff2c2c;
 
-        display: flex;
+        display: block;
 
         border-radius: 60px;
 
@@ -184,9 +198,13 @@ img {
     }
     
     .mobileContainer a.icon{
-    display: block;
+    display: flex;
 
     border-radius: 60px;
+
+    padding:5px;
+
+    margin:5px;
 
     justify-content: center;
 
@@ -194,7 +212,7 @@ img {
     }
 
     .mobileNav{
-        display: block;
+        display: flex;
 
         color: #222;
 
@@ -203,11 +221,23 @@ img {
         padding: 14px 31px;
 
         text-decoration: none;
-
-        
-
     }
 
+    .mobileLink{
+        display: flex;
+
+        color: #222;
+
+        text-align: center;
+
+        justify-content: center;
+
+        margin:0px;
+
+        padding: 14px 14px;
+
+        text-decoration: none;
+    }
 }
 
 
