@@ -21,33 +21,27 @@
             <h1>Pokemon Battle</h1>
 
             <ul class ="nav">
+                <!-- Hamburger menu toggle the navigation links -->
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
                 <li class="nav_list"><a class="nav_link" href="ptb.html">Home</a></li>
                 <li class="nav_list"><a class="nav_link" href="battle.html">Battle</a></li>
                 <li class="nav_list"><a class="nav_link" href="about.html">About Us</a></li>
                 <li class="nav_list"><a class="nav_link" href="#">Give Feedback</a></li>
             </ul>
 
-            <!--- ********** Mobile Navigation Bar ********** */ -->
+           
 
-            <ul class="mobileContainer">
                 
-                <!-- Navigation links (hidden by default) -->
-                <div id="mobileNav">
-                    <a class="mobileLink" href="ptb.html">Home</a>
-                    <a class="mobileLink" href="battle.html">Battle</a>
-                    <a class="mobileLink" href="about.html">About Us</a>
-                    <a class="mobileLink" href="#">Give Feedback</a>
-                </div>
-                
-            <!-- Hamburger menu toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </ul>
+            
+            
 
             
 
-            <!-- ********** Mobile Navigation Bar ********** */ -->
+            
         </header>
 
         <ul class=" BattleContainer">
@@ -112,7 +106,7 @@
             
             function collapseMenu(){
                 let mobileNavList = document.getElementById("mobileNav");
-                if (mobileNavList.style.display === "block") {
+                if (mobileNavList.style.display == "block") {
                     mobileNavList.style.display = "none";
                 } else {
                     mobileNavList.style.display = "block";

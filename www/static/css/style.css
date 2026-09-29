@@ -58,6 +58,10 @@ img {
 
 }
 
+.icon{
+    display:none;
+}
+
 .nav_list{
     display: flex;
 
@@ -84,12 +88,7 @@ img {
 
 /* ********Navigation******** */
 
-/* ********Mobile Navigation******** */
-.mobileContainer{
-    display: none;
-}
 
-/* ********Mobile Navigation******** */
 
 .BattleContainer{
     padding: 0px;
@@ -261,71 +260,14 @@ img {
         
     }
 
-    /* Hide normal navigation bar and builds hamburger menu */
-    .nav, .nav_list:hover, .nav_link {
-        display: none;
-    }
+    /* Change Navigation bar into hamburger menu */
+    .nav{
+        display: block
 
-    .mobileContainer{
-        list-style-type: none;
-
-        margin: 0px;
-
-        padding: 0px;
-
-        border: 6px solid #ff2c2c;
-
-        display: block;
-
-        border-radius: 60px;
-
-        justify-content: center;
-
-        flex-wrap: wrap;
 
     }
+
     
-    .mobileContainer a.icon{
-    display: flex;
-
-    border-radius: 60px;
-
-    padding:5px;
-
-    margin:5px;
-
-    justify-content: center;
-
-    align-items: center;
-    }
-
-    #mobileNav{
-        display: flex;
-
-        color: #222;
-
-        text-align: center;
-
-        padding: 14px 31px;
-
-        text-decoration: none;
-    }
-
-    .mobileLink{
-        display: flex;
-
-        color: #222;
-
-        text-align: center;
-
-        justify-content: center;
-
-        margin:0px;
-
-        padding: 14px 14px;
-
-        text-decoration: none;
-    }
 }
 
 
