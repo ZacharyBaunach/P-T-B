@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pokemon Team Builder Feedback
+        </title>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <div class="pageBox">
+
+    <header>
+        
+        <a href="ptb.html">
+            <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
+        </a>
+
+        <h1>
+            Give Feedback
+        </h1>
+
+        <ul class ="nav">
+                <li class="nav_list"><a class="nav_link" href="ptb.html">Home</a></li>
+                <li class="nav_list"><a class="nav_link" href="battle.html">Battle</a></li>
+                <li class="nav_list"><a class="nav_link" href="about.html">About Us</a></li>
+                <li class="nav_list"><a class="nav_link" href="feedback.html">Give Feedback</a></li>
+            </ul>
+
+        <!--- ********** Mobile Navigation Bar ********** */ -->
+
+            <ul class="mobileContainer">
+                
+                <!-- Navigation links (hidden by default) -->
+                <div id="mobileNav">
+                    <a class="mobileLink" href="ptb.html">Home</a>
+                    <a class="mobileLink" href="battle.html">Battle</a>
+                    <a class="mobileLink" href="about.html">About Us</a>
+                    <a class="mobileLink" href="feedback.html">Give Feedback</a>
+                </div>
+                
+            <!-- Hamburger menu toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+
+            
+
+            <!-- ********** Mobile Navigation Bar ********** */ -->
+    </header>
+
+    
+    <h2>
+        We would love to dhear your feedback!
+    </h2>
+    <body> 
+        <form action="http://localhost:8080/feedback.html" method="POST" name="myForm" id="myForm"></form>
+            <input name="required" type="hidden" id="required" value="email,realname">
+            <input name="recipients" type="hidden" id="recipients" value="ganbso1@furman.edu">
+            <input name="subject" type="hidden" id="subject" value="Form Results">
+        <p> 
+            <label for="realname">Please enter your name:
+            <input name="realname" type="text" id="realname" size="20">
+            </label>
+        </p>
+        <p>
+            <label for="phone_number">Please enter your phone number:
+            <input name="phone_number" type="text" id="phone_number" size="15">
+            </label>
+        </p>
+        
+    </body>
+</html>
