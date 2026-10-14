@@ -1,2 +1,4 @@
 __pycache__/
 .DS_Store
+app/__pycache__/app.cpython-311.pyc
+app/__pycache__/wsgi.cpython-311.pyc

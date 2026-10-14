@@ -1,0 +1,3739 @@
+[{
+	"name":"Bulbasaur",
+	"types":["Grass","Poison"],
+	"baseStats":{"hp":45 , "atk":49 ,"def":49 , "spa":65 , "spd":65 , "spe":45 },
+	"abilities": ["Overgrow", "Chlorophy"]
+},
+{
+	"name":"Ivysaur",
+	"types":["Grass","Poison"],
+	"baseStats":{"hp":60, "atk":62, "def":63, "spa":80, "spd":80, "spe":60 },
+	"abilities":["Overgrow", "Chlorophy"]
+},
+{
+    "name":"Venusaur",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":80, "atk":82,"def":83, "spa":100, "spd":100, "spe":80},
+   "abilities":["Overgrow","Chlorophyll"]
+},
+{
+    "name":"Charmander",
+    "types":["Fire"],
+   "baseStats":{"hp":39, "atk":52,"def":43, "spa":60, "spd":50, "spe":65},
+   "abilities":["Blaze","Solar Power"]
+},
+{
+    "name":"Charmeleon",
+    "types":["Fire"],
+   "baseStats":{"hp":58, "atk":64,"def":58, "spa":80, "spd":65, "spe":80},
+   "abilities":["Blaze","Solar Power"]
+},
+{
+    "name":"Charizard",
+    "types":["Fire","Flying"],
+   "baseStats":{"hp":78, "atk":84,"def":78, "spa":109, "spd":85, "spe":100},
+   "abilities":["Blaze","Solar Power"]
+},
+{
+    "name":"Squirtle",
+    "types":["Water"],
+   "baseStats":{"hp":44, "atk":48,"def":65, "spa":50, "spd":64, "spe":43},
+   "abilities":["Torrent","Rain Dish"]
+},
+{
+    "name":"Wartortle",
+    "types":["Water"],
+   "baseStats":{"hp":59, "atk":63,"def":80, "spa":65, "spd":80, "spe":58},
+   "abilities":["Torrent","Rain Dish"]
+},
+{
+    "name":"Blastoise",
+    "types":["Water"],
+   "baseStats":{"hp":79, "atk":83,"def":100, "spa":85, "spd":105, "spe":78},
+   "abilities":["Torrent","Rain Dish"]
+},
+{
+    "name":"Caterpie",
+    "types":["Bug"],
+   "baseStats":{"hp":45, "atk":30,"def":35, "spa":20, "spd":20, "spe":45},
+   "abilities":["Shield Dust","Run Away"]
+},
+{
+    "name":"Metapod",
+    "types":["Bug"],
+   "baseStats":{"hp":50, "atk":20,"def":55, "spa":25, "spd":25, "spe":30},
+   "abilities":["Shed Skin"]
+},
+{
+    "name":"Butterfree",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":60, "atk":45,"def":50, "spa":90, "spd":80, "spe":70},
+   "abilities":["Compound Eyes","Tinted Lens"]
+},
+{
+    "name":"Weedle",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":40, "atk":35,"def":30, "spa":20, "spd":20, "spe":50},
+   "abilities":["Shield Dust","Run Away"]
+},
+{
+    "name":"Kakuna",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":45, "atk":25,"def":50, "spa":25, "spd":25, "spe":35},
+   "abilities":["Shed Skin"]
+},
+{
+    "name":"Beedrill",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":65, "atk":90,"def":40, "spa":45, "spd":80, "spe":75},
+   "abilities":["Swarm","Sniper"]
+},
+{
+    "name":"Pidgey",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":40, "atk":45,"def":40, "spa":35, "spd":35, "spe":56},
+   "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
+},
+{
+    "name":"Pidgeotto",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":63, "atk":60,"def":55, "spa":50, "spd":50, "spe":71},
+   "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
+},
+{
+    "name":"Pidgeot",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":83, "atk":80,"def":75, "spa":70, "spd":70, "spe":101},
+   "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
+},
+{
+    "name":"Rattata",
+    "types":["Normal"],
+   "baseStats":{"hp":30, "atk":56,"def":35, "spa":25, "spd":35, "spe":72},
+   "abilities":["Run Away","Guts","Hustle"]
+},
+{
+    "name":"Raticate",
+    "types":["Normal"],
+   "baseStats":{"hp":55, "atk":81,"def":60, "spa":50, "spd":70, "spe":97},
+   "abilities":["Run Away","Guts","Hustle"]
+},
+{
+    "name":"spearow",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":40, "atk":60,"def":30, "spa":31, "spd":31, "spe":70},
+   "abilities":["Keen Eye","Sniper"]
+},
+{
+    "name":"Fearow",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":65, "atk":90,"def":65, "spa":61, "spd":61, "spe":100},
+   "abilities":["Keen Eye","Sniper"]
+},
+{
+    "name":"Ekans",
+    "types":["Poison"],
+   "baseStats":{"hp":35, "atk":60,"def":44, "spa":40, "spd":54, "spe":55},
+   "abilities":["Intimidate","Shed Skin","Unnerve"]
+},
+{
+    "name":"Arbok",
+    "types":["Poison"],
+   "baseStats":{"hp":60, "atk":95,"def":69, "spa":65, "spd":79, "spe":80},
+   "abilities":["Intimidate","Shed Skin","Unnerve"]
+},
+{
+    "name":"Pikachu",
+    "types":["Electric"],
+   "baseStats":{"hp":35, "atk":55,"def":40, "spa":50, "spd":50, "spe":90},
+   "abilities":["Static","Lightning Rod"]
+},
+{
+    "name":"Raichu",
+    "types":["Electric"],
+   "baseStats":{"hp":60, "atk":90,"def":55, "spa":90, "spd":80, "spe":110},
+   "abilities":["Static","Lightning Rod"]
+},
+{
+    "name":"Sandshrew",
+    "types":["Ground"],
+   "baseStats":{"hp":50, "atk":75,"def":85, "spa":20, "spd":30, "spe":40},
+   "abilities":["Sand Veil","Sand Rush"]
+},
+{
+    "name":"Sandslash",
+    "types":["Ground"],
+   "baseStats":{"hp":75, "atk":100,"def":110, "spa":45, "spd":55, "spe":65},
+   "abilities":["Sand Veil","Sand Rush"]
+},
+{
+    "name":"Nidoran♀",
+    "types":["Poison"],
+   "baseStats":{"hp":55, "atk":47,"def":52, "spa":40, "spd":40, "spe":41},
+   "abilities":["Poison Point","Rivalry","Hustle"]
+},
+{
+    "name":"Nidorina",
+    "types":["Poison"],
+   "baseStats":{"hp":70, "atk":62,"def":67, "spa":55, "spd":55, "spe":56},
+   "abilities":["Poison Point","Rivalry","Hustle"]
+},
+{
+    "name":"Nidoqueen",
+    "types":["Poison","Ground"],
+   "baseStats":{"hp":90, "atk":92,"def":87, "spa":75, "spd":85, "spe":76},
+   "abilities":["Poison Point","Rivalry","Sheer Force"]
+},
+{
+    "name":"Nidoran♂",
+    "types":["Poison"],
+   "baseStats":{"hp":46, "atk":57,"def":40, "spa":40, "spd":40, "spe":50},
+   "abilities":["Poison Point","Rivalry","Hustle"]
+},
+{
+    "name":"Nidorino",
+    "types":["Poison"],
+   "baseStats":{"hp":61, "atk":72,"def":57, "spa":55, "spd":55, "spe":65},
+   "abilities":["Poison Point","Rivalry","Hustle"]
+},
+{
+    "name":"Nidoking",
+    "types":["Poison","Ground"],
+   "baseStats":{"hp":81, "atk":102,"def":77, "spa":85, "spd":75, "spe":85},
+   "abilities":["Poison Point","Rivalry","Sheer Force"]
+},
+{
+    "name":"Clefairy",
+    "types":["Fairy"],
+   "baseStats":{"hp":70, "atk":45,"def":48, "spa":60, "spd":65, "spe":35},
+   "abilities":["Cute Charm","Magic Guard","Friend Guard"]
+},
+{
+    "name":"Clefable",
+    "types":["Fairy"],
+   "baseStats":{"hp":95, "atk":70,"def":73, "spa":95, "spd":90, "spe":60},
+   "abilities":["Cute Charm","Magic Guard","Unaware"]
+},
+{
+    "name":"Vulpix",
+    "types":["Fire"],
+   "baseStats":{"hp":38, "atk":41,"def":40, "spa":50, "spd":65, "spe":65},
+   "abilities":["Flash Fire","Drought"]
+},
+{
+    "name":"Ninetales",
+    "types":["Fire"],
+   "baseStats":{"hp":73, "atk":76,"def":75, "spa":81, "spd":100, "spe":100},
+   "abilities":["Flash Fire","Drought"]
+},
+{
+    "name":"Jigglypuff",
+    "types":["Normal","Fairy"],
+   "baseStats":{"hp":115, "atk":45,"def":20, "spa":45, "spd":25, "spe":20},
+   "abilities":["Cute Charm","Competitive","Friend Guard"]
+},
+{
+    "name":"Wigglytuff",
+    "types":["Normal","Fairy"],
+   "baseStats":{"hp":140, "atk":70,"def":45, "spa":85, "spd":50, "spe":45},
+   "abilities":["Cute Charm","Competitive","Frisk"]
+},
+{
+    "name":"Zubat",
+    "types":["Poison","Flying"],
+   "baseStats":{"hp":40, "atk":45,"def":35, "spa":30, "spd":40, "spe":55},
+   "abilities":["Inner Focus","Infiltrator"]
+},
+{
+    "name":"Golbat",
+    "types":["Poison","Flying"],
+   "baseStats":{"hp":75, "atk":80,"def":70, "spa":65, "spd":75, "spe":90},
+   "abilities":["Inner Focus","Infiltrator"]
+},
+{
+    "name":"Oddish",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":45, "atk":50,"def":55, "spa":75, "spd":65, "spe":30},
+   "abilities":["Chlorophyll","Run Away"]
+},
+{
+    "name":"Gloom",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":60, "atk":65,"def":70, "spa":85, "spd":75, "spe":40},
+   "abilities":["Chlorophyll","Stench"]
+},
+{
+    "name":"Vileplume",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":75, "atk":80,"def":85, "spa":110, "spd":90, "spe":50},
+   "abilities":["Chlorophyll","Effect Spore"]
+},
+{
+    "name":"Paras",
+    "types":["Bug","Grass"],
+   "baseStats":{"hp":35, "atk":70,"def":55, "spa":45, "spd":55, "spe":25},
+   "abilities":["Effect Spore","Dry Skin","Damp"]
+},
+{
+    "name":"Parasect",
+    "types":["Bug","Grass"],
+   "baseStats":{"hp":60, "atk":95,"def":80, "spa":60, "spd":80, "spe":30},
+   "abilities":["Effect Spore","Dry Skin","Damp"]
+},
+{
+    "name":"Venonat",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":60, "atk":55,"def":50, "spa":40, "spd":55, "spe":45},
+   "abilities":["Compound Eyes","Tinted Lens","Run Away"]
+},
+{
+    "name":"Venomoth",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":70, "atk":65,"def":60, "spa":90, "spd":75, "spe":90},
+   "abilities":["Shield Dust","Tinted Lens","Wonder Skin"]
+},
+{
+    "name":"Diglett",
+    "types":["Ground"],
+   "baseStats":{"hp":10, "atk":55,"def":25, "spa":35, "spd":45, "spe":95},
+   "abilities":["Sand Veil","Arena Trap","Sand Force"]
+},
+{
+    "name":"Dugtrio",
+    "types":["Ground"],
+   "baseStats":{"hp":35, "atk":100,"def":50, "spa":50, "spd":70, "spe":120},
+   "abilities":["Sand Veil","Arena Trap","Sand Force"]
+},
+{
+    "name":"Meowth",
+    "types":["Normal"],
+   "baseStats":{"hp":40, "atk":45,"def":35, "spa":40, "spd":40, "spe":90},
+   "abilities":["Pickup","Technician","Unnerve"]
+},{
+    "name":"Graveler",
+    "types":["Rock","Ground"],
+   "baseStats":{"hp":55, "atk":95,"def":115, "spa":45, "spd":45, "spe":35},
+   "abilities":["Rock Head","Sturdy","Sand Veil"]
+},
+{
+    "name":"Golem",
+    "types":["Rock","Ground"],
+   "baseStats":{"hp":80, "atk":120,"def":130, "spa":55, "spd":65, "spe":45},
+   "abilities":["Rock Head","Sturdy","Sand Veil"]
+},
+{
+    "name":"Ponyta",
+    "types":["Fire"],
+   "baseStats":{"hp":50, "atk":85,"def":55, "spa":65, "spd":65, "spe":90},
+   "abilities":["Run Away","Flash Fire","Flame Body"]
+},
+{
+    "name":"Rapidash",
+    "types":["Fire"],
+   "baseStats":{"hp":65, "atk":100,"def":70, "spa":80, "spd":80, "spe":105},
+   "abilities":["Run Away","Flash Fire","Flame Body"]
+},
+{
+    "name":"Slowpoke",
+    "types":["Water","Psychic"],
+   "baseStats":{"hp":90, "atk":65,"def":65, "spa":40, "spd":40, "spe":15},
+   "abilities":["Oblivious","Own Tempo","Regenerator"]
+},
+{
+    "name":"Slowbro",
+    "types":["Water","Psychic"],
+   "baseStats":{"hp":95, "atk":75,"def":110, "spa":100, "spd":80, "spe":30},
+   "abilities":["Oblivious","Own Tempo","Regenerator"]
+},
+{
+    "name":"Magnemite",
+    "types":["Electric","Steel"],
+   "baseStats":{"hp":25, "atk":35,"def":70, "spa":95, "spd":55, "spe":45},
+   "abilities":["Magnet Pull","Sturdy","Analytic"]
+},
+{
+    "name":"Magneton",
+    "types":["Electric","Steel"],
+   "baseStats":{"hp":50, "atk":60,"def":95, "spa":120, "spd":70, "spe":70},
+   "abilities":["Magnet Pull","Sturdy","Analytic"]
+},
+{
+    "name":"Farfetch’d",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":52, "atk":90,"def":55, "spa":58, "spd":62, "spe":60},
+   "abilities":["Keen Eye","Inner Focus","defiant"]
+},
+{
+    "name":"Doduo",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":35, "atk":85,"def":45, "spa":35, "spd":35, "spe":75},
+   "abilities":["Run Away","Early Bird","Tangled Feet"]
+},
+{
+    "name":"Dodrio",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":60, "atk":110,"def":70, "spa":60, "spd":60, "spe":110},
+   "abilities":["Run Away","Early Bird","Tangled Feet"]
+},
+{
+    "name":"Seel",
+    "types":["Water"],
+   "baseStats":{"hp":65, "atk":45,"def":55, "spa":45, "spd":70, "spe":45},
+   "abilities":["Thick Fat","Hydration","Ice Body"]
+},
+{
+    "name":"Dewgong",
+    "types":["Water","Ice"],
+   "baseStats":{"hp":90, "atk":70,"def":80, "spa":70, "spd":95, "spe":70},
+   "abilities":["Thick Fat","Hydration","Ice Body"]
+},
+{
+    "name":"Grimer",
+    "types":["Poison"],
+   "baseStats":{"hp":80, "atk":80,"def":50, "spa":40, "spd":50, "spe":25},
+   "abilities":["Stench","Sticky Hold","Poison Touch"]
+},
+{
+    "name":"Muk",
+    "types":["Poison"],
+   "baseStats":{"hp":105, "atk":105,"def":75, "spa":65, "spd":100, "spe":50},
+   "abilities":["Stench","Sticky Hold","Poison Touch"]
+},
+{
+    "name":"Shellder",
+    "types":["Water"],
+   "baseStats":{"hp":30, "atk":65,"def":100, "spa":45, "spd":25, "spe":40},
+   "abilities":["Shell Armor","Skill Link","Overcoat"]
+},
+{
+    "name":"Cloyster",
+    "types":["Water","Ice"],
+   "baseStats":{"hp":50, "atk":95,"def":180, "spa":85, "spd":45, "spe":70},
+   "abilities":["Shell Armor","Skill Link","Overcoat"]
+},
+{
+    "name":"Gastly",
+    "types":["Ghost","Poison"],
+   "baseStats":{"hp":30, "atk":35,"def":30, "spa":100, "spd":35, "spe":80},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Haunter",
+    "types":["Ghost","Poison"],
+   "baseStats":{"hp":45, "atk":50,"def":45, "spa":115, "spd":55, "spe":95},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Gengar",
+    "types":["Ghost","Poison"],
+   "baseStats":{"hp":60, "atk":65,"def":60, "spa":130, "spd":75, "spe":110},
+   "abilities":["Cursed Body"]
+},
+{
+    "name":"Drowzee",
+    "types":["Psychic"],
+   "baseStats":{"hp":60, "atk":48,"def":45, "spa":43, "spd":90, "spe":42},
+   "abilities":["Insomnia","Forewarn","Inner Focus"]
+},
+{
+    "name":"Hypno",
+    "types":["Psychic"],
+   "baseStats":{"hp":85, "atk":73,"def":70, "spa":73, "spd":115, "spe":67},
+   "abilities":["Insomnia","Forewarn","Inner Focus"]
+},
+{
+    "name":"Krabby",
+    "types":["Water"],
+   "baseStats":{"hp":30, "atk":105,"def":90, "spa":25, "spd":25, "spe":50},
+   "abilities":["Hyper Cutter","Shell Armor","Sheer Force"]
+},
+{
+    "name":"Kingler",
+    "types":["Water"],
+   "baseStats":{"hp":55, "atk":130,"def":115, "spa":50, "spd":50, "spe":75},
+   "abilities":["Hyper Cutter","Shell Armor","Sheer Force"]
+},
+{
+    "name":"Voltorb",
+    "types":["Electric"],
+   "baseStats":{"hp":40, "atk":30,"def":50, "spa":55, "spd":55, "spe":100},
+   "abilities":["Soundproof","Static","Aftermath"]
+},
+{
+    "name":"Electrode",
+    "types":["Electric"],
+   "baseStats":{"hp":60, "atk":50,"def":70, "spa":80, "spd":80, "spe":150},
+   "abilities":["Soundproof","Static","Aftermath"]
+},
+{
+    "name":"Exeggcute",
+    "types":["Grass","Psychic"],
+   "baseStats":{"hp":60, "atk":40,"def":80, "spa":60, "spd":45, "spe":40},
+   "abilities":["Chlorophyll"]
+},
+{
+    "name":"Exeggutor",
+    "types":["Grass","Psychic"],
+   "baseStats":{"hp":95, "atk":95,"def":85, "spa":125, "spd":75, "spe":55},
+   "abilities":["Chlorophyll","Harvest"]
+},
+{
+    "name":"Cubone",
+    "types":["Ground"],
+   "baseStats":{"hp":50, "atk":50,"def":95, "spa":40, "spd":50, "spe":35},
+   "abilities":["Rock Head","Lightning Rod","Battle Armor"]
+},
+{
+    "name":"Marowak",
+    "types":["Ground"],
+   "baseStats":{"hp":60, "atk":80,"def":110, "spa":50, "spd":80, "spe":45},
+   "abilities":["Rock Head","Lightning Rod","Battle Armor"]
+},
+{
+    "name":"Hitmonlee",
+    "types":["Fighting"],
+   "baseStats":{"hp":50, "atk":120,"def":53, "spa":35, "spd":110, "spe":87},
+   "abilities":["Limber","Reckless","Unburden"]
+},
+{
+    "name":"Hitmonchan",
+    "types":["Fighting"],
+   "baseStats":{"hp":50, "atk":105,"def":79, "spa":35, "spd":110, "spe":76},
+   "abilities":["Keen Eye","Iron Fist","Inner Focus"]
+},
+{
+    "name":"Lickitung",
+    "types":["Normal"],
+   "baseStats":{"hp":90, "atk":55,"def":75, "spa":60, "spd":75, "spe":30},
+   "abilities":["Own Tempo","Oblivious","Cloud Nine"]
+},
+{
+    "name":"Koffing",
+    "types":["Poison"],
+   "baseStats":{"hp":40, "atk":65,"def":95, "spa":60, "spd":45, "spe":35},
+   "abilities":["Levitate","Neutralizing Gas","Stench"]
+},
+{
+    "name":"Weezing",
+    "types":["Poison"],
+   "baseStats":{"hp":65, "atk":90,"def":120, "spa":85, "spd":70, "spe":60},
+   "abilities":["Levitate","Neutralizing Gas","Stench"]
+},
+{
+    "name":"Rhyhorn",
+    "types":["Ground","Rock"],
+   "baseStats":{"hp":80, "atk":85,"def":95, "spa":30, "spd":30, "spe":25},
+   "abilities":["Lightning Rod","Rock Head","Reckless"]
+},
+{
+    "name":"Rhydon",
+    "types":["Ground","Rock"],
+   "baseStats":{"hp":105, "atk":130,"def":120, "spa":45, "spd":45, "spe":40},
+   "abilities":["Lightning Rod","Rock Head","Reckless"]
+},
+{
+    "name":"Chansey",
+    "types":["Normal"],
+   "baseStats":{"hp":250, "atk":5,"def":5, "spa":35, "spd":105, "spe":50},
+   "abilities":["Natural Cure","Serene Grace","Healer"]
+},
+{
+    "name":"Tangela",
+    "types":["Grass"],
+   "baseStats":{"hp":65, "atk":55,"def":115, "spa":100, "spd":40, "spe":60},
+   "abilities":["Chlorophyll","Leaf Guard","Regenerator"]
+},
+{
+    "name":"Kangaskhan",
+    "types":["Normal"],
+   "baseStats":{"hp":105, "atk":95,"def":80, "spa":40, "spd":80, "spe":90},
+   "abilities":["Early Bird","Scrappy","Inner Focus"]
+},
+{
+    "name":"Horsea",
+    "types":["Water"],
+   "baseStats":{"hp":30, "atk":40,"def":70, "spa":70, "spd":25, "spe":60},
+   "abilities":["Swift Swim","Sniper","Damp"]
+},
+{
+    "name":"Seadra",
+    "types":["Water"],
+   "baseStats":{"hp":55, "atk":65,"def":95, "spa":95, "spd":45, "spe":85},
+   "abilities":["Poison Point","Sniper","Damp"]
+},
+{
+    "name":"Goldeen",
+    "types":["Water"],
+   "baseStats":{"hp":45, "atk":67,"def":60, "spa":35, "spd":50, "spe":63},
+   "abilities":["Swift Swim","Water Veil","Lightning Rod"]
+},
+{
+    "name":"Seaking",
+    "types":["Water"],
+   "baseStats":{"hp":80, "atk":92,"def":65, "spa":65, "spd":80, "spe":68},
+   "abilities":["Swift Swim","Water Veil","Lightning Rod"]
+},
+{
+    "name":"Staryu",
+    "types":["Water"],
+   "baseStats":{"hp":30, "atk":45,"def":55, "spa":70, "spd":55, "spe":85},
+   "abilities":["Illuminate","Natural Cure","Analytic"]
+},
+{
+    "name":"Starmie",
+    "types":["Water","Psychic"],
+   "baseStats":{"hp":60, "atk":75,"def":85, "spa":100, "spd":85, "spe":115},
+   "abilities":["Illuminate","Natural Cure","Analytic"]
+},
+{
+    "name":"Mr. Mime",
+    "types":["Psychic","Fairy"],
+   "baseStats":{"hp":40, "atk":45,"def":65, "spa":100, "spd":120, "spe":90},
+   "abilities":["Soundproof","Filter","Technician"]
+},
+{
+    "name":"Scyther",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":70, "atk":110,"def":80, "spa":55, "spd":80, "spe":105},
+   "abilities":["Swarm","Technician","Steadfast"]
+},
+{
+    "name":"Jynx",
+    "types":["Ice","Psychic"],
+   "baseStats":{"hp":65, "atk":50,"def":35, "spa":115, "spd":95, "spe":95},
+   "abilities":["Oblivious","Forewarn","Dry Skin"]
+},
+{
+    "name":"Electabuzz",
+    "types":["Electric"],
+   "baseStats":{"hp":65, "atk":83,"def":57, "spa":95, "spd":85, "spe":105},
+   "abilities":["Static","Vital Spirit"]
+},
+{
+    "name":"Magmar",
+    "types":["Fire"],
+   "baseStats":{"hp":65, "atk":95,"def":57, "spa":100, "spd":85, "spe":93},
+   "abilities":["Flame Body","Vital Spirit"]
+},
+{
+    "name":"Pinsir",
+    "types":["Bug"],
+   "baseStats":{"hp":65, "atk":125,"def":100, "spa":55, "spd":70, "spe":85},
+   "abilities":["Hyper Cutter","Mold Breaker","Moxie"]
+},
+{
+    "name":"Tauros",
+    "types":["Normal"],
+   "baseStats":{"hp":75, "atk":100,"def":95, "spa":40, "spd":70, "spe":110},
+   "abilities":["Imtimidate","Anger Point","Sheer Force"]
+},
+{
+    "name":"Magikarp",
+    "types":["Water"],
+   "baseStats":{"hp":20, "atk":10,"def":55, "spa":15, "spd":20, "spe":80},
+   "abilities":["Swift Swim","Rattled"]
+},
+{
+    "name":"Gyarados",
+    "types":["Water","Flying"],
+   "baseStats":{"hp":95, "atk":125,"def":79, "spa":60, "spd":100, "spe":81},
+   "abilities":["Imtimidate","Moxie"]
+},
+{
+    "name":"Lapras",
+    "types":["Water","Ice"],
+   "baseStats":{"hp":130, "atk":85,"def":80, "spa":85, "spd":95, "spe":60},
+   "abilities":["Water Absorb","Shell Armor","Hydration"]
+},
+{
+    "name":"Ditto",
+    "types":["Normal"],
+   "baseStats":{"hp":48, "atk":48,"def":48, "spa":48, "spd":48, "spe":48},
+   "abilities":["Limber","Imposter"]
+},
+{
+    "name":"Eevee",
+    "types":["Normal"],
+   "baseStats":{"hp":55, "atk":55,"def":50, "spa":45, "spd":65, "spe":55},
+   "abilities":["Run Away","Adaptability","Anticipation"]
+},
+{
+    "name":"Vaporeon",
+    "types":["Water"],
+   "baseStats":{"hp":130, "atk":65,"def":60, "spa":110, "spd":95, "spe":65},
+   "abilities":["Water Absorb","Hydration"]
+},
+{
+    "name":"Jolteon",
+    "types":["Electric"],
+   "baseStats":{"hp":65, "atk":65,"def":60, "spa":110, "spd":95, "spe":130},
+   "abilities":["Volt Absorb","Quick Feet"]
+},
+{
+    "name":"Flareon",
+    "types":["Fire"],
+   "baseStats":{"hp":65, "atk":130,"def":60, "spa":95, "spd":110, "spe":65},
+   "abilities":["Flash Fire","Guts"]
+},
+{
+    "name":"Porygon",
+    "types":["Normal"],
+   "baseStats":{"hp":65, "atk":60,"def":70, "spa":85, "spd":75, "spe":40},
+   "abilities":["Trace","Download","Analytic"]
+},
+{
+    "name":"Omanyte",
+    "types":["Rock","Water"],
+   "baseStats":{"hp":35, "atk":40,"def":100, "spa":90, "spd":55, "spe":35},
+   "abilities":["Swift Swim","Shell Armor","Weak Armor"]
+},
+{
+    "name":"Omastar",
+    "types":["Rock","Water"],
+   "baseStats":{"hp":70, "atk":60,"def":125, "spa":115, "spd":70, "spe":55},
+   "abilities":["Swift Swim","Shell Armor","Weak Armor"]
+},
+{
+    "name":"Kabuto",
+    "types":["Rock","Water"],
+   "baseStats":{"hp":30, "atk":80,"def":90, "spa":55, "spd":45, "spe":55},
+   "abilities":["Swift Swim","Battle Armor","Weak Armor"]
+},
+{
+    "name":"Kabutops",
+    "types":["Rock","Water"],
+   "baseStats":{"hp":60, "atk":115,"def":105, "spa":65, "spd":70, "spe":80},
+   "abilities":["Swift Swim","Battle Armor","Weak Armor"]
+},
+{
+    "name":"Aerodactyl",
+    "types":["Rock","Flying"],
+   "baseStats":{"hp":80, "atk":105,"def":65, "spa":60, "spd":75, "spe":130},
+   "abilities":["Rock Head","Pressure","Unnerve"]
+},
+{
+    "name":"Snorlax",
+    "types":["Normal"],
+   "baseStats":{"hp":160, "atk":110,"def":65, "spa":65, "spd":110, "spe":30},
+   "abilities":["Immunity","Thick Fat","Gluttony"]
+},
+{
+    "name":"Articuno",
+    "types":["Ice","Flying"],
+   "baseStats":{"hp":90, "atk":85,"def":100, "spa":95, "spd":125, "spe":85},
+   "abilities":["Pressure","Snow Cloak"]
+},
+{
+    "name":"Zapdos",
+    "types":["Electric","Flying"],
+   "baseStats":{"hp":90, "atk":90,"def":85, "spa":125, "spd":90, "spe":100},
+   "abilities":["Pressure","Static"]
+},
+{
+    "name":"Moltres",
+    "types":["Fire","Flying"],
+   "baseStats":{"hp":90, "atk":100,"def":90, "spa":125, "spd":85, "spe":90},
+   "abilities":["Pressure","Flame Body"]
+},
+{
+    "name":"Dratini",
+    "types":["Dragon"],
+   "baseStats":{"hp":41, "atk":64,"def":45, "spa":50, "spd":50, "spe":50},
+   "abilities":["Shed Skin","Marvel Scale"]
+},
+{
+    "name":"Dragonair",
+    "types":["Dragon"],
+   "baseStats":{"hp":61, "atk":84,"def":65, "spa":70, "spd":70, "spe":70},
+   "abilities":["Shed Skin","Marvel Scale"]
+},
+{
+    "name":"Dragonite",
+    "types":["Dragon","Flying"],
+   "baseStats":{"hp":91, "atk":134,"def":95, "spa":100, "spd":100, "spe":80},
+   "abilities":["Inner Focus","Multiscale"]
+},
+{
+    "name":"Mewtwo",
+    "types":["Psychic"],
+   "baseStats":{"hp":106, "atk":110,"def":90, "spa":154, "spd":90, "spe":130},
+   "abilities":["Pressure","Unnerve"]
+},
+{
+    "name":"Mew",
+    "types":["Psychic"],
+   "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
+   "abilities":["Synchronize"]
+},{
+    "name":"Chikorita",
+    "types":["Grass"],
+   "baseStats":{"hp":45, "atk":49,"def":65, "spa":49, "spd":65, "spe":45},
+   "abilities":["Overgrow","Leaf Guard"]
+},
+{
+    "name":"Bayleef",
+    "types":["Grass"],
+   "baseStats":{"hp":60, "atk":62,"def":80, "spa":63, "spd":80, "spe":60},
+   "abilities":["Overgrow","Leaf Guard"]
+},
+{
+    "name":"Meganium",
+    "types":["Grass"],
+   "baseStats":{"hp":80, "atk":82,"def":100, "spa":83, "spd":100, "spe":80},
+   "abilities":["Overgrow","Leaf Guard"]
+},
+{
+    "name":"Cyndaquil",
+    "types":["Fire"],
+   "baseStats":{"hp":39, "atk":52,"def":43, "spa":60, "spd":50, "spe":65},
+   "abilities":["Blaze","Flash Fire"]
+},
+{
+    "name":"Quilava",
+    "types":["Fire"],
+   "baseStats":{"hp":58, "atk":64,"def":58, "spa":80, "spd":65, "spe":80},
+   "abilities":["Blaze","Flash Fire"]
+},
+{
+    "name":"Typhlosion",
+    "types":["Fire"],
+   "baseStats":{"hp":78, "atk":84,"def":78, "spa":109, "spd":85, "spe":100},
+   "abilities":["Blaze","Flash Fire"]
+},
+{
+    "name":"Totodile",
+    "types":["Water"],
+   "baseStats":{"hp":50, "atk":65,"def":64, "spa":44, "spd":48, "spe":43},
+   "abilities":["Torrent","Sheer Force"]
+},
+{
+    "name":"Croconaw",
+    "types":["Water"],
+   "baseStats":{"hp":65, "atk":80,"def":80, "spa":59, "spd":63, "spe":58},
+   "abilities":["Torrent","Sheer Force"]
+},
+{
+    "name":"Feraligatr",
+    "types":["Water"],
+   "baseStats":{"hp":85, "atk":105,"def":100, "spa":79, "spd":83, "spe":78},
+   "abilities":["Torrent","Sheer Force"]
+},
+{
+    "name":"Sentret",
+    "types":["Normal"],
+   "baseStats":{"hp":35, "atk":46,"def":34, "spa":35, "spd":45, "spe":20},
+   "abilities":["Run Away","Keen Eye","Frisk"]
+},
+{
+    "name":"Furret",
+    "types":["Normal"],
+   "baseStats":{"hp":85, "atk":76,"def":64, "spa":45, "spd":55, "spe":90},
+   "abilities":["Run Away","Keen Eye","Frisk"]
+},
+{
+    "name":"Hoothoot",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":60, "atk":30,"def":30, "spa":36, "spd":56, "spe":50},
+   "abilities":["Insomnia","Keen Eye","Tinted Lens"]
+},
+{
+    "name":"Noctowl",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":100, "atk":50,"def":50, "spa":86, "spd":96, "spe":70},
+   "abilities":["Insomnia","Keen Eye","Tinted Lens"]
+},
+{
+    "name":"Ledyba",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":40, "atk":20,"def":30, "spa":40, "spd":80, "spe":55},
+   "abilities":["Swarm","Early Bird","Rattled"]
+},
+{
+    "name":"Ledian",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":55, "atk":35,"def":50, "spa":55, "spd":110, "spe":85},
+   "abilities":["Swarm","Early Bird","Iron Fist"]
+},
+{
+    "name":"Spinarak",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":40, "atk":60,"def":40, "spa":40, "spd":40, "spe":30},
+   "abilities":["Swarm","Insomnia","Sniper"]
+},
+{
+    "name":"Ariados",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":70, "atk":90,"def":70, "spa":60, "spd":70, "spe":40},
+   "abilities":["Swarm","Insomnia","Sniper"]
+},
+{
+    "name":"Crobat",
+    "types":["Poison","Flying"],
+   "baseStats":{"hp":85, "atk":90,"def":80, "spa":70, "spd":80, "spe":130},
+   "abilities":["Inner Focus","Infiltrator"]
+},
+{
+    "name":"Chinchou",
+    "types":["Water","Electric"],
+   "baseStats":{"hp":75, "atk":38,"def":38, "spa":56, "spd":56, "spe":67},
+   "abilities":["Volt Absorb","Illuminate","Water Absorb"]
+},
+{
+    "name":"Lanturn",
+    "types":["Water","Electric"],
+   "baseStats":{"hp":125, "atk":58,"def":58, "spa":76, "spd":76, "spe":67},
+   "abilities":["Volt Absorb","Illuminate","Water Absorb"]
+},
+{
+    "name":"Pichu",
+    "types":["Electric"],
+   "baseStats":{"hp":20, "atk":40,"def":15, "spa":35, "spd":35, "spe":60},
+   "abilities":["Static","Lightning Rod"]
+},
+{
+    "name":"Cleffa",
+    "types":["Fairy"],
+   "baseStats":{"hp":50, "atk":25,"def":28, "spa":45, "spd":55, "spe":15},
+   "abilities":["Cute Charm","Magic Guard","Friend Guard"]
+},
+{
+    "name":"Igglybuff",
+    "types":["Normal","Fairy"],
+   "baseStats":{"hp":90, "atk":30,"def":15, "spa":40, "spd":20, "spe":15},
+   "abilities":["Cute Charm","Competitive","Friend Guard"]
+},
+{
+    "name":"Togepi",
+    "types":["Fairy"],
+   "baseStats":{"hp":35, "atk":20,"def":65, "spa":40, "spd":65, "spe":20},
+   "abilities":["Hustle","Serene Grace","Super Luck"]
+},
+{
+    "name":"Togetic",
+    "types":["Fairy","Flying"],
+   "baseStats":{"hp":55, "atk":40,"def":85, "spa":80, "spd":105, "spe":40},
+   "abilities":["Hustle","Serene Grace","Super Luck"]
+},
+{
+    "name":"Natu",
+    "types":["Psychic","Flying"],
+   "baseStats":{"hp":40, "atk":50,"def":45, "spa":70, "spd":45, "spe":70},
+   "abilities":["Synchronize","Early Bird","Magic Bounce"]
+},
+{
+    "name":"Xatu",
+    "types":["Psychic","Flying"],
+   "baseStats":{"hp":65, "atk":75,"def":70, "spa":95, "spd":70, "spe":95},
+   "abilities":["Synchronize","Early Bird","Magic Bounce"]
+},
+{
+    "name":"Mareep",
+    "types":["Electric"],
+   "baseStats":{"hp":55, "atk":40,"def":40, "spa":65, "spd":45, "spe":35},
+   "abilities":["Static","Plus"]
+},
+{
+    "name":"Flaaffy",
+    "types":["Electric"],
+   "baseStats":{"hp":70, "atk":55,"def":55, "spa":80, "spd":60, "spe":45},
+   "abilities":["Static","Plus"]
+},
+{
+    "name":"Ampharos",
+    "types":["Electric"],
+   "baseStats":{"hp":90, "atk":75,"def":85, "spa":115, "spd":90, "spe":55},
+   "abilities":["Static","Plus"]
+},
+{
+    "name":"Bellossom",
+    "types":["Grass"],
+   "baseStats":{"hp":75, "atk":80,"def":95, "spa":90, "spd":100, "spe":50},
+   "abilities":["Chlorophyll","Healer"]
+},
+{
+    "name":"Marill",
+    "types":["Water","Fairy"],
+   "baseStats":{"hp":70, "atk":20,"def":50, "spa":20, "spd":50, "spe":40},
+   "abilities":["Thick Fat","Huge Power","Sap Sipper"]
+},
+{
+    "name":"Azumarill",
+    "types":["Water","Fairy"],
+   "baseStats":{"hp":100, "atk":50,"def":80, "spa":60, "spd":80, "spe":50},
+   "abilities":["Thick Fat","Huge Power","Sap Sipper"]
+},
+{
+    "name":"Sudowoodo",
+    "types":["Rock"],
+   "baseStats":{"hp":70, "atk":100,"def":115, "spa":30, "spd":65, "spe":30},
+   "abilities":["Sturdy","Rock Head","Rattled"]
+},
+{
+    "name":"Politoed",
+    "types":["Water"],
+   "baseStats":{"hp":90, "atk":75,"def":75, "spa":90, "spd":100, "spe":70},
+   "abilities":["Water Absorb","Damp","Drizzle"]
+},
+{
+    "name":"Hoppip",
+    "types":["Grass","Flying"],
+   "baseStats":{"hp":35, "atk":35,"def":40, "spa":35, "spd":55, "spe":50},
+   "abilities":["Chlorophyll","Leaf Guard","Infiltrator"]
+},
+{
+    "name":"Skiploom",
+    "types":["Grass","Flying"],
+   "baseStats":{"hp":55, "atk":45,"def":50, "spa":45, "spd":65, "spe":80},
+   "abilities":["Chlorophyll","Leaf Guard","Infiltrator"]
+},
+{
+    "name":"Jumpluff",
+    "types":["Grass","Flying"],
+   "baseStats":{"hp":75, "atk":55,"def":70, "spa":55, "spd":95, "spe":110},
+   "abilities":["Chlorophyll","Leaf Guard","Infiltrator"]
+},
+{
+    "name":"Aipom",
+    "types":["Normal"],
+   "baseStats":{"hp":55, "atk":70,"def":55, "spa":40, "spd":55, "spe":85},
+   "abilities":["Run Away","Pickup","Skill Link"]
+},
+{
+    "name":"Sunkern",
+    "types":["Grass"],
+   "baseStats":{"hp":30, "atk":30,"def":30, "spa":30, "spd":30, "spe":30},
+   "abilities":["Chlorophyll","Solar Power","Early Bird"]
+},
+{
+    "name":"Sunflora",
+    "types":["Grass"],
+   "baseStats":{"hp":75, "atk":75,"def":55, "spa":105, "spd":85, "spe":30},
+   "abilities":["Chlorophyll","Solar Power","Early Bird"]
+},
+{
+    "name":"Yanma",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":65, "atk":65,"def":45, "spa":75, "spd":45, "spe":95},
+   "abilities":["speed Boost","Compound Eyes","Frisk"]
+},
+{
+    "name":"Wooper",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":55, "atk":45,"def":45, "spa":25, "spd":25, "spe":15},
+   "abilities":["Damp","Water Absorb","Unaware"]
+},
+{
+    "name":"Quagsire",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":95, "atk":85,"def":85, "spa":65, "spd":65, "spe":35},
+   "abilities":["Damp","Water Absorb","Unaware"]
+},
+{
+    "name":"Espeon",
+    "types":["Psychic"],
+   "baseStats":{"hp":65, "atk":65,"def":60, "spa":130, "spd":95, "spe":110},
+   "abilities":["Synchronize","Magic Bounce"]
+},
+{
+    "name":"Umbreon",
+    "types":["Dark"],
+   "baseStats":{"hp":95, "atk":65,"def":110, "spa":60, "spd":130, "spe":65},
+   "abilities":["Synchronize","Inner Focus"]
+},
+{
+    "name":"Murkrow",
+    "types":["Dark","Flying"],
+   "baseStats":{"hp":60, "atk":85,"def":42, "spa":85, "spd":42, "spe":91},
+   "abilities":["Insomnia","Super Luck","Prankster"]
+},
+{
+    "name":"Slowking",
+    "types":["Water","Psychic"],
+   "baseStats":{"hp":95, "atk":75,"def":80, "spa":100, "spd":110, "spe":30},
+   "abilities":["Oblivious","Own Tempo","Regenerator"]
+},
+{
+    "name":"Misdreavus",
+    "types":["Ghost"],
+   "baseStats":{"hp":60, "atk":60,"def":60, "spa":85, "spd":85, "spe":85},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Unown",
+    "types":["Psychic"],
+   "baseStats":{"hp":48, "atk":72,"def":48, "spa":72, "spd":48, "spe":48},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Wobbuffet",
+    "types":["Psychic"],
+   "baseStats":{"hp":190, "atk":33,"def":58, "spa":33, "spd":58, "spe":33},
+   "abilities":["Shadow Tag","Telepathy"]
+},
+{
+    "name":"Girafarig",
+    "types":["Normal","Psychic"],
+   "baseStats":{"hp":70, "atk":80,"def":65, "spa":90, "spd":65, "spe":85},
+   "abilities":["Inner Focus","Early Bird","Sap Sipper"]
+},
+{
+    "name":"Pineco",
+    "types":["Bug"],
+   "baseStats":{"hp":50, "atk":65,"def":90, "spa":35, "spd":35, "spe":15},
+   "abilities":["Sturdy","Overcoat"]
+},
+{
+    "name":"Forretress",
+    "types":["Bug","Steel"],
+   "baseStats":{"hp":75, "atk":90,"def":140, "spa":60, "spd":60, "spe":40},
+   "abilities":["Sturdy","Overcoat"]
+},
+{
+    "name":"Dunsparce",
+    "types":["Normal"],
+   "baseStats":{"hp":100, "atk":70,"def":70, "spa":65, "spd":65, "spe":45},
+   "abilities":["Serene Grace","Run Away","Rattled"]
+},
+{
+    "name":"Gligar",
+    "types":["Ground","Flying"],
+   "baseStats":{"hp":65, "atk":75,"def":105, "spa":35, "spd":65, "spe":85},
+   "abilities":["Hyper Cutter","Sand Veil","Immunity"]
+},
+{
+    "name":"Steelix",
+    "types":["Steel","Ground"],
+   "baseStats":{"hp":75, "atk":85,"def":200, "spa":55, "spd":65, "spe":30},
+   "abilities":["Rock Head","Sturdy","Sheer Force"]
+},
+{
+    "name":"Snubbull",
+    "types":["Fairy"],
+   "baseStats":{"hp":60, "atk":80,"def":50, "spa":40, "spd":40, "spe":30},
+   "abilities":["Imtimidate","Run Away","Rattled"]
+},
+{
+    "name":"Granbull",
+    "types":["Fairy"],
+   "baseStats":{"hp":90, "atk":120,"def":75, "spa":60, "spd":60, "spe":45},
+   "abilities":["Imtimidate","Quick Feet","Rattled"]
+},
+{
+    "name":"Qwilfish",
+    "types":["Water","Poison"],
+   "baseStats":{"hp":65, "atk":95,"def":85, "spa":55, "spd":55, "spe":85},
+   "abilities":["Poison Point","Swift Swim","Imtimidate"]
+},
+{
+    "name":"Scizor",
+    "types":["Bug","Steel"],
+   "baseStats":{"hp":70, "atk":130,"def":100, "spa":55, "spd":80, "spe":65},
+   "abilities":["Swarm","Technician","Light Metal"]
+},
+{
+    "name":"Shuckle",
+    "types":["Bug","Rock"],
+   "baseStats":{"hp":20, "atk":10,"def":230, "spa":10, "spd":230, "spe":5},
+   "abilities":["Sturdy","Gluttony","Contrary"]
+},
+{
+    "name":"Heracross",
+    "types":["Bug","Fighting"],
+   "baseStats":{"hp":80, "atk":125,"def":75, "spa":40, "spd":95, "spe":85},
+   "abilities":["Swarm","Guts","Moxie"]
+},
+{
+    "name":"Sneasel",
+    "types":["Dark","Ice"],
+   "baseStats":{"hp":55, "atk":95,"def":55, "spa":35, "spd":75, "spe":115},
+   "abilities":["Inner Focus","Keen Eye","Pickpocket"]
+},
+{
+    "name":"Teddiursa",
+    "types":["Normal"],
+   "baseStats":{"hp":60, "atk":80,"def":50, "spa":50, "spd":50, "spe":40},
+   "abilities":["Pickup","Quick Feet","Honey Gather"]
+},
+{
+    "name":"Ursaring",
+    "types":["Normal"],
+   "baseStats":{"hp":90, "atk":130,"def":75, "spa":75, "spd":75, "spe":55},
+   "abilities":["Guts","Quick Feet","Unnerve"]
+},
+{
+    "name":"Slugma",
+    "types":["Fire"],
+   "baseStats":{"hp":40, "atk":40,"def":40, "spa":70, "spd":40, "spe":20},
+   "abilities":["Magma Armor","Flame Body","Weak Armor"]
+},
+{
+    "name":"Magcargo",
+    "types":["Fire","Rock"],
+   "baseStats":{"hp":60, "atk":50,"def":120, "spa":90, "spd":80, "spe":30},
+   "abilities":["Magma Armor","Flame Body","Weak Armor"]
+},
+{
+    "name":"Swinub",
+    "types":["Ice","Ground"],
+   "baseStats":{"hp":50, "atk":50,"def":40, "spa":30, "spd":30, "spe":50},
+   "abilities":["Oblivious","Snow Cloak","Thick Fat"]
+},
+{
+    "name":"Piloswine",
+    "types":["Ice","Ground"],
+   "baseStats":{"hp":100, "atk":100,"def":80, "spa":60, "spd":60, "spe":50},
+   "abilities":["Oblivious","Snow Cloak","Thick Fat"]
+},
+{
+    "name":"Corsola",
+    "types":["Water","Rock"],
+   "baseStats":{"hp":65, "atk":55,"def":95, "spa":65, "spd":95, "spe":35},
+   "abilities":["Hustle","Natural Cure","Regenerator"]
+},
+{
+    "name":"Remoraid",
+    "types":["Water"],
+   "baseStats":{"hp":35, "atk":65,"def":35, "spa":65, "spd":35, "spe":65},
+   "abilities":["Hustle","Sniper","Moody"]
+},
+{
+    "name":"Octillery",
+    "types":["Water"],
+   "baseStats":{"hp":75, "atk":105,"def":75, "spa":105, "spd":75, "spe":45},
+   "abilities":["Suction Cups","Sniper","Moody"]
+},
+{
+    "name":"Delibird",
+    "types":["Ice","Flying"],
+   "baseStats":{"hp":45, "atk":55,"def":45, "spa":65, "spd":45, "spe":75},
+   "abilities":["Vital Spirit","Hustle","Insomnia"]
+},
+{
+    "name":"Mantine",
+    "types":["Water","Flying"],
+   "baseStats":{"hp":85, "atk":40,"def":70, "spa":80, "spd":140, "spe":70},
+   "abilities":["Swift Swim","Water Absorb","Water Veil"]
+},
+{
+    "name":"Skarmory",
+    "types":["Steel","Flying"],
+   "baseStats":{"hp":65, "atk":80,"def":140, "spa":40, "spd":70, "spe":70},
+   "abilities":["Keen Eye","Sturdy","Weak Armor"]
+},
+{
+    "name":"Houndour",
+    "types":["Dark","Fire"],
+   "baseStats":{"hp":45, "atk":60,"def":30, "spa":80, "spd":50, "spe":65},
+   "abilities":["Early Bird","Flash Fire","Unnerve"]
+},
+{
+    "name":"Houndoom",
+    "types":["Dark","Fire"],
+   "baseStats":{"hp":75, "atk":90,"def":50, "spa":110, "spd":80, "spe":95},
+   "abilities":["Early Bird","Flash Fire","Unnerve"]
+},
+{
+    "name":"Kingdra",
+    "types":["Water","Dragon"],
+   "baseStats":{"hp":75, "atk":95,"def":95, "spa":95, "spd":95, "spe":85},
+   "abilities":["Swift Swim","Sniper","Damp"]
+},
+{
+    "name":"Phanpy",
+    "types":["Ground"],
+   "baseStats":{"hp":90, "atk":60,"def":60, "spa":40, "spd":40, "spe":40},
+   "abilities":["Pickup","Sand Veil"]
+},
+{
+    "name":"Donphan",
+    "types":["Ground"],
+   "baseStats":{"hp":90, "atk":120,"def":120, "spa":60, "spd":60, "spe":50},
+   "abilities":["Sturdy","Sand Veil"]
+},
+{
+    "name":"Porygon2",
+    "types":["Normal"],
+   "baseStats":{"hp":85, "atk":80,"def":90, "spa":105, "spd":95, "spe":60},
+   "abilities":["Trace","Download","Analytic"]
+},
+{
+    "name":"Stantler",
+    "types":["Normal"],
+   "baseStats":{"hp":73, "atk":95,"def":62, "spa":85, "spd":65, "spe":85},
+   "abilities":["Imtimidate","Frisk","Sap Sipper"]
+},
+{
+    "name":"Smeargle",
+    "types":["Normal"],
+   "baseStats":{"hp":55, "atk":20,"def":35, "spa":20, "spd":45, "spe":75},
+   "abilities":["Own Tempo","Technician","Moody"]
+},
+{
+    "name":"Tyrogue",
+    "types":["Fighting"],
+   "baseStats":{"hp":35, "atk":35,"def":35, "spa":35, "spd":35, "spe":35},
+   "abilities":["Guts","Steadfast","Vital Spirit"]
+},
+{
+    "name":"Hitmontop",
+    "types":["Fighting"],
+   "baseStats":{"hp":50, "atk":95,"def":95, "spa":35, "spd":110, "spe":70},
+   "abilities":["Imtimidate","Technician","Steadfast"]
+},
+{
+    "name":"Smoochum",
+    "types":["Ice","Psychic"],
+   "baseStats":{"hp":45, "atk":30,"def":15, "spa":85, "spd":65, "spe":65},
+   "abilities":["Oblivious","Forewarn","Hydration"]
+},
+{
+    "name":"Elekid",
+    "types":["Electric"],
+   "baseStats":{"hp":45, "atk":63,"def":37, "spa":65, "spd":55, "spe":95},
+   "abilities":["Static","Vital Spirit"]
+},
+{
+    "name":"Magby",
+    "types":["Fire"],
+   "baseStats":{"hp":45, "atk":75,"def":37, "spa":70, "spd":55, "spe":83},
+   "abilities":["Flame Body","Vital Spirit"]
+},
+{
+    "name":"Miltank",
+    "types":["Normal"],
+   "baseStats":{"hp":95, "atk":80,"def":105, "spa":40, "spd":70, "spe":100},
+   "abilities":["Thick Fat","Scrappy","Sap Sipper"]
+},
+{
+    "name":"Blissey",
+    "types":["Normal"],
+   "baseStats":{"hp":255, "atk":10,"def":10, "spa":75, "spd":135, "spe":55},
+   "abilities":["Natural Cure","Serene Grace","Healer"]
+},
+{
+    "name":"Raikou",
+    "types":["Electric"],
+   "baseStats":{"hp":90, "atk":85,"def":75, "spa":115, "spd":100, "spe":115},
+   "abilities":["Pressure","Inner Focus"]
+},
+{
+    "name":"Entei",
+    "types":["Fire"],
+   "baseStats":{"hp":115, "atk":115,"def":85, "spa":90, "spd":75, "spe":100},
+   "abilities":["Pressure","Inner Focus"]
+},
+{
+    "name":"Suicune",
+    "types":["Water"],
+   "baseStats":{"hp":100, "atk":75,"def":115, "spa":90, "spd":115, "spe":85},
+   "abilities":["Pressure","Inner Focus"]
+},
+{
+    "name":"Larvitar",
+    "types":["Rock","Ground"],
+   "baseStats":{"hp":50, "atk":64,"def":50, "spa":45, "spd":50, "spe":41},
+   "abilities":["Guts","Sand Veil"]
+},
+{
+    "name":"Pupitar",
+    "types":["Rock","Ground"],
+   "baseStats":{"hp":70, "atk":84,"def":70, "spa":65, "spd":70, "spe":51},
+   "abilities":["Shed Skin"]
+},
+{
+    "name":"Tyranitar",
+    "types":["Rock","Dark"],
+   "baseStats":{"hp":100, "atk":134,"def":110, "spa":95, "spd":100, "spe":61},
+   "abilities":["Sand Stream","Unnerve"]
+},
+{
+    "name":"Lugia",
+    "types":["Psychic","Flying"],
+   "baseStats":{"hp":106, "atk":90,"def":130, "spa":90, "spd":154, "spe":110},
+   "abilities":["Pressure","Multiscale"]
+},
+{
+    "name":"Ho-Oh",
+    "types":["Fire","Flying"],
+   "baseStats":{"hp":106, "atk":130,"def":90, "spa":110, "spd":154, "spe":90},
+   "abilities":["Pressure","Regenerator"]
+},
+{
+    "name":"Celebi",
+    "types":["Psychic","Grass"],
+   "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
+   "abilities":["Natural Cure"]
+},{
+    "name":"Treecko",
+    "types":["Grass"],
+   "baseStats":{"hp":40, "atk":45,"def":35, "spa":65, "spd":55, "spe":70},
+   "abilities":["Overgrow","Unburden"]
+},
+{
+    "name":"Grovyle",
+    "types":["Grass"],
+   "baseStats":{"hp":50, "atk":65,"def":45, "spa":85, "spd":65, "spe":95},
+   "abilities":["Overgrow","Unburden"]
+},
+{
+    "name":"Sceptile",
+    "types":["Grass"],
+   "baseStats":{"hp":70, "atk":85,"def":65, "spa":105, "spd":85, "spe":120},
+   "abilities":["Overgrow","Unburden"]
+},
+{
+    "name":"Torchic",
+    "types":["Fire"],
+   "baseStats":{"hp":45, "atk":60,"def":40, "spa":70, "spd":50, "spe":45},
+   "abilities":["Blaze","speed Boost"]
+},
+{
+    "name":"Combusken",
+    "types":["Fire","Fighting"],
+   "baseStats":{"hp":60, "atk":85,"def":60, "spa":85, "spd":60, "spe":55},
+   "abilities":["Blaze","speed Boost"]
+},
+{
+    "name":"Blaziken",
+    "types":["Fire","Fighting"],
+   "baseStats":{"hp":80, "atk":120,"def":70, "spa":110, "spd":70, "spe":80},
+   "abilities":["Blaze","speed Boost"]
+},
+{
+    "name":"Mudkip",
+    "types":["Water"],
+   "baseStats":{"hp":50, "atk":70,"def":50, "spa":50, "spd":50, "spe":40},
+   "abilities":["Torrent","Damp"]
+},
+{
+    "name":"Marshtomp",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":70, "atk":85,"def":70, "spa":60, "spd":70, "spe":50},
+   "abilities":["Torrent","Damp"]
+},
+{
+    "name":"Swampert",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":100, "atk":110,"def":90, "spa":85, "spd":90, "spe":60},
+   "abilities":["Torrent","Damp"]
+},
+{
+    "name":"Poochyena",
+    "types":["Dark"],
+   "baseStats":{"hp":35, "atk":55,"def":35, "spa":30, "spd":30, "spe":35},
+   "abilities":["Run Away","Quick Feet","Rattled"]
+},
+{
+    "name":"Mightyena",
+    "types":["Dark"],
+   "baseStats":{"hp":70, "atk":90,"def":70, "spa":60, "spd":60, "spe":70},
+   "abilities":["Imtimidate","Quick Feet","Moxie"]
+},
+{
+    "name":"Zigzagoon",
+    "types":["Normal"],
+   "baseStats":{"hp":38, "atk":30,"def":41, "spa":30, "spd":41, "spe":60},
+   "abilities":["Pickup","Gluttony","Quick Feet"]
+},
+{
+    "name":"Linoone",
+    "types":["Normal"],
+   "baseStats":{"hp":78, "atk":70,"def":61, "spa":50, "spd":61, "spe":100},
+   "abilities":["Pickup","Gluttony","Quick Feet"]
+},
+{
+    "name":"Wurmple",
+    "types":["Bug"],
+   "baseStats":{"hp":45, "atk":45,"def":35, "spa":20, "spd":30, "spe":20},
+   "abilities":["Shield Dust","Run Away"]
+},
+{
+    "name":"Silcoon",
+    "types":["Bug"],
+   "baseStats":{"hp":50, "atk":35,"def":55, "spa":25, "spd":25, "spe":15},
+   "abilities":["Shed Skin"]
+},
+{
+    "name":"Beautifly",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":60, "atk":70,"def":50, "spa":100, "spd":50, "spe":65},
+   "abilities":["Swarm","Rivalry"]
+},
+{
+    "name":"Cascoon",
+    "types":["Bug"],
+   "baseStats":{"hp":50, "atk":35,"def":55, "spa":25, "spd":25, "spe":15},
+   "abilities":["Shed Skin"]
+},
+{
+    "name":"Dustox",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":60, "atk":50,"def":70, "spa":50, "spd":90, "spe":65},
+   "abilities":["Shield Dust","Compound Eyes"]
+},
+{
+    "name":"Lotad",
+    "types":["Water","Grass"],
+   "baseStats":{"hp":40, "atk":30,"def":30, "spa":40, "spd":50, "spe":30},
+   "abilities":["Swift Swim","Rain Dish","Own Tempo"]
+},
+{
+    "name":"Lombre",
+    "types":["Water","Grass"],
+   "baseStats":{"hp":60, "atk":50,"def":50, "spa":60, "spd":70, "spe":50},
+   "abilities":["Swift Swim","Rain Dish","Own Tempo"]
+},
+{
+    "name":"Ludicolo",
+    "types":["Water","Grass"],
+   "baseStats":{"hp":80, "atk":70,"def":70, "spa":90, "spd":100, "spe":70},
+   "abilities":["Swift Swim","Rain Dish","Own Tempo"]
+},
+{
+    "name":"Seedot",
+    "types":["Grass"],
+   "baseStats":{"hp":40, "atk":40,"def":50, "spa":30, "spd":30, "spe":30},
+   "abilities":["Chlorophyll","Early Bird","Pickpocket"]
+},
+{
+    "name":"Nuzleaf",
+    "types":["Grass","Dark"],
+   "baseStats":{"hp":70, "atk":70,"def":40, "spa":60, "spd":40, "spe":60},
+   "abilities":["Chlorophyll","Early Bird","Pickpocket"]
+},
+{
+    "name":"Shiftry",
+    "types":["Grass","Dark"],
+   "baseStats":{"hp":90, "atk":100,"def":60, "spa":90, "spd":60, "spe":80},
+   "abilities":["Chlorophyll","Early Bird","Pickpocket"]
+},
+{
+    "name":"Taillow",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":40, "atk":55,"def":30, "spa":30, "spd":30, "spe":85},
+   "abilities":["Guts","Scrappy"]
+},
+{
+    "name":"Swellow",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":60, "atk":85,"def":60, "spa":50, "spd":50, "spe":125},
+   "abilities":["Guts","Scrappy"]
+},
+{
+    "name":"Wingull",
+    "types":["Water","Flying"],
+   "baseStats":{"hp":40, "atk":30,"def":30, "spa":55, "spd":30, "spe":85},
+   "abilities":["Keen Eye","Hydration","Rain Dish"]
+},
+{
+    "name":"Pelipper",
+    "types":["Water","Flying"],
+   "baseStats":{"hp":60, "atk":50,"def":100, "spa":95, "spd":70, "spe":65},
+   "abilities":["Keen Eye","Drizzle","Rain Dish"]
+},
+{
+    "name":"Ralts",
+    "types":["Psychic","Fairy"],
+   "baseStats":{"hp":28, "atk":25,"def":25, "spa":45, "spd":35, "spe":40},
+   "abilities":["Synchronize","Trace","Telepathy"]
+},
+{
+    "name":"Kirlia",
+    "types":["Psychic","Fairy"],
+   "baseStats":{"hp":38, "atk":35,"def":35, "spa":65, "spd":55, "spe":50},
+   "abilities":["Synchronize","Trace","Telepathy"]
+},
+{
+    "name":"Gardevoir",
+    "types":["Psychic","Fairy"],
+   "baseStats":{"hp":68, "atk":65,"def":65, "spa":125, "spd":115, "spe":80},
+   "abilities":["Synchronize","Trace","Telepathy"]
+},
+{
+    "name":"Surskit",
+    "types":["Bug","Water"],
+   "baseStats":{"hp":40, "atk":30,"def":32, "spa":50, "spd":52, "spe":65},
+   "abilities":["Swift Swim","Rain Dish"]
+},
+{
+    "name":"Masquerain",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":70, "atk":60,"def":62, "spa":100, "spd":82, "spe":80},
+   "abilities":["Imtimidate","Unnerve"]
+},
+{
+    "name":"Shroomish",
+    "types":["Grass"],
+   "baseStats":{"hp":60, "atk":40,"def":60, "spa":40, "spd":60, "spe":35},
+   "abilities":["Effect Spore","Poison Heal","Quick Feet"]
+},
+{
+    "name":"Breloom",
+    "types":["Grass","Fighting"],
+   "baseStats":{"hp":60, "atk":130,"def":80, "spa":60, "spd":60, "spe":70},
+   "abilities":["Effect Spore","Poison Heal","Technician"]
+},
+{
+    "name":"Slakoth",
+    "types":["Normal"],
+   "baseStats":{"hp":60, "atk":60,"def":60, "spa":35, "spd":35, "spe":30},
+   "abilities":["Truant"]
+},
+{
+    "name":"Vigoroth",
+    "types":["Normal"],
+   "baseStats":{"hp":80, "atk":80,"def":80, "spa":55, "spd":55, "spe":90},
+   "abilities":["Vital Spirit"]
+},
+{
+    "name":"Slaking",
+    "types":["Normal"],
+   "baseStats":{"hp":150, "atk":160,"def":100, "spa":95, "spd":65, "spe":100},
+   "abilities":["Truant"]
+},
+{
+    "name":"Nincada",
+    "types":["Bug","Ground"],
+   "baseStats":{"hp":31, "atk":45,"def":90, "spa":30, "spd":30, "spe":40},
+   "abilities":["Compound Eyes","Run Away"]
+},
+{
+    "name":"Ninjask",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":61, "atk":90,"def":45, "spa":50, "spd":50, "spe":160},
+   "abilities":["speed Boost","Infiltrator"]
+},
+{
+    "name":"Shedinja",
+    "types":["Bug","Ghost"],
+   "baseStats":{"hp":1, "atk":90,"def":45, "spa":30, "spd":30, "spe":40},
+   "abilities":["Wonder Guard"]
+},
+{
+    "name":"Whismur",
+    "types":["Normal"],
+   "baseStats":{"hp":64, "atk":51,"def":23, "spa":51, "spd":23, "spe":28},
+   "abilities":["Soundproof","Rattled"]
+},
+{
+    "name":"Loudred",
+    "types":["Normal"],
+   "baseStats":{"hp":84, "atk":71,"def":43, "spa":71, "spd":43, "spe":48},
+   "abilities":["Soundproof","Scrappy"]
+},
+{
+    "name":"Exploud",
+    "types":["Normal"],
+   "baseStats":{"hp":104, "atk":91,"def":63, "spa":91, "spd":73, "spe":68},
+   "abilities":["Soundproof","Scrappy"]
+},
+{
+    "name":"Makuhita",
+    "types":["Fighting"],
+   "baseStats":{"hp":72, "atk":60,"def":30, "spa":20, "spd":30, "spe":25},
+   "abilities":["Thick Fat","Guts","Sheer Force"]
+},
+{
+    "name":"Hariyama",
+    "types":["Fighting"],
+   "baseStats":{"hp":144, "atk":120,"def":60, "spa":40, "spd":60, "spe":50},
+   "abilities":["Thick Fat","Guts","Sheer Force"]
+},
+{
+    "name":"Azurill",
+    "types":["Normal","Fairy"],
+   "baseStats":{"hp":50, "atk":20,"def":40, "spa":20, "spd":40, "spe":20},
+   "abilities":["Thick Fat","Huge Power","Sap Sipper"]
+},
+{
+    "name":"Nosepass",
+    "types":["Rock"],
+   "baseStats":{"hp":30, "atk":45,"def":135, "spa":45, "spd":90, "spe":30},
+   "abilities":["Sturdy","Magnet Pull","Sand Force"]
+},
+{
+    "name":"Skitty",
+    "types":["Normal"],
+   "baseStats":{"hp":50, "atk":45,"def":45, "spa":35, "spd":35, "spe":50},
+   "abilities":["Cute Charm","Normalize","Wonder Skin"]
+},
+{
+    "name":"Delcatty",
+    "types":["Normal"],
+   "baseStats":{"hp":70, "atk":65,"def":65, "spa":55, "spd":55, "spe":70},
+   "abilities":["Cute Charm","Normalize","Wonder Skin"]
+},
+{
+    "name":"Sableye",
+    "types":["Dark","Ghost"],
+   "baseStats":{"hp":50, "atk":75,"def":75, "spa":65, "spd":65, "spe":50},
+   "abilities":["Keen Eye","Stall","Prankster"]
+},
+{
+    "name":"Mawile",
+    "types":["Steel","Fairy"],
+   "baseStats":{"hp":50, "atk":85,"def":85, "spa":55, "spd":55, "spe":50},
+   "abilities":["Hyper Cutter","Imtimidate","Sheer Force"]
+},
+{
+    "name":"Aron",
+    "types":["Steel","Rock"],
+   "baseStats":{"hp":50, "atk":70,"def":100, "spa":40, "spd":40, "spe":30},
+   "abilities":["Sturdy","Rock Head","Heavy Metal"]
+},
+{
+    "name":"Lairon",
+    "types":["Steel","Rock"],
+   "baseStats":{"hp":60, "atk":90,"def":140, "spa":50, "spd":50, "spe":40},
+   "abilities":["Sturdy","Rock Head","Heavy Metal"]
+},
+{
+    "name":"Aggron",
+    "types":["Steel","Rock"],
+   "baseStats":{"hp":70, "atk":110,"def":180, "spa":60, "spd":60, "spe":50},
+   "abilities":["Sturdy","Rock Head","Heavy Metal"]
+},
+{
+    "name":"Meditite",
+    "types":["Fighting","Psychic"],
+   "baseStats":{"hp":30, "atk":40,"def":55, "spa":40, "spd":55, "spe":60},
+   "abilities":["Pure Power","Telepathy"]
+},
+{
+    "name":"Medicham",
+    "types":["Fighting","Psychic"],
+   "baseStats":{"hp":60, "atk":60,"def":75, "spa":60, "spd":75, "spe":80},
+   "abilities":["Pure Power","Telepathy"]
+},
+{
+    "name":"Electrike",
+    "types":["Electric"],
+   "baseStats":{"hp":40, "atk":45,"def":40, "spa":65, "spd":40, "spe":65},
+   "abilities":["Static","Lightning Rod","Minus"]
+},
+{
+    "name":"Manectric",
+    "types":["Electric"],
+   "baseStats":{"hp":70, "atk":75,"def":60, "spa":105, "spd":60, "spe":105},
+   "abilities":["Static","Lightning Rod","Minus"]
+},
+{
+    "name":"Plusle",
+    "types":["Electric"],
+   "baseStats":{"hp":60, "atk":50,"def":40, "spa":85, "spd":75, "spe":95},
+   "abilities":["Plus","Lightning Rod"]
+},
+{
+    "name":"Minun",
+    "types":["Electric"],
+   "baseStats":{"hp":60, "atk":40,"def":50, "spa":75, "spd":85, "spe":95},
+   "abilities":["Minus","Volt Absorb"]
+},
+{
+    "name":"Volbeat",
+    "types":["Bug"],
+   "baseStats":{"hp":65, "atk":73,"def":55, "spa":47, "spd":75, "spe":85},
+   "abilities":["Illuminate","Swarm","Prankster"]
+},
+{
+    "name":"Illumise",
+    "types":["Bug"],
+   "baseStats":{"hp":65, "atk":47,"def":55, "spa":73, "spd":75, "spe":85},
+   "abilities":["Oblivious","Tinted Lens","Prankster"]
+},
+{
+    "name":"Roselia",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":50, "atk":60,"def":45, "spa":100, "spd":80, "spe":65},
+   "abilities":["Natural Cure","Poison Point","Leaf Guard"]
+},
+{
+    "name":"Gulpin",
+    "types":["Poison"],
+   "baseStats":{"hp":70, "atk":43,"def":53, "spa":43, "spd":53, "spe":40},
+   "abilities":["Liquid Ooze","Sticky Hold","Gluttony"]
+},
+{
+    "name":"Swalot",
+    "types":["Poison"],
+   "baseStats":{"hp":100, "atk":73,"def":83, "spa":73, "spd":83, "spe":55},
+   "abilities":["Liquid Ooze","Sticky Hold","Gluttony"]
+},
+{
+    "name":"Carvanha",
+    "types":["Water","Dark"],
+   "baseStats":{"hp":45, "atk":90,"def":20, "spa":65, "spd":20, "spe":65},
+   "abilities":["Rough Skin","speed Boost"]
+},
+{
+    "name":"Sharpedo",
+    "types":["Water","Dark"],
+   "baseStats":{"hp":70, "atk":120,"def":40, "spa":95, "spd":40, "spe":95},
+   "abilities":["Rough Skin","speed Boost"]
+},
+{
+    "name":"Wailmer",
+    "types":["Water"],
+   "baseStats":{"hp":130, "atk":70,"def":35, "spa":70, "spd":35, "spe":60},
+   "abilities":["Water Veil","Oblivious","Pressure"]
+},
+{
+    "name":"Wailord",
+    "types":["Water"],
+   "baseStats":{"hp":170, "atk":90,"def":45, "spa":90, "spd":45, "spe":60},
+   "abilities":["Water Veil","Oblivious","Pressure"]
+},
+{
+    "name":"Numel",
+    "types":["Fire","Ground"],
+   "baseStats":{"hp":60, "atk":60,"def":40, "spa":65, "spd":45, "spe":35},
+   "abilities":["Oblivious","Simple","Own Tempo"]
+},
+{
+    "name":"Camerupt",
+    "types":["Fire","Ground"],
+   "baseStats":{"hp":70, "atk":100,"def":70, "spa":105, "spd":75, "spe":40},
+   "abilities":["Magma Armor","Solid Rock","Anger Point"]
+},
+{
+    "name":"Torkoal",
+    "types":["Fire"],
+   "baseStats":{"hp":70, "atk":85,"def":140, "spa":85, "spd":70, "spe":20},
+   "abilities":["White Smoke","Drought","Shell Armor"]
+},
+{
+    "name":"Spoink",
+    "types":["Psychic"],
+   "baseStats":{"hp":60, "atk":25,"def":35, "spa":70, "spd":80, "spe":60},
+   "abilities":["Thick Fat","Own Tempo","Gluttony"]
+},
+{
+    "name":"Grumpig",
+    "types":["Psychic"],
+   "baseStats":{"hp":80, "atk":45,"def":65, "spa":90, "spd":110, "spe":80},
+   "abilities":["Thick Fat","Own Tempo","Gluttony"]
+},
+{
+    "name":"Spinda",
+    "types":["Normal"],
+   "baseStats":{"hp":60, "atk":60,"def":60, "spa":60, "spd":60, "spe":60},
+   "abilities":["Own Tempo","Tangled Feet","Contrary"]
+},
+{
+    "name":"Trapinch",
+    "types":["Ground"],
+   "baseStats":{"hp":45, "atk":100,"def":45, "spa":45, "spd":45, "spe":10},
+   "abilities":["Hyper Cutter","Arena Trap","Sheer Force"]
+},
+{
+    "name":"Vibrava",
+    "types":["Ground","Dragon"],
+   "baseStats":{"hp":50, "atk":70,"def":50, "spa":50, "spd":50, "spe":70},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Flygon",
+    "types":["Ground","Dragon"],
+   "baseStats":{"hp":80, "atk":100,"def":80, "spa":80, "spd":80, "spe":100},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Cacnea",
+    "types":["Grass"],
+   "baseStats":{"hp":50, "atk":85,"def":40, "spa":85, "spd":40, "spe":35},
+   "abilities":["Sand Veil","Water Absorb"]
+},
+{
+    "name":"Cacturne",
+    "types":["Grass","Dark"],
+   "baseStats":{"hp":70, "atk":115,"def":60, "spa":115, "spd":60, "spe":55},
+   "abilities":["Sand Veil","Water Absorb"]
+},
+{
+    "name":"Swablu",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":45, "atk":40,"def":60, "spa":40, "spd":75, "spe":50},
+   "abilities":["Natural Cure","Cloud Nine"]
+},
+{
+    "name":"Altaria",
+    "types":["Dragon","Flying"],
+   "baseStats":{"hp":75, "atk":70,"def":90, "spa":70, "spd":105, "spe":80},
+   "abilities":["Natural Cure","Cloud Nine"]
+},
+{
+    "name":"Zangoose",
+    "types":["Normal"],
+   "baseStats":{"hp":73, "atk":115,"def":60, "spa":60, "spd":60, "spe":90},
+   "abilities":["Immunity","Toxic Boost"]
+},
+{
+    "name":"Seviper",
+    "types":["Poison"],
+   "baseStats":{"hp":73, "atk":100,"def":60, "spa":100, "spd":60, "spe":65},
+   "abilities":["Shed Skin","Infiltrator"]
+},
+{
+    "name":"Lunatone",
+    "types":["Rock","Psychic"],
+   "baseStats":{"hp":90, "atk":55,"def":65, "spa":95, "spd":85, "spe":70},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Solrock",
+    "types":["Rock","Psychic"],
+   "baseStats":{"hp":90, "atk":95,"def":85, "spa":55, "spd":65, "spe":70},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Barboach",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":50, "atk":48,"def":43, "spa":46, "spd":41, "spe":60},
+   "abilities":["Oblivious","Anticipation","Hydration"]
+},
+{
+    "name":"Whiscash",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":110, "atk":78,"def":73, "spa":76, "spd":71, "spe":60},
+   "abilities":["Oblivious","Anticipation","Hydration"]
+},
+{
+    "name":"Corphish",
+    "types":["Water"],
+   "baseStats":{"hp":43, "atk":80,"def":65, "spa":50, "spd":35, "spe":35},
+   "abilities":["Hyper Cutter","Shell Armor","Adaptability"]
+},
+{
+    "name":"Crawdaunt",
+    "types":["Water","Dark"],
+   "baseStats":{"hp":63, "atk":120,"def":85, "spa":90, "spd":55, "spe":55},
+   "abilities":["Hyper Cutter","Shell Armor","Adaptability"]
+},
+{
+    "name":"Baltoy",
+    "types":["Ground","Psychic"],
+   "baseStats":{"hp":40, "atk":40,"def":55, "spa":40, "spd":70, "spe":55},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Claydol",
+    "types":["Ground","Psychic"],
+   "baseStats":{"hp":60, "atk":70,"def":105, "spa":70, "spd":120, "spe":75},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Lileep",
+    "types":["Rock","Grass"],
+   "baseStats":{"hp":66, "atk":41,"def":77, "spa":61, "spd":87, "spe":23},
+   "abilities":["Suction Cups","Storm Drain"]
+},
+{
+    "name":"Cradily",
+    "types":["Rock","Grass"],
+   "baseStats":{"hp":86, "atk":81,"def":97, "spa":81, "spd":107, "spe":43},
+   "abilities":["Suction Cups","Storm Drain"]
+},
+{
+    "name":"Anorith",
+    "types":["Rock","Bug"],
+   "baseStats":{"hp":45, "atk":95,"def":50, "spa":40, "spd":50, "spe":75},
+   "abilities":["Battle Armor","Swift Swim"]
+},
+{
+    "name":"Armaldo",
+    "types":["Rock","Bug"],
+   "baseStats":{"hp":75, "atk":125,"def":100, "spa":70, "spd":80, "spe":45},
+   "abilities":["Battle Armor","Swift Swim"]
+},
+{
+    "name":"Feebas",
+    "types":["Water"],
+   "baseStats":{"hp":20, "atk":15,"def":20, "spa":10, "spd":55, "spe":80},
+   "abilities":["Swift Swim","Oblivious","Adaptability"]
+},
+{
+    "name":"Milotic",
+    "types":["Water"],
+   "baseStats":{"hp":95, "atk":60,"def":79, "spa":100, "spd":125, "spe":81},
+   "abilities":["Marvel Scale","Competitive","Cute Charm"]
+},
+{
+    "name":"Castform",
+    "types":["Normal"],
+   "baseStats":{"hp":70, "atk":70,"def":70, "spa":70, "spd":70, "spe":70},
+   "abilities":["Forecast"]
+},
+{
+    "name":"Kecleon",
+    "types":["Normal"],
+   "baseStats":{"hp":60, "atk":90,"def":70, "spa":60, "spd":120, "spe":40},
+   "abilities":["Color Change","Protean"]
+},
+{
+    "name":"Shuppet",
+    "types":["Ghost"],
+   "baseStats":{"hp":44, "atk":75,"def":35, "spa":63, "spd":33, "spe":45},
+   "abilities":["Insomnia","Frisk","Cursed Body"]
+},
+{
+    "name":"Banette",
+    "types":["Ghost"],
+   "baseStats":{"hp":64, "atk":115,"def":65, "spa":83, "spd":63, "spe":65},
+   "abilities":["Insomnia","Frisk","Cursed Body"]
+},
+{
+    "name":"Duskull",
+    "types":["Ghost"],
+   "baseStats":{"hp":20, "atk":40,"def":90, "spa":30, "spd":90, "spe":25},
+   "abilities":["Levitate","Frisk"]
+},
+{
+    "name":"Dusclops",
+    "types":["Ghost"],
+   "baseStats":{"hp":40, "atk":70,"def":130, "spa":60, "spd":130, "spe":25},
+   "abilities":["Pressure","Frisk"]
+},
+{
+    "name":"Tropius",
+    "types":["Grass","Flying"],
+   "baseStats":{"hp":99, "atk":68,"def":83, "spa":72, "spd":87, "spe":51},
+   "abilities":["Chlorophyll","Solar Power","Harvest"]
+},
+{
+    "name":"Chimecho",
+    "types":["Psychic"],
+   "baseStats":{"hp":75, "atk":50,"def":80, "spa":95, "spd":90, "spe":65},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Absol",
+    "types":["Dark"],
+   "baseStats":{"hp":65, "atk":130,"def":60, "spa":75, "spd":60, "spe":75},
+   "abilities":["Pressure","Super Luck","Justified"]
+},
+{
+    "name":"Wynaut",
+    "types":["Psychic"],
+   "baseStats":{"hp":95, "atk":23,"def":48, "spa":23, "spd":48, "spe":23},
+   "abilities":["Shadow Tag","Telepathy"]
+},
+{
+    "name":"Snorunt",
+    "types":["Ice"],
+   "baseStats":{"hp":50, "atk":50,"def":50, "spa":50, "spd":50, "spe":50},
+   "abilities":["Inner Focus","Ice Body","Moody"]
+},
+{
+    "name":"Glalie",
+    "types":["Ice"],
+   "baseStats":{"hp":80, "atk":80,"def":80, "spa":80, "spd":80, "spe":80},
+   "abilities":["Inner Focus","Ice Body","Moody"]
+},
+{
+    "name":"Spheal",
+    "types":["Ice","Water"],
+   "baseStats":{"hp":70, "atk":40,"def":50, "spa":55, "spd":50, "spe":25},
+   "abilities":["Thick Fat","Ice Body","Oblivious"]
+},
+{
+    "name":"Sealeo",
+    "types":["Ice","Water"],
+   "baseStats":{"hp":90, "atk":60,"def":70, "spa":75, "spd":70, "spe":45},
+   "abilities":["Thick Fat","Ice Body","Oblivious"]
+},
+{
+    "name":"Walrein",
+    "types":["Ice","Water"],
+   "baseStats":{"hp":110, "atk":80,"def":90, "spa":95, "spd":90, "spe":65},
+   "abilities":["Thick Fat","Ice Body","Oblivious"]
+},
+{
+    "name":"Clamperl",
+    "types":["Water"],
+   "baseStats":{"hp":35, "atk":64,"def":85, "spa":74, "spd":55, "spe":32},
+   "abilities":["Shell Armor","Rattled"]
+},
+{
+    "name":"Huntail",
+    "types":["Water"],
+   "baseStats":{"hp":55, "atk":104,"def":105, "spa":94, "spd":75, "spe":52},
+   "abilities":["Swift Swim","Water Veil"]
+},
+{
+    "name":"Gorebyss",
+    "types":["Water"],
+   "baseStats":{"hp":55, "atk":84,"def":105, "spa":114, "spd":75, "spe":52},
+   "abilities":["Swift Swim","Hydration"]
+},
+{
+    "name":"Relicanth",
+    "types":["Water","Rock"],
+   "baseStats":{"hp":100, "atk":90,"def":130, "spa":45, "spd":65, "spe":55},
+   "abilities":["Swift Swim","Rock Head","Sturdy"]
+},
+{
+    "name":"Luvdisc",
+    "types":["Water"],
+   "baseStats":{"hp":43, "atk":30,"def":55, "spa":40, "spd":65, "spe":97},
+   "abilities":["Swift Swim","Hydration"]
+},
+{
+    "name":"Bagon",
+    "types":["Dragon"],
+   "baseStats":{"hp":45, "atk":75,"def":60, "spa":40, "spd":30, "spe":50},
+   "abilities":["Rock Head","Sheer Force"]
+},
+{
+    "name":"Shelgon",
+    "types":["Dragon"],
+   "baseStats":{"hp":65, "atk":95,"def":100, "spa":60, "spd":50, "spe":50},
+   "abilities":["Rock Head","Overcoat"]
+},
+{
+    "name":"Salamence",
+    "types":["Dragon","Flying"],
+   "baseStats":{"hp":95, "atk":135,"def":80, "spa":110, "spd":80, "spe":100},
+   "abilities":["Imtimidate","Moxie"]
+},
+{
+    "name":"Beldum",
+    "types":["Steel","Psychic"],
+   "baseStats":{"hp":40, "atk":55,"def":80, "spa":35, "spd":60, "spe":30},
+   "abilities":["Clear Body","Light Metal"]
+},
+{
+    "name":"Metang",
+    "types":["Steel","Psychic"],
+   "baseStats":{"hp":60, "atk":75,"def":100, "spa":55, "spd":80, "spe":50},
+   "abilities":["Clear Body","Light Metal"]
+},
+{
+    "name":"Metagross",
+    "types":["Steel","Psychic"],
+   "baseStats":{"hp":80, "atk":135,"def":130, "spa":95, "spd":90, "spe":70},
+   "abilities":["Clear Body","Light Metal"]
+},
+{
+    "name":"Regirock",
+    "types":["Rock"],
+   "baseStats":{"hp":80, "atk":100,"def":200, "spa":50, "spd":100, "spe":50},
+   "abilities":["Clear Body","Sturdy"]
+},
+{
+    "name":"Regice",
+    "types":["Ice"],
+   "baseStats":{"hp":80, "atk":50,"def":100, "spa":100, "spd":200, "spe":50},
+   "abilities":["Clear Body","Ice Body"]
+},
+{
+    "name":"Registeel",
+    "types":["Steel"],
+   "baseStats":{"hp":80, "atk":75,"def":150, "spa":75, "spd":150, "spe":50},
+   "abilities":["Clear Body","Light Metal"]
+},
+{
+    "name":"Latias",
+    "types":["Dragon","Psychic"],
+   "baseStats":{"hp":80, "atk":80,"def":90, "spa":110, "spd":130, "spe":110},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Latios",
+    "types":["Dragon","Psychic"],
+   "baseStats":{"hp":80, "atk":90,"def":80, "spa":130, "spd":110, "spe":110},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Kyogre",
+    "types":["Water"],
+   "baseStats":{"hp":100, "atk":100,"def":90, "spa":150, "spd":140, "spe":90},
+   "abilities":["Drizzle"]
+},
+{
+    "name":"Groudon",
+    "types":["Ground"],
+   "baseStats":{"hp":100, "atk":150,"def":140, "spa":100, "spd":90, "spe":90},
+   "abilities":["Drought"]
+},
+{
+    "name":"Rayquaza",
+    "types":["Dragon","Flying"],
+   "baseStats":{"hp":105, "atk":150,"def":90, "spa":150, "spd":90, "spe":95},
+   "abilities":["Air Lock"]
+},
+{
+    "name":"Jirachi",
+    "types":["Steel","Psychic"],
+   "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
+   "abilities":["Serene Grace"]
+},
+{
+    "name":"Deoxys",
+    "types":["Psychic"],
+   "baseStats":{"hp":50, "atk":150,"def":50, "spa":150, "spd":50, "spe":150},
+   "abilities":["Pressure"]
+},{
+    "name":"Turtwig",
+    "types":["Grass"],
+   "baseStats":{"hp":55, "atk":68,"def":64, "spa":45, "spd":55, "spe":31},
+   "abilities":["Overgrow","Shell Armor"]
+},
+{
+    "name":"Grotle",
+    "types":["Grass"],
+   "baseStats":{"hp":75, "atk":89,"def":85, "spa":55, "spd":65, "spe":36},
+   "abilities":["Overgrow","Shell Armor"]
+},
+{
+    "name":"Torterra",
+    "types":["Grass","Ground"],
+   "baseStats":{"hp":95, "atk":109,"def":105, "spa":75, "spd":85, "spe":56},
+   "abilities":["Overgrow","Shell Armor"]
+},
+{
+    "name":"Chimchar",
+    "types":["Fire"],
+   "baseStats":{"hp":44, "atk":58,"def":44, "spa":58, "spd":44, "spe":61},
+   "abilities":["Blaze","Iron Fist"]
+},
+{
+    "name":"Monferno",
+    "types":["Fire","Fighting"],
+   "baseStats":{"hp":64, "atk":78,"def":52, "spa":78, "spd":52, "spe":81},
+   "abilities":["Blaze","Iron Fist"]
+},
+{
+    "name":"Infernape",
+    "types":["Fire","Fighting"],
+   "baseStats":{"hp":76, "atk":104,"def":71, "spa":104, "spd":71, "spe":108},
+   "abilities":["Blaze","Iron Fist"]
+},
+{
+    "name":"Piplup",
+    "types":["Water"],
+   "baseStats":{"hp":53, "atk":51,"def":53, "spa":61, "spd":56, "spe":40},
+   "abilities":["Torrent","defiant"]
+},
+{
+    "name":"Prinplup",
+    "types":["Water"],
+   "baseStats":{"hp":64, "atk":66,"def":68, "spa":81, "spd":76, "spe":50},
+   "abilities":["Torrent","defiant"]
+},
+{
+    "name":"Empoleon",
+    "types":["Water","Steel"],
+   "baseStats":{"hp":84, "atk":86,"def":88, "spa":111, "spd":101, "spe":60},
+   "abilities":["Torrent","defiant"]
+},
+{
+    "name":"Starly",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":40, "atk":55,"def":30, "spa":30, "spd":30, "spe":60},
+   "abilities":["Keen Eye","Reckless"]
+},
+{
+    "name":"Staravia",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":55, "atk":75,"def":50, "spa":40, "spd":40, "spe":80},
+   "abilities":["Imtimidate","Reckless"]
+},
+{
+    "name":"Staraptor",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":85, "atk":120,"def":70, "spa":50, "spd":60, "spe":100},
+   "abilities":["Imtimidate","Reckless"]
+},
+{
+    "name":"Bidoof",
+    "types":["Normal"],
+   "baseStats":{"hp":59, "atk":45,"def":40, "spa":35, "spd":40, "spe":31},
+   "abilities":["Simple","Unaware","Moody"]
+},
+{
+    "name":"Bibarel",
+    "types":["Normal","Water"],
+   "baseStats":{"hp":79, "atk":85,"def":60, "spa":55, "spd":60, "spe":71},
+   "abilities":["Simple","Unaware","Moody"]
+},
+{
+    "name":"Kricketot",
+    "types":["Bug"],
+   "baseStats":{"hp":37, "atk":25,"def":41, "spa":25, "spd":41, "spe":25},
+   "abilities":["Shed Skin","Run Away"]
+},
+{
+    "name":"Kricketune",
+    "types":["Bug"],
+   "baseStats":{"hp":77, "atk":85,"def":51, "spa":55, "spd":51, "spe":65},
+   "abilities":["Swarm","Technician"]
+},
+{
+    "name":"Shinx",
+    "types":["Electric"],
+   "baseStats":{"hp":45, "atk":65,"def":34, "spa":40, "spd":34, "spe":45},
+   "abilities":["Rivalry","Imtimidate","Guts"]
+},
+{
+    "name":"Luxio",
+    "types":["Electric"],
+   "baseStats":{"hp":60, "atk":85,"def":49, "spa":60, "spd":49, "spe":60},
+   "abilities":["Rivalry","Imtimidate","Guts"]
+},
+{
+    "name":"Luxray",
+    "types":["Electric"],
+   "baseStats":{"hp":80, "atk":120,"def":79, "spa":95, "spd":79, "spe":70},
+   "abilities":["Rivalry","Imtimidate","Guts"]
+},
+{
+    "name":"Budew",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":40, "atk":30,"def":35, "spa":50, "spd":70, "spe":55},
+   "abilities":["Natural Cure","Poison Point","Leaf Guard"]
+},
+{
+    "name":"Roserade",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":60, "atk":70,"def":65, "spa":125, "spd":105, "spe":90},
+   "abilities":["Natural Cure","Poison Point","Technician"]
+},
+{
+    "name":"Cranidos",
+    "types":["Rock"],
+   "baseStats":{"hp":67, "atk":125,"def":40, "spa":30, "spd":30, "spe":58},
+   "abilities":["Mold Breaker","Sheer Force"]
+},
+{
+    "name":"Rampardos",
+    "types":["Rock"],
+   "baseStats":{"hp":97, "atk":165,"def":60, "spa":65, "spd":50, "spe":58},
+   "abilities":["Mold Breaker","Sheer Force"]
+},
+{
+    "name":"Shieldon",
+    "types":["Rock","Steel"],
+   "baseStats":{"hp":30, "atk":42,"def":118, "spa":42, "spd":88, "spe":30},
+   "abilities":["Sturdy","Soundproof"]
+},
+{
+    "name":"Bastiodon",
+    "types":["Rock","Steel"],
+   "baseStats":{"hp":60, "atk":52,"def":168, "spa":47, "spd":138, "spe":30},
+   "abilities":["Sturdy","Soundproof"]
+},
+{
+    "name":"Burmy",
+    "types":["Bug"],
+   "baseStats":{"hp":40, "atk":29,"def":45, "spa":29, "spd":45, "spe":36},
+   "abilities":["Shed Skin"]
+},
+{
+    "name":"Wormadam",
+    "types":["Bug","Grass"],
+   "baseStats":{"hp":60, "atk":59,"def":85, "spa":79, "spd":105, "spe":36},
+   "abilities":["Anticipation"]
+},
+{
+    "name":"Mothim",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":70, "atk":94,"def":50, "spa":94, "spd":50, "spe":66},
+   "abilities":["Swarm","Tinted Lens"]
+},
+{
+    "name":"Combee",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":30, "atk":30,"def":42, "spa":30, "spd":42, "spe":70},
+   "abilities":["Honey Gather","Hustle"]
+},
+{
+    "name":"Vespiquen",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":70, "atk":80,"def":102, "spa":80, "spd":102, "spe":40},
+   "abilities":["Pressure","Unnerve"]
+},
+{
+    "name":"Pachirisu",
+    "types":["Electric"],
+   "baseStats":{"hp":60, "atk":45,"def":70, "spa":45, "spd":90, "spe":95},
+   "abilities":["Run Away","Pickup","Volt Absorb"]
+},
+{
+    "name":"Buizel",
+    "types":["Water"],
+   "baseStats":{"hp":55, "atk":65,"def":35, "spa":60, "spd":30, "spe":85},
+   "abilities":["Swift Swim","Water Veil"]
+},
+{
+    "name":"Floatzel",
+    "types":["Water"],
+   "baseStats":{"hp":85, "atk":105,"def":55, "spa":85, "spd":50, "spe":115},
+   "abilities":["Swift Swim","Water Veil"]
+},
+{
+    "name":"Cherubi",
+    "types":["Grass"],
+   "baseStats":{"hp":45, "atk":35,"def":45, "spa":62, "spd":53, "spe":35},
+   "abilities":["Chlorophyll"]
+},
+{
+    "name":"Cherrim",
+    "types":["Grass"],
+   "baseStats":{"hp":70, "atk":60,"def":70, "spa":87, "spd":78, "spe":85},
+   "abilities":["Flower Gift"]
+},
+{
+    "name":"Shellos",
+    "types":["Water"],
+   "baseStats":{"hp":76, "atk":48,"def":48, "spa":57, "spd":62, "spe":34},
+   "abilities":["Sticky Hold","Storm Drain","Sand Force"]
+},
+{
+    "name":"Gastrodon",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":111, "atk":83,"def":68, "spa":92, "spd":82, "spe":39},
+   "abilities":["Sticky Hold","Storm Drain","Sand Force"]
+},
+{
+    "name":"Ambipom",
+    "types":["Normal"],
+   "baseStats":{"hp":75, "atk":100,"def":66, "spa":60, "spd":66, "spe":115},
+   "abilities":["Technician","Pickup","Skill Link"]
+},
+{
+    "name":"Drifloon",
+    "types":["Ghost","Flying"],
+   "baseStats":{"hp":90, "atk":50,"def":34, "spa":60, "spd":44, "spe":70},
+   "abilities":["Aftermath","Unburden","Flare Boost"]
+},
+{
+    "name":"Drifblim",
+    "types":["Ghost","Flying"],
+   "baseStats":{"hp":150, "atk":80,"def":44, "spa":90, "spd":54, "spe":80},
+   "abilities":["Aftermath","Unburden","Flare Boost"]
+},
+{
+    "name":"Buneary",
+    "types":["Normal"],
+   "baseStats":{"hp":55, "atk":66,"def":44, "spa":44, "spd":56, "spe":85},
+   "abilities":["Run Away","Klutz","Limber"]
+},
+{
+    "name":"Lopunny",
+    "types":["Normal"],
+   "baseStats":{"hp":65, "atk":76,"def":84, "spa":54, "spd":96, "spe":105},
+   "abilities":["Cute Charm","Klutz","Limber"]
+},
+{
+    "name":"Mismagius",
+    "types":["Ghost"],
+   "baseStats":{"hp":60, "atk":60,"def":60, "spa":105, "spd":105, "spe":105},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Honchkrow",
+    "types":["Dark","Flying"],
+   "baseStats":{"hp":100, "atk":125,"def":52, "spa":105, "spd":52, "spe":71},
+   "abilities":["Insomnia","Super Luck","Moxie"]
+},
+{
+    "name":"Glameow",
+    "types":["Normal"],
+   "baseStats":{"hp":49, "atk":55,"def":42, "spa":42, "spd":37, "spe":85},
+   "abilities":["Limber","Own Tempo","Keen Eye"]
+},
+{
+    "name":"Purugly",
+    "types":["Normal"],
+   "baseStats":{"hp":71, "atk":82,"def":64, "spa":64, "spd":59, "spe":112},
+   "abilities":["Thick Fat","Own Tempo","defiant"]
+},
+{
+    "name":"Chingling",
+    "types":["Psychic"],
+   "baseStats":{"hp":45, "atk":30,"def":50, "spa":65, "spd":50, "spe":45},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Stunky",
+    "types":["Poison","Dark"],
+   "baseStats":{"hp":63, "atk":63,"def":47, "spa":41, "spd":41, "spe":74},
+   "abilities":["Stench","Aftermath","Keen Eye"]
+},
+{
+    "name":"Skuntank",
+    "types":["Poison","Dark"],
+   "baseStats":{"hp":103, "atk":93,"def":67, "spa":71, "spd":61, "spe":84},
+   "abilities":["Stench","Aftermath","Keen Eye"]
+},
+{
+    "name":"Bronzor",
+    "types":["Steel","Psychic"],
+   "baseStats":{"hp":57, "atk":24,"def":86, "spa":24, "spd":86, "spe":23},
+   "abilities":["Levitate","Heatproof","Heavy Metal"]
+},
+{
+    "name":"Bronzong",
+    "types":["Steel","Psychic"],
+   "baseStats":{"hp":67, "atk":89,"def":116, "spa":79, "spd":116, "spe":33},
+   "abilities":["Levitate","Heatproof","Heavy Metal"]
+},
+{
+    "name":"Bonsly",
+    "types":["Rock"],
+   "baseStats":{"hp":50, "atk":80,"def":95, "spa":10, "spd":45, "spe":10},
+   "abilities":["Sturdy","Rock Head","Rattled"]
+},
+{
+    "name":"Mime Jr.",
+    "types":["Psychic","Fairy"],
+   "baseStats":{"hp":20, "atk":25,"def":45, "spa":70, "spd":90, "spe":60},
+   "abilities":["Soundproof","Filter","Technician"]
+},
+{
+    "name":"Happiny",
+    "types":["Normal"],
+   "baseStats":{"hp":100, "atk":5,"def":5, "spa":15, "spd":65, "spe":30},
+   "abilities":["Natural Cure","Serene Grace","Friend Guard"]
+},
+{
+    "name":"Chatot",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":76, "atk":65,"def":45, "spa":92, "spd":42, "spe":91},
+   "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
+},
+{
+    "name":"Spiritomb",
+    "types":["Ghost","Dark"],
+   "baseStats":{"hp":50, "atk":92,"def":108, "spa":92, "spd":108, "spe":35},
+   "abilities":["Pressure","Infiltrator"]
+},
+{
+    "name":"Gible",
+    "types":["Dragon","Ground"],
+   "baseStats":{"hp":58, "atk":70,"def":45, "spa":40, "spd":45, "spe":42},
+   "abilities":["Sand Veil","Rough Skin"]
+},
+{
+    "name":"Gabite",
+    "types":["Dragon","Ground"],
+   "baseStats":{"hp":68, "atk":90,"def":65, "spa":50, "spd":55, "spe":82},
+   "abilities":["Sand Veil","Rough Skin"]
+},
+{
+    "name":"Garchomp",
+    "types":["Dragon","Ground"],
+   "baseStats":{"hp":108, "atk":130,"def":95, "spa":80, "spd":85, "spe":102},
+   "abilities":["Sand Veil","Rough Skin"]
+},
+{
+    "name":"Munchlax",
+    "types":["Normal"],
+   "baseStats":{"hp":135, "atk":85,"def":40, "spa":40, "spd":85, "spe":5},
+   "abilities":["Pickup","Thick Fat","Gluttony"]
+},
+{
+    "name":"Riolu",
+    "types":["Fighting"],
+   "baseStats":{"hp":40, "atk":70,"def":40, "spa":35, "spd":40, "spe":60},
+   "abilities":["Steadfast","Inner Focus","Prankster"]
+},
+{
+    "name":"Lucario",
+    "types":["Fighting","Steel"],
+   "baseStats":{"hp":70, "atk":110,"def":70, "spa":115, "spd":70, "spe":90},
+   "abilities":["Steadfast","Inner Focus","Justified"]
+},
+{
+    "name":"Hippopotas",
+    "types":["Ground"],
+   "baseStats":{"hp":68, "atk":72,"def":78, "spa":38, "spd":42, "spe":32},
+   "abilities":["Sand Stream","Sand Force"]
+},
+{
+    "name":"Hippowdon",
+    "types":["Ground"],
+   "baseStats":{"hp":108, "atk":112,"def":118, "spa":68, "spd":72, "spe":47},
+   "abilities":["Sand Stream","Sand Force"]
+},
+{
+    "name":"Skorupi",
+    "types":["Poison","Bug"],
+   "baseStats":{"hp":40, "atk":50,"def":90, "spa":30, "spd":55, "spe":65},
+   "abilities":["Battle Armor","Sniper","Keen Eye"]
+},
+{
+    "name":"Drapion",
+    "types":["Poison","Dark"],
+   "baseStats":{"hp":70, "atk":90,"def":110, "spa":60, "spd":75, "spe":95},
+   "abilities":["Battle Armor","Sniper","Keen Eye"]
+},
+{
+    "name":"Croagunk",
+    "types":["Poison","Fighting"],
+   "baseStats":{"hp":48, "atk":61,"def":40, "spa":61, "spd":40, "spe":50},
+   "abilities":["Anticipation","Dry Skin","Poison Touch"]
+},
+{
+    "name":"Toxicroak",
+    "types":["Poison","Fighting"],
+   "baseStats":{"hp":83, "atk":106,"def":65, "spa":86, "spd":65, "spe":85},
+   "abilities":["Anticipation","Dry Skin","Poison Touch"]
+},
+{
+    "name":"Carnivine",
+    "types":["Grass"],
+   "baseStats":{"hp":74, "atk":100,"def":72, "spa":90, "spd":72, "spe":46},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Finneon",
+    "types":["Water"],
+   "baseStats":{"hp":49, "atk":49,"def":56, "spa":49, "spd":61, "spe":66},
+   "abilities":["Swift Swim","Storm Drain","Water Veil"]
+},
+{
+    "name":"Lumineon",
+    "types":["Water"],
+   "baseStats":{"hp":69, "atk":69,"def":76, "spa":69, "spd":86, "spe":91},
+   "abilities":["Swift Swim","Storm Drain","Water Veil"]
+},
+{
+    "name":"Snover",
+    "types":["Grass","Ice"],
+   "baseStats":{"hp":60, "atk":62,"def":50, "spa":62, "spd":60, "spe":40},
+   "abilities":["Snow Warning","Soundproof"]
+},
+{
+    "name":"Abomasnow",
+    "types":["Grass","Ice"],
+   "baseStats":{"hp":90, "atk":92,"def":75, "spa":92, "spd":85, "spe":60},
+   "abilities":["Snow Warning","Soundproof"]
+},
+{
+    "name":"Weavile",
+    "types":["Dark","Ice"],
+   "baseStats":{"hp":70, "atk":120,"def":65, "spa":45, "spd":85, "spe":125},
+   "abilities":["Pressure","Pickpocket"]
+},
+{
+    "name":"Magnezone",
+    "types":["Electric","Steel"],
+   "baseStats":{"hp":70, "atk":70,"def":115, "spa":130, "spd":90, "spe":60},
+   "abilities":["Magnet Pull","Sturdy","Analytic"]
+},
+{
+    "name":"Lickilicky",
+    "types":["Normal"],
+   "baseStats":{"hp":110, "atk":85,"def":95, "spa":80, "spd":95, "spe":50},
+   "abilities":["Own Tempo","Oblivious","Cloud Nine"]
+},
+{
+    "name":"Rhyperior",
+    "types":["Ground","Rock"],
+   "baseStats":{"hp":115, "atk":140,"def":130, "spa":55, "spd":55, "spe":40},
+   "abilities":["Lightning Rod","Solid Rock","Reckless"]
+},
+{
+    "name":"Tangrowth",
+    "types":["Grass"],
+   "baseStats":{"hp":100, "atk":100,"def":125, "spa":110, "spd":50, "spe":50},
+   "abilities":["Chlorophyll","Leaf Guard","Regenerator"]
+},
+{
+    "name":"Electivire",
+    "types":["Electric"],
+   "baseStats":{"hp":75, "atk":123,"def":67, "spa":95, "spd":85, "spe":95},
+   "abilities":["Motor Drive","Vital Spirit"]
+},
+{
+    "name":"Magmortar",
+    "types":["Fire"],
+   "baseStats":{"hp":75, "atk":95,"def":67, "spa":125, "spd":95, "spe":83},
+   "abilities":["Flame Body","Vital Spirit"]
+},
+{
+    "name":"Togekiss",
+    "types":["Fairy","Flying"],
+   "baseStats":{"hp":85, "atk":50,"def":95, "spa":120, "spd":115, "spe":80},
+   "abilities":["Hustle","Serene Grace","Super Luck"]
+},
+{
+    "name":"Yanmega",
+    "types":["Bug","Flying"],
+   "baseStats":{"hp":86, "atk":76,"def":86, "spa":116, "spd":56, "spe":95},
+   "abilities":["speed Boost","Tinted Lens","Frisk"]
+},
+{
+    "name":"Leafeon",
+    "types":["Grass"],
+   "baseStats":{"hp":65, "atk":110,"def":130, "spa":60, "spd":65, "spe":95},
+   "abilities":["Leaf Guard","Chlorophyll"]
+},
+{
+    "name":"Glaceon",
+    "types":["Ice"],
+   "baseStats":{"hp":65, "atk":60,"def":110, "spa":130, "spd":95, "spe":65},
+   "abilities":["Snow Cloak","Ice Body"]
+},
+{
+    "name":"Gliscor",
+    "types":["Ground","Flying"],
+   "baseStats":{"hp":75, "atk":95,"def":125, "spa":45, "spd":75, "spe":95},
+   "abilities":["Hyper Cutter","Sand Veil","Poison Heal"]
+},
+{
+    "name":"Mamoswine",
+    "types":["Ice","Ground"],
+   "baseStats":{"hp":110, "atk":130,"def":80, "spa":70, "spd":60, "spe":80},
+   "abilities":["Oblivious","Snow Cloak","Thick Fat"]
+},
+{
+    "name":"Porygon-Z",
+    "types":["Normal"],
+   "baseStats":{"hp":85, "atk":80,"def":70, "spa":135, "spd":75, "spe":90},
+   "abilities":["Adaptability","Download","Analytic"]
+},
+{
+    "name":"Gallade",
+    "types":["Psychic","Fighting"],
+   "baseStats":{"hp":68, "atk":125,"def":65, "spa":65, "spd":115, "spe":80},
+   "abilities":["Steadfast","Sharpness","Justified"]
+},
+{
+    "name":"Probopass",
+    "types":["Rock","Steel"],
+   "baseStats":{"hp":60, "atk":55,"def":145, "spa":75, "spd":150, "spe":40},
+   "abilities":["Sturdy","Magnet Pull","Sand Force"]
+},
+{
+    "name":"Dusknoir",
+    "types":["Ghost"],
+   "baseStats":{"hp":45, "atk":100,"def":135, "spa":65, "spd":135, "spe":45},
+   "abilities":["Pressure","Frisk"]
+},
+{
+    "name":"Froslass",
+    "types":["Ice","Ghost"],
+   "baseStats":{"hp":70, "atk":80,"def":70, "spa":80, "spd":70, "spe":110},
+   "abilities":["Snow Cloak","Cursed Body"]
+},
+{
+    "name":"Rotom",
+    "types":["Electric","Ghost"],
+   "baseStats":{"hp":50, "atk":50,"def":77, "spa":95, "spd":77, "spe":91},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Uxie",
+    "types":["Psychic"],
+   "baseStats":{"hp":75, "atk":75,"def":130, "spa":75, "spd":130, "spe":95},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Mesprit",
+    "types":["Psychic"],
+   "baseStats":{"hp":80, "atk":105,"def":105, "spa":105, "spd":105, "spe":80},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Azelf",
+    "types":["Psychic"],
+   "baseStats":{"hp":75, "atk":125,"def":70, "spa":125, "spd":70, "spe":115},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Dialga",
+    "types":["Steel","Dragon"],
+   "baseStats":{"hp":100, "atk":120,"def":120, "spa":150, "spd":100, "spe":90},
+   "abilities":["Pressure","Telepathy"]
+},
+{
+    "name":"Palkia",
+    "types":["Water","Dragon"],
+   "baseStats":{"hp":90, "atk":120,"def":100, "spa":150, "spd":120, "spe":100},
+   "abilities":["Pressure","Telepathy"]
+},
+{
+    "name":"Heatran",
+    "types":["Fire","Steel"],
+   "baseStats":{"hp":91, "atk":90,"def":106, "spa":130, "spd":106, "spe":77},
+   "abilities":["Flash Fire","Flame Body"]
+},
+{
+    "name":"Regigigas",
+    "types":["Normal"],
+   "baseStats":{"hp":110, "atk":160,"def":110, "spa":80, "spd":110, "spe":100},
+   "abilities":["Slow Start"]
+},
+{
+    "name":"Giratina",
+    "types":["Ghost","Dragon"],
+   "baseStats":{"hp":150, "atk":100,"def":120, "spa":100, "spd":120, "spe":90},
+   "abilities":["Pressure","Telepathy"]
+},
+{
+    "name":"Cresselia",
+    "types":["Psychic"],
+   "baseStats":{"hp":120, "atk":70,"def":120, "spa":75, "spd":130, "spe":85},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Phione",
+    "types":["Water"],
+   "baseStats":{"hp":80, "atk":80,"def":80, "spa":80, "spd":80, "spe":80},
+   "abilities":["Hydration"]
+},
+{
+    "name":"Manaphy",
+    "types":["Water"],
+   "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
+   "abilities":["Hydration"]
+},
+{
+    "name":"Darkrai",
+    "types":["Dark"],
+   "baseStats":{"hp":70, "atk":90,"def":90, "spa":135, "spd":90, "spe":125},
+   "abilities":["Bad Dreams"]
+},
+{
+    "name":"Shaymin",
+    "types":["Grass"],
+   "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
+   "abilities":["Natural Cure"]
+},
+{
+    "name":"Arceus",
+    "types":["Normal"],
+   "baseStats":{"hp":120, "atk":120,"def":120, "spa":120, "spd":120, "spe":120},
+   "abilities":["Multitype"]
+},{
+    "name":"Victini",
+    "types":["Psychic","Fire"],
+   "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
+   "abilities":["Victory Star"]
+},
+{
+    "name":"Snivy",
+    "types":["Grass"],
+   "baseStats":{"hp":45, "atk":45,"def":55, "spa":45, "spd":55, "spe":63},
+   "abilities":["Overgrow","Contrary"]
+},
+{
+    "name":"Servine",
+    "types":["Grass"],
+   "baseStats":{"hp":60, "atk":60,"def":75, "spa":60, "spd":75, "spe":83},
+   "abilities":["Overgrow","Contrary"]
+},
+{
+    "name":"Serperior",
+    "types":["Grass"],
+   "baseStats":{"hp":75, "atk":75,"def":95, "spa":75, "spd":95, "spe":113},
+   "abilities":["Overgrow","Contrary"]
+},
+{
+    "name":"Tepig",
+    "types":["Fire"],
+   "baseStats":{"hp":65, "atk":63,"def":45, "spa":45, "spd":45, "spe":45},
+   "abilities":["Blaze","Thick Fat"]
+},
+{
+    "name":"Pignite",
+    "types":["Fire","Fighting"],
+   "baseStats":{"hp":90, "atk":93,"def":55, "spa":70, "spd":55, "spe":55},
+   "abilities":["Blaze","Thick Fat"]
+},
+{
+    "name":"Emboar",
+    "types":["Fire","Fighting"],
+   "baseStats":{"hp":110, "atk":123,"def":65, "spa":100, "spd":65, "spe":65},
+   "abilities":["Blaze","Reckless"]
+},
+{
+    "name":"Oshawott",
+    "types":["Water"],
+   "baseStats":{"hp":55, "atk":55,"def":45, "spa":63, "spd":45, "spe":45},
+   "abilities":["Torrent","Shell Armor"]
+},
+{
+    "name":"Dewott",
+    "types":["Water"],
+   "baseStats":{"hp":75, "atk":75,"def":60, "spa":83, "spd":60, "spe":60},
+   "abilities":["Torrent","Shell Armor"]
+},
+{
+    "name":"Samurott",
+    "types":["Water"],
+   "baseStats":{"hp":95, "atk":100,"def":85, "spa":108, "spd":70, "spe":70},
+   "abilities":["Torrent","Shell Armor"]
+},
+{
+    "name":"Patrat",
+    "types":["Normal"],
+   "baseStats":{"hp":45, "atk":55,"def":39, "spa":35, "spd":39, "spe":42},
+   "abilities":["Run Away","Keen Eye","Analytic"]
+},
+{
+    "name":"Watchog",
+    "types":["Normal"],
+   "baseStats":{"hp":60, "atk":85,"def":69, "spa":60, "spd":69, "spe":77},
+   "abilities":["Illuminate","Keen Eye","Analytic"]
+},
+{
+    "name":"Lillipup",
+    "types":["Normal"],
+   "baseStats":{"hp":45, "atk":60,"def":45, "spa":25, "spd":45, "spe":55},
+   "abilities":["Vital Spirit","Pickup","Run Away"]
+},
+{
+    "name":"Herdier",
+    "types":["Normal"],
+   "baseStats":{"hp":65, "atk":80,"def":65, "spa":35, "spd":65, "spe":60},
+   "abilities":["Imtimidate","Sand Rush","Scrappy"]
+},
+{
+    "name":"Stoutland",
+    "types":["Normal"],
+   "baseStats":{"hp":85, "atk":110,"def":90, "spa":45, "spd":90, "spe":80},
+   "abilities":["Imtimidate","Sand Rush","Scrappy"]
+},
+{
+    "name":"Purrloin",
+    "types":["Dark"],
+   "baseStats":{"hp":41, "atk":50,"def":37, "spa":50, "spd":37, "spe":66},
+   "abilities":["Limber","Unburden","Prankster"]
+},
+{
+    "name":"Liepard",
+    "types":["Dark"],
+   "baseStats":{"hp":64, "atk":88,"def":50, "spa":88, "spd":50, "spe":106},
+   "abilities":["Limber","Unburden","Prankster"]
+},
+{
+    "name":"Pansage",
+    "types":["Grass"],
+   "baseStats":{"hp":50, "atk":53,"def":48, "spa":53, "spd":48, "spe":64},
+   "abilities":["Gluttony","Overgrow"]
+},
+{
+    "name":"Simisage",
+    "types":["Grass"],
+   "baseStats":{"hp":75, "atk":98,"def":63, "spa":98, "spd":63, "spe":101},
+   "abilities":["Gluttony","Overgrow"]
+},
+{
+    "name":"Pansear",
+    "types":["Fire"],
+   "baseStats":{"hp":50, "atk":53,"def":48, "spa":53, "spd":48, "spe":64},
+   "abilities":["Gluttony","Blaze"]
+},
+{
+    "name":"Simisear",
+    "types":["Fire"],
+   "baseStats":{"hp":75, "atk":98,"def":63, "spa":98, "spd":63, "spe":101},
+   "abilities":["Gluttony","Blaze"]
+},
+{
+    "name":"Panpour",
+    "types":["Water"],
+   "baseStats":{"hp":50, "atk":53,"def":48, "spa":53, "spd":48, "spe":64},
+   "abilities":["Gluttony","Torrent"]
+},
+{
+    "name":"Simipour",
+    "types":["Water"],
+   "baseStats":{"hp":75, "atk":98,"def":63, "spa":98, "spd":63, "spe":101},
+   "abilities":["Gluttony","Torrent"]
+},
+{
+    "name":"Munna",
+    "types":["Psychic"],
+   "baseStats":{"hp":76, "atk":25,"def":45, "spa":67, "spd":55, "spe":24},
+   "abilities":["Forewarn","Synchronize","Telepathy"]
+},
+{
+    "name":"Musharna",
+    "types":["Psychic"],
+   "baseStats":{"hp":116, "atk":55,"def":85, "spa":107, "spd":95, "spe":29},
+   "abilities":["Forewarn","Synchronize","Telepathy"]
+},
+{
+    "name":"Pidove",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":50, "atk":55,"def":50, "spa":36, "spd":30, "spe":43},
+   "abilities":["Big Pecks","Super Luck","Rivalry"]
+},
+{
+    "name":"Tranquill",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":62, "atk":77,"def":62, "spa":50, "spd":42, "spe":65},
+   "abilities":["Big Pecks","Super Luck","Rivalry"]
+},
+{
+    "name":"Unfezant",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":80, "atk":115,"def":80, "spa":65, "spd":55, "spe":93},
+   "abilities":["Big Pecks","Super Luck","Rivalry"]
+},
+{
+    "name":"Blitzle",
+    "types":["Electric"],
+   "baseStats":{"hp":45, "atk":60,"def":32, "spa":50, "spd":32, "spe":76},
+   "abilities":["Lightning Rod","Motor Drive","Sap Sipper"]
+},
+{
+    "name":"Zebstrika",
+    "types":["Electric"],
+   "baseStats":{"hp":75, "atk":100,"def":63, "spa":80, "spd":63, "spe":116},
+   "abilities":["Lightning Rod","Motor Drive","Sap Sipper"]
+},
+{
+    "name":"Roggenrola",
+    "types":["Rock"],
+   "baseStats":{"hp":55, "atk":75,"def":85, "spa":25, "spd":25, "spe":15},
+   "abilities":["Sturdy","Weak Armor","Sand Force"]
+},
+{
+    "name":"Boldore",
+    "types":["Rock"],
+   "baseStats":{"hp":70, "atk":105,"def":105, "spa":50, "spd":40, "spe":20},
+   "abilities":["Sturdy","Weak Armor","Sand Force"]
+},
+{
+    "name":"Gigalith",
+    "types":["Rock"],
+   "baseStats":{"hp":85, "atk":135,"def":130, "spa":60, "spd":80, "spe":25},
+   "abilities":["Sturdy","Sand Stream","Sand Force"]
+},
+{
+    "name":"Woobat",
+    "types":["Psychic","Flying"],
+   "baseStats":{"hp":65, "atk":45,"def":43, "spa":55, "spd":43, "spe":72},
+   "abilities":["Unaware","Klutz","Simple"]
+},
+{
+    "name":"Swoobat",
+    "types":["Psychic","Flying"],
+   "baseStats":{"hp":67, "atk":57,"def":55, "spa":77, "spd":55, "spe":114},
+   "abilities":["Unaware","Klutz","Simple"]
+},
+{
+    "name":"Drilbur",
+    "types":["Ground"],
+   "baseStats":{"hp":60, "atk":85,"def":40, "spa":30, "spd":45, "spe":68},
+   "abilities":["Sand Rush","Sand Force","Mold Breaker"]
+},
+{
+    "name":"Excadrill",
+    "types":["Ground","Steel"],
+   "baseStats":{"hp":110, "atk":135,"def":60, "spa":50, "spd":65, "spe":88},
+   "abilities":["Sand Rush","Sand Force","Mold Breaker"]
+},
+{
+    "name":"Audino",
+    "types":["Normal"],
+   "baseStats":{"hp":103, "atk":60,"def":86, "spa":60, "spd":86, "spe":50},
+   "abilities":["Healer","Regenerator","Klutz"]
+},
+{
+    "name":"Timburr",
+    "types":["Fighting"],
+   "baseStats":{"hp":75, "atk":80,"def":55, "spa":25, "spd":35, "spe":35},
+   "abilities":["Guts","Sheer Force","Iron Fist"]
+},
+{
+    "name":"Gurdurr",
+    "types":["Fighting"],
+   "baseStats":{"hp":85, "atk":105,"def":85, "spa":40, "spd":50, "spe":40},
+   "abilities":["Guts","Sheer Force","Iron Fist"]
+},
+{
+    "name":"Conkeldurr",
+    "types":["Fighting"],
+   "baseStats":{"hp":105, "atk":140,"def":95, "spa":55, "spd":65, "spe":45},
+   "abilities":["Guts","Sheer Force","Iron Fist"]
+},
+{
+    "name":"Tympole",
+    "types":["Water"],
+   "baseStats":{"hp":50, "atk":50,"def":40, "spa":50, "spd":40, "spe":64},
+   "abilities":["Swift Swim","Hydration","Water Absorb"]
+},
+{
+    "name":"Palpitoad",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":75, "atk":65,"def":55, "spa":65, "spd":55, "spe":69},
+   "abilities":["Swift Swim","Poison Touch","Water Absorb"]
+},
+{
+    "name":"Seismitoad",
+    "types":["Water","Ground"],
+   "baseStats":{"hp":105, "atk":95,"def":75, "spa":85, "spd":75, "spe":74},
+   "abilities":["Swift Swim","Poison Touch","Water Absorb"]
+},
+{
+    "name":"Throh",
+    "types":["Fighting"],
+   "baseStats":{"hp":120, "atk":100,"def":85, "spa":30, "spd":85, "spe":45},
+   "abilities":["Guts","Inner Focus","Mold Breaker"]
+},
+{
+    "name":"Sawk",
+    "types":["Fighting"],
+   "baseStats":{"hp":75, "atk":125,"def":75, "spa":30, "spd":75, "spe":85},
+   "abilities":["Sturdy","Inner Focus","Mold Breaker"]
+},
+{
+    "name":"Sewaddle",
+    "types":["Bug","Grass"],
+   "baseStats":{"hp":45, "atk":53,"def":70, "spa":40, "spd":60, "spe":42},
+   "abilities":["Swarm","Chlorophyll","Overcoat"]
+},
+{
+    "name":"Swadloon",
+    "types":["Bug","Grass"],
+   "baseStats":{"hp":55, "atk":63,"def":90, "spa":50, "spd":80, "spe":42},
+   "abilities":["Leaf Guard","Chlorophyll","Overcoat"]
+},
+{
+    "name":"Leavanny",
+    "types":["Bug","Grass"],
+   "baseStats":{"hp":75, "atk":103,"def":80, "spa":70, "spd":80, "spe":92},
+   "abilities":["Swarm","Chlorophyll","Overcoat"]
+},
+{
+    "name":"Venipede",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":30, "atk":45,"def":59, "spa":30, "spd":39, "spe":57},
+   "abilities":["Poison Point","Swarm","speed Boost"]
+},
+{
+    "name":"Whirlipede",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":40, "atk":55,"def":99, "spa":40, "spd":79, "spe":47},
+   "abilities":["Poison Point","Swarm","speed Boost"]
+},
+{
+    "name":"Scolipede",
+    "types":["Bug","Poison"],
+   "baseStats":{"hp":60, "atk":100,"def":89, "spa":55, "spd":69, "spe":112},
+   "abilities":["Poison Point","Swarm","speed Boost"]
+},
+{
+    "name":"Cottonee",
+    "types":["Grass","Fairy"],
+   "baseStats":{"hp":40, "atk":27,"def":60, "spa":37, "spd":50, "spe":66},
+   "abilities":["Prankster","Infiltrator","Chlorophyll"]
+},
+{
+    "name":"Whimsicott",
+    "types":["Grass","Fairy"],
+   "baseStats":{"hp":60, "atk":67,"def":85, "spa":77, "spd":75, "spe":116},
+   "abilities":["Prankster","Infiltrator","Chlorophyll"]
+},
+{
+    "name":"Petilil",
+    "types":["Grass"],
+   "baseStats":{"hp":45, "atk":35,"def":50, "spa":70, "spd":50, "spe":30},
+   "abilities":["Chlorophyll","Own Tempo","Leaf Guard"]
+},
+{
+    "name":"Lilligant",
+    "types":["Grass"],
+   "baseStats":{"hp":70, "atk":60,"def":75, "spa":110, "spd":75, "spe":90},
+   "abilities":["Chlorophyll","Own Tempo","Leaf Guard"]
+},
+{
+    "name":"Sandile",
+    "types":["Ground","Dark"],
+   "baseStats":{"hp":50, "atk":72,"def":35, "spa":35, "spd":35, "spe":65},
+   "abilities":["Imtimidate","Moxie","Anger Point"]
+},
+{
+    "name":"Krokorok",
+    "types":["Ground","Dark"],
+   "baseStats":{"hp":60, "atk":82,"def":45, "spa":45, "spd":45, "spe":74},
+   "abilities":["Imtimidate","Moxie","Anger Point"]
+},
+{
+    "name":"Krookodile",
+    "types":["Ground","Dark"],
+   "baseStats":{"hp":95, "atk":117,"def":80, "spa":65, "spd":70, "spe":92},
+   "abilities":["Imtimidate","Moxie","Anger Point"]
+},
+{
+    "name":"Darumaka",
+    "types":["Fire"],
+   "baseStats":{"hp":70, "atk":90,"def":45, "spa":15, "spd":45, "spe":50},
+   "abilities":["Hustle","Inner Focus"]
+},
+{
+    "name":"Darmanitan",
+    "types":["Fire"],
+   "baseStats":{"hp":105, "atk":140,"def":55, "spa":30, "spd":55, "spe":95},
+   "abilities":["Sheer Force","Zen Mode"]
+},
+{
+    "name":"Maractus",
+    "types":["Grass"],
+   "baseStats":{"hp":75, "atk":86,"def":67, "spa":106, "spd":67, "spe":60},
+   "abilities":["Water Absorb","Chlorophyll","Storm Drain"]
+},
+{
+    "name":"Dwebble",
+    "types":["Bug","Rock"],
+   "baseStats":{"hp":50, "atk":65,"def":85, "spa":35, "spd":35, "spe":55},
+   "abilities":["Sturdy","Shell Armor","Weak Armor"]
+},
+{
+    "name":"Crustle",
+    "types":["Bug","Rock"],
+   "baseStats":{"hp":70, "atk":105,"def":125, "spa":65, "spd":75, "spe":45},
+   "abilities":["Sturdy","Shell Armor","Weak Armor"]
+},
+{
+    "name":"Scraggy",
+    "types":["Dark","Fighting"],
+   "baseStats":{"hp":50, "atk":75,"def":70, "spa":35, "spd":70, "spe":48},
+   "abilities":["Shed Skin","Moxie","Imtimidate"]
+},
+{
+    "name":"Scrafty",
+    "types":["Dark","Fighting"],
+   "baseStats":{"hp":65, "atk":90,"def":115, "spa":45, "spd":115, "spe":58},
+   "abilities":["Shed Skin","Moxie","Imtimidate"]
+},
+{
+    "name":"Sigilyph",
+    "types":["Psychic","Flying"],
+   "baseStats":{"hp":72, "atk":58,"def":80, "spa":103, "spd":80, "spe":97},
+   "abilities":["Wonder Skin","Magic Guard","Tinted Lens"]
+},
+{
+    "name":"Yamask",
+    "types":["Ghost"],
+   "baseStats":{"hp":38, "atk":30,"def":85, "spa":55, "spd":65, "spe":30},
+   "abilities":["Mummy"]
+},
+{
+    "name":"Cofagrigus",
+    "types":["Ghost"],
+   "baseStats":{"hp":58, "atk":50,"def":145, "spa":95, "spd":105, "spe":30},
+   "abilities":["Mummy"]
+},
+{
+    "name":"Tirtouga",
+    "types":["Water","Rock"],
+   "baseStats":{"hp":54, "atk":78,"def":103, "spa":53, "spd":45, "spe":22},
+   "abilities":["Solid Rock","Sturdy","Swift Swim"]
+},
+{
+    "name":"Carracosta",
+    "types":["Water","Rock"],
+   "baseStats":{"hp":74, "atk":108,"def":133, "spa":83, "spd":65, "spe":32},
+   "abilities":["Solid Rock","Sturdy","Swift Swim"]
+},
+{
+    "name":"Archen",
+    "types":["Rock","Flying"],
+   "baseStats":{"hp":55, "atk":112,"def":45, "spa":74, "spd":45, "spe":70},
+   "abilities":["defeatist"]
+},
+{
+    "name":"Archeops",
+    "types":["Rock","Flying"],
+   "baseStats":{"hp":75, "atk":140,"def":65, "spa":112, "spd":65, "spe":110},
+   "abilities":["defeatist"]
+},
+{
+    "name":"Trubbish",
+    "types":["Poison"],
+   "baseStats":{"hp":50, "atk":50,"def":62, "spa":40, "spd":62, "spe":65},
+   "abilities":["Stench","Sticky Hold","Aftermath"]
+},
+{
+    "name":"Garbodor",
+    "types":["Poison"],
+   "baseStats":{"hp":80, "atk":95,"def":82, "spa":60, "spd":82, "spe":75},
+   "abilities":["Stench","Weak Armor","Aftermath"]
+},
+{
+    "name":"Zorua",
+    "types":["Dark"],
+   "baseStats":{"hp":40, "atk":65,"def":40, "spa":80, "spd":40, "spe":65},
+   "abilities":["Illusion"]
+},
+{
+    "name":"Zoroark",
+    "types":["Dark"],
+   "baseStats":{"hp":60, "atk":105,"def":60, "spa":120, "spd":60, "spe":105},
+   "abilities":["Illusion"]
+},
+{
+    "name":"Minccino",
+    "types":["Normal"],
+   "baseStats":{"hp":55, "atk":50,"def":40, "spa":40, "spd":40, "spe":75},
+   "abilities":["Cute Charm","Technician","Skill Link"]
+},
+{
+    "name":"Cinccino",
+    "types":["Normal"],
+   "baseStats":{"hp":75, "atk":95,"def":60, "spa":65, "spd":60, "spe":115},
+   "abilities":["Cute Charm","Technician","Skill Link"]
+},
+{
+    "name":"Gothita",
+    "types":["Psychic"],
+   "baseStats":{"hp":45, "atk":30,"def":50, "spa":55, "spd":65, "spe":45},
+   "abilities":["Frisk","Competitive","Shadow Tag"]
+},
+{
+    "name":"Gothorita",
+    "types":["Psychic"],
+   "baseStats":{"hp":60, "atk":45,"def":70, "spa":75, "spd":85, "spe":55},
+   "abilities":["Frisk","Competitive","Shadow Tag"]
+},
+{
+    "name":"Gothitelle",
+    "types":["Psychic"],
+   "baseStats":{"hp":70, "atk":55,"def":95, "spa":95, "spd":110, "spe":65},
+   "abilities":["Frisk","Competitive","Shadow Tag"]
+},
+{
+    "name":"Solosis",
+    "types":["Psychic"],
+   "baseStats":{"hp":45, "atk":30,"def":40, "spa":105, "spd":50, "spe":20},
+   "abilities":["Overcoat","Magic Guard","Regenerator"]
+},
+{
+    "name":"Duosion",
+    "types":["Psychic"],
+   "baseStats":{"hp":65, "atk":40,"def":50, "spa":125, "spd":60, "spe":30},
+   "abilities":["Overcoat","Magic Guard","Regenerator"]
+},
+{
+    "name":"Reuniclus",
+    "types":["Psychic"],
+   "baseStats":{"hp":110, "atk":65,"def":75, "spa":125, "spd":85, "spe":30},
+   "abilities":["Overcoat","Magic Guard","Regenerator"]
+},
+{
+    "name":"Ducklett",
+    "types":["Water","Flying"],
+   "baseStats":{"hp":62, "atk":44,"def":50, "spa":44, "spd":50, "spe":55},
+   "abilities":["Keen Eye","Big Pecks","Hydration"]
+},
+{
+    "name":"Swanna",
+    "types":["Water","Flying"],
+   "baseStats":{"hp":75, "atk":87,"def":63, "spa":87, "spd":63, "spe":98},
+   "abilities":["Keen Eye","Big Pecks","Hydration"]
+},
+{
+    "name":"Vanillite",
+    "types":["Ice"],
+   "baseStats":{"hp":36, "atk":50,"def":50, "spa":65, "spd":60, "spe":44},
+   "abilities":["Ice Body","Weak Armor"]
+},
+{
+    "name":"Vanillish",
+    "types":["Ice"],
+   "baseStats":{"hp":51, "atk":65,"def":65, "spa":80, "spd":75, "spe":59},
+   "abilities":["Ice Body","Weak Armor"]
+},
+{
+    "name":"Vanilluxe",
+    "types":["Ice"],
+   "baseStats":{"hp":71, "atk":95,"def":85, "spa":110, "spd":95, "spe":79},
+   "abilities":["Ice Body","Weak Armor"]
+},
+{
+    "name":"Deerling",
+    "types":["Normal","Grass"],
+   "baseStats":{"hp":60, "atk":60,"def":50, "spa":40, "spd":50, "spe":75},
+   "abilities":["Chlorophyll","Sap Sipper","Serene Grace"]
+},
+{
+    "name":"Sawsbuck",
+    "types":["Normal","Grass"],
+   "baseStats":{"hp":80, "atk":100,"def":70, "spa":60, "spd":70, "spe":95},
+   "abilities":["Chlorophyll","Sap Sipper","Serene Grace"]
+},
+{
+    "name":"Emolga",
+    "types":["Electric","Flying"],
+   "baseStats":{"hp":55, "atk":75,"def":60, "spa":75, "spd":60, "spe":103},
+   "abilities":["Static","Motor Drive"]
+},
+{
+    "name":"Karrablast",
+    "types":["Bug"],
+   "baseStats":{"hp":50, "atk":75,"def":45, "spa":40, "spd":45, "spe":60},
+   "abilities":["Swarm","Shed Skin","No Guard"]
+},
+{
+    "name":"Escavalier",
+    "types":["Bug","Steel"],
+   "baseStats":{"hp":70, "atk":135,"def":105, "spa":60, "spd":105, "spe":20},
+   "abilities":["Swarm","Shell Armor","Overcoat"]
+},
+{
+    "name":"Foongus",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":69, "atk":55,"def":45, "spa":55, "spd":55, "spe":15},
+   "abilities":["Effect Spore","Regenerator"]
+},
+{
+    "name":"Amoonguss",
+    "types":["Grass","Poison"],
+   "baseStats":{"hp":114, "atk":85,"def":70, "spa":85, "spd":80, "spe":30},
+   "abilities":["Effect Spore","Regenerator"]
+},
+{
+    "name":"Frillish",
+    "types":["Water","Ghost"],
+   "baseStats":{"hp":55, "atk":40,"def":50, "spa":65, "spd":85, "spe":40},
+   "abilities":["Water Absorb","Cursed Body","Damp"]
+},
+{
+    "name":"Jellicent",
+    "types":["Water","Ghost"],
+   "baseStats":{"hp":100, "atk":60,"def":70, "spa":85, "spd":105, "spe":60},
+   "abilities":["Water Absorb","Cursed Body","Damp"]
+},
+{
+    "name":"Alomomola",
+    "types":["Water"],
+   "baseStats":{"hp":165, "atk":75,"def":80, "spa":40, "spd":45, "spe":65},
+   "abilities":["Healer","Hydration","Regenerator"]
+},
+{
+    "name":"Joltik",
+    "types":["Bug","Electric"],
+   "baseStats":{"hp":50, "atk":47,"def":50, "spa":57, "spd":50, "spe":65},
+   "abilities":["Compound Eyes","Unnerve","Swarm"]
+},
+{
+    "name":"Galvantula",
+    "types":["Bug","Electric"],
+   "baseStats":{"hp":70, "atk":77,"def":60, "spa":97, "spd":60, "spe":108},
+   "abilities":["Compound Eyes","Unnerve","Swarm"]
+},
+{
+    "name":"Ferroseed",
+    "types":["Grass","Steel"],
+   "baseStats":{"hp":44, "atk":50,"def":91, "spa":24, "spd":86, "spe":10},
+   "abilities":["Iron Barbs"]
+},
+{
+    "name":"Ferrothorn",
+    "types":["Grass","Steel"],
+   "baseStats":{"hp":74, "atk":94,"def":131, "spa":54, "spd":116, "spe":20},
+   "abilities":["Iron Barbs","Anticipation"]
+},
+{
+    "name":"Klink",
+    "types":["Steel"],
+   "baseStats":{"hp":40, "atk":55,"def":70, "spa":45, "spd":60, "spe":30},
+   "abilities":["Plus","Minus","Clear Body"]
+},
+{
+    "name":"Klang",
+    "types":["Steel"],
+   "baseStats":{"hp":60, "atk":80,"def":95, "spa":70, "spd":85, "spe":50},
+   "abilities":["Plus","Minus","Clear Body"]
+},
+{
+    "name":"Klinklang",
+    "types":["Steel"],
+   "baseStats":{"hp":60, "atk":100,"def":115, "spa":70, "spd":85, "spe":90},
+   "abilities":["Plus","Minus","Clear Body"]
+},
+{
+    "name":"Tynamo",
+    "types":["Electric"],
+   "baseStats":{"hp":35, "atk":55,"def":40, "spa":45, "spd":40, "spe":60},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Eelektrik",
+    "types":["Electric"],
+   "baseStats":{"hp":65, "atk":85,"def":70, "spa":75, "spd":70, "spe":40},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Eelektross",
+    "types":["Electric"],
+   "baseStats":{"hp":85, "atk":115,"def":80, "spa":105, "spd":80, "spe":50},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Elgyem",
+    "types":["Psychic"],
+   "baseStats":{"hp":55, "atk":55,"def":55, "spa":85, "spd":55, "spe":30},
+   "abilities":["Telepathy","Synchronize","Analytic"]
+},
+{
+    "name":"Beheeyem",
+    "types":["Psychic"],
+   "baseStats":{"hp":75, "atk":75,"def":75, "spa":125, "spd":95, "spe":40},
+   "abilities":["Telepathy","Synchronize","Analytic"]
+},
+{
+    "name":"Litwick",
+    "types":["Ghost","Fire"],
+   "baseStats":{"hp":50, "atk":30,"def":55, "spa":65, "spd":55, "spe":20},
+   "abilities":["Flash Fire","Flame Body","Infiltrator"]
+},
+{
+    "name":"Lampent",
+    "types":["Ghost","Fire"],
+   "baseStats":{"hp":60, "atk":40,"def":60, "spa":95, "spd":60, "spe":55},
+   "abilities":["Flash Fire","Flame Body","Infiltrator"]
+},
+{
+    "name":"Chandelure",
+    "types":["Ghost","Fire"],
+   "baseStats":{"hp":60, "atk":55,"def":90, "spa":145, "spd":90, "spe":80},
+   "abilities":["Flash Fire","Flame Body","Infiltrator"]
+},
+{
+    "name":"Axew",
+    "types":["Dragon"],
+   "baseStats":{"hp":46, "atk":87,"def":60, "spa":30, "spd":40, "spe":57},
+   "abilities":["Rivalry","Mold Breaker","Unnerve"]
+},
+{
+    "name":"Fraxure",
+    "types":["Dragon"],
+   "baseStats":{"hp":66, "atk":117,"def":70, "spa":40, "spd":50, "spe":67},
+   "abilities":["Rivalry","Mold Breaker","Unnerve"]
+},
+{
+    "name":"Haxorus",
+    "types":["Dragon"],
+   "baseStats":{"hp":76, "atk":147,"def":90, "spa":60, "spd":70, "spe":97},
+   "abilities":["Rivalry","Mold Breaker","Unnerve"]
+},
+{
+    "name":"Cubchoo",
+    "types":["Ice"],
+   "baseStats":{"hp":55, "atk":70,"def":40, "spa":60, "spd":40, "spe":40},
+   "abilities":["Snow Cloak","Slush Rush","Rattled"]
+},
+{
+    "name":"Beartic",
+    "types":["Ice"],
+   "baseStats":{"hp":95, "atk":130,"def":80, "spa":70, "spd":80, "spe":50},
+   "abilities":["Snow Cloak","Slush Rush","Swift Swim"]
+},
+{
+    "name":"Cryogonal",
+    "types":["Ice"],
+   "baseStats":{"hp":80, "atk":50,"def":50, "spa":95, "spd":135, "spe":105},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Shelmet",
+    "types":["Bug"],
+   "baseStats":{"hp":50, "atk":40,"def":85, "spa":40, "spd":65, "spe":25},
+   "abilities":["Hydration","Shell Armor","Overcoat"]
+},
+{
+    "name":"Accelgor",
+    "types":["Bug"],
+   "baseStats":{"hp":80, "atk":70,"def":40, "spa":100, "spd":60, "spe":145},
+   "abilities":["Hydration","Sticky Hold","Unburden"]
+},
+{
+    "name":"Stunfisk",
+    "types":["Ground","Electric"],
+   "baseStats":{"hp":109, "atk":66,"def":84, "spa":81, "spd":99, "spe":32},
+   "abilities":["Static","Limber","Sand Veil"]
+},
+{
+    "name":"Mienfoo",
+    "types":["Fighting"],
+   "baseStats":{"hp":45, "atk":85,"def":50, "spa":55, "spd":50, "spe":65},
+   "abilities":["Inner Focus","Regenerator","Reckless"]
+},
+{
+    "name":"Mienshao",
+    "types":["Fighting"],
+   "baseStats":{"hp":65, "atk":125,"def":60, "spa":95, "spd":60, "spe":105},
+   "abilities":["Inner Focus","Regenerator","Reckless"]
+},
+{
+    "name":"Druddigon",
+    "types":["Dragon"],
+   "baseStats":{"hp":77, "atk":120,"def":90, "spa":60, "spd":90, "spe":48},
+   "abilities":["Rough Skin","Sheer Force","Mold Breaker"]
+},
+{
+    "name":"Golett",
+    "types":["Ground","Ghost"],
+   "baseStats":{"hp":59, "atk":74,"def":50, "spa":35, "spd":50, "spe":35},
+   "abilities":["Iron Fist","Klutz","No Guard"]
+},
+{
+    "name":"Golurk",
+    "types":["Ground","Ghost"],
+   "baseStats":{"hp":89, "atk":124,"def":80, "spa":55, "spd":80, "spe":55},
+   "abilities":["Iron Fist","Klutz","No Guard"]
+},
+{
+    "name":"Pawniard",
+    "types":["Dark","Steel"],
+   "baseStats":{"hp":45, "atk":85,"def":70, "spa":40, "spd":40, "spe":60},
+   "abilities":["defiant","Inner Focus","Pressure"]
+},
+{
+    "name":"Bisharp",
+    "types":["Dark","Steel"],
+   "baseStats":{"hp":65, "atk":125,"def":100, "spa":60, "spd":70, "spe":70},
+   "abilities":["defiant","Inner Focus","Pressure"]
+},
+{
+    "name":"Bouffalant",
+    "types":["Normal"],
+   "baseStats":{"hp":95, "atk":110,"def":95, "spa":40, "spd":95, "spe":55},
+   "abilities":["Reckless","Sap Sipper","Soundproof"]
+},
+{
+    "name":"Rufflet",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":70, "atk":83,"def":50, "spa":37, "spd":50, "spe":60},
+   "abilities":["Keen Eye","Sheer Force","Hustle"]
+},
+{
+    "name":"Braviary",
+    "types":["Normal","Flying"],
+   "baseStats":{"hp":100, "atk":123,"def":75, "spa":57, "spd":75, "spe":80},
+   "abilities":["Keen Eye","Sheer Force","defiant"]
+},
+{
+    "name":"Vullaby",
+    "types":["Dark","Flying"],
+   "baseStats":{"hp":70, "atk":55,"def":75, "spa":45, "spd":65, "spe":60},
+   "abilities":["Big Pecks","Overcoat","Weak Armor"]
+},
+{
+    "name":"Mandibuzz",
+    "types":["Dark","Flying"],
+   "baseStats":{"hp":110, "atk":65,"def":105, "spa":55, "spd":95, "spe":80},
+   "abilities":["Big Pecks","Overcoat","Weak Armor"]
+},
+{
+    "name":"Heatmor",
+    "types":["Fire"],
+   "baseStats":{"hp":85, "atk":97,"def":66, "spa":105, "spd":66, "spe":65},
+   "abilities":["Gluttony","Flash Fire","White Smoke"]
+},
+{
+    "name":"Durant",
+    "types":["Bug","Steel"],
+   "baseStats":{"hp":58, "atk":109,"def":112, "spa":48, "spd":48, "spe":109},
+   "abilities":["Swarm","Hustle","Truant"]
+},
+{
+    "name":"Deino",
+    "types":["Dark","Dragon"],
+   "baseStats":{"hp":52, "atk":65,"def":50, "spa":45, "spd":50, "spe":38},
+   "abilities":["Hustle"]
+},
+{
+    "name":"Zweilous",
+    "types":["Dark","Dragon"],
+   "baseStats":{"hp":72, "atk":85,"def":70, "spa":65, "spd":70, "spe":58},
+   "abilities":["Hustle"]
+},
+{
+    "name":"Hydreigon",
+    "types":["Dark","Dragon"],
+   "baseStats":{"hp":92, "atk":105,"def":90, "spa":125, "spd":90, "spe":98},
+   "abilities":["Levitate"]
+},
+{
+    "name":"Larvesta",
+    "types":["Bug","Fire"],
+   "baseStats":{"hp":55, "atk":85,"def":55, "spa":50, "spd":55, "spe":60},
+   "abilities":["Flame Body","Swarm"]
+},
+{
+    "name":"Volcarona",
+    "types":["Bug","Fire"],
+   "baseStats":{"hp":85, "atk":60,"def":65, "spa":135, "spd":105, "spe":100},
+   "abilities":["Flame Body","Swarm"]
+},
+{
+    "name":"Cobalion",
+    "types":["Steel","Fighting"],
+   "baseStats":{"hp":91, "atk":90,"def":129, "spa":90, "spd":72, "spe":108},
+   "abilities":["Justified"]
+},
+{
+    "name":"Terrakion",
+    "types":["Rock","Fighting"],
+   "baseStats":{"hp":91, "atk":129,"def":90, "spa":72, "spd":90, "spe":108},
+   "abilities":["Justified"]
+},
+{
+    "name":"Virizion",
+    "types":["Grass","Fighting"],
+   "baseStats":{"hp":91, "atk":90,"def":72, "spa":90, "spd":129, "spe":108},
+   "abilities":["Justified"]
+},
+{
+    "name":"Tornadus",
+    "types":["Flying"],
+   "baseStats":{"hp":79, "atk":115,"def":70, "spa":125, "spd":80, "spe":111},
+   "abilities":["Prankster","defiant"]
+},
+{
+    "name":"Thundurus",
+    "types":["Electric","Flying"],
+   "baseStats":{"hp":79, "atk":115,"def":70, "spa":125, "spd":80, "spe":111},
+   "abilities":["Prankster","defiant"]
+},
+{
+    "name":"Reshiram",
+    "types":["Dragon","Fire"],
+   "baseStats":{"hp":100, "atk":120,"def":100, "spa":150, "spd":120, "spe":90},
+   "abilities":["Turboblaze"]
+},
+{
+    "name":"Zekrom",
+    "types":["Dragon","Electric"],
+   "baseStats":{"hp":100, "atk":150,"def":120, "spa":120, "spd":100, "spe":90},
+   "abilities":["Teravolt"]
+},
+{
+    "name":"Landorus",
+    "types":["Ground","Flying"],
+   "baseStats":{"hp":89, "atk":125,"def":90, "spa":115, "spd":80, "spe":101},
+   "abilities":["Sand Force","Sheer Force"]
+},
+{
+    "name":"Kyurem",
+    "types":["Dragon","Ice"],
+   "baseStats":{"hp":125, "atk":120,"def":90, "spa":170, "spd":100, "spe":95},
+   "abilities":["Pressure"]
+},
+{
+    "name":"Keldeo",
+    "types":["Water","Fighting"],
+   "baseStats":{"hp":91, "atk":72,"def":90, "spa":129, "spd":90, "spe":108},
+   "abilities":["Justified"]
+},
+{
+    "name":"Meloetta",
+    "types":["Normal","Psychic"],
+   "baseStats":{"hp":100, "atk":77,"def":77, "spa":128, "spd":128, "spe":90},
+   "abilities":["Serene Grace"]
+},
+{
+    "name":"Genesect",
+    "types":["Bug","Steel"],
+   "baseStats":{"hp":71, "atk":120,"def":95, "spa":120, "spd":95, "spe":99},
+   "abilities":["Download"]
+}]
