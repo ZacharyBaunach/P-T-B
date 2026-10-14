@@ -52,7 +52,7 @@
 
         <!-- Team Box -->
         <div class="selection-box">
-            <input id= "pokeSearch", type = "text", placeholder="Search..">
+            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
             <button onclick="listAdd()">Add Pokemon</button>
             <ul class=" BattleContainer">
 
@@ -127,8 +127,34 @@
                 } else {
                     mobileNavList.style.display = "block";
                 }
-            }
+            };
 
+            //loads pokemon data upon page loaded
+            let pokeData = [];
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log("Loaded page")
+                getPokeData();
+            });
+            async function getPokeData() {
+                const promise = await fetch('/Pokedex')
+                pokeData = await promise.json()
+                console.log(pokeData) 
+            };
+            //search funtion
+            function pokeSearch(){
+                const search = document.getElementById('pokeSearch').value
+                console.log(search)
+                var searchList = []
+                for (const pokemon of pokeData) {
+                    if (pokemon["name"].toLowerCase().includes(search)) {
+                        searchList.push(pokemon)
+                    }
+                }
+                console.log(searchList)
+            };
+            function pokeAdd(){
+                return
+            };
         </script>
 
     </body>
