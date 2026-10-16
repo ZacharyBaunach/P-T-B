@@ -90,7 +90,7 @@ img {
 
 
 
-#battleContainer{
+#teamContainer{
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -99,7 +99,7 @@ img {
 
 }
 
-#battleContainer li button img {
+#teamContainer li button img {
     width: 50px;
     height: 50px;
     object-fit: cover;
@@ -191,13 +191,13 @@ img {
     list-style-type: none;
 }
 
-#battleContainer li {
+#teamContainer li {
     display: flex;
     border: 2px solid #222;
     flex-direction: column;
 }
 
-#battleContainer  li button {
+#teamContainer  li button {
     display: inline-flex;
     height: 50px;   
     width:  50px;
@@ -278,57 +278,57 @@ img {
 @media screen and (max-width: 930px) {
 
 /* Changes the direction of the flexboxes to fit better on the page */
-    #battleContainer{
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style-type: none;
-    }
+.BattleContainer {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
 
-    .PSpriteA {
-        display: flex;
+.PSpriteA {
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
 
-    .PSpriteE{
-        display: flex;
+.PSpriteE{
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
 
-    .MovesA {
-        display: flex;
+.MovesA {
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
 
-    .MovesE {
-        display: flex;
+.MovesE {
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
+
+
+
+
+/* Change size of battle page images */
+
+
+
+.ASprite, .ESprite{
+    width: 150px;
+    height: 150px;
     
+}
+
+/* Change Navigation bar into hamburger menu */
+.nav{
+    display: block
 
 
-
-    /* Change size of battle page images */
-
-    
-
-    .ASprite, .ESprite{
-        width: 150px;
-        height: 150px;
-        
-    }
-
-    /* Change Navigation bar into hamburger menu */
-    .nav{
-        display: block
-
-
-    }
+}
 
     
 }

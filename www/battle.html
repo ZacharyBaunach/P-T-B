@@ -36,14 +36,14 @@
             
         </header>
 
-        <ul class=" BattleContainer">
+        <ul class="BattleContainer">
             
                 <li class="PSpriteA">
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
                         
                 </li>
 
@@ -105,6 +105,52 @@
                 }
             }
 
+            //gsets up pokemon addition list
+            let pokeSearchList = []
+
+            //checks sessionStorage and loads in 'saved' team
+            let index = 0
+            for (i = 1; i <7 ; i++) {
+                if (sessionStorage[i]){
+                    pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
+                    console.log(`loading index ${i}`)
+                    pokeAdd()
+                    pokeSearchList.pop()
+                    index += 1
+                }   else {
+                    console.log(`empty session storage of index ${i}`)
+                }
+            };
+
+            //adds pokemon data to each pokemon entry
+            function pokeAdd(){
+                //init pokmeon to add
+                const pokemon = pokeSearchList[0]
+                //create pokemon img element
+                const pokeImage = image(pokemon["name"])
+
+                if(index == 0) {
+                    const ActivePkmon = document.querySelector(".ActiveSpriteA")
+                    ActivePkmon.appendChild(pokeImage)
+                } else {
+
+                //main team locaiton
+                const MainArea = document.querySelector(".PSpriteA")
+                const teamArea = MainArea.querySelectorAll(".entry")
+
+                //attaches pokemon data/pic to entry
+                teamArea[index % 6 -1].entry = pokemon
+                teamArea[index % 6 -1].appendChild(pokeImage)
+                }
+            };
+
+            function image(name){
+                const pokeImage = document.createElement('img')
+                pokeImage.setAttribute('src', `static/img/pokemon_collection/${name}.webp`)
+                pokeImage.setAttribute('alt', `${name} sprite`)
+                pokeImage.setAttribute('class', 'pokeSprite')
+                return pokeImage
+            }
         </script>
     </body>
     </div>
