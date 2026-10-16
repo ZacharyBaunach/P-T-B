@@ -99,9 +99,24 @@ img {
 
 }
 
+.pokeEntry img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
 .Sprite{
     width: 50px;
     height: 50px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.pokeSprite {
+    width: 45px;
+    height: 45px;
+    z-index: 2;
 }
 
 .ASprite, .ESprite{
@@ -176,11 +191,14 @@ img {
 
 .pokeEntry{
     display: block;
+    height: 50px;   
+    width:  50px;
     background: rgb(220, 220, 220);
     border: 2px solid #222;
     float:left;
     cursor: pointer;
 }
+
 
 /* Try to get pokemon sprite overlade pokeball?
 .poke-image{
