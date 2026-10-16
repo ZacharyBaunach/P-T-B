@@ -51,47 +51,53 @@
         </p>
 
         <!-- Team Box -->
-        <div class="selection-box">
-            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
-            <button onclick="pokeAdd()">Add Pokemon</button>
-            <ul class=" BattleContainer">
+        <div id="selection-box">
+            <ul id="battleContainer">
 
-                <li class="empty">
-                    <a class="pokeEntry">
-                        <img class="Sprite" src="static/img/Pokeball.png" alt="pokeballSprite">
-                    </a>
+                <li class="empty", id="lst1">
+                    <button id="pokeEntry1", popovertarget="pokemonPopup">
+
+                    </button>
                 </li>
-                <li class="empty">
-                    <a class="pokeEntry">
-                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
-                    </a>
+                <li class="empty", id="lst2">
+                    <button id="pokeEntry2", popovertarget="pokemonPopup">
+                    </button>
                 </li>
-                <li class="empty">
-                    <a class="pokeEntry">
-                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
-                    </a>
+                <li class="empty", id="lst3">
+                    <button id="pokeEntry3", popovertarget="pokemonPopup">
+ 
+                    </button>
                 </li>
-                <li class="empty">
-                    <a class="pokeEntry">
-                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
-                    </a>
+                <li class="empty", id="lst4">
+                    <button id="pokeEntry4", popovertarget="pokemonPopup">
+
+                    </button>
                 </li>
-                <li class="empty">
-                    <a class="pokeEntry">
-                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
-                    </a>
+                <li class="empty", id="lst5">
+                    <button id="pokeEntry5", popovertarget="pokemonPopup">
+
+                    </button>
                 </li>
-                <li class="empty">
-                    <a class="pokeEntry">
-                        <img class="Sprite" src="static/img/Pokeball.png" alt="Sprite">
-                    </a>
+                <li class="empty", id="lst6">
+                    <button id="pokeEntry6", popovertarget="pokemonPopup">
+
+                    </button>
                 </li>
             </ul>
         </div>
 
         <ul id="resultList"></ul>
 
+        <!-- this is the popup screen for pokemon selection-->
+        <div popover id="pokemonPopup">
+            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <button onclick="pokeAdd()">Add Pokemon</button>
 
+            <!-- pokemon team edit screen; subject to change-->
+            <div id="editBox">
+
+            </div>
+        </div>
         
         <script>
             console.log("ready to load .js")
@@ -134,8 +140,8 @@
                 }
                 console.log(searchList)
             };
+            //adds pokemon data to each pokemon entry
             function pokeAdd(){
-                console.log(searchList)
                 const container = document.querySelector('.empty')
                 const pokemon = searchList[0]
 
@@ -144,21 +150,55 @@
                 pokeImage.setAttribute('src', `static/img/pokemon_collection/${pokemon["name"]}.webp`)
                 pokeImage.setAttribute('alt', `${pokemon["name"]} sprite`)
                 pokeImage.setAttribute('class', 'pokeSprite')
-                const pokemoncontainer = container.querySelector('.pokeEntry')
+                const pokemoncontainer = container.childNodes[1]
 
+                //attaches pokemon data/pic to entry
+                pokemoncontainer.entry = pokemon
                 container.classList = "full"
                 pokemoncontainer.appendChild(pokeImage)
-                // const name = container.querySelector('.poke-name')
-                // name.innerHTML = pokemon["name"]
-                // const abilities = container.querySelector('.poke-abilities')
-                // abilities.innerHTML = pokemon["abilities"][0]
-                // const stats = container.querySelector('.poke-stats')
-                // console.log(pokemon["baseStats"])
-                // stats.innerHTML = ''
-                // for (const [stat, value] of Object.entries(pokemon['baseStats'])) {
-                //     stats.innerHTML += `${stat} = ${value} ` 
-                // }
+
+                //update popup
+                const popup = document.getElementById("pokemonPopup")
+                const popupContainer = popup.querySelector('.empty')
+                const popupPokeEntry = popupContainer.children[0]
+                popupPokeEntry.entry = pokemon
+                popupContainer.classList = "full"
+                const newPokeImage = pokeImage.cloneNode()
+                popupPokeEntry.appendChild(newPokeImage)
             };
+
+            //intial clone for popup box (you can change it if you have a better design in mind)
+            const teamContainer = document.getElementById("battleContainer")
+            const clone = teamContainer.cloneNode(true)
+            clone.id = "teamBox"
+            const teambox = document.getElementById("editBox")
+            var i = 1
+            for (const node of clone.children) {
+                const actionNode = node.children[0]
+                actionNode.removeAttribute('popovertarget')
+                actionNode.setAttribute('id', `pokeEntry${i}mirror`)
+                actionNode.setAttribute('onclick', `displayEntry(${i})`)
+                i += 1
+            }
+            //append selection box mirror to popup
+            teambox.appendChild(clone)
+
+            function displayEntry(num) {
+                const displayContainer = document.getElementById('teamBox')
+                displayContainer.style.height = "250px"
+                displayContainer.style.width = "350px"
+
+                const entry = document.getElementById(`pokeEntry${num}mirror`)
+                entry.style.borderBottom = "0px"
+                const pokemonEntry = entry.entry
+
+                //display pokemon data
+                const textbox = document.createElement("div")
+                textbox.setAttribute('id','pokeDisplayStats')
+                textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}, base-stats: ${pokemonEntry.baseStats}`
+                displayContainer.children[num-1].appendChild(textbox)
+                console.log(entry)
+            }
         </script>
 
     </body>
