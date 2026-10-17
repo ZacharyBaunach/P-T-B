@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import json
 
 app = Flask(__name__)
 
@@ -16,3 +17,8 @@ def hello():
 def TheForbiddenPage():
     return "You have stumbled upon sights unmeant for your eyes. Turn back or be forever lost."
 
+@app.route("/Pokedex")
+def getPokeData():
+    with open('db/Pokedex.json', 'r', encoding='utf-8') as file:
+        pokedex = json.load(file)
+        return pokedex

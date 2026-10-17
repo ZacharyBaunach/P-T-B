@@ -137,6 +137,13 @@ img {
     border-radius: 60px;
 }
 
+.ActiveMoveA:hover, .ActiveMoveE:hover{
+    display:flex;
+    background-color: #65cbe4;
+    border-radius: 60px;
+    color: rgb(37, 36, 36);
+}
+
 .BattleWindowContainer{
     border: 5px solid #222;
     padding: 15px;
