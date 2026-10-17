@@ -90,7 +90,7 @@ img {
 
 
 
-.BattleContainer{
+#teamContainer{
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -99,9 +99,25 @@ img {
 
 }
 
+#teamContainer li button img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: inline-flex;
+    padding: 0px
+}
+
 .Sprite{
     width: 50px;
     height: 50px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.pokeSprite {
+    width: 45px;
+    height: 45px;
+    z-index: 2;
 }
 
 .ASprite, .ESprite{
@@ -175,28 +191,75 @@ img {
     color: rgb(37, 36, 36);
 }
 
-.selection-box{
+/* popup CSS styling */
+#selection-box{
     border: 5px solid #222;
     padding: 15px;
     list-style-type: none;
 }
 
-.pokeEntry{
-    display: block;
-    background: rgb(220, 220, 220);
+#teamContainer li {
+    display: flex;
     border: 2px solid #222;
-    float:left;
-    cursor: pointer;
+    flex-direction: column;
 }
 
-/* Try to get pokemon sprite overlade pokeball?
-.poke-image{
-    display: block;
-    height:auto;
-    width:auto;
-    background-image:  "static/img/Pokeball.png";
+#teamContainer  li button {
+    display: inline-flex;
+    height: 50px;   
+    width:  50px;
+    background: rgb(220, 220, 220);
+    cursor: pointer;
+    background-image: url('../img/Pokeball.png');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
 }
-*/
+
+#editBox {
+    padding: 0px;
+    display: flex;
+    background: rgb(220, 220, 220);
+    justify-content: flex-start;
+    border: 3px solid #222;
+
+}
+
+#teamBox {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+#teamBox li {
+    display: flex;
+    flex-direction: column;
+}
+
+#teamBox div {
+    display: flex;
+}
+
+#pokeDisplayStats {
+    display: flex;
+}
+
+#teamBox button {
+    border-right: 2px solid #222;
+    display: inline-flex;
+    height: 50px;   
+    width:  50px;
+    background: rgb(220, 220, 220);
+    cursor: pointer;
+    background-image: url('../img/Pokeball.png');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* end of popup CSS */
+
 .poke-name{
     display: block;
     height:auto;
@@ -222,7 +285,7 @@ img {
 @media screen and (max-width: 930px) {
 
 /* Changes the direction of the flexboxes to fit better on the page */
-    .BattleContainer{
+.BattleContainer {
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -230,49 +293,49 @@ img {
     list-style-type: none;
 }
 
-    .PSpriteA {
-        display: flex;
+.PSpriteA {
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
 
-    .PSpriteE{
-        display: flex;
+.PSpriteE{
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
 
-    .MovesA {
-        display: flex;
+.MovesA {
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
 
-    .MovesE {
-        display: flex;
+.MovesE {
+    display: flex;
 
-        flex-direction: row;
-    }
+    flex-direction: row;
+}
+
+
+
+
+/* Change size of battle page images */
+
+
+
+.ASprite, .ESprite{
+    width: 150px;
+    height: 150px;
     
+}
+
+/* Change Navigation bar into hamburger menu */
+.nav{
+    display: block
 
 
-
-    /* Change size of battle page images */
-
-    
-
-    .ASprite, .ESprite{
-        width: 150px;
-        height: 150px;
-        
-    }
-
-    /* Change Navigation bar into hamburger menu */
-    .nav{
-        display: block
-
-
-    }
+}
 
     
 }
