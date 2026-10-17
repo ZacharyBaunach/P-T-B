@@ -88,6 +88,15 @@ img {
 
 /* ********Navigation******** */
 
+/* ********Battle Container ******** */
+
+.BattleContainer {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
 
 
 #teamContainer{
@@ -104,7 +113,8 @@ img {
     height: 50px;
     object-fit: cover;
     display: inline-flex;
-    padding: 0px
+    padding: 0px;
+    list-style-type: none;
 }
 
 .Sprite{
@@ -112,18 +122,21 @@ img {
     height: 50px;
     display: inline-block;
     z-index: 1;
+    list-style-type: none;
 }
 
 .pokeSprite {
     width: 45px;
     height: 45px;
     z-index: 2;
+    list-style-type: none;
 }
 
 .ASprite, .ESprite{
     width: 200px;
     height: 200px;
     justify-content: center;
+    list-style-type: none;
     
 }
 
@@ -132,7 +145,9 @@ img {
 
     margin: 0px;
 
-    padding: 0px
+    padding: 0px;
+
+    list-style-type: none;
 }
 
 .PSpriteE{
@@ -140,7 +155,9 @@ img {
 
     margin: 0px;
 
-    padding: 0px
+    padding: 0px;
+
+    list-style-type: none;
 }
 
 .ActiveMoveA, .ActiveMoveE{
@@ -151,13 +168,27 @@ img {
     border: 5px solid #222;
 
     border-radius: 60px;
+    
+    
 }
 
 .ActiveMoveA:hover, .ActiveMoveE:hover{
     display:flex;
-    background-color: #65cbe4;
-    border-radius: 60px;
-    color: rgb(37, 36, 36);
+    outline: 5px solid #ffffff;
+}
+
+#startTurn{
+    display:flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #222;
+    border-radius:60px;
+}
+
+#startTurn:hover{
+    display:flex;
+    outline: 5px solid #ffffff;
 }
 
 .BattleWindowContainer{
@@ -202,6 +233,7 @@ img {
     display: flex;
     border: 2px solid #222;
     flex-direction: column;
+    
 }
 
 #teamContainer  li button {
@@ -214,6 +246,7 @@ img {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
 }
 
 #editBox {
@@ -222,6 +255,7 @@ img {
     background: rgb(220, 220, 220);
     justify-content: flex-start;
     border: 3px solid #222;
+    list-style-type: none;
 
 }
 
@@ -229,6 +263,7 @@ img {
     padding: 0px;
     margin: 0px;
     display: flex;
+    list-style-type: none;
 }
 
 #teamBox li {
@@ -331,10 +366,18 @@ img {
 }
 
 /* Change Navigation bar into hamburger menu */
-.nav{
-    display: block
 
+.icon{
+    display:flex;
+    padding: 10px;
+}
 
+.nav_list{
+    display:none
+}
+
+.nav_list_mobile{
+    display: flex;
 }
 
     

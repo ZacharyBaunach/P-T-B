@@ -20,7 +20,7 @@
 
             <h1>Pokemon Battle</h1>
 
-            <ul class ="nav">
+            <ul id="navigationBar" class ="nav">
                 <!-- Hamburger menu toggle the navigation links -->
                 <li>
                     <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
@@ -88,7 +88,13 @@
             
         </ul>
 
+        <div id="startTurn">
+            Start Turn
+        </div>
+
         <ul class="BattleWindowContainer">
+            
+
             <li class="BattleWindow">
 
             </li>
@@ -97,11 +103,16 @@
             //Makes Hamburger menu appear and disappear// 
             
             function collapseMenu(){
-                let mobileNavList = document.getElementById("mobileNav");
-                if (mobileNavList.style.display == "block") {
-                    mobileNavList.style.display = "none";
-                } else {
-                    mobileNavList.style.display = "block";
+                let unorderedNav = document.getElementById("navigationBar");
+                let mobileNav = unorderedNav.className;
+                let sitePages = document.getElementsByClassName("nav_list");
+                if (mobileNav.className == "nav") {
+                    mobileNav.className = "hamburgerNav";
+                    sitePages.className = "nav_list_mobile";
+                } 
+                
+                else {
+                    mobileNav.className = "nav";
                 }
             }
 
