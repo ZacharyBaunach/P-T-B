@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5,h6 {
     color: #ff2c2c;
 }
 
+.pageTitle{
+    text-align: center;
+}
+
 
 img.site-logo {
     display: flex;
@@ -30,7 +34,7 @@ img.site-logo {
     padding: 5px;
     border: 15px solid #ff2c2c;
     border-radius: 100px;
-    outline: 10px solid #222;
+    outline: 5px solid #222;
     background-color: #84dbf0;
     
     
@@ -43,7 +47,7 @@ img.site-logo {
     border: solid 20px #ff2c2c;
     border-radius: 60px;
     height: auto;
-    outline: 10px solid #222;
+    outline: 5px solid #222;
 
 }
 
@@ -214,6 +218,8 @@ img {
     padding: 10px;
     border: 5px solid #222;
     border-radius:60px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 #startTurn:hover{
@@ -397,6 +403,10 @@ img {
     width: 150px;
     height: 150px;
     
+}
+
+#startTurn{
+    margin: 20px;
 }
 
 /* Change Navigation bar into hamburger menu */
