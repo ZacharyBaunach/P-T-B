@@ -11,14 +11,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+    
+    <a href="ptb.html"> 
+            <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
+    </a>
+
    
     <div class="pageBox">
+        
     <body>
         <header>
-            <a href="ptb.html"> 
-            <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
-            </a>
-
+            
             <h1>Pokemon Team Builder</h1>
 
             <ul id="navigationBar" class ="nav">
@@ -28,10 +31,10 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </li>
-                <li class="nav_list"><a class="nav_link" href="ptb.html">Home</a></li>
-                <li class="nav_list"><a class="nav_link" href="battle.html">Battle</a></li>
-                <li class="nav_list"><a class="nav_link" href="about.html">About Us</a></li>
-                <li class="nav_list"><a class="nav_link" href="feedback.html">Give Feedback</a></li>
+                <li class="nav_list" id="home" ><a class="nav_link" href="ptb.html" onclick="navHighlight(home)">Home</a></li>
+                <li class="nav_list" id="battle" ><a class="nav_link" href="battle.html"  onclick="navHighlight(battle)">Battle</a></li>
+                <li class="nav_list" id="about" ><a class="nav_link" href="about.html"  onclick="navHighlight(about)">About Us</a></li>
+                <li class="nav_list" id="feedback" ><a class="nav_link" href="feedback.html"  onclick="navHighlight(feedback)">Give Feedback</a></li>
             </ul>
 
             
@@ -92,6 +95,19 @@
         </script>
 
         <script>
+            //Keeps currently sellected page highlighted//
+
+            // function navHighlight(currentPage){
+            //     let homePage = document.getElementById("home");
+            //     let hP = homePage.className;
+            //     let battlePage = document.getElementById("battle");
+            //     let aboutPage = document.getElementById("about");
+            //     let feedbackPage = document.getElementById("feedback");
+
+            //     hP = "currentPage";
+            // }
+
+
             //Makes Hamburger menu appear and disappear// 
             
             function collapseMenu(){
@@ -106,6 +122,8 @@
                         for (const page of webPages){
 
                             page.className = "nav_list_mobile";
+
+                            
                             
                         }
 

@@ -19,9 +19,20 @@ h1,h2,h3,h4,h5,h6 {
     color: #ff2c2c;
 }
 
+
 img.site-logo {
+    display: flex;
+
+    align-items: center;
+
     height: 150px;
     width: 150px;
+    padding: 5px;
+    border: 15px solid #ff2c2c;
+    border-radius: 100px;
+    outline: 10px solid #222;
+    background-color: #84dbf0;
+    
     
 }
 
@@ -32,6 +43,7 @@ img.site-logo {
     border: solid 20px #ff2c2c;
     border-radius: 60px;
     height: auto;
+    outline: 10px solid #222;
 
 }
 
@@ -55,6 +67,8 @@ img {
     border-radius: 60px;
 
     justify-content: center;
+    
+    background-color: #222;
 
 }
 
@@ -71,6 +85,8 @@ img {
 
     align-items: center;
 
+    background-color: #84dbf0;
+
 }
 
 .nav_link{
@@ -85,6 +101,20 @@ img {
 
     text-decoration: none;
 }
+
+/* .currentPage{
+    display: flex;
+
+    border: 1px solid #222;
+
+    border-radius: 60px;
+
+    align-items: center;
+
+    background-color: #84dbf0;
+
+    outline: -5px solid #ff2c2c;
+} */
 
 /* ********Navigation******** */
 
@@ -373,18 +403,28 @@ img {
 
 .icon{
     display:flex;
-    padding: 10px;
+    padding: 20px;
     color:#222;
     text-decoration: none;
+    justify-content: center;
+    background-color:#84dbf0;
+    border-radius: 60px;
+    margin:5px
+}
+
+.nav{
+    background-color: #84dbf0;
+
+
 }
 
 .nav_list{
-    display:none
+    display:none;
+
 }
 
-.nav_list_mobile{
-    display: flex;
-    flex-direction: column;
+.currentPage{
+    display: none;
 }
 
 .hamburgerNav{
@@ -398,13 +438,33 @@ img {
 
     display: flex;
 
-    border-radius: 60px;
+    border-radius: 40px;
 
+    justify-content: center;
+
+    flex-direction: column;
+
+    background-color: #222;
+}
+    
+.nav_list_mobile{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #222;
+    border-radius: 60px;
+    justify-content: center;
+    background-color: #84dbf0;
+    margin-bottom: 5px;
+}
+.nav_link{
+    padding: 20px;
     justify-content: center;
 }
 
-    
+
 }
+    
+
 
 
 
