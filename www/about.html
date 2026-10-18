@@ -24,7 +24,7 @@
             About Us
         </h1>
 
-        <ul class ="nav">
+        <ul id="navigationBar" class ="nav">
                 <!-- Hamburger menu toggle the navigation links -->
                 <li>
                     <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
@@ -110,11 +110,34 @@
             //Makes Hamburger menu appear and disappear// 
             
             function collapseMenu(){
-                let mobileNavList = document.getElementById("mobileNav");
-                if (mobileNavList.style.display === "block") {
-                    mobileNavList.style.display = "none";
-                } else {
-                    mobileNavList.style.display = "block";
+                let navContainer = document.getElementById("navigationBar");
+                let mobileNav = navContainer.className;
+                let webPages = document.getElementsByClassName("nav_list");
+                if (mobileNav == "nav") {
+                    navContainer.className = "hamburgerNav";
+                    
+                    for (let i=0; i<4; i++){
+
+                        for (const page of webPages){
+
+                            page.className = "nav_list_mobile";
+                            
+                        }
+
+                    }
+                    
+                } 
+                
+                else {
+                    let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
+
+                    navContainer.className = "nav";
+
+                        for (let i=0; i<4; i++){
+                            for (const page of hamburgerPages){
+                                page.className = "nav_list"
+                            }
+                        }
                 }
             }
 

@@ -196,6 +196,10 @@ img {
     padding: 15px;
     list-style-type: none;
 }
+
+.selectedMove{
+    outline:5px solid #ff2c2c;
+}
 /* ********Battle Container******** */
 
 /* Pokemon Container */
@@ -370,6 +374,8 @@ img {
 .icon{
     display:flex;
     padding: 10px;
+    color:#222;
+    text-decoration: none;
 }
 
 .nav_list{
@@ -378,6 +384,23 @@ img {
 
 .nav_list_mobile{
     display: flex;
+    flex-direction: column;
+}
+
+.hamburgerNav{
+    list-style-type: none;
+
+    margin: 0px;
+
+    padding: 0px;
+
+    border: 6px solid #ff2c2c;
+
+    display: flex;
+
+    border-radius: 60px;
+
+    justify-content: center;
 }
 
     

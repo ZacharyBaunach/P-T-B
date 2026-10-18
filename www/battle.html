@@ -49,7 +49,7 @@
 
                 <li class="MovesA">
                     <div>
-                        <div class="ActiveMoveA">Move</div>
+                        <div id="move1" class="ActiveMoveA" onclick="moveHighlight(move1)">Move</div>
                         <div class="ActiveMoveA">Move</div>
                     </div>
                     <div>
@@ -68,7 +68,7 @@
 
                 <li class="MovesE">
                     <div>
-                        <div class="ActiveMoveE">Move</div>
+                        <div id="move5" class="ActiveMoveE">Move</div>
                         <div class="ActiveMoveE">Move</div>
                     </div>
                     <div>
@@ -103,17 +103,43 @@
             //Makes Hamburger menu appear and disappear// 
             
             function collapseMenu(){
-                let unorderedNav = document.getElementById("navigationBar");
-                let mobileNav = unorderedNav.className;
-                let sitePages = document.getElementsByClassName("nav_list");
-                if (mobileNav.className == "nav") {
-                    mobileNav.className = "hamburgerNav";
-                    sitePages.className = "nav_list_mobile";
+                let navContainer = document.getElementById("navigationBar");
+                let mobileNav = navContainer.className;
+                let webPages = document.getElementsByClassName("nav_list");
+                if (mobileNav == "nav") {
+                    navContainer.className = "hamburgerNav";
+                    
+                    for (let i=0; i<4; i++){
+
+                        for (const page of webPages){
+
+                            page.className = "nav_list_mobile";
+                            
+                        }
+
+                    }
+                    
                 } 
                 
                 else {
-                    mobileNav.className = "nav";
+                    let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
+
+                    navContainer.className = "nav";
+
+                        for (let i=0; i<4; i++){
+                            for (const page of hamburgerPages){
+                                page.className = "nav_list"
+                            }
+                        }
                 }
+            }
+
+            //Highlights move buttons when clicked//
+
+            function moveHighlight(moveid){
+                let moveToHighlight = document.getElementById(String(moveid));
+
+                moveToHighlight.className = "selectedMove"
             }
 
             //gsets up pokemon addition list

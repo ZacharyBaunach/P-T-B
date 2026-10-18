@@ -24,7 +24,12 @@
             Give Feedback
         </h1>
 
-        <ul class ="nav">
+        <ul id="navigationBar" class ="nav">
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
                 <li class="nav_list"><a class="nav_link" href="ptb.html">Home</a></li>
                 <li class="nav_list"><a class="nav_link" href="battle.html">Battle</a></li>
                 <li class="nav_list"><a class="nav_link" href="about.html">About Us</a></li>
@@ -65,5 +70,38 @@
         <p>
             <input type="submit" value="Submit">
         </p>
+        <script>
+            function collapseMenu(){
+                let navContainer = document.getElementById("navigationBar");
+                let mobileNav = navContainer.className;
+                let webPages = document.getElementsByClassName("nav_list");
+                if (mobileNav == "nav") {
+                    navContainer.className = "hamburgerNav";
+                    
+                    for (let i=0; i<4; i++){
+
+                        for (const page of webPages){
+
+                            page.className = "nav_list_mobile";
+                            
+                        }
+
+                    }
+                    
+                } 
+                
+                else {
+                    let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
+
+                    navContainer.className = "nav";
+
+                        for (let i=0; i<4; i++){
+                            for (const page of hamburgerPages){
+                                page.className = "nav_list"
+                            }
+                        }
+                }
+            }
+        </script>
     </body>
 </html>
