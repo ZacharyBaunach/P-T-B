@@ -234,6 +234,14 @@ img {
 }
 
 .selectedMove{
+    margin:15px;
+
+    padding: 10px;
+
+    border: 5px solid #222;
+
+    border-radius: 60px;
+
     outline:5px solid #ff2c2c;
 }
 /* ********Battle Container******** */
@@ -419,7 +427,9 @@ img {
     justify-content: center;
     background-color:#84dbf0;
     border-radius: 60px;
-    margin:5px
+    margin:5px;
+    font-size: x-large;
+
 }
 
 .nav{

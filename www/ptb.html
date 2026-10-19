@@ -114,8 +114,16 @@
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
                 let webPages = document.getElementsByClassName("nav_list");
+
+                //When clicked, changes the class of navigation list
+                //and makes page links appear below hamburger menu.
+
                 if (mobileNav == "nav") {
                     navContainer.className = "hamburgerNav";
+
+                    //This code hates me :( 
+                    //and wouldn't show them all at once with just an 'of' loop.
+                    //The nested loop was the only solution I found to this problem.
                     
                     for (let i=0; i<4; i++){
 
@@ -130,11 +138,18 @@
                     }
                     
                 } 
+
+                //When clicked again, changes the class of navigation bar to
+                //its initial class and hides page links.
                 
                 else {
                     let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
 
                     navContainer.className = "nav";
+
+                        //This code hates me :( 
+                        //and wouldn't show them all at once with just an 'of' loop.
+                        //The nested loop was the only solution I found to this problem.
 
                         for (let i=0; i<4; i++){
                             for (const page of hamburgerPages){
