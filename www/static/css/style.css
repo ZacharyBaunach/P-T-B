@@ -317,23 +317,37 @@ img.site-logo {
 
 #teamBox {
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 0px;
     display: flex;
     background: rgb(220, 220, 220);
     justify-content: flex-start;
     border: 3px solid #222;
+    border-bottom: unset;
     list-style-type: none;
+}
+
+#teamBox li{
+    border: unset;
 }
 
 #teamBox ul {
     margin: 0px;
 }
 
+#editBox {
+    display: flex;
+    background: rgb(220, 220, 220);
+    border: 3px solid #222;
+    border-top: unset;
+    height: 500px;
+    width : 500px;
+}
+
 #pokeDisplayStats {
     display: flex;
 }
 
-[open] {
+.open {
     border-bottom: 0px;
 }
 

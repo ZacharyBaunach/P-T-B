@@ -223,11 +223,16 @@
                 actionNode.removeAttribute('popovertarget')
                 actionNode.setAttribute('id', `pokeEntry${i}mirror`)
                 actionNode.setAttribute('onclick', `displayEntry(${i})`)
-                actionNode.setAttribute('state', 'closed')
+                actionNode.setAttribute('class', 'closed')
                 i += 1
             }
             //append selection box mirror to popup
             teambox.appendChild(clone)
+            //then add hidden editbox
+            const editbox = document.createElement('div')
+            editbox.setAttribute('id', 'editBox')
+            editbox.setAttribute('class', 'hidden')
+            teambox.appendChild(editbox)
 
             //search funtion
             let pokeSearchList = []
@@ -298,8 +303,7 @@
             function displayEntry(num) {
                 const displayContainer = document.getElementById('teamBox')
                 const entry = document.querySelector(`#pokeEntry${num}mirror`)
-                console.log(entry)
-                entry.setAttribute('state', 'open')
+                entry.setAttribute('class', 'open')
                 const pokemonEntry = entry.entry
 
                 //display pokemon data
