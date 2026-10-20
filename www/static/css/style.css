@@ -151,25 +151,6 @@ img.site-logo {
     list-style-type: none;
 }
 
-
-#teamContainer{
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-
-}
-
-#teamContainer li button img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    display: inline-flex;
-    padding: 0px;
-    list-style-type: none;
-}
-
 .Sprite{
     width: 50px;
     height: 50px;
@@ -296,14 +277,32 @@ img.site-logo {
     list-style-type: none;
 }
 
-#teamContainer li {
+.teamContainer{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.teamContainer li button img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: inline-flex;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.teamContainer li {
     display: flex;
     border: 2px solid #222;
     flex-direction: column;
     
 }
 
-#teamContainer  li button {
+.teamContainer  li button {
     display: inline-flex;
     height: 50px;   
     width:  50px;
@@ -314,51 +313,29 @@ img.site-logo {
     align-items: center;
     justify-content: center;
     list-style-type: none;
-}
-
-#editBox {
-    padding: 0px;
-    display: flex;
-    background: rgb(220, 220, 220);
-    justify-content: flex-start;
-    border: 3px solid #222;
-    list-style-type: none;
-
 }
 
 #teamBox {
     padding: 0px;
     margin: 0px;
     display: flex;
+    background: rgb(220, 220, 220);
+    justify-content: flex-start;
+    border: 3px solid #222;
     list-style-type: none;
 }
 
-#teamBox li {
-    display: flex;
-    flex-direction: column;
-}
-
-#teamBox div {
-    display: flex;
+#teamBox ul {
+    margin: 0px;
 }
 
 #pokeDisplayStats {
     display: flex;
 }
 
-#teamBox button {
-    border-right: 2px solid #222;
-    display: inline-flex;
-    height: 50px;   
-    width:  50px;
-    background: rgb(220, 220, 220);
-    cursor: pointer;
-    background-image: url('../img/Pokeball.png');
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
+[open] {
+    border-bottom: 0px;
 }
-
 
 /* end of popup CSS */
 
