@@ -24,5 +24,6 @@ def getPokeData():
         return pokedex
 
 @app.route("/Pokemon/<name>")
-def pokemonProfile():
-    return render_template('pokemon.html')
+def pokemonProfile(name):
+    pokemonName = name
+    return render_template('pokemon.html', pokemonName=pokemonName)
