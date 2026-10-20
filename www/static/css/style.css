@@ -2,12 +2,14 @@
    Fonts & Global Styles
    ========================================================================== */
 
-   .press-start-2p-regular {
+/* Defines the custom Press Start 2P font family rules */
+.press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Global body styling including max-width, center alignment, and background image setup */
 body {
     font-family: "Press Start 2P", system-ui;
     max-width: 900px;
@@ -15,7 +17,7 @@ body {
     padding: 0 1rem;
     color: #222;
 
-/* For the background color and image */
+    /* For the background color and image */
     background-image: url('../img/PTB-Background.jpg');
     background-size: cover;
     background-color: black;
@@ -24,10 +26,12 @@ body {
     background-attachment: fixed;
 }
 
+/* Standard heading color override across all levels */
 h1,h2,h3,h4,h5,h6 {
     color: #ff2c2c;
 }
 
+/* Centers main page titles */
 .pageTitle{
     text-align: center;
 }
@@ -36,6 +40,7 @@ h1,h2,h3,h4,h5,h6 {
    Global Layout & Components
    ========================================================================== */
 
+/* Main container card styling used throughout pages */
 .pageBox {
     background-color: #84dbf0;
     padding: 20px;
@@ -47,6 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+/* Styling specifically for the circular site logo image */
 img.site-logo {
     display: flex;
     align-items: center;
@@ -64,6 +70,7 @@ img.site-logo {
    Navigation Bar
    ========================================================================== */
 
+/* Main navigation container bar */
 .nav{
     list-style-type: none;
     margin: 0px;
@@ -75,10 +82,12 @@ img.site-logo {
     background-color: #222;
 }
 
+/* Hidden by default on desktop, used for mobile view */
 .icon{
     display:none;
 }
 
+/* Individual navigation list items container */
 .nav_list{
     display: flex;
     border: 1px solid #222;
@@ -87,6 +96,7 @@ img.site-logo {
     background-color: #84dbf0;
 }
 
+/* Hover effect for desktop navigation links */
 .nav_list:hover {
   display: flex;
   background-color: #65cbe4;
@@ -94,6 +104,7 @@ img.site-logo {
   color: rgb(37, 36, 36);
 }
 
+/* Styling for text links inside the navigation bar */
 .nav_link{
 
     display: flex;
@@ -121,21 +132,25 @@ img.site-logo {
    Homepage & Search Elements
    ========================================================================== */
 
+/* Flex container layout for displaying Pokémon cards on the homepage */
 .homepagePokemon {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
 }
 
+/* Dimensions for individual Pokémon images on the homepage grid */
 .pokemonImage{
     width: 100px;
     height: 100px
 }
 
+/* Background wrapper style for search sections */
 .pokemonSearch {
     background-color: antiquewhite;
 }
 
+/* Layout for search result items */
 .pokeSearch .a {
     float: left;
     display: block;
@@ -150,6 +165,7 @@ img.site-logo {
    Battle Container & Mechanics
    ========================================================================== */
 
+/* Main layout wrapper for the battle screen */
 .BattleContainer {
     padding: 0px;
     display: flex;
@@ -158,12 +174,14 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Outer border container for battle windows and dialogs */
 .BattleWindowContainer{
     border: 5px solid #222;
     padding: 15px;
     list-style-type: none;
 }
 
+/* Styling for active move slots during combat */
 .ActiveMoveA, .ActiveMoveE{
     margin:15px;
     padding: 10px;
@@ -172,11 +190,13 @@ img.site-logo {
     
 }
 
+/* Hover highlight effect for active battle moves */
 .ActiveMoveA:hover, .ActiveMoveE:hover{
     display:flex;
     outline: 5px solid #ffffff;
 }
 
+/* Highlights the currently selected combat move */
 .selectedMove{
     margin:15px;
     padding: 10px;
@@ -185,6 +205,7 @@ img.site-logo {
     outline:5px solid #ff2c2c;
 }
 
+/* Main action button used to trigger turn execution */
 #startTurn{
     display:flex;
     justify-content: center;
@@ -196,6 +217,7 @@ img.site-logo {
     margin-right: 250px;
 }
 
+/* Hover state styling for the turn trigger button */
 #startTurn:hover{
     display:flex;
     outline: 5px solid #ffffff;
@@ -205,6 +227,7 @@ img.site-logo {
    Sprites, Team UI & Popups
    ========================================================================== */
 
+/* Base sizing and positioning for general battle sprites */
 .Sprite{
     width: 50px;
     height: 50px;
@@ -213,6 +236,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Sizing for layered Pokémon sprites */
 .pokeSprite {
     width: 45px;
     height: 45px;
@@ -220,6 +244,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Larger custom sizing for active ally and enemy combat sprites */
 .ASprite, .ESprite{
     width: 200px;
     height: 200px;
@@ -228,6 +253,7 @@ img.site-logo {
     
 }
 
+/* Alignment wrapper for the ally player sprite side */
 .PSpriteA{
     justify-content: flex-start;
     margin: 0px;
@@ -235,6 +261,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Alignment wrapper for the enemy player sprite side */
 .PSpriteE{
     justify-content: flex-end;
     margin: 0px;
@@ -242,6 +269,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Container wrapper for the user's selected Pokémon team list */
 .teamContainer{
     padding: 0px;
     display: flex;
@@ -251,6 +279,7 @@ img.site-logo {
 
 }
 
+/* Flex item rules for individual team list entries */
 .teamContainer li {
     display: flex;
     border: 2px solid #222;
@@ -258,6 +287,7 @@ img.site-logo {
     
 }
 
+/* Pokeball button style inside team slots */
 .teamContainer li button {
     display: inline-flex;
     height: 50px;   
@@ -271,6 +301,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Image scaling inside team Pokeball buttons */
 .teamContainer li button img {
     width: 50px;
     height: 50px;
@@ -280,6 +311,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Main panel background container for roster or team editing */
 #teamBox {
     padding: 0px;
     margin: 0px;
@@ -290,26 +322,31 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Resets list spacing inside team boxes */
 #teamBox ul {
     margin: 0px;
 }
 
+/* Container for displaying stats layouts */
 #pokeDisplayStats {
     display: flex;
 }
 
+/* Popup container box styling */
 #selection-box{
     border: 5px solid #222;
     padding: 15px;
     list-style-type: none;
 }
 
+/* Removes bottom border when details/popup elements are open */
 [open] {
     border-bottom: 0px;
 }
 
 /* end of popup CSS */
 
+/* Text alignment rules for Pokémon names, abilities, and stats info */
 .poke-name,
 .poke-abilities,
 .poke-stats{
@@ -333,6 +370,7 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* Stacks sprite rows horizontally for mobile layout view */
 .PSpriteA,.PSpriteE,.MovesA,.MovesE {
     display: flex;
     flex-direction: row;
@@ -340,18 +378,21 @@ img.site-logo {
 
 /* Change size of battle page images */
 
+/* Scales down battle sprites for smaller screens */
 .ASprite, .ESprite{
     width: 150px;
     height: 150px;
     
 }
 
+/* Adjusts turn button margin spacing for mobile view */
 #startTurn{
     margin: 20px;
 }
 
 /* Hamburger Navigation*/
 
+/* Styles the mobile dropdown toggle icon button */
 .icon{
     display:flex;
     padding: 20px;
@@ -365,18 +406,22 @@ img.site-logo {
 
 }
 
+/* Background adjustment for the nav bar on mobile */
 .nav{
     background-color: #84dbf0;
 }
 
+/* Hides standard desktop navigation list on mobile */
 .nav_list{
     display:none;
 }
 
+/* Hides currentPage indicator on mobile */
 .currentPage{
     display: none;
 }
 
+/* Wrapper styling for the expanded mobile hamburger menu */
 .hamburgerNav{
     list-style-type: none;
     margin: 0px;
@@ -389,6 +434,7 @@ img.site-logo {
     background-color: #222;
 }
     
+/* Column layout for links within the mobile navigation dropdown */
 .nav_list_mobile{
     display: flex;
     flex-direction: column;
@@ -398,16 +444,10 @@ img.site-logo {
     background-color: #84dbf0;
     margin-bottom: 5px;
 }
+
+/* Spacing and layout rules for mobile navigation links */
 .nav_link{
     padding: 20px;
     justify-content: center;
 }
 }
-    
-
-
-
-
-
-
-/* ********** @media queries ********** */
