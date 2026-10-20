@@ -16,7 +16,7 @@ body {
 
 
 /* For the background color and image */
-    background-image: url('../img/space.jpg');
+    background-image: url('../img/PTB-Background.jpg');
     background-size: cover;
     background-color: black;
     background-repeat: no-repeat;
@@ -60,10 +60,7 @@ img.site-logo {
 
 }
 
-img {
-    height: 250px;
-    width: 250px;
-}
+
 
 /* ********Navigation******** */
 .nav{
@@ -130,6 +127,19 @@ img {
 } */
 
 /* ********Navigation******** */
+
+/* Pokemon Databank on Homepage */
+
+.homepagePokemon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.pokemonImage{
+    width: 100px;
+    height: 100px
+}
 
 /* ********Battle Container ******** */
 
