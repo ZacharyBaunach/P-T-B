@@ -340,11 +340,6 @@ img.site-logo {
     list-style-type: none;
 }
 
-/* Removes bottom border when details/popup elements are open */
-[open] {
-    border-bottom: 0px;
-}
-
 /* end of popup CSS */
 
 /* Text alignment rules for Pokémon names, abilities, and stats info */
