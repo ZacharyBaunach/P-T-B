@@ -1,11 +1,8 @@
-
-
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-
 
 body {
     font-family: "Press Start 2P", system-ui;
@@ -13,7 +10,6 @@ body {
     margin: 4rem auto;
     padding: 0 1rem;
     color: #222;
-
 
 /* For the background color and image */
     background-image: url('../img/PTB-Background.jpg');
@@ -35,9 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 
 img.site-logo {
     display: flex;
-
     align-items: center;
-
     height: 150px;
     width: 150px;
     padding: 5px;
@@ -45,8 +39,7 @@ img.site-logo {
     border-radius: 100px;
     outline: 5px solid #222;
     background-color: #84dbf0;
-    
-    
+
 }
 
 .pageBox {
@@ -65,19 +58,12 @@ img.site-logo {
 /* ********Navigation******** */
 .nav{
     list-style-type: none;
-
     margin: 0px;
-
     padding: 0px;
-
     border: 6px solid #ff2c2c;
-
     display: flex;
-
     border-radius: 60px;
-
     justify-content: center;
-    
     background-color: #222;
 
 }
@@ -88,15 +74,10 @@ img.site-logo {
 
 .nav_list{
     display: flex;
-
     border: 1px solid #222;
-
     border-radius: 60px;
-
     align-items: center;
-
     background-color: #84dbf0;
-
 }
 
 .nav_link{
