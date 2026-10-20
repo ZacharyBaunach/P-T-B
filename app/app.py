@@ -23,6 +23,6 @@ def getPokeData():
         pokedex = json.load(file)
         return pokedex
 
-@app.route("/<name>")
+@app.route("/Pokemon/<name>")
 def pokemonProfile():
     return render_template('pokemon.html')

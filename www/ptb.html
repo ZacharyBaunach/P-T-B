@@ -46,19 +46,63 @@
             Eevee is my favorite Pokemon.
         </p>
 
+        <!-- Team Box -->
+        <div id="selection-box">
+            <ul id="teamContainer">
+
+                <li class="entry", id="lst1">
+                    <button id="pokeEntry1", popovertarget="pokemonPopup"></button>
+                </li>
+                <li class="entry", id="lst2">
+                    <button id="pokeEntry2", popovertarget="pokemonPopup"></button>
+                </li>
+                <li class="entry", id="lst3">
+                    <button id="pokeEntry3", popovertarget="pokemonPopup"></button>
+                </li>
+                <li class="entry", id="lst4">
+                    <button id="pokeEntry4", popovertarget="pokemonPopup"></button>
+                </li>
+                <li class="entry", id="lst5">
+                    <button id="pokeEntry5", popovertarget="pokemonPopup"></button>
+                </li>
+                <li class="entry", id="lst6">
+                    <button id="pokeEntry6", popovertarget="pokemonPopup"></button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- this is the popup screen for pokemon selection-->
+        <div popover id="pokemonPopup">
+            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <button onclick="pokeAdd()">Add Pokemon</button>
+
+            <!-- pokemon team edit screen; subject to change-->
+            <div id="editBox">
+
+            </div>
+        </div>
+
+        <!--Pokemon Database-->
+
         <ul class="homepagePokemon">
-            <img class="pokemonImage"
-            src="static/img/pokemon_collection/Bulbasaur.webp" 
-            alt="Bulbasaur"
-            />
-            <img class="pokemonImage"
-            src="static/img/pokemon_collection/Ivysaur.webp" 
-            alt="Ivysaur"
-            />
-            <img class="pokemonImage"
-            src="static/img/pokemon_collection/venusaur.webp" 
-            alt="Venusaur"
-            />
+            <a href="Bulbasaur">
+                <img class="pokemonImage"
+                src="static/img/pokemon_collection/Bulbasaur.webp" 
+                alt="Bulbasaur"
+                />
+            </a>
+            <a>
+                <img class="pokemonImage"
+                src="static/img/pokemon_collection/Ivysaur.webp" 
+                alt="Ivysaur"
+                />
+            </a>
+            <a>
+                <img class="pokemonImage"
+                src="static/img/pokemon_collection/venusaur.webp" 
+                alt="Venusaur"
+                />
+            </a>
             <img class="pokemonImage"
             src="static/img/pokemon_collection/charmander.webp" 
             alt="Charmander"
@@ -97,38 +141,7 @@
             />
         </ul>
 
-        <!-- Team Box -->
-        <div id="selection-box">
-            <ul class="teamContainer">
-
-                <li class="entry", id="lst1">
-                    <button id="pokeEntry1", popovertarget="pokemonPopup"></button>
-                </li>
-                <li class="entry", id="lst2">
-                    <button id="pokeEntry2", popovertarget="pokemonPopup"></button>
-                </li>
-                <li class="entry", id="lst3">
-                    <button id="pokeEntry3", popovertarget="pokemonPopup"></button>
-                </li>
-                <li class="entry", id="lst4">
-                    <button id="pokeEntry4", popovertarget="pokemonPopup"></button>
-                </li>
-                <li class="entry", id="lst5">
-                    <button id="pokeEntry5", popovertarget="pokemonPopup"></button>
-                </li>
-                <li class="entry", id="lst6">
-                    <button id="pokeEntry6", popovertarget="pokemonPopup"></button>
-                </li>
-            </ul>
-        </div>
-
-        <!-- this is the popup screen for pokemon selection-->
-        <div popover id="pokemonPopup">
-            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
-            <button onclick="pokeAdd()">Add Pokemon</button>
-
-            <!-- pokemon team edit screen; subject to change-->
-        </div>
+        
         
         <script>
             console.log("ready to load .js")
@@ -199,6 +212,7 @@
                         }
                 }
             }
+
 
             //loads pokemon data upon page loaded
             let pokeData = [];
