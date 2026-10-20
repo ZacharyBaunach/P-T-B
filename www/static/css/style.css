@@ -269,6 +269,14 @@ img.site-logo {
     list-style-type: none;
 }
 
+/* overlay images in battle.html */
+.entry {
+    display: grid;
+}
+.entry img {
+    grid-area: overlay;
+}
+
 /* Container wrapper for the user's selected Pokémon team list */
 .teamContainer{
     padding: 0px;
