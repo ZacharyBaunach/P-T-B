@@ -13,6 +13,14 @@ body {
     margin: 4rem auto;
     padding: 0 1rem;
     color: #222;
+
+
+/* For the background image */
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1,h2,h3,h4,h5,h6 {
