@@ -32,6 +32,20 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
+/* ==========================================================================
+   Global Layout & Components
+   ========================================================================== */
+
+.pageBox {
+    background-color: #84dbf0;
+    padding: 20px;
+    margin: 30px;
+    border: solid 20px #ff2c2c;
+    border-radius: 60px;
+    height: auto;
+    outline: 5px solid #222;
+
+}
 
 img.site-logo {
     display: flex;
@@ -46,20 +60,10 @@ img.site-logo {
 
 }
 
-.pageBox {
-    background-color: #84dbf0;
-    padding: 20px;
-    margin: 30px;
-    border: solid 20px #ff2c2c;
-    border-radius: 60px;
-    height: auto;
-    outline: 5px solid #222;
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
 
-}
-
-
-
-/* ********Navigation******** */
 .nav{
     list-style-type: none;
     margin: 0px;
@@ -69,7 +73,6 @@ img.site-logo {
     border-radius: 60px;
     justify-content: center;
     background-color: #222;
-
 }
 
 .icon{
@@ -84,16 +87,19 @@ img.site-logo {
     background-color: #84dbf0;
 }
 
+.nav_list:hover {
+  display: flex;
+  background-color: #65cbe4;
+  border-radius: 60px;
+  color: rgb(37, 36, 36);
+}
+
 .nav_link{
-    
+
     display: flex;
-
     color: #222;
-
     text-align: center;
-
     padding: 14px 31px;
-
     text-decoration: none;
 }
 
@@ -111,9 +117,9 @@ img.site-logo {
     outline: -5px solid #ff2c2c;
 } */
 
-/* ********Navigation******** */
-
-/* Pokemon Databank on Homepage */
+/* ==========================================================================
+   Homepage & Search Elements
+   ========================================================================== */
 
 .homepagePokemon {
     display: flex;
@@ -126,7 +132,23 @@ img.site-logo {
     height: 100px
 }
 
-/* ********Battle Container ******** */
+.pokemonSearch {
+    background-color: antiquewhite;
+}
+
+.pokeSearch .a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* ==========================================================================
+   Battle Container & Mechanics
+   ========================================================================== */
 
 .BattleContainer {
     padding: 0px;
@@ -135,6 +157,53 @@ img.site-logo {
     align-items: center;
     list-style-type: none;
 }
+
+.BattleWindowContainer{
+    border: 5px solid #222;
+    padding: 15px;
+    list-style-type: none;
+}
+
+.ActiveMoveA, .ActiveMoveE{
+    margin:15px;
+    padding: 10px;
+    border: 5px solid #222;
+    border-radius: 60px;
+    
+}
+
+.ActiveMoveA:hover, .ActiveMoveE:hover{
+    display:flex;
+    outline: 5px solid #ffffff;
+}
+
+.selectedMove{
+    margin:15px;
+    padding: 10px;
+    border: 5px solid #222;
+    border-radius: 60px;
+    outline:5px solid #ff2c2c;
+}
+
+#startTurn{
+    display:flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #222;
+    border-radius:60px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#startTurn:hover{
+    display:flex;
+    outline: 5px solid #ffffff;
+}
+
+/* ==========================================================================
+   Sprites, Team UI & Popups
+   ========================================================================== */
 
 .Sprite{
     width: 50px;
@@ -161,104 +230,15 @@ img.site-logo {
 
 .PSpriteA{
     justify-content: flex-start;
-
     margin: 0px;
-
     padding: 0px;
-
     list-style-type: none;
 }
 
 .PSpriteE{
     justify-content: flex-end;
-
     margin: 0px;
-
     padding: 0px;
-
-    list-style-type: none;
-}
-
-.ActiveMoveA, .ActiveMoveE{
-    margin:15px;
-
-    padding: 10px;
-
-    border: 5px solid #222;
-
-    border-radius: 60px;
-    
-    
-}
-
-.ActiveMoveA:hover, .ActiveMoveE:hover{
-    display:flex;
-    outline: 5px solid #ffffff;
-}
-
-#startTurn{
-    display:flex;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    border: 5px solid #222;
-    border-radius:60px;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-
-#startTurn:hover{
-    display:flex;
-    outline: 5px solid #ffffff;
-}
-
-.BattleWindowContainer{
-    border: 5px solid #222;
-    padding: 15px;
-    list-style-type: none;
-}
-
-.selectedMove{
-    margin:15px;
-
-    padding: 10px;
-
-    border: 5px solid #222;
-
-    border-radius: 60px;
-
-    outline:5px solid #ff2c2c;
-}
-/* ********Battle Container******** */
-
-/* Pokemon Container */
-
-/* Search funtion */
-.pokemonSearch {
-    background-color: antiquewhite;
-}
-
-.pokeSearch .a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav_list:hover {
-    display:flex;
-    background-color: #65cbe4;
-    border-radius: 60px;
-    color: rgb(37, 36, 36);
-}
-
-/* popup CSS styling */
-#selection-box{
-    border: 5px solid #222;
-    padding: 15px;
     list-style-type: none;
 }
 
@@ -271,15 +251,6 @@ img.site-logo {
 
 }
 
-.teamContainer li button img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    display: inline-flex;
-    padding: 0px;
-    list-style-type: none;
-}
-
 .teamContainer li {
     display: flex;
     border: 2px solid #222;
@@ -287,7 +258,7 @@ img.site-logo {
     
 }
 
-.teamContainer  li button {
+.teamContainer li button {
     display: inline-flex;
     height: 50px;   
     width:  50px;
@@ -297,6 +268,15 @@ img.site-logo {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
+}
+
+.teamContainer li button img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: inline-flex;
+    padding: 0px;
     list-style-type: none;
 }
 
@@ -318,26 +298,20 @@ img.site-logo {
     display: flex;
 }
 
+#selection-box{
+    border: 5px solid #222;
+    padding: 15px;
+    list-style-type: none;
+}
+
 [open] {
     border-bottom: 0px;
 }
 
 /* end of popup CSS */
 
-.poke-name{
-    display: block;
-    height:auto;
-    width:auto;
-    text-align: center;
-}
-
-.poke-abilities{
-    display: block;
-    height:auto;
-    width:auto;
-    text-align: center;
-}
-
+.poke-name,
+.poke-abilities,
 .poke-stats{
     display: block;
     height:auto;
@@ -345,7 +319,9 @@ img.site-logo {
     text-align: center;
 }
 
-/* ********** @media queries ********** */
+/* ==========================================================================
+   Media Queries (Mobile / Responsive)
+   ========================================================================== */
 @media screen and (max-width: 930px) {
 
 /* Changes the direction of the flexboxes to fit better on the page */
@@ -357,36 +333,12 @@ img.site-logo {
     list-style-type: none;
 }
 
-.PSpriteA {
+.PSpriteA,.PSpriteE,.MovesA,.MovesE {
     display: flex;
-
     flex-direction: row;
 }
-
-.PSpriteE{
-    display: flex;
-
-    flex-direction: row;
-}
-
-.MovesA {
-    display: flex;
-
-    flex-direction: row;
-}
-
-.MovesE {
-    display: flex;
-
-    flex-direction: row;
-}
-
-
-
 
 /* Change size of battle page images */
-
-
 
 .ASprite, .ESprite{
     width: 150px;
@@ -398,7 +350,7 @@ img.site-logo {
     margin: 20px;
 }
 
-/* Change Navigation bar into hamburger menu */
+/* Hamburger Navigation*/
 
 .icon{
     display:flex;
@@ -415,13 +367,10 @@ img.site-logo {
 
 .nav{
     background-color: #84dbf0;
-
-
 }
 
 .nav_list{
     display:none;
-
 }
 
 .currentPage{
@@ -430,21 +379,13 @@ img.site-logo {
 
 .hamburgerNav{
     list-style-type: none;
-
     margin: 0px;
-
     padding: 0px;
-
     border: 6px solid #ff2c2c;
-
     display: flex;
-
     border-radius: 40px;
-
     justify-content: center;
-
     flex-direction: column;
-
     background-color: #222;
 }
     
@@ -461,8 +402,6 @@ img.site-logo {
     padding: 20px;
     justify-content: center;
 }
-
-
 }
     
 
