@@ -11,112 +11,87 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-
-    <a href="ptb.html"> 
-            <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
-    </a>
-
-    <div class="pageBox">
-
-    <header>
-        
-        
-
-        <h1 class="pageTitle">
-            Give Feedback
-        </h1>
-
-        <ul id="navigationBar" class ="nav">
-                <li>
-                    <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-                <li class="nav_list"><a class="nav_link" href="ptb.html">Home</a></li>
-                <li class="nav_list"><a class="nav_link" href="battle.html">Battle</a></li>
-                <li class="nav_list"><a class="nav_link" href="about.html">About Us</a></li>
-                <li class="nav_list"><a class="nav_link" href="feedback.html">Give Feedback</a></li>
-            </ul>
-
-        
-    </header>
-
-    
-    <h2>
-        We would love to hear your feedback!
-    </h2>
     <body> 
-        <form action="http://localhost:8080/feedback.html" method="POST" name="myForm" id="myForm"></form>
-            <input name="required" type="hidden" id="required" value="email,realname">
-            <input name="recipients" type="hidden" id="recipients" value="ganbso1@furman.edu">
-            <input name="subject" type="hidden" id="subject" value="Form Results">
-        <p> 
-            <label for="realname">Please enter your name:
-            <input name="realname" type="text" id="realname" size="20">
-            </label>
-        </p>
-        <p>
-            <label for="phone_number">Please enter your phone number:
-            <input name="phone_number" type="number" id="phone_number" size="15">
-            </label>
-        </p>
-        <p>
-            <label for="phone_number">Please enter your email:
-            <input name="phone_number" type="text" id="phone_number" size="15">
-            </label>
-        </p>
-        <p>
-            <label for="comments">Please enter your comments:
-            <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
-            </label>
-        <p>
-            <input type="submit" value="Submit">
-        </p>
+        <a href="ptb.html"> 
+            <img src="static/img/Logo.png" alt="Logo" class="site-logo">
+        </a>
+
+        <div class="pageBox">
+            <header>
+                <h1 class="pageTitle">
+                    Give Feedback
+                </h1>
+
+                <ul id="navigationBar" class="nav">
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav_list"><a class="nav_link" href="ptb.html">Home</a></li>
+                    <li class="nav_list"><a class="nav_link" href="battle.html">Battle</a></li>
+                    <li class="nav_list"><a class="nav_link" href="about.html">About Us</a></li>
+                    <li class="nav_list"><a class="nav_link" href="feedback.html">Give Feedback</a></li>
+                </ul>
+            </header>
+            
+            <h2>
+                We would love to hear your feedback!
+            </h2>
+
+            <!-- Form -->
+            <form action="http://localhost:8080/feedback.html" method="POST" name="myForm" id="myForm">
+                <input name="required" type="hidden" id="required" value="email,realname">
+                <input name="recipients" type="hidden" id="recipients" value="ganbso1@furman.edu">
+                <input name="subject" type="hidden" id="subject" value="Form Results">
+                
+                <p> 
+                    <label for="realname">Please enter your name:
+                    <input name="realname" type="text" id="realname" size="20">
+                    </label>
+                </p>
+                <p>
+                    <label for="phone_number">Please enter your phone number:
+                    <input name="phone_number" type="text" id="phone_number" size="15">
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Please enter your email:
+                    <input name="email" type="text" id="email" size="15">
+                    </label>
+                </p>
+                <p>
+                    <label for="comments">Please enter your comments:
+                    <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+
         <script>
             function collapseMenu(){
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
                 let webPages = document.getElementsByClassName("nav_list");
 
-                //When clicked, changes the class of navigation list
-                //and makes page links appear below hamburger menu.
-
                 if (mobileNav == "nav") {
                     navContainer.className = "hamburgerNav";
-
-                    //This code hates me :( 
-                    //and wouldn't show them all at once with just an 'of' loop.
-                    //The nested loop was the only solution I found to this problem.
-                    
                     for (let i=0; i<4; i++){
-
                         for (const page of webPages){
-
                             page.className = "nav_list_mobile";
-                            
                         }
-
                     }
-                    
-                } 
-
-                //When clicked again, changes the class of navigation bar to
-                //its initial class and hides page links.
-                
-                else {
+                } else {
                     let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
-
                     navContainer.className = "nav";
-
-                        //This code hates me :( 
-                        //and wouldn't show them all at once with just an 'of' loop.
-                        //The nested loop was the only solution I found to this problem.
-
-                        for (let i=0; i<4; i++){
-                            for (const page of hamburgerPages){
-                                page.className = "nav_list"
-                            }
+                    for (let i=0; i<4; i++){
+                        for (const page of hamburgerPages){
+                            page.className = "nav_list"
                         }
+                    }
                 }
             }
         </script>
