@@ -85,9 +85,6 @@
 
             <!-- pokemon team edit screen; subject to change-->
             <!-- Container for detailed stats or editing inside the popup modal -->
-            <div id="editBox">
-
-            </div>
         </div>
 
         <!--Pokemon Database-->
@@ -337,6 +334,9 @@
                 const entry = document.querySelector(`#pokeEntry${num}mirror`)
                 entry.setAttribute('class', 'open')
                 const pokemonEntry = entry.entry
+
+                const editBox = document.querySelector('#editBox')
+                editBox.setAttribute('class', 'open')
 
                 //display pokemon data
                 const textbox = document.createElement("div")
