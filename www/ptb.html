@@ -1,33 +1,48 @@
+<!-- ==========================================================================
+     POKEMON TEAM BUILDER - HOME PAGE
+     Sections: Head | Logo | Page Box (header, intro, team, popup)
+     ========================================================================== -->
 <!DOCTYPE html>
 <html>
-    <!-- Head section containing title, styles, fonts, and meta tags -->
     <head>
+        <!-- Page title shown in the browser tab -->
         <title>
             Pokemon Team Builder
         </title>
+        <!-- Site stylesheet -->
         <link rel="stylesheet" href="static/css/style.css">
+        <!-- Speeds up loading of Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Makes the page fit the device width (mobile friendly) -->
         <meta name="viewport" content="width=device-width">
+        <!-- Pixel-style font used across the site -->
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!-- Font Awesome icons (used for the hamburger menu icon) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
+    <!-- LOGO -->
     <!-- Site logo link wrapping the image banner -->
+    <!-- Clicking the logo takes you back to the home page -->
     <a href="ptb.html"> 
             <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
     </a>
 
    
+    <!-- PAGE BOX -->
     <!-- Main page content box wrapper -->
     <div class="pageBox">
         
     <body>
+        <!-- HEADER AND NAVIGATION -->
         <!-- Page header containing main title and navigation menu -->
         <header>
             
+            <!-- Main page title -->
             <h1 class="pageTitle">Pokemon Team Builder</h1>
 
+            <!-- Navigation bar (class switches between "nav" and "hamburgerNav" in collapseMenu()) -->
             <ul id="navigationBar" class ="nav">
                 <!-- Hamburger menu toggle the navigation links -->
                 <li>
@@ -35,6 +50,7 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </li>
+                <!-- Navigation links: Home, Battle, About Us, Give Feedback -->
                 <li class="nav_list" id="home" ><a class="nav_link" href="ptb.html" onclick="navHighlight(home)">Home</a></li>
                 <li class="nav_list" id="battle" ><a class="nav_link" href="battle.html"  onclick="navHighlight(battle)">Battle</a></li>
                 <li class="nav_list" id="about" ><a class="nav_link" href="about.html"  onclick="navHighlight(about)">About Us</a></li>
@@ -45,970 +61,77 @@
 
             
         </header>
+        <!-- INTRO PARAGRAPH -->
         <!-- Introductory description paragraph and external links -->
         <p>
             Build your team and test their strength against a team of your choosing. start building your team <a href=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.pm8RJVUoR8qkObyqcszZWgHaNK%3Fpid%3DApi&f=1&ipt=70b1f513962aaae733c947dd9019fcf8785c6a1d66b65d8ed93f0b67fb95fbe3&ipo=images>here.</a>
             Eevee is my favorite Pokemon.
         </p>
 
+        <!-- TEAM BOX -->
         <!-- Team Box -->
         <!-- Selection container for the 6 team slot buttons -->
         <div id="selection-box">
             <ul class="teamContainer">
 
+                <!-- Team slots: each button opens the popup (popovertarget) -->
+                <!-- Slot -->
                 <li class="entry", id="lst1">
                     <button id="pokeEntry1", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst2">
                     <button id="pokeEntry2", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst3">
                     <button id="pokeEntry3", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst4">
                     <button id="pokeEntry4", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst5">
                     <button id="pokeEntry5", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst6">
                     <button id="pokeEntry6", popovertarget="pokemonPopup"></button>
                 </li>
             </ul>
         </div>
 
+        <!-- POPUP -->
         <!-- this is the popup screen for pokemon selection-->
         <!-- Popover modal dialog used for searching and adding Pokémon -->
         <div popover id="pokemonPopup">
+            <!-- Search box: calls pokeSearch() as you type -->
             <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <!-- Adds the first search result to the team (calls pokeAdd()) -->
             <button onclick="pokeAdd()">Add Pokemon</button>
 
-            <!-- pokemon team edit screen; subject to change-->
-            <!-- Container for detailed stats or editing inside the popup modal -->
         </div>
 
+        <!-- POKEMON GALLERY -->
         <!--Pokemon Database-->
         <!-- Homepage grid gallery displaying Pokémon collection sprites -->
-
+        <!-- Each sprite links to its profile page: Pokemon/<id> (handled by Flask) -->
         <ul class="homepagePokemon">
-            <a href="Pokemon/1">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/Bulbasaur.webp" 
-                alt="Bulbasaur"
-                />
-            </a>
-            <a href="Pokemon/2">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/Ivysaur.webp" 
-                alt="Ivysaur"
-                />
-            </a>
-            <a href="Pokemon/3">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/venusaur.webp" 
-                alt="Venusaur"
-                />
-            </a>
-            <a href="Pokemon/4">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charmander.webp" 
-                alt="Charmander"
-                />
-            </a>
-            <a href="Pokemon/5">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charmelon.webp" 
-                alt="charmeleon"
-                />
-            </a>
-            <a href="Pokemon/6">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charizard.webp" 
-                alt="Charizard"
-                />
-            </a>
-            <a href="Pokemon/7">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/squirtle.webp" 
-                alt="Squirtle"
-                />
-            </a>
-            <a href="Pokemon/8">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/wartortle.webp" 
-                alt="Wartortle"
-                />
-            </a>
-            <a href="Pokemon/9">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/blastoise.webp" 
-                alt="Blastoise"
-                />
-            </a>
-            <a href="Pokemon/10">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/caterpie.webp" 
-                alt="Caterpie"
-                />
-            </a>
-            <a href="Pokemon/11">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/metapod.webp" 
-                alt="Metapod"
-                />
-            </a>
-            <a href="Pokemon/12">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/butterfee.webp" 
-                alt="Butterfree"
-                />
-            </a>
-            <a href="Pokemon/13">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/weedle.webp" 
-                alt="Weedle"
-                />
-            </a>
-            <a href="Pokemon/14">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/kakuna.webp" 
-                alt="Kakuna"
-                />
-            </a>
-            <a href="Pokemon/15">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/beedrill.webp" 
-                alt="Beedrill"
-                />
-            </a>
-            <a href="Pokemon/16">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgey.webp" 
-                alt="Pidgey"
-                />
-            </a>
-            <a href="Pokemon/17">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgeotto.webp" 
-                alt="Pidgeotto"
-                />
-            </a>
-            <a href="Pokemon/18">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgeot.webp" 
-                alt="Pidgeot"
-                />
-            </a>
-            <a href="Pokemon/19">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/rattata.webp" 
-                alt="Rattata"
-                />
-            </a>
-            <a href="Pokemon/20">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/raticate.webp" 
-                alt="Raticate"
-                />
-            </a>
-            <a href="Pokemon/21">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/spearow.webp" 
-                alt="Spearow"
-                />
-            </a>
-            <a href="Pokemon/22">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/fearow.webp" 
-                alt="Fearow"
-                />
-            </a>
-            <a href="Pokemon/23">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/ekans.webp" 
-                alt="Ekans"
-                />
-            </a>
-            <a href="Pokemon/24">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/arbok.webp" 
-                alt="Arbok"
-                />
-            </a>
-            <a href="Pokemon/25">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pikachu.webp" 
-                alt="Pikachu"
-                />
-            </a>
-            <a href="Pokemon/26">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/raichu.webp" 
-                alt="Raichu"
-                />
-            </a>
-            <a href="Pokemon/27">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/sanshrew.webp" 
-                alt="Sandshrew"
-                />
-            </a>
-            <a href="Pokemon/28">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/sandslash.webp" 
-                alt="Sandslash"
-                />
-            </a>
-            <a href="Pokemon/29">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoran.webp" 
-                alt="NidoranF"
-                />
-            </a>
-            <a href="Pokemon/30">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidorina.webp" 
-                alt="Nidorina"
-                />
-            </a>
-            <a href="Pokemon/31">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoqueen.webp" 
-                alt="Nidoqueen"
-                />
-            </a>
-            <a href="Pokemon/32">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoran.webp" 
-                alt="NidoranM"
-                />
-            </a>
-            <a href="Pokemon/33">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidorino.webp" 
-                alt="Nidorino"
-                />
-            </a>
-            <a href="Pokemon/34">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoking.webp" 
-                alt="Nidoking"
-                />
-            </a>
-            <a href="Pokemon/35">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/clefairy.webp" 
-                alt="Clefairy"
-                />
-            </a>
-            <a href="Pokemon/36">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/clefable.webp" 
-                alt="Clefable"
-                />
-            </a>
-            <a href="Pokemon/37">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/vulpix.webp" 
-                alt="Vulpix"
-                />
-            </a>
-            <a href="Pokemon/38">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/ninetales.webp" 
-                alt="Ninetales"
-                />
-            </a>
-            <a href="Pokemon/39">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/jigglypuff.webp" 
-                alt="Jigglypuff"
-                />
-            </a>
-            <a href="Pokemon/40">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/wigglypuff.webp" 
-                alt="Wigglytuff"
-                />
-            </a>
-            <a href="Pokemon/41">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/Bulbasaur.webp" 
-                alt="Bulbasaur"
-                />
-            </a>
-            <a href="Pokemon/42">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/Ivysaur.webp" 
-                alt="Ivysaur"
-                />
-            </a>
-            <a href="Pokemon/43">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/venusaur.webp" 
-                alt="Venusaur"
-                />
-            </a>
-            <a href="Pokemon/44">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charmander.webp" 
-                alt="Charmander"
-                />
-            </a>
-            <a href="Pokemon/45">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charmelon.webp" 
-                alt="charmeleon"
-                />
-            </a>
-            <a href="Pokemon/46">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charizard.webp" 
-                alt="Charizard"
-                />
-            </a>
-            <a href="Pokemon/47">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/squirtle.webp" 
-                alt="Squirtle"
-                />
-            </a>
-            <a href="Pokemon/48">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/wartortle.webp" 
-                alt="Wartortle"
-                />
-            </a>
-            <a href="Pokemon/49">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/blastoise.webp" 
-                alt="Blastoise"
-                />
-            </a>
-            <a href="Pokemon/50">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/caterpie.webp" 
-                alt="Caterpie"
-                />
-            </a>
-            <a href="Pokemon/51">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/metapod.webp" 
-                alt="Metapod"
-                />
-            </a>
-            <a href="Pokemon/52">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/butterfee.webp" 
-                alt="Butterfree"
-                />
-            </a>
-            <a href="Pokemon/53">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/weedle.webp" 
-                alt="Weedle"
-                />
-            </a>
-            <a href="Pokemon/54">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/kakuna.webp" 
-                alt="Kakuna"
-                />
-            </a>
-            <a href="Pokemon/55">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/beedrill.webp" 
-                alt="Beedrill"
-                />
-            </a>
-            <a href="Pokemon/56">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgey.webp" 
-                alt="Pidgey"
-                />
-            </a>
-            <a href="Pokemon/57">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgeotto.webp" 
-                alt="Pidgeotto"
-                />
-            </a>
-            <a href="Pokemon/58">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgeot.webp" 
-                alt="Pidgeot"
-                />
-            </a>
-            <a href="Pokemon/59">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/rattata.webp" 
-                alt="Rattata"
-                />
-            </a>
-            <a href="Pokemon/60">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/raticate.webp" 
-                alt="Raticate"
-                />
-            </a>
-            <a href="Pokemon/61">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/spearow.webp" 
-                alt="Spearow"
-                />
-            </a>
-            <a href="Pokemon/62">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/fearow.webp" 
-                alt="Fearow"
-                />
-            </a>
-            <a href="Pokemon/63">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/ekans.webp" 
-                alt="Ekans"
-                />
-            </a>
-            <a href="Pokemon/64">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/arbok.webp" 
-                alt="Arbok"
-                />
-            </a>
-            <a href="Pokemon/65">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pikachu.webp" 
-                alt="Pikachu"
-                />
-            </a>
-            <a href="Pokemon/66">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/raichu.webp" 
-                alt="Raichu"
-                />
-            </a>
-            <a href="Pokemon/67">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/sanshrew.webp" 
-                alt="Sandshrew"
-                />
-            </a>
-            <a href="Pokemon/68">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/sandslash.webp" 
-                alt="Sandslash"
-                />
-            </a>
-            <a href="Pokemon/69">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoran.webp" 
-                alt="NidoranF"
-                />
-            </a>
-            <a href="Pokemon/70">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidorina.webp" 
-                alt="Nidorina"
-                />
-            </a>
-            <a href="Pokemon/71">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoqueen.webp" 
-                alt="Nidoqueen"
-                />
-            </a>
-            <a href="Pokemon/72">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoran.webp" 
-                alt="NidoranM"
-                />
-            </a>
-            <a href="Pokemon/73">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidorino.webp" 
-                alt="Nidorino"
-                />
-            </a>
-            <a href="Pokemon/74">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoking.webp" 
-                alt="Nidoking"
-                />
-            </a>
-            <a href="Pokemon/75">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/clefairy.webp" 
-                alt="Clefairy"
-                />
-            </a>
-            <a href="Pokemon/76">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/clefable.webp" 
-                alt="Clefable"
-                />
-            </a>
-            <a href="Pokemon/77">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/vulpix.webp" 
-                alt="Vulpix"
-                />
-            </a>
-            <a href="Pokemon/78">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/ninetales.webp" 
-                alt="Ninetales"
-                />
-            </a>
-            <a href="Pokemon/79">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/jigglypuff.webp" 
-                alt="Jigglypuff"
-                />
-            </a>
-            <a href="Pokemon/80">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/wigglypuff.webp" 
-                alt="Wigglytuff"
-                />
-            </a>
-            <a href="Pokemon/81">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/Bulbasaur.webp" 
-                alt="Bulbasaur"
-                />
-            </a>
-            <a href="Pokemon/82">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/Ivysaur.webp" 
-                alt="Ivysaur"
-                />
-            </a>
-            <a href="Pokemon/83">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/venusaur.webp" 
-                alt="Venusaur"
-                />
-            </a>
-            <a href="Pokemon/84">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charmander.webp" 
-                alt="Charmander"
-                />
-            </a>
-            <a href="Pokemon/85">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charmelon.webp" 
-                alt="charmeleon"
-                />
-            </a>
-            <a href="Pokemon/86">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/charizard.webp" 
-                alt="Charizard"
-                />
-            </a>
-            <a href="Pokemon/87">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/squirtle.webp" 
-                alt="Squirtle"
-                />
-            </a>
-            <a href="Pokemon/88">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/wartortle.webp" 
-                alt="Wartortle"
-                />
-            </a>
-            <a href="Pokemon/89">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/blastoise.webp" 
-                alt="Blastoise"
-                />
-            </a>
-            <a href="Pokemon/90">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/caterpie.webp" 
-                alt="Caterpie"
-                />
-            </a>
-            <a href="Pokemon/91">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/metapod.webp" 
-                alt="Metapod"
-                />
-            </a>
-            <a href="Pokemon/92">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/butterfee.webp" 
-                alt="Butterfree"
-                />
-            </a>
-            <a href="Pokemon/93">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/weedle.webp" 
-                alt="Weedle"
-                />
-            </a>
-            <a href="Pokemon/94">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/kakuna.webp" 
-                alt="Kakuna"
-                />
-            </a>
-            <a href="Pokemon/95">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/beedrill.webp" 
-                alt="Beedrill"
-                />
-            </a>
-            <a href="Pokemon/96">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgey.webp" 
-                alt="Pidgey"
-                />
-            </a>
-            <a href="Pokemon/97">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgeotto.webp" 
-                alt="Pidgeotto"
-                />
-            </a>
-            <a href="Pokemon/98">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pidgeot.webp" 
-                alt="Pidgeot"
-                />
-            </a>
-            <a href="Pokemon/99">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/rattata.webp" 
-                alt="Rattata"
-                />
-            </a>
-            <a href="Pokemon/100">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/raticate.webp" 
-                alt="Raticate"
-                />
-            </a>
-            <a href="Pokemon/101">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/spearow.webp" 
-                alt="Spearow"
-                />
-            </a>
-            <a href="Pokemon/102">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/fearow.webp" 
-                alt="Fearow"
-                />
-            </a>
-            <a href="Pokemon/103">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/ekans.webp" 
-                alt="Ekans"
-                />
-            </a>
-            <a href="Pokemon/104">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/arbok.webp" 
-                alt="Arbok"
-                />
-            </a>
-            <a href="Pokemon/105">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pikachu.webp" 
-                alt="Pikachu"
-                />
-            </a>
-            <a href="Pokemon/106">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/raichu.webp" 
-                alt="Raichu"
-                />
-            </a>
-            <a href="Pokemon/107">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/sanshrew.webp" 
-                alt="Sandshrew"
-                />
-            </a>
-            <a href="Pokemon/108">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/sandslash.webp" 
-                alt="Sandslash"
-                />
-            </a>
-            <a href="Pokemon/109">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoran.webp" 
-                alt="NidoranF"
-                />
-            </a>
-            <a href="Pokemon/110">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidorina.webp" 
-                alt="Nidorina"
-                />
-            </a>
-            <a href="Pokemon/111">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoqueen.webp" 
-                alt="Nidoqueen"
-                />
-            </a>
-            <a href="Pokemon/112">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoran.webp" 
-                alt="NidoranM"
-                />
-            </a>
-            <a href="Pokemon/113">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidorino.webp" 
-                alt="Nidorino"
-                />
-            </a>
-            <a href="Pokemon/114">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/nidoking.webp" 
-                alt="Nidoking"
-                />
-            </a>
-            <a href="Pokemon/115">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/clefairy.webp" 
-                alt="Clefairy"
-                />
-            </a>
-            <a href="Pokemon/116">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/horsea.webp" 
-                alt="Horsea"
-                />
-            </a>
-            <a href="Pokemon/117">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/seadra.webp" 
-                alt="Seadra"
-                />
-            </a>
-            <a href="Pokemon/118">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/goldeen.webp" 
-                alt="Goldeen"
-                />
-            </a>
-            <a href="Pokemon/119">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/seaking.webp" 
-                alt="Seaking"
-                />
-            </a>
-            <a href="Pokemon/120">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/staryu.webp" 
-                alt="Staryu"
-                />
-            </a>
-            <a href="Pokemon/121">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/starmie.webp" 
-                alt="Starmie"
-                />
-            </a>
-            <a href="Pokemon/122">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/mr.mime.webp" 
-                alt="Mr. Mime"
-                />
-            </a>
-            <a href="Pokemon/123">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/scyther.webp" 
-                alt="Scyther"
-                />
-            </a>
-            <a href="Pokemon/124">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/jynx.webp" 
-                alt="Jynx"
-                />
-            </a>
-            <a href="Pokemon/125">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/electabuzz.webp" 
-                alt="Electabuzz"
-                />
-            </a>
-            <a href="Pokemon/126">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/magmar.webp" 
-                alt="Magmar"
-                />
-            </a>
-            <a href="Pokemon/127">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/pinsir.webp" 
-                alt="Pinsir"
-                />
-            </a>
-            <a href="Pokemon/128">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/tauros.webp" 
-                alt="Tauros"
-                />
-            </a>
-            <a href="Pokemon/129">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/magicarp.webp" 
-                alt="Magikarp"
-                />
-            </a>
-            <a href="Pokemon/130">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/130.webp" 
-                alt="Gyarados"
-                />
-            </a>
-            <a href="Pokemon/131">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/131.webp" 
-                alt="Lapras"
-                />
-            </a>
-            <a href="Pokemon/132">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/132.webp" 
-                alt="Ditto"
-                />
-            </a>
-            <a href="Pokemon/133">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/133.webp" 
-                alt="Eevee"
-                />
-            </a>
-            <a href="Pokemon/134">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/134.webp" 
-                alt="Vaporeon"
-                />
-            </a>
-            <a href="Pokemon/135">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0135.webp" 
-                alt="Jolteon"
-                />
-            </a>
-            <a href="Pokemon/136">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0136.webp" 
-                alt="Flareon"
-                />
-            </a>
-            <a href="Pokemon/137">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0137.webp" 
-                alt="Porygon"
-                />
-            </a>
-            <a href="Pokemon/138">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0138.webp" 
-                alt="Omanyte"
-                />
-            </a>
-            <a href="Pokemon/139">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0139.webp" 
-                alt="Omastar"
-                />
-            </a>
-            <a href="Pokemon/140">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0140.webp" 
-                alt="Kabuto"
-                />
-            </a>
-            <a href="Pokemon/141">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0141.webp" 
-                alt="Kabutops"
-                />
-            </a>
-            <a href="Pokemon/142">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0142.webp" 
-                alt="Aerodactyl"
-                />
-            </a>
-            <a href="Pokemon/143">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0143.webp" 
-                alt="Snorlax"
-                />
-            </a>
-            <a href="Pokemon/144">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0144.webp" 
-                alt="Articuno"
-                />
-            </a>
-            <a href="Pokemon/145">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0145.webp" 
-                alt="Zapdos"
-                />
-            </a>
-            <a href="Pokemon/146">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0146.webp" 
-                alt="Moltres"
-                />
-            </a>
-            <a href="Pokemon/147">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0147.webp" 
-                alt="Dratini"
-                />
-            </a>
-            <a href="Pokemon/148">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0148.webp" 
-                alt="Dragonair"
-                />
-            </a>
-            <a href="Pokemon/149">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0149.webp" 
-                alt="Dragonite"
-                />
-            </a>
-            <a href="Pokemon/150">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0150.webp" 
-                alt="Mewtwo"
-                />
-            </a>
-            <a href="Pokemon/151">
-                <img class="pokemonImage"
-                src="static/img/pokemon_collection/0151.webp" 
-                alt="Mew"
-                />
-            </a>
-            
-        </ul>
 
+        </ul>
         
         
+        <!-- SCRIPTS -->
         <!-- Script source inclusion reference placeholder -->
         <script>
             console.log("ready to load .js")
             src="static/js/main.js"
         </script>
 
+        <!-- Main page script -->
         <script>
+            // ---- NAV HIGHLIGHT (unused, commented out) ----
             //Keeps currently sellected page highlighted//
 
             // function navHighlight(currentPage){
@@ -1022,10 +145,12 @@
             // }
 
 
+            // ---- HAMBURGER MENU ----
             //Makes Hamburger menu appear and disappear// 
             
             // Toggles mobile hamburger navigation menu display state and CSS classes
             function collapseMenu(){
+                // Get the nav bar, its current class, and all the nav links
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
                 let webPages = document.getElementsByClassName("nav_list");
@@ -1033,6 +158,7 @@
                 //When clicked, changes the class of navigation list
                 //and makes page links appear below hamburger menu.
 
+                // Menu is currently closed -> open it
                 if (mobileNav == "nav") {
                     navContainer.className = "hamburgerNav";
 
@@ -1057,6 +183,7 @@
                 //When clicked again, changes the class of navigation bar to
                 //its initial class and hides page links.
                 
+                // Menu is currently open -> close it
                 else {
                     let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
 
@@ -1075,20 +202,45 @@
             }
 
 
+            // ---- LOAD POKEMON DATA ----
             //loads pokemon data upon page loaded
+            // Holds the Pokedex data fetched from the server
             let pokeData = [];
             // Event listener waiting for DOM content load to fetch Pokedex database entries
             document.addEventListener('DOMContentLoaded', function() {
                 console.log("Loaded page")
-                getPokeData();
+                pageLoad();
             });
+            // set up page in certain order
+            async function pageLoad() {
+                await getPokeData();
+                setPokeImages();
+            }
             // Asynchronous function to fetch Pokedex data from server endpoint
             async function getPokeData() {
-                const promise = await fetch('/Pokedex')
-                pokeData = await promise.json()
-                console.log(pokeData) 
+                // Request the /Pokedex route from Flask and store the JSON result
+                const promise = await fetch('/Pokedex');
+                pokeData = await promise.json();
             };
+            // Asynchronous function to fetch Pokedex data from server endpoint
+            async function setPokeImages() {
+                // create pokmon templete images/call buttons
+                // grab template container
+                const templateContainer = document.querySelector('.homepagePokemon')
+                // create entrys
+                for (i = 0; i < 151; i++) {
+                    const template = document.createElement('a')
+                    template.setAttribute('href', `Pokemon/${i+1}`)
+                    const image = document.createElement('img')
+                    image.setAttribute('class', 'pokemonImage')
+                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
+                    image.setAttribute('alt', `${pokeData[i].name}`)
+                    template.appendChild(image)
+                    templateContainer.appendChild(template)
+                }
+            }
 
+            // ---- POPUP TEAM MIRROR ----
             //intial clone for popup box (you can change it if you have a better design in mind)
             // Clones main team container to build the popup selection mirror interface
             const teamContainer = document.getElementsByClassName("teamContainer")[0]
@@ -1096,6 +248,7 @@
             clone.id = "teamBox"
             const teambox = document.getElementById("pokemonPopup")
             var i = 1
+            // Loop through each cloned slot and rename/wire it up for the popup
             for (const node of clone.children) {
                 const actionNode = node.children[0]
                 actionNode.removeAttribute('popovertarget')
@@ -1112,13 +265,17 @@
             editbox.setAttribute('class', 'hidden')
             teambox.appendChild(editbox)
 
+            // ---- SEARCH ----
             //search funtion
             // Filters Pokedex data entries based on user input search queries
+            // Holds the Pokemon that match the current search text
             let pokeSearchList = []
             function pokeSearch(){
+                // Read what the user typed
                 const search = document.getElementById('pokeSearch').value
                 pokeSearchList = []
                 console.log(search)
+                // Keep every Pokemon whose name starts with the search text
                 for (const pokemon of pokeData) {
                     if (pokemon["name"].toLowerCase().startsWith(search)) {
                         pokeSearchList.push(pokemon)
@@ -1126,10 +283,13 @@
                 }
             };
 
+            // ---- RESTORE SAVED TEAM ----
             //checks sessionStorage and loads in 'saved' team
             // Restores previously saved team selections from browser session storage on load
+            // index = which slot gets filled next, teamSize = max team members
             let index = 0
             let teamSize = 6
+            // Check each of the 6 slots for saved data and re-add it
             for (i = 1; i <= teamSize ; i++) {
                 if (sessionStorage[i]){
                     pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
@@ -1141,10 +301,12 @@
                 }
             };
             
+            // ---- ADD POKEMON ----
             //adds pokemon data to each pokemon entry
             // Adds selected Pokémon sprites and data attributes into active team slots
             function pokeAdd(){
                 //init pokmeon to add
+                // Uses the first match from the search list
                 const pokemon = pokeSearchList[0]
                 
                 //locating team areas
@@ -1156,12 +318,14 @@
                 const popupTeamArea = popupArea.querySelectorAll(".entry")
 
                 //pokemon image overlay
+                // Build the sprite image for this Pokemon
                 const pokeImage = document.createElement('img')
                 pokeImage.setAttribute('src', `static/img/pokemon_collection/${pokemon["name"]}.webp`)
                 pokeImage.setAttribute('alt', `${pokemon["name"]} sprite`)
                 pokeImage.setAttribute('class', 'pokeSprite')
 
                 //clean up old image
+                // (index % teamSize wraps around so slots cycle 1-6)
                 teamArea[index % teamSize].childNodes[1].innerHTML = ''
                 popupTeamArea[index % teamSize].childNodes[1].innerHTML = ''
 
@@ -1173,18 +337,21 @@
                 sessionStorage.setItem(`${index % teamSize + 1}`, JSON.stringify(pokemon))
                 
                 //update popup
+                // Copy the sprite into the popup's team mirror too
                 const newPokeImage = pokeImage.cloneNode()
                 popupTeamArea[index % teamSize].childNodes[1].entry = pokemon
                 popupTeamArea[index % teamSize].childNodes[1].appendChild(newPokeImage)
+                // Move on to the next slot
                 index += 1
                 console.log(index)
             };
 
+            // ---- DISPLAY ENTRY DETAILS ----
             //this is for display of popup to adjust evs not complete at moment
             // Displays detailed stats or configuration options when clicking a team entry
             function displayEntry(num) {
-
-                const displayContainer = document.getElementById('teamBox')
+                // Find the popup team box and the clicked slot
+                const displayContainer = document.querySelector('#pokemonPopup')
 
                 if (displayContainer.querySelector('.open')) {
                     const prevOpen = displayContainer.querySelector('.open')
@@ -1195,17 +362,16 @@
                 entry.setAttribute('class', 'open')
                 const pokemonEntry = entry.entry
 
-                console.log(entry)
-
-                const editBox = document.querySelector('#editBox')
-                editBox.setAttribute('class', 'open')
-
                 //display pokemon data
+                // Show name, abilities and base stats under the clicked slot
                 const textbox = document.createElement("div")
                 textbox.setAttribute('id','pokeDisplayStats')
                 textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}, base-stats: ${pokemonEntry.baseStats}`
 
                 //updates display stats
+                const editBox = displayContainer.querySelector('#editBox')
+                console.log(editBox)
+                editBox.setAttribute('class', 'open')
                 editBox.innerHTML = ''
                 editBox.appendChild(textbox)
                 console.log(entry)
