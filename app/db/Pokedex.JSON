@@ -167,7 +167,7 @@
    "abilities":["Sand Veil","Sand Rush"]
 },
 {
-    "name":"Nidoran♀",
+    "name":"NidoranF",
     "types":["Poison"],
    "baseStats":{"hp":55, "atk":47,"def":52, "spa":40, "spd":40, "spe":41},
    "abilities":["Poison Point","Rivalry","Hustle"]
@@ -185,7 +185,7 @@
    "abilities":["Poison Point","Rivalry","Sheer Force"]
 },
 {
-    "name":"Nidoran♂",
+    "name":"NidoranM",
     "types":["Poison"],
    "baseStats":{"hp":46, "atk":57,"def":40, "spa":40, "spd":40, "spe":50},
    "abilities":["Poison Point","Rivalry","Hustle"]
@@ -442,12 +442,7 @@
 "baseStats": {"hp": 40, "atk": 80, "def": 100, "spa": 30, "spd": 30, "spe": 20},
 "abilities": ["Rock Head", "Sturdy", "Sand Veil"]
 },
-{
-"name": "Onix",
-"types": ["Rock", "Ground"],
-"baseStats": {"hp": 35, "atk": 45, "def": 160, "spa": 30, "spd": 45, "spe": 70},
-"abilities": ["Rock Head", "Sturdy", "Weak Armor"]
-},
+
 {
 "name": "Graveler",
 "types": ["Rock", "Ground"],
@@ -497,7 +492,7 @@
    "abilities":["Magnet Pull","Sturdy","Analytic"]
 },
 {
-    "name":"Farfetch’d",
+    "name":"Farfetchd",
     "types":["Normal","Flying"],
    "baseStats":{"hp":52, "atk":90,"def":55, "spa":58, "spd":62, "spe":60},
    "abilities":["Keen Eye","Inner Focus","defiant"]
@@ -567,6 +562,12 @@
     "types":["Ghost","Poison"],
    "baseStats":{"hp":60, "atk":65,"def":60, "spa":130, "spd":75, "spe":110},
    "abilities":["Cursed Body"]
+},
+{
+    "name": "Onix",
+    "types": ["Rock", "Ground"],
+    "baseStats": {"hp": 35, "atk": 45, "def": 160, "spa": 30, "spd": 45, "spe": 70},
+    "abilities": ["Rock Head", "Sturdy", "Weak Armor"]
 },
 {
     "name":"Drowzee",
@@ -725,7 +726,7 @@
    "abilities":["Illuminate","Natural Cure","Analytic"]
 },
 {
-    "name":"Mr. Mime",
+    "name":"Mr.Mime",
     "types":["Psychic","Fairy"],
    "baseStats":{"hp":40, "atk":45,"def":65, "spa":100, "spd":120, "spe":90},
    "abilities":["Soundproof","Filter","Technician"]

@@ -137,12 +137,32 @@ img.site-logo {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Dimensions for individual Pokémon images on the homepage grid */
 .pokemonImage{
     width: 150px;
-    height: 150px
+    height: 150px;
+    
+    
+}
+
+/* Button to load more pokemon onto the homepage */
+#loadPkm{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 10px solid #222;
+    border-radius: 60px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 10px;
+}
+
+:hover#loadPkm{
+    outline: 5px solid #ffffff;
 }
 
 
@@ -285,6 +305,7 @@ img.site-logo {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    flex-wrap: wrap;
 
 }
 
@@ -310,6 +331,11 @@ img.site-logo {
     list-style-type: none;
 }
 
+.teamContainer li button.open {
+    border: unset;
+    border: 3px solid rgb(178, 52, 52);
+}
+
 /* Image scaling inside team Pokeball buttons */
 .teamContainer li button img {
     width: 50px;
@@ -323,12 +349,13 @@ img.site-logo {
 #editBox {
     display: none;
     height: 300px;
-    width: 300px;
+    background: rgb(220, 220, 220);
 }
 
 #editBox.open{
     display: unset;
     display: flex;
+    border: 3px solid #222;
 }
 
 /* Main panel background container for roster or team editing */
@@ -351,6 +378,8 @@ img.site-logo {
 /* Container for displaying stats layouts */
 #pokeDisplayStats {
     display: flex;
+    min-width: 0;
+    max-width:min-content;
 }
 
 /* Popup container box styling */
@@ -465,5 +494,16 @@ img.site-logo {
 .nav_link{
     padding: 20px;
     justify-content: center;
+}
+
+/* Removes margins from load pokemon button */
+#loadPkm{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 10px solid #222;
+    border-radius: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 }
