@@ -1,0 +1,748 @@
+{
+  "tackle": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 35
+  },
+  "pound": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 35
+  },
+  "scratch": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 35
+  },
+  "quick_attack": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1
+  },
+  "extreme_speed": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 80,
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 2
+  },
+  "fake_out": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 10,
+    "priority": 3,
+    "effects": {
+      "flinch": "100% (first turn after entering battle)"
+    }
+  },
+  "protect": {
+    "type": "normal",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 10,
+    "priority": 4,
+    "effects": {
+      "protect": "blocks most moves for the turn"
+    }
+  },
+  "quick_guard": {
+    "type": "fighting",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 15,
+    "priority": 3,
+    "effects": {
+      "team_protect": "blocks priority moves for the team"
+    }
+  },
+  "mach_punch": {
+    "type": "fighting",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1
+  },
+  "bullet_punch": {
+    "type": "steel",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1
+  },
+  "ice_shard": {
+    "type": "ice",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1
+  },
+  "aqua_jet": {
+    "type": "water",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 20,
+    "priority": 1
+  },
+  "shadow_sneak": {
+    "type": "ghost",
+    "category": "Physical",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "priority": 1
+  },
+  "sucker_punch": {
+    "type": "dark",
+    "category": "Physical",
+    "base_power": 70,
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 1,
+    "effects": {
+      "conditional": "fails if target is not preparing an attack"
+    }
+  },
+  "thunderclap": {
+    "type": "electric",
+    "category": "Special",
+    "base_power": 70,
+    "accuracy": 100,
+    "pp": 5,
+    "priority": 1,
+    "effects": {
+      "conditional": "fails if target has not selected an attacking move"
+    }
+  },
+  "first_impression": {
+    "type": "bug",
+    "category": "Physical",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effects": {
+      "conditional": "only works on the user's first turn after entering battle"
+    }
+  },
+  "body_slam": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 85,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "paralysis": "30%"
+    }
+  },
+  "flamethrower": {
+    "type": "fire",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "burn": "10%"
+    }
+  },
+  "fire_blast": {
+    "type": "fire",
+    "category": "Special",
+    "base_power": 110,
+    "accuracy": 85,
+    "pp": 5,
+    "effects": {
+      "burn": "10%"
+    }
+  },
+  "water_gun": {
+    "type": "water",
+    "category": "Special",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 25
+  },
+  "surf": {
+    "type": "water",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 15
+  },
+  "hydro_pump": {
+    "type": "water",
+    "category": "Special",
+    "base_power": 110,
+    "accuracy": 80,
+    "pp": 5
+  },
+  "thunderbolt": {
+    "type": "electric",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "paralysis": "10%"
+    }
+  },
+  "thunder": {
+    "type": "electric",
+    "category": "Special",
+    "base_power": 110,
+    "accuracy": 70,
+    "pp": 10,
+    "effects": {
+      "paralysis": "30%",
+      "accuracy_in_rain": "100%"
+    }
+  },
+  "ice_beam": {
+    "type": "ice",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effects": {
+      "freeze": "10%"
+    }
+  },
+  "blizzard": {
+    "type": "ice",
+    "category": "Special",
+    "base_power": 110,
+    "accuracy": 70,
+    "pp": 5,
+    "effects": {
+      "freeze": "10%",
+      "accuracy_in_snow": "100%"
+    }
+  },
+  "vine_whip": {
+    "type": "grass",
+    "category": "Physical",
+    "base_power": 45,
+    "accuracy": 100,
+    "pp": 25
+  },
+  "razor_leaf": {
+    "type": "grass",
+    "category": "Physical",
+    "base_power": 55,
+    "accuracy": 95,
+    "pp": 25,
+    "critical_hit_ratio": 2
+  },
+  "energy_ball": {
+    "type": "grass",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effects": {
+      "target_special_defense_down": "10%"
+    }
+  },
+  "earthquake": {
+    "type": "ground",
+    "category": "Physical",
+    "base_power": 100,
+    "accuracy": 100,
+    "pp": 10
+  },
+  "earth_power": {
+    "type": "ground",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effects": {
+      "target_special_defense_down": "10%"
+    }
+  },
+  "rock_slide": {
+    "type": "rock",
+    "category": "Physical",
+    "base_power": 75,
+    "accuracy": 90,
+    "pp": 10,
+    "effects": {
+      "flinch": "30%"
+    }
+  },
+  "stone_edge": {
+    "type": "rock",
+    "category": "Physical",
+    "base_power": 100,
+    "accuracy": 80,
+    "pp": 5,
+    "critical_hit_ratio": 2
+  },
+  "gust": {
+    "type": "flying",
+    "category": "Special",
+    "base_power": 40,
+    "accuracy": 100,
+    "pp": 35
+  },
+  "air_slash": {
+    "type": "flying",
+    "category": "Special",
+    "base_power": 75,
+    "accuracy": 95,
+    "pp": 15,
+    "effects": {
+      "flinch": "30%"
+    }
+  },
+  "psychic": {
+    "type": "psychic",
+    "category": "Special",
+    "base_power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effects": {
+      "target_special_defense_down": "10%"
+    }
+  },
+  "psyshock": {
+    "type": "psychic",
+    "category": "Special",
+    "base_power": 80,
+    "accuracy": 100,
+    "pp": 10,
+    "damage_uses": "target Defense instead of Special Defense"
+  },
+  "shadow_ball": {
+    "type": "ghost",
+    "category": "Special",
+    "base_power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "target_special_defense_down": "20%"
+    }
+  },
+  "dark_pulse": {
+    "type": "dark",
+    "category": "Special",
+    "base_power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "flinch": "20%"
+    }
+  },
+  "dragon_claw": {
+    "type": "dragon",
+    "category": "Physical",
+    "base_power": 80,
+    "accuracy": 100,
+    "pp": 15
+  },
+  "moonblast": {
+    "type": "fairy",
+    "category": "Special",
+    "base_power": 95,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "target_special_attack_down": "30%"
+    }
+  },
+  "iron_head": {
+    "type": "steel",
+    "category": "Physical",
+    "base_power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "flinch": "30%"
+    }
+  },
+  "close_combat": {
+    "type": "fighting",
+    "category": "Physical",
+    "base_power": 120,
+    "accuracy": 100,
+    "pp": 5,
+    "effects": {
+      "user_defense_down": 1,
+      "user_special_defense_down": 1
+    }
+  },
+  "drain_punch": {
+    "type": "fighting",
+    "category": "Physical",
+    "base_power": 75,
+    "accuracy": 100,
+    "pp": 10,
+    "drain": [
+      1,
+      2
+    ]
+  },
+  "brick_break": {
+    "type": "fighting",
+    "category": "Physical",
+    "base_power": 75,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "breaks": "Reflect, Light Screen, and Aurora Veil before damage"
+    }
+  },
+  "u_turn": {
+    "type": "bug",
+    "category": "Physical",
+    "base_power": 70,
+    "accuracy": 100,
+    "pp": 20,
+    "effects": {
+      "switch_user": "switches user out after damage"
+    }
+  },
+  "volt_switch": {
+    "type": "electric",
+    "category": "Special",
+    "base_power": 70,
+    "accuracy": 100,
+    "pp": 20,
+    "effects": {
+      "switch_user": "switches user out after damage"
+    }
+  },
+  "flip_turn": {
+    "type": "water",
+    "category": "Physical",
+    "base_power": 60,
+    "accuracy": 100,
+    "pp": 20,
+    "effects": {
+      "switch_user": "switches user out after damage"
+    }
+  },
+  "knock_off": {
+    "type": "dark",
+    "category": "Physical",
+    "base_power": 65,
+    "accuracy": 100,
+    "pp": 20,
+    "effects": {
+      "remove_item": "removes target's removable item; increased power if target holds an item"
+    }
+  },
+  "rapid_spin": {
+    "type": "normal",
+    "category": "Physical",
+    "base_power": 50,
+    "accuracy": 100,
+    "pp": 40,
+    "effects": {
+      "user_speed_up": 1,
+      "clears": "entry hazards and certain trapping effects on user's side"
+    }
+  },
+  "toxic": {
+    "type": "poison",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 90,
+    "pp": 10,
+    "effects": {
+      "status": "badly poisons target"
+    }
+  },
+  "will_o_wisp": {
+    "type": "fire",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 85,
+    "pp": 15,
+    "effects": {
+      "status": "burn"
+    }
+  },
+  "thunder_wave": {
+    "type": "electric",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 90,
+    "pp": 20,
+    "effects": {
+      "status": "paralysis"
+    }
+  },
+  "spore": {
+    "type": "grass",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effects": {
+      "status": "sleep"
+    }
+  },
+  "swords_dance": {
+    "type": "normal",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "user_attack_up": 2
+    }
+  },
+  "nasty_plot": {
+    "type": "dark",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "user_special_attack_up": 2
+    }
+  },
+  "calm_mind": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "user_special_attack_up": 1,
+      "user_special_defense_up": 1
+    }
+  },
+  "dragon_dance": {
+    "type": "dragon",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "user_attack_up": 1,
+      "user_speed_up": 1
+    }
+  },
+  "agility": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 30,
+    "effects": {
+      "user_speed_up": 2
+    }
+  },
+  "iron_defense": {
+    "type": "steel",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 15,
+    "effects": {
+      "user_defense_up": 2
+    }
+  },
+  "amnesia": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "user_special_defense_up": 2
+    }
+  },
+  "tail_whip": {
+    "type": "normal",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 100,
+    "pp": 30,
+    "effects": {
+      "target_defense_down": 1
+    }
+  },
+  "growl": {
+    "type": "normal",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 100,
+    "pp": 40,
+    "effects": {
+      "target_attack_down": 1
+    }
+  },
+  "charm": {
+    "type": "fairy",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 100,
+    "pp": 20,
+    "effects": {
+      "target_attack_down": 2
+    }
+  },
+  "fake_tears": {
+    "type": "dark",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 100,
+    "pp": 20,
+    "effects": {
+      "target_special_defense_down": 2
+    }
+  },
+  "leer": {
+    "type": "normal",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 100,
+    "pp": 30,
+    "effects": {
+      "target_defense_down": 1
+    }
+  },
+  "recover": {
+    "type": "normal",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 5,
+    "healing": [
+      1,
+      2
+    ]
+  },
+  "roost": {
+    "type": "flying",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 5,
+    "healing": [
+      1,
+      2
+    ],
+    "effects": {
+      "temporary_type_change": "user loses Flying type for the remainder of the turn if it was Flying-type"
+    }
+  },
+  "rest": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 5,
+    "healing": "fully restores HP; user falls asleep for 2 turns"
+  },
+  "leech_seed": {
+    "type": "grass",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": 90,
+    "pp": 10,
+    "effects": {
+      "drain": "target loses 1/8 max HP each turn; user heals by same amount"
+    }
+  },
+  "stealth_rock": {
+    "type": "rock",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "hazard": "damages opposing Pokémon switching in based on Rock effectiveness"
+    }
+  },
+  "spikes": {
+    "type": "ground",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "hazard": "damages opposing grounded Pokémon switching in; stacks up to 3 layers"
+    }
+  },
+  "light_screen": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 30,
+    "effects": {
+      "team_screen": "reduces special damage to user's side for 5 turns"
+    }
+  },
+  "reflect": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 20,
+    "effects": {
+      "team_screen": "reduces physical damage to user's side for 5 turns"
+    }
+  },
+  "rain_dance": {
+    "type": "water",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 5,
+    "effects": {
+      "weather": "rain for 5 turns"
+    }
+  },
+  "sunny_day": {
+    "type": "fire",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 5,
+    "effects": {
+      "weather": "sun for 5 turns"
+    }
+  },
+  "trick_room": {
+    "type": "psychic",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 5,
+    "priority": -7,
+    "effects": {
+      "field": "reverses Speed order for 5 turns"
+    }
+  },
+  "tailwind": {
+    "type": "flying",
+    "category": "Status",
+    "base_power": null,
+    "accuracy": null,
+    "pp": 15,
+    "effects": {
+      "team_speed": "doubles Speed of user's side for 4 turns"
+    }
+  }
+}

@@ -75,27 +75,27 @@
             <ul class="teamContainer">
 
                 <!-- Team slots: each button opens the popup (popovertarget) -->
-                <!-- Slot -->
+                <!-- Slots -->
                 <li class="entry", id="lst1">
                     <button id="pokeEntry1", popovertarget="pokemonPopup"></button>
                 </li>
-                <!-- Slot -->
+
                 <li class="entry", id="lst2">
                     <button id="pokeEntry2", popovertarget="pokemonPopup"></button>
                 </li>
-                <!-- Slot -->
+
                 <li class="entry", id="lst3">
                     <button id="pokeEntry3", popovertarget="pokemonPopup"></button>
                 </li>
-                <!-- Slot -->
+
                 <li class="entry", id="lst4">
                     <button id="pokeEntry4", popovertarget="pokemonPopup"></button>
                 </li>
-                <!-- Slot -->
+
                 <li class="entry", id="lst5">
                     <button id="pokeEntry5", popovertarget="pokemonPopup"></button>
                 </li>
-                <!-- Slot -->
+
                 <li class="entry", id="lst6">
                     <button id="pokeEntry6", popovertarget="pokemonPopup"></button>
                 </li>
@@ -154,7 +154,7 @@
             //Makes Hamburger menu appear and disappear// 
             
             // Toggles mobile hamburger navigation menu display state and CSS classes
-            function collapseMenu(){
+            function collapseMenu(){ 
                 // Get the nav bar, its current class, and all the nav links
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
@@ -270,7 +270,7 @@
         }
 
             // ---- POPUP TEAM MIRROR ----
-            //intial clone for popup box (you can change it if you have a better design in mind)
+            //intial clone for popup box
             // Clones main team container to build the popup selection mirror interface
             const teamContainer = document.getElementsByClassName("teamContainer")[0]
             const clone = teamContainer.cloneNode(true)
@@ -393,17 +393,30 @@
 
                 //display pokemon data
                 // Show name, abilities and base stats under the clicked slot
+
                 const textbox = document.createElement("div")
                 textbox.setAttribute('id','pokeDisplayStats')
-                textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}, base-stats: ${pokemonEntry.baseStats}`
-
-                //updates display stats
+                textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}`
+                const statBox = document.createElement("div")
+                statBox.setAttribute('id',"statSliderContainer")
                 const editBox = displayContainer.querySelector('#editBox')
-                console.log(editBox)
-                editBox.setAttribute('class', 'open')
                 editBox.innerHTML = ''
+
+                const statList = ['hp', 'atk', 'def', 'spa', 'spd', 'spe']
+                for (stat of statList) {
+                    const statSlider = document.createElement("input")
+
+                    const baseStatValue = pokemonEntry.baseStats[stat]
+                    console.log(pokemonEntry)
+                    statSlider.setAttribute('type', 'range')
+                    statSlider.setAttribute('class', 'statSlider')
+                    statSlider.setAttribute('id', stat)
+                    statSlider.setAttribute('min', baseStatValue)
+                    statSlider.setAttribute('max', baseStatValue+30)
+                    editBox.appendChild(statSlider)
+                }
+                editBox.setAttribute('class', 'open')
                 editBox.appendChild(textbox)
-                console.log(entry)
             }
         
         </script>
