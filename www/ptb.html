@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!-- Head section containing title, styles, fonts, and meta tags -->
     <head>
         <title>
             Pokemon Team Builder
@@ -12,14 +13,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
+    <!-- Site logo link wrapping the image banner -->
     <a href="ptb.html"> 
             <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
     </a>
 
    
+    <!-- Main page content box wrapper -->
     <div class="pageBox">
         
     <body>
+        <!-- Page header containing main title and navigation menu -->
         <header>
             
             <h1 class="pageTitle">Pokemon Team Builder</h1>
@@ -41,14 +45,16 @@
 
             
         </header>
+        <!-- Introductory description paragraph and external links -->
         <p>
             Build your team and test their strength against a team of your choosing. start building your team <a href=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.pm8RJVUoR8qkObyqcszZWgHaNK%3Fpid%3DApi&f=1&ipt=70b1f513962aaae733c947dd9019fcf8785c6a1d66b65d8ed93f0b67fb95fbe3&ipo=images>here.</a>
             Eevee is my favorite Pokemon.
         </p>
 
         <!-- Team Box -->
+        <!-- Selection container for the 6 team slot buttons -->
         <div id="selection-box">
-            <ul id="teamContainer">
+            <ul class="teamContainer">
 
                 <li class="entry", id="lst1">
                     <button id="pokeEntry1", popovertarget="pokemonPopup"></button>
@@ -72,17 +78,20 @@
         </div>
 
         <!-- this is the popup screen for pokemon selection-->
+        <!-- Popover modal dialog used for searching and adding Pokémon -->
         <div popover id="pokemonPopup">
             <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
             <button onclick="pokeAdd()">Add Pokemon</button>
 
             <!-- pokemon team edit screen; subject to change-->
+            <!-- Container for detailed stats or editing inside the popup modal -->
             <div id="editBox">
 
             </div>
         </div>
 
         <!--Pokemon Database-->
+        <!-- Homepage grid gallery displaying Pokémon collection sprites -->
 
         <ul class="homepagePokemon">
             <a href="Pokemon/1">
@@ -996,6 +1005,7 @@
 
         
         
+        <!-- Script source inclusion reference placeholder -->
         <script>
             console.log("ready to load .js")
             src="static/js/main.js"
@@ -1017,6 +1027,7 @@
 
             //Makes Hamburger menu appear and disappear// 
             
+            // Toggles mobile hamburger navigation menu display state and CSS classes
             function collapseMenu(){
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
@@ -1052,7 +1063,7 @@
                 else {
                     let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
 
-                    navContainer.className = "nav";
+                        navContainer.className = "nav";
 
                         //This code hates me :( 
                         //and wouldn't show them all at once with just an 'of' loop.
@@ -1069,10 +1080,12 @@
 
             //loads pokemon data upon page loaded
             let pokeData = [];
+            // Event listener waiting for DOM content load to fetch Pokedex database entries
             document.addEventListener('DOMContentLoaded', function() {
                 console.log("Loaded page")
                 getPokeData();
             });
+            // Asynchronous function to fetch Pokedex data from server endpoint
             async function getPokeData() {
                 const promise = await fetch('/Pokedex')
                 pokeData = await promise.json()
@@ -1080,6 +1093,7 @@
             };
 
             //intial clone for popup box (you can change it if you have a better design in mind)
+            // Clones main team container to build the popup selection mirror interface
             const teamContainer = document.getElementsByClassName("teamContainer")[0]
             const clone = teamContainer.cloneNode(true)
             clone.id = "teamBox"
@@ -1090,13 +1104,19 @@
                 actionNode.removeAttribute('popovertarget')
                 actionNode.setAttribute('id', `pokeEntry${i}mirror`)
                 actionNode.setAttribute('onclick', `displayEntry(${i})`)
-                actionNode.setAttribute('state', 'closed')
+                actionNode.setAttribute('class', 'closed')
                 i += 1
             }
             //append selection box mirror to popup
             teambox.appendChild(clone)
+            //then add hidden editbox
+            const editbox = document.createElement('div')
+            editbox.setAttribute('id', 'editBox')
+            editbox.setAttribute('class', 'hidden')
+            teambox.appendChild(editbox)
 
             //search funtion
+            // Filters Pokedex data entries based on user input search queries
             let pokeSearchList = []
             function pokeSearch(){
                 const search = document.getElementById('pokeSearch').value
@@ -1110,6 +1130,7 @@
             };
 
             //checks sessionStorage and loads in 'saved' team
+            // Restores previously saved team selections from browser session storage on load
             let index = 0
             let teamSize = 6
             for (i = 1; i <= teamSize ; i++) {
@@ -1124,6 +1145,7 @@
             };
             
             //adds pokemon data to each pokemon entry
+            // Adds selected Pokémon sprites and data attributes into active team slots
             function pokeAdd(){
                 //init pokmeon to add
                 const pokemon = pokeSearchList[0]
@@ -1162,11 +1184,11 @@
             };
 
             //this is for display of popup to adjust evs not complete at moment
+            // Displays detailed stats or configuration options when clicking a team entry
             function displayEntry(num) {
                 const displayContainer = document.getElementById('teamBox')
                 const entry = document.querySelector(`#pokeEntry${num}mirror`)
-                console.log(entry)
-                entry.setAttribute('state', 'open')
+                entry.setAttribute('class', 'open')
                 const pokemonEntry = entry.entry
 
                 //display pokemon data
