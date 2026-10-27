@@ -1,33 +1,48 @@
+<!-- ==========================================================================
+     POKEMON TEAM BUILDER - HOME PAGE
+     Sections: Head | Logo | Page Box (header, intro, team, popup)
+     ========================================================================== -->
 <!DOCTYPE html>
 <html>
-    <!-- Head section containing title, styles, fonts, and meta tags -->
     <head>
+        <!-- Page title shown in the browser tab -->
         <title>
             Pokemon Team Builder
         </title>
+        <!-- Site stylesheet -->
         <link rel="stylesheet" href="static/css/style.css">
+        <!-- Speeds up loading of Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Makes the page fit the device width (mobile friendly) -->
         <meta name="viewport" content="width=device-width">
+        <!-- Pixel-style font used across the site -->
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!-- Font Awesome icons (used for the hamburger menu icon) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
+    <!-- LOGO -->
     <!-- Site logo link wrapping the image banner -->
+    <!-- Clicking the logo takes you back to the home page -->
     <a href="ptb.html"> 
             <img src="static/img/Logo.png" alt="Logo" class="site-logo" >
     </a>
 
    
+    <!-- PAGE BOX -->
     <!-- Main page content box wrapper -->
     <div class="pageBox">
         
     <body>
+        <!-- HEADER AND NAVIGATION -->
         <!-- Page header containing main title and navigation menu -->
         <header>
             
+            <!-- Main page title -->
             <h1 class="pageTitle">Pokemon Team Builder</h1>
 
+            <!-- Navigation bar (class switches between "nav" and "hamburgerNav" in collapseMenu()) -->
             <ul id="navigationBar" class ="nav">
                 <!-- Hamburger menu toggle the navigation links -->
                 <li>
@@ -35,6 +50,7 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </li>
+                <!-- Navigation links: Home, Battle, About Us, Give Feedback -->
                 <li class="nav_list" id="home" ><a class="nav_link" href="ptb.html" onclick="navHighlight(home)">Home</a></li>
                 <li class="nav_list" id="battle" ><a class="nav_link" href="battle.html"  onclick="navHighlight(battle)">Battle</a></li>
                 <li class="nav_list" id="about" ><a class="nav_link" href="about.html"  onclick="navHighlight(about)">About Us</a></li>
@@ -45,42 +61,54 @@
 
             
         </header>
+        <!-- INTRO PARAGRAPH -->
         <!-- Introductory description paragraph and external links -->
         <p>
             Build your team and test their strength against a team of your choosing. start building your team <a href=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.pm8RJVUoR8qkObyqcszZWgHaNK%3Fpid%3DApi&f=1&ipt=70b1f513962aaae733c947dd9019fcf8785c6a1d66b65d8ed93f0b67fb95fbe3&ipo=images>here.</a>
             Eevee is my favorite Pokemon.
         </p>
 
+        <!-- TEAM BOX -->
         <!-- Team Box -->
         <!-- Selection container for the 6 team slot buttons -->
         <div id="selection-box">
             <ul class="teamContainer">
 
+                <!-- Team slots: each button opens the popup (popovertarget) -->
+                <!-- Slot -->
                 <li class="entry", id="lst1">
                     <button id="pokeEntry1", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst2">
                     <button id="pokeEntry2", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst3">
                     <button id="pokeEntry3", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst4">
                     <button id="pokeEntry4", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst5">
                     <button id="pokeEntry5", popovertarget="pokemonPopup"></button>
                 </li>
+                <!-- Slot -->
                 <li class="entry", id="lst6">
                     <button id="pokeEntry6", popovertarget="pokemonPopup"></button>
                 </li>
             </ul>
         </div>
 
+        <!-- POPUP -->
         <!-- this is the popup screen for pokemon selection-->
         <!-- Popover modal dialog used for searching and adding Pokémon -->
         <div popover id="pokemonPopup">
+            <!-- Search box: calls pokeSearch() as you type -->
             <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <!-- Adds the first search result to the team (calls pokeAdd()) -->
             <button onclick="pokeAdd()">Add Pokemon</button>
 
             <!-- pokemon team edit screen; subject to change-->
@@ -90,10 +118,14 @@
             </div>
         </div>
 
+        <!-- POKEMON GALLERY -->
         <!--Pokemon Database-->
         <!-- Homepage grid gallery displaying Pokémon collection sprites -->
+        <!-- Each sprite links to its profile page: Pokemon/<id> (handled by Flask) -->
 
         <ul class="homepagePokemon">
+
+            <!-- Entries -->
             <a href="Pokemon/1">
                 <img class="pokemonImage"
                 src="static/img/pokemon_collection/Bulbasaur.webp" 
@@ -334,6 +366,8 @@
                 alt="Wigglytuff"
                 />
             </a>
+
+            <!-- Entries -->
             <a href="Pokemon/41">
                 <img class="pokemonImage"
                 src="static/img/pokemon_collection/zubat.webp" 
@@ -574,6 +608,8 @@
                 alt="Slowpoke"
                 />
             </a>
+
+            <!-- Entries -->
             <a href="Pokemon/81">
                 <img class="pokemonImage"
                 src="static/img/pokemon_collection/slowbro.webp" 
@@ -784,6 +820,8 @@
                 alt="Kangaskhan"
                 />
             </a>
+
+            <!-- Entries -->
             <a href="Pokemon/116">
                 <img class="pokemonImage"
                 src="static/img/pokemon_collection/horsea.webp" 
@@ -1005,13 +1043,16 @@
 
         
         
+        <!-- SCRIPTS -->
         <!-- Script source inclusion reference placeholder -->
         <script>
             console.log("ready to load .js")
             src="static/js/main.js"
         </script>
 
+        <!-- Main page script -->
         <script>
+            // ---- NAV HIGHLIGHT (unused, commented out) ----
             //Keeps currently sellected page highlighted//
 
             // function navHighlight(currentPage){
@@ -1025,10 +1066,12 @@
             // }
 
 
+            // ---- HAMBURGER MENU ----
             //Makes Hamburger menu appear and disappear// 
             
             // Toggles mobile hamburger navigation menu display state and CSS classes
             function collapseMenu(){
+                // Get the nav bar, its current class, and all the nav links
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
                 let webPages = document.getElementsByClassName("nav_list");
@@ -1036,6 +1079,7 @@
                 //When clicked, changes the class of navigation list
                 //and makes page links appear below hamburger menu.
 
+                // Menu is currently closed -> open it
                 if (mobileNav == "nav") {
                     navContainer.className = "hamburgerNav";
 
@@ -1060,6 +1104,7 @@
                 //When clicked again, changes the class of navigation bar to
                 //its initial class and hides page links.
                 
+                // Menu is currently open -> close it
                 else {
                     let hamburgerPages = document.getElementsByClassName("nav_list_mobile")
 
@@ -1078,7 +1123,9 @@
             }
 
 
+            // ---- LOAD POKEMON DATA ----
             //loads pokemon data upon page loaded
+            // Holds the Pokedex data fetched from the server
             let pokeData = [];
             // Event listener waiting for DOM content load to fetch Pokedex database entries
             document.addEventListener('DOMContentLoaded', function() {
@@ -1087,11 +1134,13 @@
             });
             // Asynchronous function to fetch Pokedex data from server endpoint
             async function getPokeData() {
+                // Request the /Pokedex route from Flask and store the JSON result
                 const promise = await fetch('/Pokedex')
                 pokeData = await promise.json()
                 console.log(pokeData) 
             };
 
+            // ---- POPUP TEAM MIRROR ----
             //intial clone for popup box (you can change it if you have a better design in mind)
             // Clones main team container to build the popup selection mirror interface
             const teamContainer = document.getElementsByClassName("teamContainer")[0]
@@ -1099,6 +1148,7 @@
             clone.id = "teamBox"
             const teambox = document.getElementById("pokemonPopup")
             var i = 1
+            // Loop through each cloned slot and rename/wire it up for the popup
             for (const node of clone.children) {
                 const actionNode = node.children[0]
                 actionNode.removeAttribute('popovertarget')
@@ -1115,13 +1165,17 @@
             editbox.setAttribute('class', 'hidden')
             teambox.appendChild(editbox)
 
+            // ---- SEARCH ----
             //search funtion
             // Filters Pokedex data entries based on user input search queries
+            // Holds the Pokemon that match the current search text
             let pokeSearchList = []
             function pokeSearch(){
+                // Read what the user typed
                 const search = document.getElementById('pokeSearch').value
                 pokeSearchList = []
                 console.log(search)
+                // Keep every Pokemon whose name starts with the search text
                 for (const pokemon of pokeData) {
                     if (pokemon["name"].toLowerCase().startsWith(search)) {
                         pokeSearchList.push(pokemon)
@@ -1129,10 +1183,13 @@
                 }
             };
 
+            // ---- RESTORE SAVED TEAM ----
             //checks sessionStorage and loads in 'saved' team
             // Restores previously saved team selections from browser session storage on load
+            // index = which slot gets filled next, teamSize = max team members
             let index = 0
             let teamSize = 6
+            // Check each of the 6 slots for saved data and re-add it
             for (i = 1; i <= teamSize ; i++) {
                 if (sessionStorage[i]){
                     pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
@@ -1144,10 +1201,12 @@
                 }
             };
             
+            // ---- ADD POKEMON ----
             //adds pokemon data to each pokemon entry
             // Adds selected Pokémon sprites and data attributes into active team slots
             function pokeAdd(){
                 //init pokmeon to add
+                // Uses the first match from the search list
                 const pokemon = pokeSearchList[0]
                 
                 //locating team areas
@@ -1159,12 +1218,14 @@
                 const popupTeamArea = popupArea.querySelectorAll(".entry")
 
                 //pokemon image overlay
+                // Build the sprite image for this Pokemon
                 const pokeImage = document.createElement('img')
                 pokeImage.setAttribute('src', `static/img/pokemon_collection/${pokemon["name"]}.webp`)
                 pokeImage.setAttribute('alt', `${pokemon["name"]} sprite`)
                 pokeImage.setAttribute('class', 'pokeSprite')
 
                 //clean up old image
+                // (index % teamSize wraps around so slots cycle 1-6)
                 teamArea[index % teamSize].childNodes[1].innerHTML = ''
                 popupTeamArea[index % teamSize].childNodes[1].innerHTML = ''
 
@@ -1177,21 +1238,26 @@
                 sessionStorage.setItem(`${index % teamSize + 1}`, JSON.stringify(pokemon))
                 
                 //update popup
+                // Copy the sprite into the popup's team mirror too
                 const newPokeImage = pokeImage.cloneNode()
                 popupTeamArea[index % teamSize].childNodes[1].appendChild(newPokeImage)
+                // Move on to the next slot
                 index += 1
                 console.log(index)
             };
 
+            // ---- DISPLAY ENTRY DETAILS ----
             //this is for display of popup to adjust evs not complete at moment
             // Displays detailed stats or configuration options when clicking a team entry
             function displayEntry(num) {
+                // Find the popup team box and the clicked slot
                 const displayContainer = document.getElementById('teamBox')
                 const entry = document.querySelector(`#pokeEntry${num}mirror`)
                 entry.setAttribute('class', 'open')
                 const pokemonEntry = entry.entry
 
                 //display pokemon data
+                // Show name, abilities and base stats under the clicked slot
                 const textbox = document.createElement("div")
                 textbox.setAttribute('id','pokeDisplayStats')
                 textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}, base-stats: ${pokemonEntry.baseStats}`

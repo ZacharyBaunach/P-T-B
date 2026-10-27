@@ -319,6 +319,17 @@ img.site-logo {
     list-style-type: none;
 }
 
+#editBox {
+    display: none;
+    height: 300px;
+    width: 300px;
+}
+
+#editBox.open{
+    display: unset;
+    display: flex;
+}
+
 /* Main panel background container for roster or team editing */
 #teamBox {
     padding: 0px;
