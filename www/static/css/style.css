@@ -141,9 +141,10 @@ img.site-logo {
 
 /* Dimensions for individual Pokémon images on the homepage grid */
 .pokemonImage{
-    width: 100px;
-    height: 100px
+    width: 150px;
+    height: 150px
 }
+
 
 /* Background wrapper style for search sections */
 .pokemonSearch {
