@@ -131,7 +131,7 @@
 
         <!-- Main page script -->
         <script>
-            // ---- NAV HIGHLIGHT (unused, commented out) ----
+            // ---- NAV HIGHLIGHT----
             //Keeps currently sellected page highlighted//
 
             // function navHighlight(currentPage){
@@ -149,7 +149,7 @@
             //Makes Hamburger menu appear and disappear// 
             
             // Toggles mobile hamburger navigation menu display state and CSS classes
-            function collapseMenu(){
+            function collapseMenu(){ 
                 // Get the nav bar, its current class, and all the nav links
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
@@ -241,7 +241,7 @@
             }
 
             // ---- POPUP TEAM MIRROR ----
-            //intial clone for popup box (you can change it if you have a better design in mind)
+            //intial clone for popup box
             // Clones main team container to build the popup selection mirror interface
             const teamContainer = document.getElementsByClassName("teamContainer")[0]
             const clone = teamContainer.cloneNode(true)
