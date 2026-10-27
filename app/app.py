@@ -23,6 +23,13 @@ def getPokeData():
         pokedex = json.load(file)
         return pokedex
 
-@app.route("/Pokemon/<name>")
-def pokemonProfile():
-    return render_template('pokemon.html')
+@app.route("/Pokemon/<id>")
+def pokemonProfile(id):
+    with open('db/Pokedex.json', 'r', encoding='utf-8') as file:
+        pokedex = json.load(file)
+    
+    pd = pokedex[int(id)-1]
+    
+
+    
+    return render_template('pokemon.html', pokedex=pd)
