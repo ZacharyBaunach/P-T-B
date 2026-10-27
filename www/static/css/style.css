@@ -284,6 +284,7 @@ img.site-logo {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    flex-wrap: wrap;
 
 }
 
@@ -309,6 +310,11 @@ img.site-logo {
     list-style-type: none;
 }
 
+.teamContainer li button.open {
+    border: unset;
+    border: 3px solid rgb(178, 52, 52);
+}
+
 /* Image scaling inside team Pokeball buttons */
 .teamContainer li button img {
     width: 50px;
@@ -322,12 +328,13 @@ img.site-logo {
 #editBox {
     display: none;
     height: 300px;
-    width: 300px;
+    background: rgb(220, 220, 220);
 }
 
 #editBox.open{
     display: unset;
     display: flex;
+    border: 3px solid #222;
 }
 
 /* Main panel background container for roster or team editing */
@@ -350,6 +357,8 @@ img.site-logo {
 /* Container for displaying stats layouts */
 #pokeDisplayStats {
     display: flex;
+    min-width: 0;
+    max-width:min-content;
 }
 
 /* Popup container box styling */

@@ -1167,7 +1167,6 @@
 
                 //attaches pokemon data/pic to entry
                 teamArea[index % teamSize].childNodes[1].entry = pokemon
-                console.log(popupTeamArea)
                 teamArea[index % teamSize].childNodes[1].appendChild(pokeImage)
 
                 // update session storage
@@ -1175,6 +1174,7 @@
                 
                 //update popup
                 const newPokeImage = pokeImage.cloneNode()
+                popupTeamArea[index % teamSize].childNodes[1].entry = pokemon
                 popupTeamArea[index % teamSize].childNodes[1].appendChild(newPokeImage)
                 index += 1
                 console.log(index)
@@ -1183,10 +1183,19 @@
             //this is for display of popup to adjust evs not complete at moment
             // Displays detailed stats or configuration options when clicking a team entry
             function displayEntry(num) {
+
                 const displayContainer = document.getElementById('teamBox')
+
+                if (displayContainer.querySelector('.open')) {
+                    const prevOpen = displayContainer.querySelector('.open')
+                    prevOpen.setAttribute('class', 'closed')
+                }
+
                 const entry = document.querySelector(`#pokeEntry${num}mirror`)
                 entry.setAttribute('class', 'open')
                 const pokemonEntry = entry.entry
+
+                console.log(entry)
 
                 const editBox = document.querySelector('#editBox')
                 editBox.setAttribute('class', 'open')
@@ -1195,7 +1204,10 @@
                 const textbox = document.createElement("div")
                 textbox.setAttribute('id','pokeDisplayStats')
                 textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}, base-stats: ${pokemonEntry.baseStats}`
-                displayContainer.children[num-1].appendChild(textbox)
+
+                //updates display stats
+                editBox.innerHTML = ''
+                editBox.appendChild(textbox)
                 console.log(entry)
             }
         </script>
