@@ -20,7 +20,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <!-- Font Awesome icons (used for the hamburger menu icon) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            let num = 11
+        </script>
+
+
     </head>
+
     
     <!-- LOGO -->
     <!-- Site logo link wrapping the image banner -->
@@ -121,7 +128,7 @@
 
         </ul>
 
-        <div id="loadPkm" onclick="loadPokemon(11)">
+        <div id="loadPkm" onclick="loadPokemon(num)">
             Load More
         </div>
         
@@ -248,14 +255,17 @@
 
             // Loads additional pokemon at the user's request
             async function loadPokemon(id){
-
+                console.log(id)
                 // create pokmon templete images/call buttons
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
                 // create entrys
                 let i = id
-                let pkmLoad = id+10
-                for (i; i < pkmLoad; i++) {
+                if (id+10 > 151) {
+                    return
+                }
+                num = id+10
+                for (i; i < num; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
                     const image = document.createElement('img')
