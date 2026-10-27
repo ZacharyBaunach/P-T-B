@@ -335,12 +335,13 @@ img.site-logo {
     display: unset;
     display: flex;
     border: 3px solid #222;
+    flex-direction: column;
 }
 
 #editBox input{
-    display: flex;
-    max-width: min-content;
-    max-height: min-content;
+    display: flexbox;
+    max-width: 200px;
+    max-height: 50px;
 }
 
 /* Main panel background container for roster or team editing */
