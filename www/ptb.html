@@ -120,6 +120,10 @@
         <ul class="homepagePokemon">
 
         </ul>
+
+        <div id="loadPkm" onclick="loadPokemon(11)">
+            Load More
+        </div>
         
         
         <!-- SCRIPTS -->
@@ -131,7 +135,8 @@
 
         <!-- Main page script -->
         <script>
-            // ---- NAV HIGHLIGHT----
+
+            // ---- NAV HIGHLIGHT (unused, commented out) ----
             //Keeps currently sellected page highlighted//
 
             // function navHighlight(currentPage){
@@ -228,7 +233,7 @@
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
                 // create entrys
-                for (i = 0; i < 151; i++) {
+                for (i = 0; i < 10; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
                     const image = document.createElement('img')
@@ -238,7 +243,31 @@
                     template.appendChild(image)
                     templateContainer.appendChild(template)
                 }
+                
             }
+
+            // Loads additional pokemon at the user's request
+            async function loadPokemon(id){
+
+                // create pokmon templete images/call buttons
+                // grab template container
+                const templateContainer = document.querySelector('.homepagePokemon')
+                // create entrys
+                let i = id
+                let pkmLoad = id+10
+                for (i; i < pkmLoad; i++) {
+                    const template = document.createElement('a')
+                    template.setAttribute('href', `Pokemon/${i+1}`)
+                    const image = document.createElement('img')
+                    image.setAttribute('class', 'pokemonImage')
+                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
+                    image.setAttribute('alt', `${pokeData[i].name}`)
+                    template.appendChild(image)
+                    templateContainer.appendChild(template)
+
+                
+            }
+        }
 
             // ---- POPUP TEAM MIRROR ----
             //intial clone for popup box
@@ -389,6 +418,7 @@
                 editBox.setAttribute('class', 'open')
                 editBox.appendChild(textbox)
             }
+        
         </script>
 
     </body>
