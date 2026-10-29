@@ -216,23 +216,31 @@
 
             // ---- LOAD POKEMON DATA ----
             //loads pokemon data upon page loaded
-            // Holds the Pokedex data fetched from the server
+            // Holds the Pokedex data and Pokemon Move data fetched from the server
             let pokeData = [];
+            let pokeMoves = [];
             // Event listener waiting for DOM content load to fetch Pokedex database entries
             document.addEventListener('DOMContentLoaded', function() {
-                console.log("Loaded page")
+                console.log("Loaded page");
                 pageLoad();
             });
             // set up page in certain order
             async function pageLoad() {
                 await getPokeData();
-                setPokeImages();
+                await setPokeImages();
+                await getPokeMoves();
+                loadTeam();
             }
             // Asynchronous function to fetch Pokedex data from server endpoint
             async function getPokeData() {
                 // Request the /Pokedex route from Flask and store the JSON result
                 const promise = await fetch('/Pokedex');
                 pokeData = await promise.json();
+            };
+            async function getPokeMoves() {
+                // Request the /Pokedex route from Flask and store the JSON result
+                const promise = await fetch('/PokeMoves');
+                pokeMoves = await promise.json();
             };
             // Asynchronous function to fetch Pokedex data from server endpoint
             async function setPokeImages() {
@@ -255,7 +263,6 @@
 
             // Loads additional pokemon at the user's request
             async function loadPokemon(id){
-                console.log(id)
                 // create pokmon templete images/call buttons
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
@@ -325,64 +332,75 @@
             // ---- RESTORE SAVED TEAM ----
             //checks sessionStorage and loads in 'saved' team
             // Restores previously saved team selections from browser session storage on load
-            // index = which slot gets filled next, teamSize = max team members
-            let index = 0
+            // teamSize = max team members
             let teamSize = 6
             // Check each of the 6 slots for saved data and re-add it
-            for (i = 1; i <= teamSize ; i++) {
-                if (sessionStorage[i]){
-                    pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
-                    console.log(`loading index ${i}`)
-                    pokeAdd()
-                    pokeSearchList.pop()
-                }   else {
-                    console.log(`empty session storage of index ${i}`)
+            async function loadTeam() {
+                for (i = 1; i <= teamSize ; i++) {
+                    if (sessionStorage[i]){
+                        pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
+                        console.log(`loading index ${i}`)
+                        pokeAdd(i-1)
+                        pokeSearchList.pop()
+                    }   else {
+                        console.log(`empty session storage of index ${i}`)
+                    }
                 }
-            };
+            }
             
             // ---- ADD POKEMON ----
             //adds pokemon data to each pokemon entry
             // Adds selected Pokémon sprites and data attributes into active team slots
-            function pokeAdd(){
+            function pokeAdd(num = 7){
                 //init pokmeon to add
                 // Uses the first match from the search list
-                const pokemon = pokeSearchList[0]
-                
+                let pokemon = pokeSearchList[0];
+                const name = pokemon.name.toLowerCase();
+                pokemon.moves = pokeMoves[`${name}`];
+
                 //locating team areas
                 //main team locaitons
-                const MainArea = document.querySelector(".teamContainer")
-                const teamArea = MainArea.querySelectorAll(".entry")
+                const MainArea = document.querySelector(".teamContainer");
+                const teamArea = MainArea.querySelectorAll(".entry");
                 //popup team locations
-                const popupArea = document.querySelector("#pokemonPopup")
-                const popupTeamArea = popupArea.querySelectorAll(".entry")
+                const popupArea = document.querySelector("#pokemonPopup");
+                const popupTeamArea = popupArea.querySelectorAll(".entry");
 
                 //pokemon image overlay
                 // Build the sprite image for this Pokemon
-                const pokeImage = document.createElement('img')
-                pokeImage.setAttribute('src', `static/img/pokemon_collection/${pokemon["name"]}.webp`)
-                pokeImage.setAttribute('alt', `${pokemon["name"]} sprite`)
-                pokeImage.setAttribute('class', 'pokeSprite')
+                const pokeImage = document.createElement('img');
+                pokeImage.setAttribute('src', `static/img/pokemon_collection/${pokemon["name"]}.webp`);
+                pokeImage.setAttribute('alt', `${pokemon["name"]} sprite`);
+                pokeImage.setAttribute('class', 'pokeSprite');
+
+                //find location to insert new pokemon (may overwrite)
+                let location = teamArea[num % teamSize].childNodes[1]
+                let mirrorLocation = popupTeamArea[num % teamSize].childNodes[1]
+                if (num == 7) {
+                    location = document.querySelector('.open');
+                    mirrorLocation = popupArea.querySelector('.open');
+                };
 
                 //clean up old image
                 // (index % teamSize wraps around so slots cycle 1-6)
-                teamArea[index % teamSize].childNodes[1].innerHTML = ''
-                popupTeamArea[index % teamSize].childNodes[1].innerHTML = ''
+                location.innerHTML = '';
+                mirrorLocation.innerHTML = '';
 
                 //attaches pokemon data/pic to entry
-                teamArea[index % teamSize].childNodes[1].entry = pokemon
-                teamArea[index % teamSize].childNodes[1].appendChild(pokeImage)
+                location.entry = pokemon;
+                location.appendChild(pokeImage);
 
                 // update session storage
-                sessionStorage.setItem(`${index % teamSize + 1}`, JSON.stringify(pokemon))
+                const locationID = (location.id.at(-1))
+                sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemon));
                 
                 //update popup
                 // Copy the sprite into the popup's team mirror too
-                const newPokeImage = pokeImage.cloneNode()
-                popupTeamArea[index % teamSize].childNodes[1].entry = pokemon
-                popupTeamArea[index % teamSize].childNodes[1].appendChild(newPokeImage)
-                // Move on to the next slot
-                index += 1
-                console.log(index)
+                const newPokeImage = pokeImage.cloneNode();
+                mirrorLocation.entry = pokemon;
+                mirrorLocation.appendChild(newPokeImage);
+                // update popup display
+                displayEntry(locationID)
             };
 
             // ---- DISPLAY ENTRY DETAILS ----
@@ -395,40 +413,243 @@
                 if (displayContainer.querySelector('.open')) {
                     const prevOpen = displayContainer.querySelector('.open')
                     prevOpen.setAttribute('class', 'closed')
+                    const prevBaseOpen = document.querySelector(`.open`)
+                    prevBaseOpen.setAttribute('class', 'closed')
                 }
 
                 const entry = document.querySelector(`#pokeEntry${num}mirror`)
                 entry.setAttribute('class', 'open')
+                const entryBase = document.querySelector(`#pokeEntry${num}`)
+                entryBase.setAttribute('class', 'open')
+
+
                 const pokemonEntry = entry.entry
 
                 //display pokemon data
                 // Show name, abilities and base stats under the clicked slot
 
-                const textbox = document.createElement("div")
-                textbox.setAttribute('id','pokeDisplayStats')
-                textbox.innerHTML = `${pokemonEntry.name}, ablilities: ${pokemonEntry.abilities}`
-                const statBox = document.createElement("div")
-                statBox.setAttribute('id',"statSliderContainer")
-                const editBox = displayContainer.querySelector('#editBox')
-                editBox.innerHTML = ''
+                //main stat edit box
+                const editBox = displayContainer.querySelector('#editBox');
+                editBox.innerHTML = '';
 
-                const statList = ['hp', 'atk', 'def', 'spa', 'spd', 'spe']
+                //text stat box
+                const textbox = document.createElement("div");
+                textbox.setAttribute('id','pokeDisplayStats');
+                textbox.innerHTML = `${pokemonEntry.name}`;
+
+
+                //creates the ability selection
+                const abilityBox = document.createElement('select');
+                abilityBox.setAttribute('class', `selectAbilityBox`);
+                abilityBox.setAttribute('id', 'ability');
+                //inits and checks if session has previous ability
+                let activeAbility = ''
+                if (pokemonEntry.activeAbility) {
+                        activeAbility = pokemonEntry.activeAbility;
+                    };
+                for (ability of pokemonEntry.abilities) {
+                    const possibleAbility = document.createElement('option');
+                    possibleAbility.setAttribute('class', `${ability}`);
+                    possibleAbility.setAttribute('value', `${ability}`);
+                    possibleAbility.innerHTML = `${ability}`;
+                    if (activeAbility && ability === activeAbility) {
+                        possibleAbility.selected = true
+                    }
+                    abilityBox.addEventListener('change',abilityAttach);
+                    abilityBox.appendChild(possibleAbility);
+                };
+
+                //sets up the four move selection boxes
+                const moveBox = document.createElement("div");
+                moveBox.setAttribute('id',"moveBox");
+
+                //create move selection dropdown menus
+                const MAX_MOVES = 4;
+                for (i = 1; i<=MAX_MOVES; i++) {
+                    const move = document.createElement('select');
+                    move.setAttribute('class', `selectMoveBox`);
+                    move.setAttribute('id', `move${i}`);
+                    //generic empty option default and append to move box
+                    const emptyMove = document.createElement('option');
+                    emptyMove.setAttribute('value', '');
+                    emptyMove.innerHTML = `>--Choose a Move--<`;
+                    move.appendChild(emptyMove);
+                    //saved move from session storage
+                    let savedMove = ''
+                    if (pokemonEntry.selectedMoves) {
+                        savedMove = pokemonEntry.selectedMoves[i-1];
+                    };
+                    //for each move selection box append all possible move options
+                    for (j = 0; j< pokemonEntry.moves.length; j++) {
+                        const possibleMove = document.createElement('option');
+                        possibleMove.setAttribute('class', `${pokemonEntry.moves[j]}`);
+                        possibleMove.setAttribute('value', `${pokemonEntry.moves[j]}`);
+                        possibleMove.innerHTML = `${pokemonEntry.moves[j]}`;
+                        if (savedMove && `${pokemonEntry.moves[j]}` === savedMove) {
+                            possibleMove.selected = true;
+                        }
+                        move.appendChild(possibleMove);
+                    };
+                    moveBox.appendChild(move);
+                };
+                const dropMenus = moveBox.querySelectorAll(`.selectMoveBox`);
+                for (menu of dropMenus) {
+                    menu.addEventListener('change',onlyOneMove);
+                };
+                
+                //ajustable stat sliders
+                const statBox = document.createElement("div");
+                statBox.setAttribute('id',"statsContainer");
+
+                //stats text labels
+                const statTextContainer = document.createElement("div");
+                statTextContainer.setAttribute('id',"statTextContainer");
+                const statText = ["HP", "Attack", "Defence", "Sp Atk.", "Sp Def", "Speed"];
+                for (text of statText) {
+                    const statTextBox = document.createElement("div");
+                    statTextBox.setAttribute('id',`${text}_Text`);
+                    statTextBox.innerHTML = `${text}`;
+                    statTextContainer.appendChild(statTextBox);
+                };
+
+                //stats base values
+                const statvalueContainer = document.createElement("div");
+                statvalueContainer.setAttribute('id',"statTextContainer");
+                const statList = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
+                for (const stat of statList) {
+                    const statValueBox = document.createElement("div");
+                    const baseStatValue = pokemonEntry.baseStats[stat];
+                    statValueBox.setAttribute('id',`${stat}_Value`);
+                    statValueBox.innerHTML = `${baseStatValue}`;
+                    statvalueContainer.appendChild(statValueBox);
+                };
+
+
+                //stat slider DOM element creator
+                const statSliderContainer = document.createElement('div');
+                statSliderContainer.setAttribute('id',"statSliderContainer");
+                for (const stat of statList) {
+                    const statSlider = document.createElement("input");
+                    statSlider.setAttribute('type', 'range');
+                    statSlider.setAttribute('class', 'statSlider');
+                    statSlider.setAttribute('id', stat);
+                    statSlider.setAttribute('min', 0);
+                    statSlider.setAttribute('max', 255);
+                    statSlider.setAttribute('value', 0);
+                    //attach event to stat sliders to update stat total
+                    statSlider.addEventListener('change',statSliderUpdate);
+                    statSliderContainer.appendChild(statSlider);
+                };
+
+                //stats text values
+                const statTrueValueContainer = document.createElement("div");
+                statTrueValueContainer.setAttribute('id',"statTrueValueContainer");
                 for (stat of statList) {
-                    const statSlider = document.createElement("input")
+                    const statTrueValueBox = document.createElement("div");
+                    statTrueValueBox.setAttribute('id',`${stat}_TrueValue`);
+                    let baseStateValue = 0
+                    if (stat == 'hp') {
+                        baseStatValue = hpStatCalc(pokemonEntry.baseStats[stat],undefined,undefined,undefined);
+                    } else {
+                        baseStatValue = statCalc(pokemonEntry.baseStats[stat],undefined,undefined,undefined, undefined)
+                    }
+                    statTrueValueBox.innerHTML = `${baseStatValue}`;
+                    statTrueValueContainer.appendChild(statTrueValueBox);
+                };
 
-                    const baseStatValue = pokemonEntry.baseStats[stat]
-                    console.log(pokemonEntry)
-                    statSlider.setAttribute('type', 'range')
-                    statSlider.setAttribute('class', 'statSlider')
-                    statSlider.setAttribute('id', stat)
-                    statSlider.setAttribute('min', baseStatValue)
-                    statSlider.setAttribute('max', baseStatValue+30)
-                    editBox.appendChild(statSlider)
-                }
-                editBox.setAttribute('class', 'open')
-                editBox.appendChild(textbox)
-            }
+
+                //append all stats to editBox
+                statBox.appendChild(statTextContainer);
+                statBox.appendChild(statvalueContainer)
+                statBox.appendChild(statSliderContainer);
+                statBox.appendChild(statTrueValueContainer)
+                editBox.appendChild(statBox);
+                editBox.setAttribute('class', 'open');
+                editBox.appendChild(textbox);
+                editBox.appendChild(abilityBox);
+                editBox.appendChild(moveBox);
+            };
+
+            //funtion to be attached to pokemon moves to make sure double moves are impossible and attaches values to entry
+            function onlyOneMove() {
+                console.log('onlyOneMove triggered')
+                let selectedMoves = [];
+                const pokemonMoves = document.querySelectorAll('.selectMoveBox');
+                console.log(pokemonMoves);
+                for (menu of pokemonMoves) {
+                    console.log(menu);
+                    selectedMoves.push(menu.value);
+                };
+                console.log(selectedMoves);
+                for (move of selectedMoves) {
+                    if (move == '') {
+                        continue;
+                    }
+                    const options = document.querySelectorAll(`option`);
+                    for (moves of options) {
+                        if (moves.value != '' && selectedMoves.includes(moves.value)) {
+                            moves.disabled = true;
+                        } else {
+                            moves.disabled = false;
+                        };
+                    };
+                };
+                const pokemonEntry = document.querySelectorAll('.open')[1];
+                pokemonEntry.entry.selectedMoves = selectedMoves;
+
+                const locationID = (pokemonEntry.id.at(-7))
+                sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemonEntry.entry));
+                console.log(pokemonEntry)
+            };
         
+            //funtion to be attached to pokemon abilities to attach ability to entry
+            function abilityAttach() {
+                const chosenAbility = document.querySelector('#ability');
+                console.log(chosenAbility)
+                const ability = chosenAbility.value
+
+                //updates session storage pokemon entry's ability
+                const pokemonEntry = document.querySelectorAll('.open')[1];
+                pokemonEntry.entry.activeAbility = ability;
+                const locationID = (pokemonEntry.id.at(-7))
+                sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemonEntry.entry));
+            };
+        
+            function statSliderUpdate() {
+                const statSliders = document.querySelector('#statSliderContainer').children
+                let currentStats = {}
+                for (statSlider of statSliders) {
+                    const statsliderID = statSlider.id
+                    console.log(statSlider)
+
+                    const statValue = document.querySelector(`#${statsliderID}_Value`)
+                    let newStatValue = 0
+                    if (statsliderID == 'hp') {
+                        newStatValue = hpStatCalc(+statValue.innerHTML,undefined,+statSlider.value,undefined)
+                    } else {
+                        newStatValue = statCalc(statValue.innerHTML,undefined,statSlider.value,undefined,undefined)
+                    }
+                    currentStats[statsliderID] = newStatValue
+                    const TrueStat = document.querySelector(`#${statsliderID}_TrueValue`)
+                    TrueStat.innerHTML = newStatValue
+                };
+
+                //updates session storage pokemon entry's ability
+                const pokemonEntry = document.querySelectorAll('.open')[1];
+                pokemonEntry.entry.activeStats = currentStats;
+                const locationID = (pokemonEntry.id.at(-7))
+                sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemonEntry.entry));
+            };
+        
+            function hpStatCalc(baseVal, IV = 0, EV = 0, level = 50) {
+                const actualVal = ((2*baseVal + IV + EV/4)*level)/100+level+10
+                return actualVal
+            }
+
+            function statCalc(baseVal, IV = 0, EV = 0, level = 50, nature = 1) {
+                const actualVal = (((2*baseVal + IV + EV/4)*level)/100+5) * nature
+                return actualVal
+            }
         </script>
 
     </body>

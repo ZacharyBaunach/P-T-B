@@ -23,13 +23,24 @@ def getPokeData():
         pokedex = json.load(file)
         return pokedex
 
+@app.route("/PokeMoves")
+def getPokeMoves():
+    with open('db/Moveset.json', 'r', encoding='utf-8') as file:
+            pokeMoves = json.load(file)
+            return pokeMoves
+
 @app.route("/Pokemon/<id>")
 def pokemonProfile(id):
     with open('db/Pokedex.json', 'r', encoding='utf-8') as file:
         pokedex = json.load(file)
     
     pd = pokedex[int(id)-1]
+
+    with open('db/Moveset.json', 'r', encoding='utf-8') as file:
+        pokeMoves = json.load(file)
+
+    ms = pokeMoves[str(pd['name'].lower())]
     
 
     
-    return render_template('pokemon.html', pokedex=pd)
+    return render_template('pokemon.html', pokedex=pd, pokeMoves=ms)

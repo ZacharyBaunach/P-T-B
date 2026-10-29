@@ -359,10 +359,14 @@ img.site-logo {
     flex-direction: column;
 }
 
-#editBox input{
-    display: flexbox;
+#statsContainer {
+    display: flex
+}
+
+#statSliderContainer, #statTextContainer, #statvalueContainer {
+    display: flex;
+    flex-direction: column;
     max-width: 200px;
-    max-height: 50px;
 }
 
 /* Main panel background container for roster or team editing */
