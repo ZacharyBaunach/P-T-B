@@ -268,8 +268,11 @@
                 const templateContainer = document.querySelector('.homepagePokemon')
                 // create entrys
                 let i = id
+
+                //Hides the load more button once all pokemon are loaded
                 if (id+10 > 151) {
 
+                    //displays 151th Pokemon
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
                     const image = document.createElement('img')
@@ -281,6 +284,7 @@
 
                     let loadPokemonButton = document.getElementById('loadPkmButton')
 
+                    
                     loadPokemonButton.className = "allPkmLoaded"
 
                     return
