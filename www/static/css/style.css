@@ -164,6 +164,7 @@ img.site-logo {
 /* adds a white border when hovering over button */
 :hover.loadPkm{
     outline: 5px solid #ffffff;
+    cursor: pointer;
 }
 
 /* rule that makes load more button disappear once all are loaded */
@@ -231,6 +232,7 @@ img.site-logo {
 .ActiveMoveA:hover, .ActiveMoveE:hover{
     display:flex;
     outline: 5px solid #ffffff;
+    cursor: pointer;
 }
 
 /* Highlights the currently selected combat move */
@@ -240,6 +242,10 @@ img.site-logo {
     border: 5px solid #222;
     border-radius: 60px;
     outline:5px solid #ff2c2c;
+}
+
+:hover.selectedMove{
+    cursor: default;
 }
 
 /* Main action button used to trigger turn execution */
@@ -258,6 +264,7 @@ img.site-logo {
 #startTurn:hover{
     display:flex;
     outline: 5px solid #ffffff;
+    cursor: pointer;
 }
 
 /* ==========================================================================
