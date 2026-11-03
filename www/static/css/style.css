@@ -171,6 +171,17 @@ img.site-logo {
     display: none;
 }
 
+/* Sizing for Pokemon Images on Template stat pages */
+.pokemonTemplateImage{
+    display:flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #222;
+    border-radius: 60px;
+}
+
 
 /* Background wrapper style for search sections */
 .pokemonSearch {
@@ -541,4 +552,6 @@ img.site-logo {
 .profileName { color: #ff2d2d; } /* Pokemon name in profile card */
 
 .profileRow { margin: 16px 0; text-align: auto; } 
+}
+
 }
