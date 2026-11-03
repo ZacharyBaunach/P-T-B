@@ -554,12 +554,18 @@
                     statSlider.setAttribute('min', 0);
                     statSlider.setAttribute('max', 255);
                     statSlider.setAttribute('value', 0);
+                    if (pokemonEntry.activeStats) {
+                        console.log(pokemonEntry.activeStats[stat])
+                        const statValue = pokemonEntry.activeStats[stat]
+                        console.log(statValue)
+                        statSlider.setAttribute('value', statValue);
+                    };
                     //attach event to stat sliders to update stat total
                     statSlider.addEventListener('change',statSliderUpdate);
                     statSliderContainer.appendChild(statSlider);
                 };
 
-                //stats text values
+                //final stats text values
                 const statTrueValueContainer = document.createElement("div");
                 statTrueValueContainer.setAttribute('id',"statTrueValueContainer");
                 for (stat of statList) {
@@ -568,8 +574,14 @@
                     let baseStateValue = 0
                     if (stat == 'hp') {
                         baseStatValue = hpStatCalc(pokemonEntry.baseStats[stat],undefined,undefined,undefined);
+                        if (pokemonEntry.activeStats) {
+                            baseStatValue = hpStatCalc(pokemonEntry.baseStats[stat],undefined,pokemonEntry.activeStats[stat],undefined);
+                        }
                     } else {
                         baseStatValue = statCalc(pokemonEntry.baseStats[stat],undefined,undefined,undefined, undefined)
+                        if (pokemonEntry.activeStats) {
+                            baseStatValue = statCalc(pokemonEntry.baseStats[stat],undefined,pokemonEntry.activeStats[stat],undefined, undefined)
+                        }
                     }
                     statTrueValueBox.innerHTML = `${baseStatValue}`;
                     statTrueValueContainer.appendChild(statTrueValueBox);
@@ -645,9 +657,9 @@
                     if (statsliderID == 'hp') {
                         newStatValue = hpStatCalc(+statValue.innerHTML,undefined,+statSlider.value,undefined)
                     } else {
-                        newStatValue = statCalc(statValue.innerHTML,undefined,statSlider.value,undefined,undefined)
+                        newStatValue = statCalc(+statValue.innerHTML,undefined,+statSlider.value,undefined,undefined)
                     }
-                    currentStats[statsliderID] = newStatValue
+                    currentStats[statsliderID] = statSlider.value
                     const TrueStat = document.querySelector(`#${statsliderID}_TrueValue`)
                     TrueStat.innerHTML = newStatValue
                 };
