@@ -18,7 +18,7 @@
     <div class="pageBox">
         <body>
             <header>
-                <h2 class="pageTitle"> {{ pokedex['name'] }} </h2>
+                <h2 class="pageTitle"> {{ pokedex['id'] }} </h2>
             </header>
 
             <p>
@@ -51,6 +51,8 @@
                         <div class="statLine">
                             <span class="statName">{{ labels[stat] }}</span>
                             <span class="statValue">{{ value }}</span>
+                            <div class="statTrack">
+                                <div class="statFill" style="width: {{ (value / 255 * 100)|round }}%"></div>
                             </div>
                         </div>
                     {% endfor %}

@@ -1,442 +1,516 @@
 [{
+    "id": "Bulbasaur",
 	"name":"Bulbasaur",
 	"types":["Grass","Poison"],
 	"baseStats":{"hp":45 , "atk":49 ,"def":49 , "spa":65 , "spd":65 , "spe":45 },
 	"abilities": ["Overgrow", "Chlorophy"]
 },
 {
+    "id": "Ivysaur",
 	"name":"Ivysaur",
 	"types":["Grass","Poison"],
 	"baseStats":{"hp":60, "atk":62, "def":63, "spa":80, "spd":80, "spe":60 },
 	"abilities":["Overgrow", "Chlorophy"]
 },
 {
+    "id": "Venusaur",
     "name":"Venusaur",
     "types":["Grass","Poison"],
    "baseStats":{"hp":80, "atk":82,"def":83, "spa":100, "spd":100, "spe":80},
    "abilities":["Overgrow","Chlorophyll"]
 },
 {
+    "id": "Charmander",
     "name":"Charmander",
     "types":["Fire"],
    "baseStats":{"hp":39, "atk":52,"def":43, "spa":60, "spd":50, "spe":65},
    "abilities":["Blaze","Solar Power"]
 },
 {
+    "id": "Charmeleon",
     "name":"Charmeleon",
     "types":["Fire"],
    "baseStats":{"hp":58, "atk":64,"def":58, "spa":80, "spd":65, "spe":80},
    "abilities":["Blaze","Solar Power"]
 },
 {
+    "id": "Charizard",
     "name":"Charizard",
     "types":["Fire","Flying"],
    "baseStats":{"hp":78, "atk":84,"def":78, "spa":109, "spd":85, "spe":100},
    "abilities":["Blaze","Solar Power"]
 },
 {
+    "id": "Squirtle",
     "name":"Squirtle",
     "types":["Water"],
    "baseStats":{"hp":44, "atk":48,"def":65, "spa":50, "spd":64, "spe":43},
    "abilities":["Torrent","Rain Dish"]
 },
 {
+    "id": "Wartortle",
     "name":"Wartortle",
     "types":["Water"],
    "baseStats":{"hp":59, "atk":63,"def":80, "spa":65, "spd":80, "spe":58},
    "abilities":["Torrent","Rain Dish"]
 },
 {
+    "id": "Blastoise",
     "name":"Blastoise",
     "types":["Water"],
    "baseStats":{"hp":79, "atk":83,"def":100, "spa":85, "spd":105, "spe":78},
    "abilities":["Torrent","Rain Dish"]
 },
 {
+    "id": "Caterpie",
     "name":"Caterpie",
     "types":["Bug"],
    "baseStats":{"hp":45, "atk":30,"def":35, "spa":20, "spd":20, "spe":45},
    "abilities":["Shield Dust","Run Away"]
 },
 {
+    "id": "Metapod",
     "name":"Metapod",
     "types":["Bug"],
    "baseStats":{"hp":50, "atk":20,"def":55, "spa":25, "spd":25, "spe":30},
    "abilities":["Shed Skin"]
 },
 {
+    "id": "Butterfree",
     "name":"Butterfree",
     "types":["Bug","Flying"],
    "baseStats":{"hp":60, "atk":45,"def":50, "spa":90, "spd":80, "spe":70},
    "abilities":["Compound Eyes","Tinted Lens"]
 },
 {
+    "id": "Weedle",
     "name":"Weedle",
     "types":["Bug","Poison"],
    "baseStats":{"hp":40, "atk":35,"def":30, "spa":20, "spd":20, "spe":50},
    "abilities":["Shield Dust","Run Away"]
 },
 {
+    "id": "Kakuna",
     "name":"Kakuna",
     "types":["Bug","Poison"],
    "baseStats":{"hp":45, "atk":25,"def":50, "spa":25, "spd":25, "spe":35},
    "abilities":["Shed Skin"]
 },
 {
+    "id": "Beedrill",
     "name":"Beedrill",
     "types":["Bug","Poison"],
    "baseStats":{"hp":65, "atk":90,"def":40, "spa":45, "spd":80, "spe":75},
    "abilities":["Swarm","Sniper"]
 },
 {
+    "id": "Pidgey",
     "name":"Pidgey",
     "types":["Normal","Flying"],
    "baseStats":{"hp":40, "atk":45,"def":40, "spa":35, "spd":35, "spe":56},
    "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
 },
 {
+    "id": "Pidgeotto",
     "name":"Pidgeotto",
     "types":["Normal","Flying"],
    "baseStats":{"hp":63, "atk":60,"def":55, "spa":50, "spd":50, "spe":71},
    "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
 },
 {
+    "id": "Pidgeot",
     "name":"Pidgeot",
     "types":["Normal","Flying"],
    "baseStats":{"hp":83, "atk":80,"def":75, "spa":70, "spd":70, "spe":101},
    "abilities":["Keen Eye","Tangled Feet","Big Pecks"]
 },
 {
+    "id": "Rattata",
     "name":"Rattata",
     "types":["Normal"],
    "baseStats":{"hp":30, "atk":56,"def":35, "spa":25, "spd":35, "spe":72},
    "abilities":["Run Away","Guts","Hustle"]
 },
 {
+    "id": "Raticate",
     "name":"Raticate",
     "types":["Normal"],
    "baseStats":{"hp":55, "atk":81,"def":60, "spa":50, "spd":70, "spe":97},
    "abilities":["Run Away","Guts","Hustle"]
 },
 {
+    "id": "Spearow",
     "name":"spearow",
     "types":["Normal","Flying"],
    "baseStats":{"hp":40, "atk":60,"def":30, "spa":31, "spd":31, "spe":70},
    "abilities":["Keen Eye","Sniper"]
 },
 {
+    "id": "Fearow",
     "name":"Fearow",
     "types":["Normal","Flying"],
    "baseStats":{"hp":65, "atk":90,"def":65, "spa":61, "spd":61, "spe":100},
    "abilities":["Keen Eye","Sniper"]
 },
 {
+    "id": "Ekans",
     "name":"Ekans",
     "types":["Poison"],
    "baseStats":{"hp":35, "atk":60,"def":44, "spa":40, "spd":54, "spe":55},
    "abilities":["Intimidate","Shed Skin","Unnerve"]
 },
 {
+    "id": "Arbok",
     "name":"Arbok",
     "types":["Poison"],
    "baseStats":{"hp":60, "atk":95,"def":69, "spa":65, "spd":79, "spe":80},
    "abilities":["Intimidate","Shed Skin","Unnerve"]
 },
 {
+    "id": "Pikachu",
     "name":"Pikachu",
     "types":["Electric"],
    "baseStats":{"hp":35, "atk":55,"def":40, "spa":50, "spd":50, "spe":90},
    "abilities":["Static","Lightning Rod"]
 },
 {
+    "id": "Raichu",
     "name":"Raichu",
     "types":["Electric"],
    "baseStats":{"hp":60, "atk":90,"def":55, "spa":90, "spd":80, "spe":110},
    "abilities":["Static","Lightning Rod"]
 },
 {
+    "id": "Sandshrew",
     "name":"Sandshrew",
     "types":["Ground"],
    "baseStats":{"hp":50, "atk":75,"def":85, "spa":20, "spd":30, "spe":40},
    "abilities":["Sand Veil","Sand Rush"]
 },
 {
+    "id": "Sandslash",
     "name":"Sandslash",
     "types":["Ground"],
    "baseStats":{"hp":75, "atk":100,"def":110, "spa":45, "spd":55, "spe":65},
    "abilities":["Sand Veil","Sand Rush"]
 },
 {
+    "id": "Nidoran♀",
     "name":"NidoranF",
     "types":["Poison"],
    "baseStats":{"hp":55, "atk":47,"def":52, "spa":40, "spd":40, "spe":41},
    "abilities":["Poison Point","Rivalry","Hustle"]
 },
 {
+    "id": "Nidorina",
     "name":"Nidorina",
     "types":["Poison"],
    "baseStats":{"hp":70, "atk":62,"def":67, "spa":55, "spd":55, "spe":56},
    "abilities":["Poison Point","Rivalry","Hustle"]
 },
 {
+    "id": "Nidoqueen",
     "name":"Nidoqueen",
     "types":["Poison","Ground"],
    "baseStats":{"hp":90, "atk":92,"def":87, "spa":75, "spd":85, "spe":76},
    "abilities":["Poison Point","Rivalry","Sheer Force"]
 },
 {
+    "id": "Nidoran♂",
     "name":"NidoranM",
     "types":["Poison"],
    "baseStats":{"hp":46, "atk":57,"def":40, "spa":40, "spd":40, "spe":50},
    "abilities":["Poison Point","Rivalry","Hustle"]
 },
 {
+    "id": "Nidorino",
     "name":"Nidorino",
     "types":["Poison"],
    "baseStats":{"hp":61, "atk":72,"def":57, "spa":55, "spd":55, "spe":65},
    "abilities":["Poison Point","Rivalry","Hustle"]
 },
 {
+    "id": "Nidoking",
     "name":"Nidoking",
     "types":["Poison","Ground"],
    "baseStats":{"hp":81, "atk":102,"def":77, "spa":85, "spd":75, "spe":85},
    "abilities":["Poison Point","Rivalry","Sheer Force"]
 },
 {
+    "id": "Clefairy",
     "name":"Clefairy",
     "types":["Fairy"],
    "baseStats":{"hp":70, "atk":45,"def":48, "spa":60, "spd":65, "spe":35},
    "abilities":["Cute Charm","Magic Guard","Friend Guard"]
 },
 {
+    "id": "Clefable",
     "name":"Clefable",
     "types":["Fairy"],
    "baseStats":{"hp":95, "atk":70,"def":73, "spa":95, "spd":90, "spe":60},
    "abilities":["Cute Charm","Magic Guard","Unaware"]
 },
 {
+    "id": "Vulpix",
     "name":"Vulpix",
     "types":["Fire"],
    "baseStats":{"hp":38, "atk":41,"def":40, "spa":50, "spd":65, "spe":65},
    "abilities":["Flash Fire","Drought"]
 },
 {
+    "id": "Ninetales",
     "name":"Ninetales",
     "types":["Fire"],
    "baseStats":{"hp":73, "atk":76,"def":75, "spa":81, "spd":100, "spe":100},
    "abilities":["Flash Fire","Drought"]
 },
 {
+    "id": "Jigglypuff",
     "name":"Jigglypuff",
     "types":["Normal","Fairy"],
    "baseStats":{"hp":115, "atk":45,"def":20, "spa":45, "spd":25, "spe":20},
    "abilities":["Cute Charm","Competitive","Friend Guard"]
 },
 {
+    "id": "Wigglytuff",
     "name":"Wigglytuff",
     "types":["Normal","Fairy"],
    "baseStats":{"hp":140, "atk":70,"def":45, "spa":85, "spd":50, "spe":45},
    "abilities":["Cute Charm","Competitive","Frisk"]
 },
 {
+    "id": "Zubat",
     "name":"Zubat",
     "types":["Poison","Flying"],
    "baseStats":{"hp":40, "atk":45,"def":35, "spa":30, "spd":40, "spe":55},
    "abilities":["Inner Focus","Infiltrator"]
 },
 {
+    "id": "Golbat",
     "name":"Golbat",
     "types":["Poison","Flying"],
    "baseStats":{"hp":75, "atk":80,"def":70, "spa":65, "spd":75, "spe":90},
    "abilities":["Inner Focus","Infiltrator"]
 },
 {
+    "id": "Oddish",
     "name":"Oddish",
     "types":["Grass","Poison"],
    "baseStats":{"hp":45, "atk":50,"def":55, "spa":75, "spd":65, "spe":30},
    "abilities":["Chlorophyll","Run Away"]
 },
 {
+    "id": "Gloom",
     "name":"Gloom",
     "types":["Grass","Poison"],
    "baseStats":{"hp":60, "atk":65,"def":70, "spa":85, "spd":75, "spe":40},
    "abilities":["Chlorophyll","Stench"]
 },
 {
+    "id": "Vileplume",
     "name":"Vileplume",
     "types":["Grass","Poison"],
    "baseStats":{"hp":75, "atk":80,"def":85, "spa":110, "spd":90, "spe":50},
    "abilities":["Chlorophyll","Effect Spore"]
 },
 {
+    "id": "Paras",
     "name":"Paras",
     "types":["Bug","Grass"],
    "baseStats":{"hp":35, "atk":70,"def":55, "spa":45, "spd":55, "spe":25},
    "abilities":["Effect Spore","Dry Skin","Damp"]
 },
 {
+    "id": "Parasect",
     "name":"Parasect",
     "types":["Bug","Grass"],
    "baseStats":{"hp":60, "atk":95,"def":80, "spa":60, "spd":80, "spe":30},
    "abilities":["Effect Spore","Dry Skin","Damp"]
 },
 {
+    "id": "Venonat",
     "name":"Venonat",
     "types":["Bug","Poison"],
    "baseStats":{"hp":60, "atk":55,"def":50, "spa":40, "spd":55, "spe":45},
    "abilities":["Compound Eyes","Tinted Lens","Run Away"]
 },
 {
+    "id": "Venomoth",
     "name":"Venomoth",
     "types":["Bug","Poison"],
    "baseStats":{"hp":70, "atk":65,"def":60, "spa":90, "spd":75, "spe":90},
    "abilities":["Shield Dust","Tinted Lens","Wonder Skin"]
 },
 {
+    "id": "Diglett",
     "name":"Diglett",
     "types":["Ground"],
    "baseStats":{"hp":10, "atk":55,"def":25, "spa":35, "spd":45, "spe":95},
    "abilities":["Sand Veil","Arena Trap","Sand Force"]
 },
 {
+    "id": "Dugtrio",
     "name":"Dugtrio",
     "types":["Ground"],
    "baseStats":{"hp":35, "atk":100,"def":50, "spa":50, "spd":70, "spe":120},
    "abilities":["Sand Veil","Arena Trap","Sand Force"]
 },
 {
+    "id": "Meowth",
 "name": "Meowth",
 "types": ["Normal"],
 "baseStats": {"hp": 40, "atk": 45, "def": 35, "spa": 40, "spd": 40, "spe": 90},
 "abilities": ["Pickup", "Technician", "Unnerve"]
 },
 {
+    "id": "Persian",
 "name": "Persian",
 "types": ["Normal"],
 "baseStats": {"hp": 65, "atk": 70, "def": 60, "spa": 65, "spd": 65, "spe": 115},
 "abilities": ["Limber", "Technician", "Unnerve"]
 },
 {
+    "id": "Psyduck",
 "name": "Psyduck",
 "types": ["Water"],
 "baseStats": {"hp": 50, "atk": 52, "def": 48, "spa": 65, "spd": 50, "spe": 55},
 "abilities": ["Damp", "Cloud Nine", "Swift Swim"]
 },
 {
+    "id": "Golduck",
 "name": "Golduck",
 "types": ["Water"],
 "baseStats": {"hp": 80, "atk": 82, "def": 78, "spa": 95, "spd": 80, "spe": 85},
 "abilities": ["Damp", "Cloud Nine", "Swift Swim"]
 },
 {
+    "id": "Mankey",
 "name": "Mankey",
 "types": ["Fighting"],
 "baseStats": {"hp": 40, "atk": 80, "def": 35, "spa": 35, "spd": 45, "spe": 70},
 "abilities": ["Vital Spirit", "Anger Point", "Defiant"]
 },
 {
+    "id": "Primeape",
 "name": "Primeape",
 "types": ["Fighting"],
 "baseStats": {"hp": 65, "atk": 105, "def": 60, "spa": 60, "spd": 70, "spe": 95},
 "abilities": ["Vital Spirit", "Anger Point", "Defiant"]
 },
 {
+    "id": "Growlithe",
 "name": "Growlithe",
 "types": ["Fire"],
 "baseStats": {"hp": 55, "atk": 70, "def": 45, "spa": 70, "spd": 50, "spe": 60},
 "abilities": ["Intimidate", "Flash Fire", "Justified"]
 },
 {
+    "id": "Arcanine",
 "name": "Arcanine",
 "types": ["Fire"],
 "baseStats": {"hp": 90, "atk": 110, "def": 80, "spa": 100, "spd": 80, "spe": 95},
 "abilities": ["Intimidate", "Flash Fire", "Justified"]
 },
 {
+    "id": "Poliwag",
 "name": "Poliwag",
 "types": ["Water"],
 "baseStats": {"hp": 40, "atk": 50, "def": 40, "spa": 40, "spd": 40, "spe": 90},
 "abilities": ["Water Absorb", "Damp", "Swift Swim"]
 },
 {
+    "id": "Poliwhirl",
 "name": "Poliwhirl",
 "types": ["Water"],
 "baseStats": {"hp": 65, "atk": 65, "def": 65, "spa": 50, "spd": 50, "spe": 90},
 "abilities": ["Water Absorb", "Damp", "Swift Swim"]
 },
 {
+    "id": "Poliwrath",
 "name": "Poliwrath",
 "types": ["Water", "Fighting"],
 "baseStats": {"hp": 90, "atk": 95, "def": 95, "spa": 70, "spd": 90, "spe": 70},
 "abilities": ["Water Absorb", "Damp", "Swift Swim"]
 },
 {
+    "id": "Abra",
 "name": "Abra",
 "types": ["Psychic"],
 "baseStats": {"hp": 25, "atk": 20, "def": 15, "spa": 105, "spd": 55, "spe": 90},
 "abilities": ["Synchronize", "Inner Focus", "Magic Guard"]
 },
 {
+    "id": "Kadabra",
 "name": "Kadabra",
 "types": ["Psychic"],
 "baseStats": {"hp": 40, "atk": 35, "def": 30, "spa": 120, "spd": 70, "spe": 105},
 "abilities": ["Synchronize", "Inner Focus", "Magic Guard"]
 },
 {
+    "id": "Alakazam",
 "name": "Alakazam",
 "types": ["Psychic"],
 "baseStats": {"hp": 55, "atk": 50, "def": 45, "spa": 135, "spd": 95, "spe": 120},
 "abilities": ["Synchronize", "Inner Focus", "Magic Guard"]
 },
 {
+    "id": "Machop",
 "name": "Machop",
 "types": ["Fighting"],
 "baseStats": {"hp": 70, "atk": 80, "def": 50, "spa": 35, "spd": 35, "spe": 35},
 "abilities": ["Guts", "No Guard", "Steadfast"]
 },
 {
+    "id": "Machoke",
 "name": "Machoke",
 "types": ["Fighting"],
 "baseStats": {"hp": 80, "atk": 100, "def": 70, "spa": 50, "spd": 60, "spe": 45},
 "abilities": ["Guts", "No Guard", "Steadfast"]
 },
 {
+    "id": "Machamp",
 "name": "Machamp",
 "types": ["Fighting"],
 "baseStats": {"hp": 90, "atk": 130, "def": 80, "spa": 65, "spd": 85, "spe": 55},
 "abilities": ["Guts", "No Guard", "Steadfast"]
 },
 {
+    "id": "Bellsprout",
 "name": "Bellsprout",
 "types": ["Grass", "Poison"],
 "baseStats": {"hp": 50, "atk": 75, "def": 35, "spa": 70, "spd": 30, "spe": 40},
 "abilities": ["Chlorophyll", "Gluttony"]
 },
 {
+    "id": "Weepinbell",
 "name": "Weepinbell",
 "types": ["Grass", "Poison"],
 "baseStats": {"hp": 65, "atk": 90, "def": 50, "spa": 85, "spd": 45, "spe": 55},
 "abilities": ["Chlorophyll", "Gluttony"]
 },
 {
+    "id": "Victreebel",
 "name": "Victreebel",
 "types": ["Grass", "Poison"],
 "baseStats": {"hp": 80, "atk": 105, "def": 65, "spa": 100, "spd": 70, "spe": 70},
 "abilities": ["Chlorophyll", "Gluttony"]
 },
 {
+    "id": "Tentacool",
 "name": "Tentacool",
 "types": ["Water", "Poison"],
 "baseStats": {"hp": 40, "atk": 40, "def": 35, "spa": 50, "spd": 100, "spe": 70},
 "abilities": ["Clear Body", "Liquid Ooze", "Rain Dish"]
 },
 {
+    "id": "Tentacruel",
 "name": "Tentacruel",
 "types": ["Water", "Poison"],
 "baseStats": {"hp": 80, "atk": 70, "def": 65, "spa": 80, "spd": 120, "spe": 100},
 "abilities": ["Clear Body", "Liquid Ooze", "Rain Dish"]
 },
 {
+    "id": "Geodude",
 "name": "Geodude",
 "types": ["Rock", "Ground"],
 "baseStats": {"hp": 40, "atk": 80, "def": 100, "spa": 30, "spd": 30, "spe": 20},
@@ -444,462 +518,539 @@
 },
 
 {
+    "id": "Graveler",
 "name": "Graveler",
 "types": ["Rock", "Ground"],
 "baseStats": {"hp": 55, "atk": 95, "def": 115, "spa": 45, "spd": 45, "spe": 35},
 "abilities": ["Rock Head", "Sturdy", "Sand Veil"]
 },
 {
+    "id": "Golem",
     "name":"Golem",
     "types":["Rock","Ground"],
    "baseStats":{"hp":80, "atk":120,"def":130, "spa":55, "spd":65, "spe":45},
    "abilities":["Rock Head","Sturdy","Sand Veil"]
 },
 {
+    "id": "Ponyta",
     "name":"Ponyta",
     "types":["Fire"],
    "baseStats":{"hp":50, "atk":85,"def":55, "spa":65, "spd":65, "spe":90},
    "abilities":["Run Away","Flash Fire","Flame Body"]
 },
 {
+    "id": "Rapidash",
     "name":"Rapidash",
     "types":["Fire"],
    "baseStats":{"hp":65, "atk":100,"def":70, "spa":80, "spd":80, "spe":105},
    "abilities":["Run Away","Flash Fire","Flame Body"]
 },
 {
+    "id": "Slowpoke",
     "name":"Slowpoke",
     "types":["Water","Psychic"],
    "baseStats":{"hp":90, "atk":65,"def":65, "spa":40, "spd":40, "spe":15},
    "abilities":["Oblivious","Own Tempo","Regenerator"]
 },
 {
+    "id": "Slowbro",
     "name":"Slowbro",
     "types":["Water","Psychic"],
    "baseStats":{"hp":95, "atk":75,"def":110, "spa":100, "spd":80, "spe":30},
    "abilities":["Oblivious","Own Tempo","Regenerator"]
 },
 {
+    "id": "Magnemite",
     "name":"Magnemite",
     "types":["Electric","Steel"],
    "baseStats":{"hp":25, "atk":35,"def":70, "spa":95, "spd":55, "spe":45},
    "abilities":["Magnet Pull","Sturdy","Analytic"]
 },
 {
+    "id": "Magneton",
     "name":"Magneton",
     "types":["Electric","Steel"],
    "baseStats":{"hp":50, "atk":60,"def":95, "spa":120, "spd":70, "spe":70},
    "abilities":["Magnet Pull","Sturdy","Analytic"]
 },
 {
+    "id": "Farfetch'd",
     "name":"Farfetchd",
     "types":["Normal","Flying"],
    "baseStats":{"hp":52, "atk":90,"def":55, "spa":58, "spd":62, "spe":60},
    "abilities":["Keen Eye","Inner Focus","defiant"]
 },
 {
+    "id": "Doduo",
     "name":"Doduo",
     "types":["Normal","Flying"],
    "baseStats":{"hp":35, "atk":85,"def":45, "spa":35, "spd":35, "spe":75},
    "abilities":["Run Away","Early Bird","Tangled Feet"]
 },
 {
+    "id": "Dodrio",
     "name":"Dodrio",
     "types":["Normal","Flying"],
    "baseStats":{"hp":60, "atk":110,"def":70, "spa":60, "spd":60, "spe":110},
    "abilities":["Run Away","Early Bird","Tangled Feet"]
 },
 {
+    "id": "Seel",
     "name":"Seel",
     "types":["Water"],
    "baseStats":{"hp":65, "atk":45,"def":55, "spa":45, "spd":70, "spe":45},
    "abilities":["Thick Fat","Hydration","Ice Body"]
 },
 {
+    "id": "Dewgong",
     "name":"Dewgong",
     "types":["Water","Ice"],
    "baseStats":{"hp":90, "atk":70,"def":80, "spa":70, "spd":95, "spe":70},
    "abilities":["Thick Fat","Hydration","Ice Body"]
 },
 {
+    "id": "Grimer",
     "name":"Grimer",
     "types":["Poison"],
    "baseStats":{"hp":80, "atk":80,"def":50, "spa":40, "spd":50, "spe":25},
    "abilities":["Stench","Sticky Hold","Poison Touch"]
 },
 {
+    "id": "Muk",
     "name":"Muk",
     "types":["Poison"],
    "baseStats":{"hp":105, "atk":105,"def":75, "spa":65, "spd":100, "spe":50},
    "abilities":["Stench","Sticky Hold","Poison Touch"]
 },
 {
+    "id": "Shellder",
     "name":"Shellder",
     "types":["Water"],
    "baseStats":{"hp":30, "atk":65,"def":100, "spa":45, "spd":25, "spe":40},
    "abilities":["Shell Armor","Skill Link","Overcoat"]
 },
 {
+    "id": "Cloyster",
     "name":"Cloyster",
     "types":["Water","Ice"],
    "baseStats":{"hp":50, "atk":95,"def":180, "spa":85, "spd":45, "spe":70},
    "abilities":["Shell Armor","Skill Link","Overcoat"]
 },
 {
+    "id": "Gastly",
     "name":"Gastly",
     "types":["Ghost","Poison"],
    "baseStats":{"hp":30, "atk":35,"def":30, "spa":100, "spd":35, "spe":80},
    "abilities":["Levitate"]
 },
 {
+    "id": "Haunter",
     "name":"Haunter",
     "types":["Ghost","Poison"],
    "baseStats":{"hp":45, "atk":50,"def":45, "spa":115, "spd":55, "spe":95},
    "abilities":["Levitate"]
 },
 {
+    "id": "Gengar",
     "name":"Gengar",
     "types":["Ghost","Poison"],
    "baseStats":{"hp":60, "atk":65,"def":60, "spa":130, "spd":75, "spe":110},
    "abilities":["Cursed Body"]
 },
 {
+    "id": "Onix",
     "name": "Onix",
     "types": ["Rock", "Ground"],
     "baseStats": {"hp": 35, "atk": 45, "def": 160, "spa": 30, "spd": 45, "spe": 70},
     "abilities": ["Rock Head", "Sturdy", "Weak Armor"]
 },
 {
+    "id": "Drowzee",
     "name":"Drowzee",
     "types":["Psychic"],
    "baseStats":{"hp":60, "atk":48,"def":45, "spa":43, "spd":90, "spe":42},
    "abilities":["Insomnia","Forewarn","Inner Focus"]
 },
 {
+    "id": "Hypno",
     "name":"Hypno",
     "types":["Psychic"],
    "baseStats":{"hp":85, "atk":73,"def":70, "spa":73, "spd":115, "spe":67},
    "abilities":["Insomnia","Forewarn","Inner Focus"]
 },
 {
+    "id": "Krabby",
     "name":"Krabby",
     "types":["Water"],
    "baseStats":{"hp":30, "atk":105,"def":90, "spa":25, "spd":25, "spe":50},
    "abilities":["Hyper Cutter","Shell Armor","Sheer Force"]
 },
 {
+    "id": "Kingler",
     "name":"Kingler",
     "types":["Water"],
    "baseStats":{"hp":55, "atk":130,"def":115, "spa":50, "spd":50, "spe":75},
    "abilities":["Hyper Cutter","Shell Armor","Sheer Force"]
 },
 {
+    "id": "Voltorb",
     "name":"Voltorb",
     "types":["Electric"],
    "baseStats":{"hp":40, "atk":30,"def":50, "spa":55, "spd":55, "spe":100},
    "abilities":["Soundproof","Static","Aftermath"]
 },
 {
+    "id": "Electrode",
     "name":"Electrode",
     "types":["Electric"],
    "baseStats":{"hp":60, "atk":50,"def":70, "spa":80, "spd":80, "spe":150},
    "abilities":["Soundproof","Static","Aftermath"]
 },
 {
+    "id": "Exeggcute",
     "name":"Exeggcute",
     "types":["Grass","Psychic"],
    "baseStats":{"hp":60, "atk":40,"def":80, "spa":60, "spd":45, "spe":40},
    "abilities":["Chlorophyll"]
 },
 {
+    "id": "Exeggutor",
     "name":"Exeggutor",
     "types":["Grass","Psychic"],
    "baseStats":{"hp":95, "atk":95,"def":85, "spa":125, "spd":75, "spe":55},
    "abilities":["Chlorophyll","Harvest"]
 },
 {
+    "id": "Cubone",
     "name":"Cubone",
     "types":["Ground"],
    "baseStats":{"hp":50, "atk":50,"def":95, "spa":40, "spd":50, "spe":35},
    "abilities":["Rock Head","Lightning Rod","Battle Armor"]
 },
 {
+    "id": "Marowak",
     "name":"Marowak",
     "types":["Ground"],
    "baseStats":{"hp":60, "atk":80,"def":110, "spa":50, "spd":80, "spe":45},
    "abilities":["Rock Head","Lightning Rod","Battle Armor"]
 },
 {
+    "id": "Hitmonlee",
     "name":"Hitmonlee",
     "types":["Fighting"],
    "baseStats":{"hp":50, "atk":120,"def":53, "spa":35, "spd":110, "spe":87},
    "abilities":["Limber","Reckless","Unburden"]
 },
 {
+    "id": "Hitmonchan",
     "name":"Hitmonchan",
     "types":["Fighting"],
    "baseStats":{"hp":50, "atk":105,"def":79, "spa":35, "spd":110, "spe":76},
    "abilities":["Keen Eye","Iron Fist","Inner Focus"]
 },
 {
+    "id": "Lickitung",
     "name":"Lickitung",
     "types":["Normal"],
    "baseStats":{"hp":90, "atk":55,"def":75, "spa":60, "spd":75, "spe":30},
    "abilities":["Own Tempo","Oblivious","Cloud Nine"]
 },
 {
+    "id": "Koffing",
     "name":"Koffing",
     "types":["Poison"],
    "baseStats":{"hp":40, "atk":65,"def":95, "spa":60, "spd":45, "spe":35},
    "abilities":["Levitate","Neutralizing Gas","Stench"]
 },
 {
+    "id": "Weezing",
     "name":"Weezing",
     "types":["Poison"],
    "baseStats":{"hp":65, "atk":90,"def":120, "spa":85, "spd":70, "spe":60},
    "abilities":["Levitate","Neutralizing Gas","Stench"]
 },
 {
+    "id": "Rhyhorn",
     "name":"Rhyhorn",
     "types":["Ground","Rock"],
    "baseStats":{"hp":80, "atk":85,"def":95, "spa":30, "spd":30, "spe":25},
    "abilities":["Lightning Rod","Rock Head","Reckless"]
 },
 {
+    "id": "Rhydon",
     "name":"Rhydon",
     "types":["Ground","Rock"],
    "baseStats":{"hp":105, "atk":130,"def":120, "spa":45, "spd":45, "spe":40},
    "abilities":["Lightning Rod","Rock Head","Reckless"]
 },
 {
+    "id": "Chansey",
     "name":"Chansey",
     "types":["Normal"],
    "baseStats":{"hp":250, "atk":5,"def":5, "spa":35, "spd":105, "spe":50},
    "abilities":["Natural Cure","Serene Grace","Healer"]
 },
 {
+    "id": "Tangela",
     "name":"Tangela",
     "types":["Grass"],
    "baseStats":{"hp":65, "atk":55,"def":115, "spa":100, "spd":40, "spe":60},
    "abilities":["Chlorophyll","Leaf Guard","Regenerator"]
 },
 {
+    "id": "Kangaskhan",
     "name":"Kangaskhan",
     "types":["Normal"],
    "baseStats":{"hp":105, "atk":95,"def":80, "spa":40, "spd":80, "spe":90},
    "abilities":["Early Bird","Scrappy","Inner Focus"]
 },
 {
+    "id": "Horsea",
     "name":"Horsea",
     "types":["Water"],
    "baseStats":{"hp":30, "atk":40,"def":70, "spa":70, "spd":25, "spe":60},
    "abilities":["Swift Swim","Sniper","Damp"]
 },
 {
+    "id": "Seadra",
     "name":"Seadra",
     "types":["Water"],
    "baseStats":{"hp":55, "atk":65,"def":95, "spa":95, "spd":45, "spe":85},
    "abilities":["Poison Point","Sniper","Damp"]
 },
 {
+    "id": "Goldeen",
     "name":"Goldeen",
     "types":["Water"],
    "baseStats":{"hp":45, "atk":67,"def":60, "spa":35, "spd":50, "spe":63},
    "abilities":["Swift Swim","Water Veil","Lightning Rod"]
 },
 {
+    "id": "Seaking",
     "name":"Seaking",
     "types":["Water"],
    "baseStats":{"hp":80, "atk":92,"def":65, "spa":65, "spd":80, "spe":68},
    "abilities":["Swift Swim","Water Veil","Lightning Rod"]
 },
 {
+    "id": "Staryu",
     "name":"Staryu",
     "types":["Water"],
    "baseStats":{"hp":30, "atk":45,"def":55, "spa":70, "spd":55, "spe":85},
    "abilities":["Illuminate","Natural Cure","Analytic"]
 },
 {
+    "id": "Starmie",
     "name":"Starmie",
     "types":["Water","Psychic"],
    "baseStats":{"hp":60, "atk":75,"def":85, "spa":100, "spd":85, "spe":115},
    "abilities":["Illuminate","Natural Cure","Analytic"]
 },
 {
+    "id": "Mr. Mime",
     "name":"Mr.Mime",
     "types":["Psychic","Fairy"],
    "baseStats":{"hp":40, "atk":45,"def":65, "spa":100, "spd":120, "spe":90},
    "abilities":["Soundproof","Filter","Technician"]
 },
 {
+    "id": "Scyther",
     "name":"Scyther",
     "types":["Bug","Flying"],
    "baseStats":{"hp":70, "atk":110,"def":80, "spa":55, "spd":80, "spe":105},
    "abilities":["Swarm","Technician","Steadfast"]
 },
 {
+    "id": "Jynx",
     "name":"Jynx",
     "types":["Ice","Psychic"],
    "baseStats":{"hp":65, "atk":50,"def":35, "spa":115, "spd":95, "spe":95},
    "abilities":["Oblivious","Forewarn","Dry Skin"]
 },
 {
+    "id": "Electabuzz",
     "name":"Electabuzz",
     "types":["Electric"],
    "baseStats":{"hp":65, "atk":83,"def":57, "spa":95, "spd":85, "spe":105},
    "abilities":["Static","Vital Spirit"]
 },
 {
+    "id": "Magmar",
     "name":"Magmar",
     "types":["Fire"],
    "baseStats":{"hp":65, "atk":95,"def":57, "spa":100, "spd":85, "spe":93},
    "abilities":["Flame Body","Vital Spirit"]
 },
 {
+    "id": "Pinsir",
     "name":"Pinsir",
     "types":["Bug"],
    "baseStats":{"hp":65, "atk":125,"def":100, "spa":55, "spd":70, "spe":85},
    "abilities":["Hyper Cutter","Mold Breaker","Moxie"]
 },
 {
+    "id": "Tauros",
     "name":"Tauros",
     "types":["Normal"],
    "baseStats":{"hp":75, "atk":100,"def":95, "spa":40, "spd":70, "spe":110},
    "abilities":["Imtimidate","Anger Point","Sheer Force"]
 },
 {
+    "id": "Magikarp",
     "name":"Magikarp",
     "types":["Water"],
    "baseStats":{"hp":20, "atk":10,"def":55, "spa":15, "spd":20, "spe":80},
    "abilities":["Swift Swim","Rattled"]
 },
 {
+    "id": "Gyarados",
     "name":"Gyarados",
     "types":["Water","Flying"],
    "baseStats":{"hp":95, "atk":125,"def":79, "spa":60, "spd":100, "spe":81},
    "abilities":["Imtimidate","Moxie"]
 },
 {
+    "id": "Lapras",
     "name":"Lapras",
     "types":["Water","Ice"],
    "baseStats":{"hp":130, "atk":85,"def":80, "spa":85, "spd":95, "spe":60},
    "abilities":["Water Absorb","Shell Armor","Hydration"]
 },
 {
+    "id": "Ditto",
     "name":"Ditto",
     "types":["Normal"],
    "baseStats":{"hp":48, "atk":48,"def":48, "spa":48, "spd":48, "spe":48},
    "abilities":["Limber","Imposter"]
 },
 {
+    "id": "Eevee",
     "name":"Eevee",
     "types":["Normal"],
    "baseStats":{"hp":55, "atk":55,"def":50, "spa":45, "spd":65, "spe":55},
    "abilities":["Run Away","Adaptability","Anticipation"]
 },
 {
+    "id": "Vaporeon",
     "name":"Vaporeon",
     "types":["Water"],
    "baseStats":{"hp":130, "atk":65,"def":60, "spa":110, "spd":95, "spe":65},
    "abilities":["Water Absorb","Hydration"]
 },
 {
+    "id": "Jolteon",
     "name":"Jolteon",
     "types":["Electric"],
    "baseStats":{"hp":65, "atk":65,"def":60, "spa":110, "spd":95, "spe":130},
    "abilities":["Volt Absorb","Quick Feet"]
 },
 {
+    "id": "Flareon",
     "name":"Flareon",
     "types":["Fire"],
    "baseStats":{"hp":65, "atk":130,"def":60, "spa":95, "spd":110, "spe":65},
    "abilities":["Flash Fire","Guts"]
 },
 {
+    "id": "Porygon",
     "name":"Porygon",
     "types":["Normal"],
    "baseStats":{"hp":65, "atk":60,"def":70, "spa":85, "spd":75, "spe":40},
    "abilities":["Trace","Download","Analytic"]
 },
 {
+    "id": "Omanyte",
     "name":"Omanyte",
     "types":["Rock","Water"],
    "baseStats":{"hp":35, "atk":40,"def":100, "spa":90, "spd":55, "spe":35},
    "abilities":["Swift Swim","Shell Armor","Weak Armor"]
 },
 {
+    "id": "Omastar",
     "name":"Omastar",
     "types":["Rock","Water"],
    "baseStats":{"hp":70, "atk":60,"def":125, "spa":115, "spd":70, "spe":55},
    "abilities":["Swift Swim","Shell Armor","Weak Armor"]
 },
 {
+    "id": "Kabuto",
     "name":"Kabuto",
     "types":["Rock","Water"],
    "baseStats":{"hp":30, "atk":80,"def":90, "spa":55, "spd":45, "spe":55},
    "abilities":["Swift Swim","Battle Armor","Weak Armor"]
 },
 {
+    "id": "Kabutops",
     "name":"Kabutops",
     "types":["Rock","Water"],
    "baseStats":{"hp":60, "atk":115,"def":105, "spa":65, "spd":70, "spe":80},
    "abilities":["Swift Swim","Battle Armor","Weak Armor"]
 },
 {
+    "id": "Aerodactyl",
     "name":"Aerodactyl",
     "types":["Rock","Flying"],
    "baseStats":{"hp":80, "atk":105,"def":65, "spa":60, "spd":75, "spe":130},
    "abilities":["Rock Head","Pressure","Unnerve"]
 },
 {
+    "id": "Snorlax",
     "name":"Snorlax",
     "types":["Normal"],
    "baseStats":{"hp":160, "atk":110,"def":65, "spa":65, "spd":110, "spe":30},
    "abilities":["Immunity","Thick Fat","Gluttony"]
 },
 {
+    "id": "Articuno",
     "name":"Articuno",
     "types":["Ice","Flying"],
    "baseStats":{"hp":90, "atk":85,"def":100, "spa":95, "spd":125, "spe":85},
    "abilities":["Pressure","Snow Cloak"]
 },
 {
+    "id": "Zapdos",
     "name":"Zapdos",
     "types":["Electric","Flying"],
    "baseStats":{"hp":90, "atk":90,"def":85, "spa":125, "spd":90, "spe":100},
    "abilities":["Pressure","Static"]
 },
 {
+    "id": "Moltres",
     "name":"Moltres",
     "types":["Fire","Flying"],
    "baseStats":{"hp":90, "atk":100,"def":90, "spa":125, "spd":85, "spe":90},
    "abilities":["Pressure","Flame Body"]
 },
 {
+    "id": "Dratini",
     "name":"Dratini",
     "types":["Dragon"],
    "baseStats":{"hp":41, "atk":64,"def":45, "spa":50, "spd":50, "spe":50},
    "abilities":["Shed Skin","Marvel Scale"]
 },
 {
+    "id": "Dragonair",
     "name":"Dragonair",
     "types":["Dragon"],
    "baseStats":{"hp":61, "atk":84,"def":65, "spa":70, "spd":70, "spe":70},
    "abilities":["Shed Skin","Marvel Scale"]
 },
 {
+    "id": "Dragonite",
     "name":"Dragonite",
     "types":["Dragon","Flying"],
    "baseStats":{"hp":91, "atk":134,"def":95, "spa":100, "spd":100, "spe":80},
    "abilities":["Inner Focus","Multiscale"]
 },
 {
+    "id": "Mewtwo",
     "name":"Mewtwo",
     "types":["Psychic"],
    "baseStats":{"hp":106, "atk":110,"def":90, "spa":154, "spd":90, "spe":130},
    "abilities":["Pressure","Unnerve"]
 },
 {
+    "id": "Mew",
     "name":"Mew",
     "types":["Psychic"],
    "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
