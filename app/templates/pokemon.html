@@ -18,7 +18,7 @@
     <div class="pageBox">
         <body>
             <header>
-                <h1 class="pageTitle"> {{ pokedex['name'] }} </h1>
+                <h2 class="pageTitle"> {{ pokedex['id'] }} </h2>
             </header>
 
             <p>
@@ -26,11 +26,6 @@
             </p>
 
             <div class="profileCard">
-
-                <!-- Icon -->
-                <img class="profileIcon"
-                     src="/static/img/pokemon_collection/{{ pokedex['name'] }}.webp" 
-                     alt="{{ pokedex['name'] }}"> <!---this is the pokemon icon-->
 
                 <!-- Types as colored badges -->
                 <div class="profileRow"> 

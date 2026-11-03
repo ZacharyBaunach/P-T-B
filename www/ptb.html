@@ -22,7 +22,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script>
-            let num = 10
+            let num = 15
+            const LASTPOKEMONID = 251
         </script>
 
 
@@ -223,7 +224,7 @@
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
                 // create entrys
-                for (i = 0; i < 10; i++) {
+                for (i = 0; i < 15; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
                     const image = document.createElement('img')
@@ -245,7 +246,7 @@
                 let i = id
 
                 //Hides the load more button once all pokemon are loaded
-                if (id+10 > 151) {
+                if (id+15 > LASTPOKEMONID) {
 
                     //displays 151th Pokemon
                     const template = document.createElement('a')
@@ -264,7 +265,7 @@
 
                     return
                 }
-                num = id+10
+                num = id+15
                 for (i; i < num; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
