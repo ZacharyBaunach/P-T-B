@@ -529,4 +529,16 @@ img.site-logo {
     width: 120px;
     height: 120px;
 }
+
+/* ===== Pokemon profile card ( which are for used in ptb.html popup AND pokemon.html) ===== */
+.profileCard { text-align: center; }
+
+.profileIcon {
+    width: 140px;
+    image-rendering: pixelated;
+}
+
+.profileName { color: #ff2d2d; } /* Pokemon name in profile card */
+
+.profileRow { margin: 16px 0; text-align: auto; } 
 }

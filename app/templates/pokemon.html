@@ -21,23 +21,48 @@
                 <h1 class="pageTitle"> {{ pokedex['name'] }} </h1>
             </header>
 
-            <p>
-                Type: {{ pokedex["types"] }}
-            </p>
-            
-            
-            <p>
-                stats: {{ pokedex["baseStats"] }}
-            </p>
+            <div class="profileCard">
 
-            <p>
-                abilities: {{ pokedex['abilities'] }}
-            </p>
+                <!-- Icon -->
+                <img class="profileIcon"
+                     src="/static/img/pokemon_collection/{{ pokedex['name'] }}.webp" 
+                     alt="{{ pokedex['name'] }}"> <!---this is the pokemon icon-->
 
-            <p>
-                moves: {{ pokeMoves }}
-            </p>
-            
+                <!-- Types as colored badges -->
+                <div class="profileRow"> 
+                    <h3>Type</h3>
+                    {% for t in pokedex['types'] %}
+                        <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
+                    {% endfor %}
+                </div>
+
+                <!-- Abilities as pills -->
+                <div class="profileRow">
+                    <h3>Abilities</h3>
+                    {% for a in pokedex['abilities'] %}
+                        <span class="abilityPill">{{ a }}</span>
+                    {% endfor %}
+                </div>
+
+                <!-- Stat bars (255 is the max possible base stat) -->
+                {% set labels = {'hp':'HP','atk':'Attack','def':'Defense','spa':'Sp. Atk','spd':'Sp. Def','spe':'Speed'} %}
+                <div class="profileRow">
+                    <h3>Base Stats</h3>
+                    {% for stat, value in pokedex['baseStats'].items() %}
+                        <div class="statLine">
+                            <span class="statName">{{ labels[stat] }}</span>
+                            <span class="statValue">{{ value }}</span>
+                            <div class="statTrack">
+                                <div class="statFill" style="width: {{ (value / 255 * 100)|round }}%"></div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <p class="statTotal">Total: {{ pokedex['baseStats'].values()|sum }}</p>
+                </div>
+
+            </div>
+
         </body>
     </div>
+</html>
 </html>
