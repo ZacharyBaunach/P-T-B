@@ -178,8 +178,7 @@ img.site-logo {
     height: 250px;
     justify-content: center;
     align-items: center;
-    border: 5px solid #222;
-    border-radius: 60px;
+
 }
 
 
@@ -537,15 +536,16 @@ img.site-logo {
 
 /* Makes the Pokemon images on homepage smaller to have around 2 per row on smaller devices */
 .pokemonImage{
-    width: 120px;
-    height: 120px;
+    display:flex;
+    width: 100px;
+    height: 100px;
 }
 
 /* ===== Pokemon profile card ( which are for used in ptb.html popup AND pokemon.html) ===== */
 .profileCard { text-align: center; }
 
 .profileIcon {
-    width: 140px;
+    width: 100px;
     image-rendering: pixelated;
 }
 
@@ -554,4 +554,4 @@ img.site-logo {
 .profileRow { margin: 16px 0; text-align: auto; } 
 }
 
-}
+
