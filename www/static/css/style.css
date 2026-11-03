@@ -150,7 +150,7 @@ img.site-logo {
 }
 
 /* Button to load more pokemon onto the homepage */
-#loadPkm{
+.loadPkm{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -161,8 +161,14 @@ img.site-logo {
     padding: 10px;
 }
 
-:hover#loadPkm{
+/* adds a white border when hovering over button */
+:hover.loadPkm{
     outline: 5px solid #ffffff;
+}
+
+/* rule that makes load more button disappear once all are loaded */
+.allPkmLoaded{
+    display: none;
 }
 
 
@@ -508,7 +514,7 @@ img.site-logo {
 }
 
 /* Removes margins from load pokemon button */
-#loadPkm{
+.loadPkm{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -516,5 +522,11 @@ img.site-logo {
     border-radius: 60px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+/* Makes the Pokemon images on homepage smaller to have around 2 per row on smaller devices */
+.pokemonImage{
+    width: 120px;
+    height: 120px;
 }
 }
