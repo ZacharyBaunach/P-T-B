@@ -248,7 +248,7 @@
                 for (i = 0; i < 15; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
-                    template.setAttribute('class', 'pokemonImageLink')
+                    template.className='pokemonImageLink'
                     const image = document.createElement('img')
                     image.setAttribute('class', 'pokemonImage')
                     image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
@@ -329,6 +329,7 @@
                     //displays 151th Pokemon
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
+                    template.className='pokemonImageLink'
                     const image = document.createElement('img')
                     image.setAttribute('class', 'pokemonImage')
                     image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
@@ -347,6 +348,7 @@
                 for (i; i < loadMorePokemon; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
+                    template.className='pokemonImageLink'
                     const image = document.createElement('img')
                     image.setAttribute('class', 'pokemonImage')
                     image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
