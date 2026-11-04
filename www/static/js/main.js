@@ -1,37 +1,54 @@
 console.log("main.js loaded - edit me in www/static/js/main.js");
 
-//grab containers from page
-const Search = document.getElementById("pokeEntry")
-const resultsList = document.getElementById("resultsList")
-//init search list results
-let data = []
+//inits
+// TEAM_LIMIT = max team members, MOVE_LIMIT = max moves
+const TEAM_LIMIT = 6
+const MOVE_LIMIT = 4
+// list of pokemon to add (for adding session storage)
+let pokeSearchList = []
+// Holds the Pokedex data and Pokemon Move data fetched from the server
+let pokeData = [];
+let pokeMoves = [];
 
-//fetch Pokedex.JSON
-fetch('Pokedex.JSON')
-    .then(jsonData => {
-        data = jsonData; 
-    })
-
-
-Search.addEventListener('input', (e) => {
-    const searchString = e.target.value.toLowerCase();
-
-    // Filter data based on user input
-    const filteredData = data.filter(item => {
-        return item.name.toLowerCase().includes(searchString);
-    });
-
-    displayResults(filteredData);
+// Event listener waiting for DOM content load to fetch Pokedex database entries
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("Loaded page");
+    pageLoad();
 });
 
-// 3. Display the filtered results in the HTML
-function displayResults(items) {
-    // Clear previous results
-    resultsList.innerHTML = '';
-
-    // If no matches found
-    if (items.length === 0) {
-        resultsList.innerHTML = '<li>No results found</li>';
-        return;
+// ---- RESTORE SAVED TEAM ----
+//checks sessionStorage and loads in 'saved' team
+// Restores previously saved team selections from browser session storage on load
+// Check each of the 6 slots for saved data and re-add it
+async function loadTeam() {
+    for (let p = 1; p <= TEAM_LIMIT; p++) {
+        if (sessionStorage[p]){
+            pokeSearchList.push(JSON.parse(sessionStorage.getItem(p)))
+            console.log(`loading index ${p}`)
+            pokeAdd(p-1)
+            pokeSearchList.pop()
+        }   else {
+            console.log(`empty session storage of index ${p}`)
+        }
     }
+}
+
+// creates img DOM element given pokemon name
+function image(name){
+    const pokeImage = document.createElement('img')
+    pokeImage.setAttribute('src', `static/img/pokemon_collection/${name}.webp`)
+    pokeImage.setAttribute('alt', `${name} sprite`)
+    pokeImage.setAttribute('class', 'pokeSprite')
+    return pokeImage
+}
+
+// Stat Calc for hp
+function hpStatCalc(baseVal, IV = 0, EV = 0, level = 50) {
+    const actualVal = ((2*baseVal + IV + EV/4)*level)/100+level+10
+    return actualVal
+}
+// Sstat Calc for atk, def, spa, spd, spe
+function statCalc(baseVal, IV = 0, EV = 0, level = 50, nature = 1) {
+    const actualVal = (((2*baseVal + IV + EV/4)*level)/100+5) * nature
+    return actualVal
 }

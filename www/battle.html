@@ -102,9 +102,22 @@
 
             </li>
         </ul>
+        <script src="static/js/main.js"></script>
+
         <script>
-            //Makes Hamburger menu appear and disappear// 
+            console.log("ready to load .js")
+
+            //index init for loading pokemon from session storage in order
+            let index = 0
+
+            async function pageLoad() {
+                await loadTeam();
+                activePokemonMoves();
+            };
             
+
+
+            //Makes Hamburger menu appear and disappear// 
             function collapseMenu(){
                 let navContainer = document.getElementById("navigationBar");
                 let mobileNav = navContainer.className;
@@ -218,23 +231,6 @@
                 }
             }
 
-            //gsets up pokemon addition list
-            let pokeSearchList = []
-
-            //checks sessionStorage and loads in 'saved' team
-            let index = 0
-            for (i = 1; i <7 ; i++) {
-                if (sessionStorage[i]){
-                    pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
-                    console.log(`loading index ${i}`)
-                    pokeAdd()
-                    pokeSearchList.pop()
-                    index += 1
-                }   else {
-                    console.log(`empty session storage of index ${i}`)
-                }
-            };
-
             //adds pokemon data to each pokemon entry
             function pokeAdd(){
                 //init pokmeon to add
@@ -244,6 +240,9 @@
 
                 if(index == 0) {
                     const ActivePkmon = document.querySelector(".ActiveSpriteA")
+                    pokeImage.entry = pokemon
+                    pokeImage.setAttribute('id', 'activePokemon')
+                    console.log(pokeImage)
                     ActivePkmon.appendChild(pokeImage)
                 } else {
 
@@ -255,14 +254,18 @@
                 teamArea[index % 6 -1].entry = pokemon
                 teamArea[index % 6 -1].appendChild(pokeImage)
                 }
+                index += 1
             };
+        
+            function activePokemonMoves() {
+                //grabs active pokemon and extracts pokemon entry
+                const activePokemonLocation = document.querySelector("#activePokemon")
+                const pokemonEntry = activePokemonLocation.entry
 
-            function image(name){
-                const pokeImage = document.createElement('img')
-                pokeImage.setAttribute('src', `static/img/pokemon_collection/${name}.webp`)
-                pokeImage.setAttribute('alt', `${name} sprite`)
-                pokeImage.setAttribute('class', 'pokeSprite')
-                return pokeImage
+                const pokemonMoves = document.querySelectorAll('.ActiveMoveA')
+                for (i = 0; i < MOVE_LIMIT; i++) {
+                    pokemonMoves[i].innerHTML = `${pokemonEntry.selectedMoves[i]}`
+                }
             }
         </script>
     </body>

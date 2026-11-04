@@ -156,28 +156,11 @@
         
         
         <!-- SCRIPTS -->
-        <!-- Script source inclusion reference placeholder -->
+        <script src="static/js/main.js"> </script>
+
+        <!-- PAGE SPECIFIC SCRIPTS -->
         <script>
             console.log("ready to load .js")
-            src="static/js/main.js"
-        </script>
-
-        <!-- Main page script -->
-        <script>
-
-            // ---- NAV HIGHLIGHT (unused, commented out) ----
-            //Keeps currently sellected page highlighted//
-
-            // function navHighlight(currentPage){
-            //     let homePage = document.getElementById("home");
-            //     let hP = homePage.className;
-            //     let battlePage = document.getElementById("battle");
-            //     let aboutPage = document.getElementById("about");
-            //     let feedbackPage = document.getElementById("feedback");
-
-            //     hP = "currentPage";
-            // }
-
 
             // ---- HAMBURGER MENU ----
             //Makes Hamburger menu appear and disappear// 
@@ -235,22 +218,14 @@
                 }
             }
 
-
             // ---- LOAD POKEMON DATA ----
-            //loads pokemon data upon page loaded
-            // Holds the Pokedex data and Pokemon Move data fetched from the server
-            let pokeData = [];
-            let pokeMoves = [];
-            // Event listener waiting for DOM content load to fetch Pokedex database entries
-            document.addEventListener('DOMContentLoaded', function() {
-                console.log("Loaded page");
-                pageLoad();
-            });
-            // set up page in certain order
+            //loads pokemon data upon page loaded (event in main.JS)
+            // sets up page in certain order
             async function pageLoad() {
                 await getPokeData();
                 await setPokeImages();
                 await getPokeMoves();
+                console.log('loading team from session storage')
                 loadTeam();
             }
             // Asynchronous function to fetch Pokedex data from server endpoint
@@ -264,7 +239,7 @@
                 const promise = await fetch('/PokeMoves');
                 pokeMoves = await promise.json();
             };
-            // Asynchronous function to fetch Pokedex data from server endpoint
+            // Asynchronous function to create set of ten template links/images for pokemon pokedex entries
             async function setPokeImages() {
                 // create pokmon templete images/call buttons
                 // grab template container
@@ -455,8 +430,9 @@
         //Generation load
         //////////////////////////////////////////////////////////////////////////
 
-            // Loads additional pokemon at the user's request
-            async function showMorePokemon(id){
+        
+            // Loads additional pokemon templates at the user's request
+            async function loadPokemon(id){
                 // create pokmon templete images/call buttons
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
@@ -529,7 +505,6 @@
             //search funtion
             // Filters Pokedex data entries based on user input search queries
             // Holds the Pokemon that match the current search text
-            let pokeSearchList = []
             function pokeSearch(){
                 // Read what the user typed
                 const search = document.getElementById('pokeSearch').value
@@ -543,24 +518,6 @@
                 }
             };
 
-            // ---- RESTORE SAVED TEAM ----
-            //checks sessionStorage and loads in 'saved' team
-            // Restores previously saved team selections from browser session storage on load
-            // teamSize = max team members
-            let teamSize = 6
-            // Check each of the 6 slots for saved data and re-add it
-            async function loadTeam() {
-                for (i = 1; i <= teamSize ; i++) {
-                    if (sessionStorage[i]){
-                        pokeSearchList.push(JSON.parse(sessionStorage.getItem(i)))
-                        console.log(`loading index ${i}`)
-                        pokeAdd(i-1)
-                        pokeSearchList.pop()
-                    }   else {
-                        console.log(`empty session storage of index ${i}`)
-                    }
-                }
-            }
             
             // ---- ADD POKEMON ----
             //adds pokemon data to each pokemon entry
@@ -568,7 +525,8 @@
             function pokeAdd(num = 7){
                 //init pokmeon to add
                 // Uses the first match from the search list
-                let pokemon = pokeSearchList[0];
+                const pokemon = pokeSearchList[0];
+                console.log(pokemon)
                 const name = pokemon.name.toLowerCase();
                 pokemon.moves = pokeMoves[`${name}`];
 
@@ -588,18 +546,18 @@
                 pokeImage.setAttribute('class', 'pokeSprite');
 
                 //find location to insert new pokemon (may overwrite)
-                let location = teamArea[num % teamSize].childNodes[1]
-                let mirrorLocation = popupTeamArea[num % teamSize].childNodes[1]
+                console.log(num)
+                let location = teamArea[num % TEAM_LIMIT].childNodes[1]
+                let mirrorLocation = popupTeamArea[num % TEAM_LIMIT].childNodes[1]
                 if (num == 7) {
                     location = document.querySelector('.open');
                     mirrorLocation = popupArea.querySelector('.open');
                 };
 
                 //clean up old image
-                // (index % teamSize wraps around so slots cycle 1-6)
+                // (index % TEAM_LIMIT wraps around so slots cycle 1-6)
                 location.innerHTML = '';
                 mirrorLocation.innerHTML = '';
-
                 //attaches pokemon data/pic to entry
                 location.entry = pokemon;
                 location.appendChild(pokeImage);
@@ -678,8 +636,7 @@
                 moveBox.setAttribute('id',"moveBox");
 
                 //create move selection dropdown menus
-                const MAX_MOVES = 4;
-                for (i = 1; i<=MAX_MOVES; i++) {
+                for (i = 1; i<=MOVE_LIMIT; i++) {
                     const move = document.createElement('select');
                     move.setAttribute('class', `selectMoveBox`);
                     move.setAttribute('id', `move${i}`);
@@ -751,9 +708,7 @@
                     statSlider.setAttribute('max', 255);
                     statSlider.setAttribute('value', 0);
                     if (pokemonEntry.activeStats) {
-                        console.log(pokemonEntry.activeStats[stat])
                         const statValue = pokemonEntry.activeStats[stat]
-                        console.log(statValue)
                         statSlider.setAttribute('value', statValue);
                     };
                     //attach event to stat sliders to update stat total
@@ -825,10 +780,9 @@
 
                 const locationID = (pokemonEntry.id.at(-7))
                 sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemonEntry.entry));
-                console.log(pokemonEntry)
             };
         
-            //funtion to be attached to pokemon abilities to attach ability to entry
+            // Event function to be attached to pokemon abilities to attach ability to saved entry.
             function abilityAttach() {
                 const chosenAbility = document.querySelector('#ability');
                 console.log(chosenAbility)
@@ -841,6 +795,7 @@
                 sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemonEntry.entry));
             };
         
+            // Event function to be attached to statSliders to update saved EV count and reflect on actual stat values.
             function statSliderUpdate() {
                 const statSliders = document.querySelector('#statSliderContainer').children
                 let currentStats = {}
@@ -866,16 +821,7 @@
                 const locationID = (pokemonEntry.id.at(-7))
                 sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemonEntry.entry));
             };
-        
-            function hpStatCalc(baseVal, IV = 0, EV = 0, level = 50) {
-                const actualVal = ((2*baseVal + IV + EV/4)*level)/100+level+10
-                return actualVal
-            }
 
-            function statCalc(baseVal, IV = 0, EV = 0, level = 50, nature = 1) {
-                const actualVal = (((2*baseVal + IV + EV/4)*level)/100+5) * nature
-                return actualVal
-            }
         </script>
 
     </body>
