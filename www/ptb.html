@@ -121,23 +121,23 @@
 
         </div>
 
-        <div id="loadPkmButton" class="loadPkm" onclick="genOneLoad(loadMorePokemon)">
+        <div id="loadPkmButton" class="loadPkm" onclick="generationLoad(15)">
             Gen 1
         </div>
 
-        <div id="loadPkmButton" class="loadPkm" onclick="genTwoLoad(loadMorePokemon)">
+        <div id="loadPkmButton" class="loadPkm" onclick="generationLoad(166)">
             Gen 2
         </div>
 
-        <div id="loadPkmButton" class="loadPkm" onclick="genThreeLoad(loadMorePokemon)">
+        <div id="loadPkmButton" class="loadPkm" onclick="generationLoad(266)">
             Gen 3
         </div>
 
-        <div id="loadPkmButton" class="loadPkm" onclick="genFourLoad(loadMorePokemon)">
+        <div id="loadPkmButton" class="loadPkm" onclick="generationLoad(401)">
             Gen 4
         </div>
 
-        <div id="loadPkmButton" class="loadPkm" onclick="genFiveLoad(loadMorePokemon)">
+        <div id="loadPkmButton" class="loadPkm" onclick="generationLoad(507)">
             Gen 5
         </div>
 
@@ -248,6 +248,7 @@
                 for (i = 0; i < 15; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
+                    template.setAttribute('class', 'pokemonImageLink')
                     const image = document.createElement('img')
                     image.setAttribute('class', 'pokemonImage')
                     image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
@@ -257,165 +258,48 @@
                 }
                 
             }
+
+
+            //deloads current pokemon
+            async function deloadPokemon(){
+
+                let pokemonList = document.getElementsByClassName('pokemonImageLink');
+
+                //Deletes current pokemon on page
+            
+                for (let i=0; i<10; i++){
+                    for (let pokemon of pokemonList){
+                        console.log(pokemon.remove())
+                    }
+                }
+            }
+
             //////////////////////////////////////////////////////////////////////////
             //Generation Loads
             //////////////////////////////////////////////////////////////////////////
 
-            //Deletes Current Pokemon on page and loads first pokemon of generation 1
-            async function genOneLoad(){
-            let pokemonList = document.getElementsByClassName('pokemonImage');
+            //Deletes Current Pokemon on page and loads first pokemon of generation specified
+            async function generationLoad(startingPkm){
+
+            
 
             //Set loadMorePokemon variable to the first pokemon after initial load
-            loadMorePokemon = 15;
+            loadMorePokemon = startingPkm;
             
-            //Deletes current pokemon on page
-            for (let i=0; i<10; i++){
-                for (let pokemon of pokemonList){
-                    console.log(pokemon.remove())
-                }
-            }
+            //Deloads current pokemon on page
+            await deloadPokemon()
+            
 
-            //Load first 15 Pokemon of generation 1
+            //Load first 15 Pokemon of selected generation
 
             // create pokmon templete images/call buttons
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
                 // create entrys
-                for (i = 0; i < 15; i++) {
+                for (let i = startingPkm-15; i < startingPkm; i++) {
                     const template = document.createElement('a')
                     template.setAttribute('href', `Pokemon/${i+1}`)
-                    const image = document.createElement('img')
-                    image.setAttribute('class', 'pokemonImage')
-                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
-                    image.setAttribute('alt', `${pokeData[i].name}`)
-                    template.appendChild(image)
-                    templateContainer.appendChild(template)
-                }
-                
-        }
-
-            //Deletes Current Pokemon on page and loads first pokemon of generation 2
-            async function genTwoLoad(){
-            let pokemonList = document.getElementsByClassName('pokemonImage');
-
-            //Set loadMorePokemon variable to the first pokemon after initial load
-            loadMorePokemon = 166;
-            
-            //Deletes current pokemon on page
-            for (let i=0; i<10; i++){
-                for (let pokemon of pokemonList){
-                    console.log(pokemon.remove())
-                }
-            }
-
-            //Load first 15 Pokemon of generation 2
-
-            // create pokmon templete images/call buttons
-                // grab template container
-                const templateContainer = document.querySelector('.homepagePokemon')
-                // create entrys
-                for (i = 151; i < 166; i++) {
-                    const template = document.createElement('a')
-                    template.setAttribute('href', `Pokemon/${i+1}`)
-                    const image = document.createElement('img')
-                    image.setAttribute('class', 'pokemonImage')
-                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
-                    image.setAttribute('alt', `${pokeData[i].name}`)
-                    template.appendChild(image)
-                    templateContainer.appendChild(template)
-                }
-                
-        }
-
-        //Deletes Current Pokemon on page and loads first pokemon of generation 3
-        async function genThreeLoad(){
-            let pokemonList = document.getElementsByClassName('pokemonImage');
-
-            //Set loadMorePokemon variable to the first pokemon after initial load
-            loadMorePokemon = 266;
-            
-            //Deletes current pokemon on page
-            for (let i=0; i<10; i++){
-                for (let pokemon of pokemonList){
-                    console.log(pokemon.remove())
-                }
-            }
-
-            //Load first 15 Pokemon of generation 3
-
-            // create pokmon templete images/call buttons
-                // grab template container
-                const templateContainer = document.querySelector('.homepagePokemon')
-                // create entrys
-                for (i = 251; i < 266; i++) {
-                    const template = document.createElement('a')
-                    template.setAttribute('href', `Pokemon/${i+1}`)
-                    const image = document.createElement('img')
-                    image.setAttribute('class', 'pokemonImage')
-                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
-                    image.setAttribute('alt', `${pokeData[i].name}`)
-                    template.appendChild(image)
-                    templateContainer.appendChild(template)
-                }
-                
-        }
-
-        //Deletes Current Pokemon on page and loads first pokemon of generation 4
-        async function genFourLoad(){
-            let pokemonList = document.getElementsByClassName('pokemonImage');
-
-            //Set loadMorePokemon variable to the first pokemon after initial load
-            loadMorePokemon = 401;
-            
-            //Deletes current pokemon on page
-            for (let i=0; i<10; i++){
-                for (let pokemon of pokemonList){
-                    console.log(pokemon.remove())
-                }
-            }
-
-            //Load first 15 Pokemon of generation 4
-
-            // create pokmon templete images/call buttons
-                // grab template container
-                const templateContainer = document.querySelector('.homepagePokemon')
-                // create entrys
-                for (i = 386; i < 401; i++) {
-                    const template = document.createElement('a')
-                    template.setAttribute('href', `Pokemon/${i+1}`)
-                    const image = document.createElement('img')
-                    image.setAttribute('class', 'pokemonImage')
-                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
-                    image.setAttribute('alt', `${pokeData[i].name}`)
-                    template.appendChild(image)
-                    templateContainer.appendChild(template)
-                }
-                
-        }
-
-        //Deletes Current Pokemon on page and loads first pokemon of generation 5
-        async function genFiveLoad(){
-            let pokemonList = document.getElementsByClassName('pokemonImage');
-
-            //Set loadMorePokemon variable to the first pokemon after initial load
-            loadMorePokemon = 507;
-            
-            //Deletes current pokemon on page
-            for (let i=0; i<10; i++){
-                for (let pokemon of pokemonList){
-                    console.log(pokemon.remove())
-                }
-            }
-
-            //Load first 15 Pokemon of generation 5
-
-            // create pokmon templete images/call buttons
-                // grab template container
-                const templateContainer = document.querySelector('.homepagePokemon')
-                // create entrys
-                for (i = 492; i < 507; i++) {
-                    const template = document.createElement('a')
-                    template.setAttribute('href', `Pokemon/${i+1}`)
+                    template.className='pokemonImageLink'
                     const image = document.createElement('img')
                     image.setAttribute('class', 'pokemonImage')
                     image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
@@ -432,7 +316,7 @@
 
         
             // Loads additional pokemon templates at the user's request
-            async function loadPokemon(id){
+            async function showMorePokemon(id){
                 // create pokmon templete images/call buttons
                 // grab template container
                 const templateContainer = document.querySelector('.homepagePokemon')
