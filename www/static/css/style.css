@@ -129,6 +129,43 @@ img.site-logo {
 } */
 
 /* ==========================================================================
+   Generation Filter
+   ========================================================================== */
+
+.generationFilter{
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0px;
+
+    border: 6px solid #ff2c2c;
+    display: flex;
+    border-radius: 60px;
+    justify-content: center;
+    background-color: #222;
+
+}
+
+.pokemonFilterItems{
+    display: flex;
+    border: 5px solid #222;
+    border-radius: 60px;
+    align-items: center;
+    background-color: #84dbf0;
+}
+
+:hover.pokemonFilterItems{
+    background-color: #65cbe4;
+}
+
+.genLoad{
+    display: flex;
+    color: #222;
+    text-align: center;
+    padding: 14px 31px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ==========================================================================
    Homepage & Search Elements
    ========================================================================== */
 
@@ -172,17 +209,6 @@ img.site-logo {
     display: none;
 }
 
-/* Sizing for Pokemon Images on Template stat pages */
-.pokemonTemplateImage{
-    display:flex;
-    width: 250px;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
 /* Background wrapper style for search sections */
 .pokemonSearch {
     background-color: antiquewhite;
@@ -197,6 +223,35 @@ img.site-logo {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+/* ==========================================================================
+   Pokemon Stats template pages
+   ========================================================================== */
+
+   /* Sizing for Pokemon Images on Template stat pages */
+.pokemonTemplateImage{
+    display:flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+
+}
+    /* Sets image and stats in a horizontal flex box*/
+.profileCard{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+    /* Image styling  */
+#pokemonStatsImage{
+    justify-content: flex-start;
+    padding-right: 100px;
+}
+    /* Pokemon Stat styling */
+#pokemonStats{
+    justify-content: center;
 }
 
 /* ==========================================================================

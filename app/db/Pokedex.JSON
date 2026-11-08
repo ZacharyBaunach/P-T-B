@@ -3099,6 +3099,7 @@
    "baseStats":{"hp":120, "atk":120,"def":120, "spa":120, "spd":120, "spe":120},
    "abilities":["Multitype"]
 },{
+    "id": "Victini",
     "name":"Victini",
     "types":["Psychic","Fire"],
    "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},

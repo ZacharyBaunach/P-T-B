@@ -21,45 +21,49 @@
                 <h2 class="pageTitle"> {{ pokedex['id'] }} </h2>
             </header>
 
-            <p>
-                <img class="pokemonTemplateImage" src="/static/img/pokemon_collection/{{ pokedex['name'] }}.webp" >
-            </p>
+            <ul class="profileCard">
 
-            <div class="profileCard">
+                <li id="pokemonStatsImage">
+                    <img class="pokemonTemplateImage" src="/static/img/pokemon_collection/{{ pokedex['name'] }}.webp" >
+                </li>
 
+            
+
+                
                 <!-- Types as colored badges -->
-                <div class="profileRow"> 
-                    <h3>Type</h3>
-                    {% for t in pokedex['types'] %}
-                        <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
-                    {% endfor %}
-                </div>
+                <li id="pokemonStats">
+                    <div class="profileRow"> 
+                        <h3>Type</h3>
+                        {% for t in pokedex['types'] %}
+                            <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
+                        {% endfor %}
+                    </div>
 
-                <!-- Abilities as pills -->
-                <div class="profileRow">
-                    <h3>Abilities</h3>
-                    {% for a in pokedex['abilities'] %}
-                        <span class="abilityPill">{{ a }}</span>
-                    {% endfor %}
-                </div>
+                    <!-- Abilities as pills -->
+                    <div class="profileRow">
+                        <h3>Abilities</h3>
+                        {% for a in pokedex['abilities'] %}
+                            <span class="abilityPill">{{ a }}</span>
+                        {% endfor %}
+                    </div>
 
-                <!-- Stat bars (255 is the max possible base stat) -->
-                {% set labels = {'hp':'HP','atk':'Attack','def':'Defense','spa':'Sp. Atk','spd':'Sp. Def','spe':'Speed'} %}
-                <div class="profileRow">
-                    <h3>Base Stats</h3>
-                    {% for stat, value in pokedex['baseStats'].items() %}
-                        <div class="statLine">
-                            <span class="statName">{{ labels[stat] }}</span>
-                            <span class="statValue">{{ value }}</span>
-                            <div class="statTrack">
-                                <div class="statFill" style="width: {{ (value / 255 * 100)|round }}%"></div>
+                    <!-- Stat bars (255 is the max possible base stat) -->
+                    {% set labels = {'hp':'HP','atk':'Attack','def':'Defense','spa':'Sp. Atk','spd':'Sp. Def','spe':'Speed'} %}
+                    <div class="profileRow">
+                        <h3>Base Stats</h3>
+                        {% for stat, value in pokedex['baseStats'].items() %}
+                            <div class="statLine">
+                                <span class="statName">{{ labels[stat] }}</span>
+                                <span class="statValue">{{ value }}</span>
+                                <div class="statTrack">
+                                    <div class="statFill" style="width: {{ (value / 255 * 100)|round }}%"></div>
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
-                    <p class="statTotal">Total: {{ pokedex['baseStats'].values()|sum }}</p>
-                </div>
-
-            </div>
+                        {% endfor %}
+                        <p class="statTotal">Total: {{ pokedex['baseStats'].values()|sum }}</p>
+                    </div>
+                </li>
+            </ul>
 
         </body>
     </div>
