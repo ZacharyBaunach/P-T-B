@@ -417,11 +417,20 @@ img.site-logo {
     list-style-type: none;
 }
 
+#activePokemonHighlight, #teamid2Highlight, #teamid3Highlight, #teamid4Highlight,
+#teamid5Highlight, #teamid6Highlight {
+    outline :5px solid #ff2c2c;
+}
+
 /* overlay images in battle.html */
 .entry {
     display: grid;
 }
-.entry img {
+.activeEntry {
+    display: grid;
+    outline :3px solid #ff2c2c;
+}
+.entry img, .activeEntry img {
     grid-area: overlay;
 }
 
