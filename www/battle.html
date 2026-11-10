@@ -42,11 +42,11 @@
         <ul class="BattleContainer">
             
                 <li class="PSpriteA">
-                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry"><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot2", onclick="toSwap(slot2)"><img class="Sprite", id="img2", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot3", onclick="toSwap(slot3)"><img class="Sprite", id="img3", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot4", onclick="toSwap(slot4)"><img class="Sprite", id="img4", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot5", onclick="toSwap(slot5)"><img class="Sprite", id="img5", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot6", onclick="toSwap(slot6)"><img class="Sprite", id="img6", src="static/img/Pokeball.png" alt="Sprite"></div>
                         
                 </li>
 
@@ -113,8 +113,12 @@
             async function pageLoad() {
                 await loadTeam();
                 activePokemonMoves();
+                attachEvents();
             };
             
+            function attachEvents() {
+
+            }
 
 
             //Makes Hamburger menu appear and disappear// 
@@ -170,34 +174,30 @@
             //Highlight function for ally team//
 
             function allyMoveHighlight(moveid){
-                let firstMove = document.getElementById("move1");
-                let secondMove = document.getElementById("move2");
-                let thirdMove = document.getElementById("move3");
-                let fourthMove = document.getElementById("move4");
 
-                //Unhighlights all moves//
+                //Unhighlights move if selected
+                try {
+                    console.log('found selected move')
+                    const selectedMove = document.querySelector('.selectedMove');
+                    selectedMove.setAttribute('class', 'ActiveMoveA');
+                } catch (error) {
+                    console.log('no move selected');
+                };
 
-                firstMove.className= "ActiveMoveA";
-                secondMove.className= "ActiveMoveA";
-                thirdMove.className= "ActiveMoveA";
-                fourthMove.className= "ActiveMoveA";
+                //unhighlights selected pokemon
+                try {
+                    const activePokemon = document.querySelector('#activePokemonHighlight');
+                    console.log(activePokemon)
+                    activePokemon.setAttribute('id', 'activePokemon');
+                    const selectedPokemon = document.querySelector(`.activeEntry`);
+                    selectedPokemon.setAttribute('class', `entry`);
+                } catch (error) {
+                    console.log('no pokemon selected');
+                };
 
-                //Decides which move to highlight based on user click//
-
-                if (moveid == move1) {
-                    firstMove.className= "selectedMove"
-                } 
-                else if (moveid == move2) {
-                    secondMove.className= "selectedMove"
-                }
-                else if (moveid == move3) {
-                    thirdMove.className= "selectedMove"
-                } 
-                
-                else {
-                    fourthMove.className= "selectedMove"
-                }
-            }
+                //highlights selected move
+                moveid.setAttribute('class', 'selectedMove');
+            };
 
             //Highlight function for enemy team//
 
@@ -251,6 +251,7 @@
                 const teamArea = MainArea.querySelectorAll(".entry")
 
                 //attaches pokemon data/pic to entry
+                pokeImage.setAttribute('id', `teamid${index%6+1}`)
                 teamArea[index % 6 -1].entry = pokemon
                 teamArea[index % 6 -1].appendChild(pokeImage)
                 }
@@ -267,6 +268,27 @@
                     pokemonMoves[i].innerHTML = `${pokemonEntry.selectedMoves[i]}`
                 }
             }
+
+            function toSwap(toSwap) {
+                //grabs pokemon to swap
+                console.log(toSwap)
+                let activePokemon = document.querySelector('#activePokemon')
+
+                //grabs selected move if choesen and unhighlights
+                try {
+                    console.log('foundMove')
+                    const selectedMove = document.querySelector('.selectedMove')
+                    selectedMove.setAttribute('class', 'ActiveMoveA')
+                } catch (error) {
+                    console.log('no move selected')
+                }
+
+                activePokemon.setAttribute('id','activePokemonHighlight')
+                toSwap.setAttribute('class', `activeEntry`)
+
+            }
+
+
         </script>
     </body>
     </div>
