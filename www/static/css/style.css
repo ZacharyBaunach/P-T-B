@@ -775,29 +775,3 @@ img.site-logo {
     background: #ff2d2d;
 }
 .statTotal { font-size: 0.7rem; }
-
-/* ===== POP-UP: Gallery detail  ===== */
-#pokemonDetail { /* the popup itself */
-    background: #84d9ef;
-    border: 6px solid #ff2d2d;
-    border-radius: 30px;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    max-height: 85vh;
-    overflow-y: auto;
-    font-family: 'Press Start 2P', monospace;
-}
-
-/* dark background behind the popup */
-#pokemonDetail::backdrop {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-/* link to the full profile page */
-.fullPageLink {
-    font-size: 0.7rem;
-    display: inline-block;
-    margin-top: 12px;
-    color: #222;
-}
