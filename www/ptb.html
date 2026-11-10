@@ -24,6 +24,11 @@
         <script>
             let loadMorePokemon = 15
             const LASTPOKEMONID = 1000
+            const GEN1 = 15
+            const GEN2 = 166
+            const GEN3 = 266
+            const GEN4 = 401
+            const GEN5 = 507
         </script>
 
 
@@ -173,31 +178,31 @@
                 </li>
 
             <li class="pokemonFilterItems">
-                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(15)">
+                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(GEN1)">
                     Gen 1
                 </div>
             </li>
 
             <li class="pokemonFilterItems">
-                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(166)">
+                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(GEN2)">
                     Gen 2
                 </div>
             </li>
 
             <li class="pokemonFilterItems">
-                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(266)">
+                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(GEN3)">
                     Gen 3
                 </div>
             </li>
 
             <li class="pokemonFilterItems">
-                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(401)">
+                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(GEN4)">
                     Gen 4
                 </div>
             </li>
 
             <li class="pokemonFilterItems">
-                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(507)">
+                <div id="loadPkmButton" class="genLoad" onclick="generationLoad(GEN5)">
                     Gen 5
                 </div>
             </li>
@@ -377,7 +382,7 @@
 
 
             //deloads current pokemon
-            async function deloadPokemon(){
+            function deloadPokemon(){
 
                 let pokemonList = document.getElementsByClassName('pokemonImageLink');
 
@@ -395,7 +400,7 @@
         //////////////////////////////////////////////////////////////////////////
 
             //Deletes Current Pokemon on page and loads first pokemon of generation specified
-            async function generationLoad(startingPkm){
+            function generationLoad(startingPkm){
 
             
 
@@ -403,7 +408,7 @@
             loadMorePokemon = startingPkm;
             
             //Deloads current pokemon on page
-            await deloadPokemon()
+            deloadPokemon()
             
 
             //Load first 15 Pokemon of selected generation
