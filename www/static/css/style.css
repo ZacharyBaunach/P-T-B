@@ -589,12 +589,12 @@ img.site-logo {
 }
 
 /* Background adjustment for the nav bar on mobile */
-.nav{
+.nav, .generationFilter{
     background-color: #84dbf0;
 }
 
 /* Hides standard desktop navigation list on mobile */
-.nav_list{
+.nav_list, .pokemonFilterItems{
     display:none;
 }
 
@@ -604,7 +604,7 @@ img.site-logo {
 }
 
 /* Wrapper styling for the expanded mobile hamburger menu */
-.hamburgerNav{
+.hamburgerNav, .mobileGenerationFilter{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -617,7 +617,7 @@ img.site-logo {
 }
     
 /* Column layout for links within the mobile navigation dropdown */
-.nav_list_mobile{
+.nav_list_mobile, .mobilepokemonFilterItems{
     display: flex;
     flex-direction: column;
     border: 5px solid #222;
