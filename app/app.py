@@ -41,6 +41,12 @@ def pokemonProfile(id):
 
     ms = pokeMoves[str(pd['name'].lower())]
     
+    prevPkm = pokedex[int(id)-2]
 
+    prevID = int(id)-1
+
+    nextPkm = pokedex[int(id)]
+
+    nextID = int(id)+1
     
-    return render_template('pokemon.html', pokedex=pd, pokeMoves=ms)
+    return render_template('pokemon.html', pokedex=pd, pokeMoves=ms, prevPkm=prevPkm, nextPkm=nextPkm, prevID=prevID, nextID=nextID)

@@ -66,17 +66,22 @@
             </ul>
 
             <ul id="navigatePokemonPage">
-                <li id="prevPokemon">
-                    <div>
-                        {{pokedex['id']}}
-                    </div>
-                </li>
 
-                <li id="nextPokemon">
-                    <div>
-                        {{pokedex['id']}}
-                    </div>
+                <a id="prevPokemonLink" href="{{prevID}}">
+                <li id="prevPokemon">
+                    
+                        {{prevPkm['id']}}
+                    
                 </li>
+                </a>
+
+                <a id="nextPokemonLink" href="{{nextID}}">
+                <li id="nextPokemon">
+                    
+                        {{nextPkm['id']}}
+                    
+                </li>
+                </a>
             </ul>
 
         </body>

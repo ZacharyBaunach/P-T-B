@@ -256,6 +256,52 @@ img.site-logo {
     justify-content: center;
 }
 
+    /* Navigate to previous and next pokemon from template */
+#navigatePokemonPage{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#prevPokemon{
+    margin-right: 45px;
+    border: 5px solid #222;
+    border-radius: 60px;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+:hover#prevPokemon{
+    outline: 5px solid #ffffff;
+}
+
+#nextPokemon{
+    margin-left: 45px;
+    border: 5px solid #222;
+    border-radius: 60px;
+    padding: 15px;
+    cursor: pointer;
+  
+}
+
+:hover#nextPokemon{
+    outline: 5px solid #ffffff;
+}
+
+#prevPokemonLink{
+    text-decoration: none;
+
+}
+
+#nextPokemonLink{
+    text-decoration: none;
+
+}
+
+
+
 /* ==========================================================================
    Battle Container & Mechanics
    ========================================================================== */
@@ -606,11 +652,51 @@ img.site-logo {
 }
 
 /* ===== Pokemon profile card ( which are for used in ptb.html popup AND pokemon.html) ===== */
-.profileCard { text-align: center; }
+.profileCard { 
+    flex-direction: column;
+}
 
 .profileIcon {
     width: 100px;
     image-rendering: pixelated;
+    
+}
+
+#pokemonStatsImage{
+    display:flex;
+    justify-content: center;
+
+}
+
+#navigatePokemonPage{
+    flex-direction: column;
+}
+
+#prevPokemon{
+    margin-right: 0px;
+    margin-bottom:10px;
+    border: 5px solid #222;
+    border-radius: 60px;
+    padding: 15px;
+    cursor: pointer;
+    justify-content: center;
+    
+    
+}
+
+#nextPokemon{
+    margin-left: 0px;
+    border: 5px solid #222;
+    border-radius: 60px;
+    padding: 15px;
+    cursor: pointer;
+    justify-content: center;
+  
+}
+
+    /* Pokemon Stat styling */
+#pokemonStats{
+    justify-content: center;
 }
 
 .profileName { color: #ff2d2d; } /* Pokemon name in profile card */
