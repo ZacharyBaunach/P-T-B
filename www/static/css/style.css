@@ -238,7 +238,9 @@ img.site-logo {
     height: 250px;
     justify-content: center;
     align-items: center;
-
+}
+#popupText {
+    display: flexbox;
 }
     /* Sets image and stats in a horizontal flex box*/
 .profileCard{
@@ -435,7 +437,7 @@ img.site-logo {
 }
 
 /* Container wrapper for the user's selected Pokémon team list */
-.teamContainer{
+.teamContainer, .enemyTeamContainer{
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -446,7 +448,7 @@ img.site-logo {
 }
 
 /* Flex item rules for individual team list entries */
-.teamContainer li {
+.teamContainer li, .enemyTeamContainer li {
     display: flex;
     border: 2px solid #222;
     flex-direction: column;
@@ -454,7 +456,7 @@ img.site-logo {
 }
 
 /* Pokeball button style inside team slots */
-.teamContainer li button {
+.teamContainer li button, .enemyTeamContainer li button{
     display: inline-flex;
     height: 50px;   
     width:  50px;
@@ -530,7 +532,7 @@ img.site-logo {
 }
 
 /* Popup container box styling */
-#selection-box{
+#selectionBox{
     border: 5px solid #222;
     padding: 15px;
     list-style-type: none;

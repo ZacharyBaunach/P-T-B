@@ -25,7 +25,7 @@ async function loadTeam() {
         if (sessionStorage[p]){
             pokeSearchList.push(JSON.parse(sessionStorage.getItem(p)))
             console.log(`loading index ${p}`)
-            pokeAdd(p-1)
+            pokeAdd(undefined,p-1)
             pokeSearchList.pop()
         }   else {
             console.log(`empty session storage of index ${p}`)

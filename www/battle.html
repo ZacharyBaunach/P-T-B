@@ -177,7 +177,8 @@
 
                 //Unhighlights move if selected
                 try {
-                    const selectedMove = document.querySelector('.selectedMove');
+                    const activeMoveList = document.querySelector('.MovesA')
+                    const selectedMove = activeMoveList.querySelector('.selectedMove');
                     selectedMove.setAttribute('class', 'ActiveMoveA');
                 } catch (error) {
                     //console.log('no move selected');
@@ -298,7 +299,8 @@
 
                 //grabs selected move if choesen and unhighlights
                 try {
-                    const selectedMove = document.querySelector('.selectedMove')
+                    const activeMoveList = document.querySelector('.MovesA')
+                    const selectedMove = activeMoveList.querySelector('.selectedMove');
                     selectedMove.setAttribute('class', 'ActiveMoveA')
                 } catch (error) {
                 }
@@ -353,7 +355,7 @@
 
                     activePokemonMoves();
                 } catch (error) {
-                    console.log('error')
+                    console.log('not swaping')
                 };
 
             }

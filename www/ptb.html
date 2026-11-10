@@ -78,7 +78,7 @@
         <!-- TEAM BOX -->
         <!-- Team Box -->
         <!-- Selection container for the 6 team slot buttons -->
-        <div id="selection-box">
+        <div id="selectionBox">
             <ul class="teamContainer">
 
                 <!-- Team slots: each button opens the popup (popovertarget) -->
@@ -107,6 +107,37 @@
                     <button id="pokeEntry6", popovertarget="pokemonPopup"></button>
                 </li>
             </ul>
+
+            <p>Enemy Team:</p>
+
+            <ul class="enemyTeamContainer">
+
+                <!-- Team slots: each button opens the popup (popovertarget) -->
+                <!-- Slots -->
+                <li class="entry", id="Elst1">
+                    <button id="enemyPokeEntry1", popovertarget="enemyPokemonPopup"></button>
+                </li>
+
+                <li class="entry", id="Elst2">
+                    <button id="enemyPokeEntry2", popovertarget="enemyPokemonPopup"></button>
+                </li>
+
+                <li class="entry", id="Elst3">
+                    <button id="enemyPokeEntry3", popovertarget="enemyPokemonPopup"></button>
+                </li>
+
+                <li class="entry", id="Elst4">
+                    <button id="enemyPokeEntry4", popovertarget="enemyPokemonPopup"></button>
+                </li>
+
+                <li class="entry", id="Elst5">
+                    <button id="enemyPokeEntry5", popovertarget="enemyPokemonPopup"></button>
+                </li>
+
+                <li class="entry", id="Elst6">
+                    <button id="enemyPokeEntry6", popovertarget="enemyPokemonPopup"></button>
+                </li>
+            </ul>
         </div>
 
         <!-- POPUP -->
@@ -116,8 +147,17 @@
             <!-- Search box: calls pokeSearch() as you type -->
             <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
             <!-- Adds the first search result to the team (calls pokeAdd()) -->
-            <button onclick="pokeAdd()">Add Pokemon</button>
+            <button onclick="pokeAdd(pokemonPopup)">Add Pokemon</button>
+            <p id="popupText">Team Popup</p>
+        </div>
 
+        <!-- enemey Team popup -->
+        <div popover id="enemyPokemonPopup">
+            <!-- Search box: calls pokeSearch() as you type -->
+            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <!-- Adds the first search result to the team (calls pokeAdd()) -->
+            <button onclick="pokeAdd(enemyPokemonPopup)">Add Pokemon</button>
+            <p id="enemyPopupText">Enemy Team Popup</p>
         </div>
 
         <p>
@@ -300,6 +340,7 @@
                 await getPokeData();
                 await setPokeImages();
                 await getPokeMoves();
+                popUpCreate();
                 console.log('loading team from session storage')
                 loadTeam();
             }
@@ -440,27 +481,53 @@
             // ---- POPUP TEAM MIRROR ----
             //intial clone for popup box
             // Clones main team container to build the popup selection mirror interface
-            const teamContainer = document.getElementsByClassName("teamContainer")[0]
-            const clone = teamContainer.cloneNode(true)
-            clone.id = "teamBox"
-            const teambox = document.getElementById("pokemonPopup")
-            var i = 1
-            // Loop through each cloned slot and rename/wire it up for the popup
-            for (const node of clone.children) {
-                const actionNode = node.children[0]
-                actionNode.removeAttribute('popovertarget')
-                actionNode.setAttribute('id', `pokeEntry${i}mirror`)
-                actionNode.setAttribute('onclick', `displayEntry(${i})`)
-                actionNode.setAttribute('class', 'closed')
-                i += 1
-            }
-            //append selection box mirror to popup
-            teambox.appendChild(clone)
-            //then add hidden editbox
-            const editbox = document.createElement('div')
-            editbox.setAttribute('id', 'editBox')
-            editbox.setAttribute('class', 'hidden')
-            teambox.appendChild(editbox)
+            function popUpCreate() {
+                //creating user team popup
+                const teamContainer = document.querySelector(".teamContainer")
+                const clone = teamContainer.cloneNode(true)
+                clone.setAttribute('id','teambox')
+                const teambox = document.getElementById("pokemonPopup")
+                var i = 1
+                // Loop through each cloned slot and rename/wire it up for the popup
+                for (const node of clone.children) {
+                    const actionNode = node.children[0]
+                    actionNode.removeAttribute('popovertarget')
+                    actionNode.setAttribute('id', `pokeEntry${i}mirror`)
+                    actionNode.setAttribute('onclick', `displayEntry(undefined, ${i})`)
+                    actionNode.setAttribute('class', 'closed')
+                    i += 1
+                }
+                //append selection box mirror to popup
+                teambox.appendChild(clone)
+                //then add hidden editbox
+                const editbox = document.createElement('div')
+                editbox.setAttribute('id', 'editBox')
+                editbox.setAttribute('class', 'hidden')
+                teambox.appendChild(editbox)
+
+                //creating enemy team popup
+                const enemyTeamContainer = document.querySelector(".enemyTeamContainer")
+                const enemyClone = enemyTeamContainer.cloneNode(true)
+                enemyClone.setAttribute('id','enemyTeamBox')
+                const enemyTeambox = document.getElementById("enemyPokemonPopup")
+                var i = 1
+                // Loop through each cloned slot and rename/wire it up for the popup
+                for (const node of enemyClone.children) {
+                    const actionNode = node.children[0]
+                    actionNode.removeAttribute('enemyPopovertarget')
+                    actionNode.setAttribute('id', `enemyPokeEntry${i}mirror`)
+                    actionNode.setAttribute('onclick', `displayEntry(${i})`)
+                    actionNode.setAttribute('class', 'closed')
+                    i += 1
+                }
+                //append selection box mirror to popup
+                enemyTeambox.appendChild(enemyClone)
+                //then add hidden editbox
+                const enemyEditbox = document.createElement('div')
+                enemyEditbox.setAttribute('id', 'enemyEditBox')
+                enemyEditbox.setAttribute('class', 'hidden')
+                enemyTeambox.appendChild(enemyEditbox)
+            };
 
             // ---- SEARCH ----
             //search funtion
@@ -483,20 +550,26 @@
             // ---- ADD POKEMON ----
             //adds pokemon data to each pokemon entry
             // Adds selected Pokémon sprites and data attributes into active team slots
-            function pokeAdd(num = 7){
+            function pokeAdd(element, num = 7){
+                console.log(element)
+                console.log('num:')
+                console.log(num)
+                if (element == null || element.id == 'pokemonPopup') {
+                    element = document.querySelector('.teamContainer')
+                } else {
+                    element = document.querySelector('.enemyTeamContainer')
+                }
                 //init pokmeon to add
                 // Uses the first match from the search list
                 const pokemon = pokeSearchList[0];
-                console.log(pokemon)
                 const name = pokemon.name.toLowerCase();
                 pokemon.moves = pokeMoves[`${name}`];
 
                 //locating team areas
                 //main team locaitons
-                const MainArea = document.querySelector(".teamContainer");
-                const teamArea = MainArea.querySelectorAll(".entry");
+                const teamArea = element.querySelectorAll(".entry");
                 //popup team locations
-                const popupArea = document.querySelector("#pokemonPopup");
+                const popupArea = document.querySelectorAll(`.${element.className}`)[1]
                 const popupTeamArea = popupArea.querySelectorAll(".entry");
 
                 //pokemon image overlay
@@ -507,10 +580,9 @@
                 pokeImage.setAttribute('class', 'pokeSprite');
 
                 //find location to insert new pokemon (may overwrite)
-                console.log(num)
                 let location = teamArea[num % TEAM_LIMIT].childNodes[1]
                 let mirrorLocation = popupTeamArea[num % TEAM_LIMIT].childNodes[1]
-                if (num == 7) {
+                if (num == 7 ) {
                     location = document.querySelector('.open');
                     mirrorLocation = popupArea.querySelector('.open');
                 };
@@ -533,15 +605,21 @@
                 mirrorLocation.entry = pokemon;
                 mirrorLocation.appendChild(newPokeImage);
                 // update popup display
-                displayEntry(locationID)
+                displayEntry(element, locationID)
             };
 
             // ---- DISPLAY ENTRY DETAILS ----
             //this is for display of popup to adjust evs not complete at moment
             // Displays detailed stats or configuration options when clicking a team entry
-            function displayEntry(num) {
+            function displayEntry(element, num) {
+                console.log('num:')
+                console.log(num)
+                if (element == null) {
+                    element = document.querySelector('.teamContainer')
+                }
                 // Find the popup team box and the clicked slot
-                const displayContainer = document.querySelector('#pokemonPopup')
+                const displayContainer = document.querySelectorAll(`.${element.className}`)[1]
+                console.log(displayContainer)
 
                 if (displayContainer.querySelector('.open')) {
                     const prevOpen = displayContainer.querySelector('.open')
@@ -562,7 +640,8 @@
                 // Show name, abilities and base stats under the clicked slot
 
                 //main stat edit box
-                const editBox = displayContainer.querySelector('#editBox');
+                console.log(displayContainer)
+                const editBox = displayContainer.parentNode.querySelector('#editBox');
                 editBox.innerHTML = '';
 
                 //text stat box
