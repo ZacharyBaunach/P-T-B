@@ -27,9 +27,6 @@
                     <img class="pokemonTemplateImage" src="/static/img/pokemon_collection/{{ pokedex['name'] }}.webp" >
                 </li>
 
-            
-
-                
                 <!-- Types as colored badges -->
                 <li id="pokemonStats">
                     <div class="profileRow"> 
@@ -38,12 +35,6 @@
                             <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
                         {% endfor %}
                     </div>
-                <div class="profileRow"> 
-                    <h3>Type</h3>
-                    {% for t in pokedex['types'] %}
-                        <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
-                    {% endfor %}
-                </div>
 
                     <!-- Abilities as pills -->
                     <div class="profileRow">
