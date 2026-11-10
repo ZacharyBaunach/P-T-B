@@ -38,6 +38,12 @@
                             <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
                         {% endfor %}
                     </div>
+                <div class="profileRow"> 
+                    <h3>Type</h3>
+                    {% for t in pokedex['types'] %}
+                        <span class="typeBadge type-{{ t|lower }}">{{ t }}</span>
+                    {% endfor %}
+                </div>
 
                     <!-- Abilities as pills -->
                     <div class="profileRow">

@@ -670,12 +670,15 @@ img.site-logo {
 .profileCard { 
     flex-direction: column;
 }
+.profileCard { text-align: center; }
 
 .profileIcon {
     width: 100px;
     image-rendering: pixelated;
     
 }
+
+
 
 #pokemonStatsImage{
     display:flex;
@@ -720,3 +723,81 @@ img.site-logo {
 }
 
 
+/* Type badges + ability pills */
+.typeBadge, .abilityPill {
+    display: inline-block; /* Display as inline-block for horizontal alignment */
+    padding: 6px 12px; /* Padding inside the badge */
+    margin: 4px 4px 0 0;
+    border-radius: 999px;
+    border: 3px solid #222;
+    font-size: 0.7rem;
+    color: #fff;
+}
+.abilityPill { background: #fff; color: #222; }
+
+/* Type colors - depends on the type of pokemon*/
+.type-water    { background: #4592c4; }
+.type-fire     { background: #fd7d24; }
+.type-grass    { background: #9bcc50; color: #222; }
+.type-electric { background: #eed535; color: #222; }
+.type-normal   { background: #a4acaf; }
+.type-flying   { background: #3dc7ef; }
+.type-poison   { background: #b97fc9; }
+.type-ground   { background: #ab9842; }
+.type-rock     { background: #a38c21; }
+.type-bug      { background: #729f3f; }
+.type-ghost    { background: #7b62a3; }
+.type-psychic  { background: #f366b9; }
+.type-ice      { background: #51c4e7; color: #222; }
+.type-dragon   { background: #7038f8; }
+.type-fighting { background: #d56723; }
+.type-fairy    { background: #fdb9e9; color: #222; }
+
+/* Stat bars- used bars because it allows the easier visualizaiton*/
+.statLine {
+    display: grid;
+    grid-template-columns: 90px 40px 1fr;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    font-size: 0.7rem;
+}
+/* Tracking bar which shows the total statisitc value of the poken */
+.statTrack {
+    height: 14px;
+    background: #fff;
+    border: 3px solid #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.statFill {
+    height: 100%;
+    background: #ff2d2d;
+}
+.statTotal { font-size: 0.7rem; }
+
+/* ===== POP-UP: Gallery detail  ===== */
+#pokemonDetail { /* the popup itself */
+    background: #84d9ef;
+    border: 6px solid #ff2d2d;
+    border-radius: 30px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* dark background behind the popup */
+#pokemonDetail::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* link to the full profile page */
+.fullPageLink {
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-top: 12px;
+    color: #222;
+}
