@@ -12,7 +12,7 @@
 /* Global body styling including max-width, center alignment, and background image setup */
 body {
     font-family: "Press Start 2P", system-ui;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 4rem auto;
     padding: 0 1rem;
     color: #222;
@@ -313,6 +313,7 @@ img.site-logo {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+
 }
 
 /* Outer border container for battle windows and dialogs */
@@ -324,7 +325,7 @@ img.site-logo {
 
 /* Styling for active move slots during combat */
 .ActiveMoveA, .ActiveMoveE{
-    margin:15px;
+    margin:5px;
     padding: 10px;
     border: 5px solid #222;
     border-radius: 60px;
@@ -340,7 +341,7 @@ img.site-logo {
 
 /* Highlights the currently selected combat move */
 .selectedMove{
-    margin:15px;
+    margin:5px;
     padding: 10px;
     border: 5px solid #222;
     border-radius: 60px;
@@ -556,6 +557,11 @@ img.site-logo {
 .PSpriteA,.PSpriteE,.MovesA,.MovesE {
     display: flex;
     flex-direction: row;
+
+}
+
+.MovesA,.MovesE{
+        flex-wrap: wrap;
 }
 
 /* Change size of battle page images */
