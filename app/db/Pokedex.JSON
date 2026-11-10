@@ -1127,126 +1127,147 @@
    "abilities":["Run Away","Keen Eye","Frisk"]
 },
 {
+    "id": "Furret",
     "name":"Furret",
     "types":["Normal"],
    "baseStats":{"hp":85, "atk":76,"def":64, "spa":45, "spd":55, "spe":90},
    "abilities":["Run Away","Keen Eye","Frisk"]
 },
 {
+    "id": "Hoothoot",
     "name":"Hoothoot",
     "types":["Normal","Flying"],
    "baseStats":{"hp":60, "atk":30,"def":30, "spa":36, "spd":56, "spe":50},
    "abilities":["Insomnia","Keen Eye","Tinted Lens"]
 },
 {
+    "id": "Noctowl",
     "name":"Noctowl",
     "types":["Normal","Flying"],
    "baseStats":{"hp":100, "atk":50,"def":50, "spa":86, "spd":96, "spe":70},
    "abilities":["Insomnia","Keen Eye","Tinted Lens"]
 },
 {
+    "id": "Ledyba",
     "name":"Ledyba",
     "types":["Bug","Flying"],
    "baseStats":{"hp":40, "atk":20,"def":30, "spa":40, "spd":80, "spe":55},
    "abilities":["Swarm","Early Bird","Rattled"]
 },
 {
+    "id": "Ledian",
     "name":"Ledian",
     "types":["Bug","Flying"],
    "baseStats":{"hp":55, "atk":35,"def":50, "spa":55, "spd":110, "spe":85},
    "abilities":["Swarm","Early Bird","Iron Fist"]
 },
 {
+    "id": "Spinarak",
     "name":"Spinarak",
     "types":["Bug","Poison"],
    "baseStats":{"hp":40, "atk":60,"def":40, "spa":40, "spd":40, "spe":30},
    "abilities":["Swarm","Insomnia","Sniper"]
 },
 {
+    "id": "Ariados",
     "name":"Ariados",
     "types":["Bug","Poison"],
    "baseStats":{"hp":70, "atk":90,"def":70, "spa":60, "spd":70, "spe":40},
    "abilities":["Swarm","Insomnia","Sniper"]
 },
 {
+    "id": "Crobat",
     "name":"Crobat",
     "types":["Poison","Flying"],
    "baseStats":{"hp":85, "atk":90,"def":80, "spa":70, "spd":80, "spe":130},
    "abilities":["Inner Focus","Infiltrator"]
 },
 {
+    "id": "Chinchou",
     "name":"Chinchou",
     "types":["Water","Electric"],
    "baseStats":{"hp":75, "atk":38,"def":38, "spa":56, "spd":56, "spe":67},
    "abilities":["Volt Absorb","Illuminate","Water Absorb"]
 },
 {
+    "id": "Lanturn",
     "name":"Lanturn",
     "types":["Water","Electric"],
    "baseStats":{"hp":125, "atk":58,"def":58, "spa":76, "spd":76, "spe":67},
    "abilities":["Volt Absorb","Illuminate","Water Absorb"]
 },
 {
+    "id": "Pichu",
     "name":"Pichu",
     "types":["Electric"],
    "baseStats":{"hp":20, "atk":40,"def":15, "spa":35, "spd":35, "spe":60},
    "abilities":["Static","Lightning Rod"]
 },
 {
+    "id": "Cleffa",
     "name":"Cleffa",
     "types":["Fairy"],
    "baseStats":{"hp":50, "atk":25,"def":28, "spa":45, "spd":55, "spe":15},
    "abilities":["Cute Charm","Magic Guard","Friend Guard"]
 },
 {
+    "id": "Igglybuff",
     "name":"Igglybuff",
     "types":["Normal","Fairy"],
    "baseStats":{"hp":90, "atk":30,"def":15, "spa":40, "spd":20, "spe":15},
    "abilities":["Cute Charm","Competitive","Friend Guard"]
 },
 {
+    "id": "Togepi",
     "name":"Togepi",
     "types":["Fairy"],
    "baseStats":{"hp":35, "atk":20,"def":65, "spa":40, "spd":65, "spe":20},
    "abilities":["Hustle","Serene Grace","Super Luck"]
 },
 {
+    "id": "Togetic",
     "name":"Togetic",
     "types":["Fairy","Flying"],
    "baseStats":{"hp":55, "atk":40,"def":85, "spa":80, "spd":105, "spe":40},
    "abilities":["Hustle","Serene Grace","Super Luck"]
 },
 {
+    "id": "Natu",
     "name":"Natu",
     "types":["Psychic","Flying"],
    "baseStats":{"hp":40, "atk":50,"def":45, "spa":70, "spd":45, "spe":70},
    "abilities":["Synchronize","Early Bird","Magic Bounce"]
 },
 {
+    "id": "Xatu",
     "name":"Xatu",
     "types":["Psychic","Flying"],
    "baseStats":{"hp":65, "atk":75,"def":70, "spa":95, "spd":70, "spe":95},
    "abilities":["Synchronize","Early Bird","Magic Bounce"]
 },
 {
+    "id": "Mareep",
     "name":"Mareep",
     "types":["Electric"],
    "baseStats":{"hp":55, "atk":40,"def":40, "spa":65, "spd":45, "spe":35},
    "abilities":["Static","Plus"]
 },
 {
+    "id": "Flaaffy",
     "name":"Flaaffy",
     "types":["Electric"],
    "baseStats":{"hp":70, "atk":55,"def":55, "spa":80, "spd":60, "spe":45},
    "abilities":["Static","Plus"]
 },
 {
+    "id": "Ampharos",
     "name":"Ampharos",
     "types":["Electric"],
    "baseStats":{"hp":90, "atk":75,"def":85, "spa":115, "spd":90, "spe":55},
    "abilities":["Static","Plus"]
 },
 {
+    "id": "Sentret",
     "name":"Bellossom",
     "types":["Grass"],
    "baseStats":{"hp":75, "atk":80,"def":95, "spa":90, "spd":100, "spe":50},
