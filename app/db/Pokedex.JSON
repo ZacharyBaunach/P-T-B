@@ -1744,7 +1744,7 @@
 },
 {
     "id": "Ho-Oh",
-    "name":"Ho-Oh",
+    "name":"HoOh",
     "types":["Fire","Flying"],
    "baseStats":{"hp":106, "atk":130,"def":90, "spa":110, "spd":154, "spe":90},
    "abilities":["Pressure","Regenerator"]
