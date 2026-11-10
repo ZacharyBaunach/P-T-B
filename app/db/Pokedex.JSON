@@ -1055,61 +1055,72 @@
     "types":["Psychic"],
    "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
    "abilities":["Synchronize"]
-},{
+},
+{
+    "id": "Chikorita",
     "name":"Chikorita",
     "types":["Grass"],
    "baseStats":{"hp":45, "atk":49,"def":65, "spa":49, "spd":65, "spe":45},
    "abilities":["Overgrow","Leaf Guard"]
 },
 {
+    "id": "Bayleef",
     "name":"Bayleef",
     "types":["Grass"],
    "baseStats":{"hp":60, "atk":62,"def":80, "spa":63, "spd":80, "spe":60},
    "abilities":["Overgrow","Leaf Guard"]
 },
 {
+    "id": "Meganium",
     "name":"Meganium",
     "types":["Grass"],
    "baseStats":{"hp":80, "atk":82,"def":100, "spa":83, "spd":100, "spe":80},
    "abilities":["Overgrow","Leaf Guard"]
 },
 {
+    "id": "Cyndaquil",
     "name":"Cyndaquil",
     "types":["Fire"],
    "baseStats":{"hp":39, "atk":52,"def":43, "spa":60, "spd":50, "spe":65},
    "abilities":["Blaze","Flash Fire"]
 },
 {
+    "id": "Quilava",
     "name":"Quilava",
     "types":["Fire"],
    "baseStats":{"hp":58, "atk":64,"def":58, "spa":80, "spd":65, "spe":80},
    "abilities":["Blaze","Flash Fire"]
 },
 {
+    "id": "Typhlosion",
     "name":"Typhlosion",
     "types":["Fire"],
    "baseStats":{"hp":78, "atk":84,"def":78, "spa":109, "spd":85, "spe":100},
    "abilities":["Blaze","Flash Fire"]
 },
 {
+    "id": "Totodile",
     "name":"Totodile",
     "types":["Water"],
    "baseStats":{"hp":50, "atk":65,"def":64, "spa":44, "spd":48, "spe":43},
    "abilities":["Torrent","Sheer Force"]
 },
 {
+    "id": "Croconaw",
     "name":"Croconaw",
     "types":["Water"],
    "baseStats":{"hp":65, "atk":80,"def":80, "spa":59, "spd":63, "spe":58},
    "abilities":["Torrent","Sheer Force"]
 },
 {
+    "id": "Feraligatr",
     "name":"Feraligatr",
     "types":["Water"],
    "baseStats":{"hp":85, "atk":105,"def":100, "spa":79, "spd":83, "spe":78},
    "abilities":["Torrent","Sheer Force"]
 },
 {
+    "id": "Sentret",
     "name":"Sentret",
     "types":["Normal"],
    "baseStats":{"hp":35, "atk":46,"def":34, "spa":35, "spd":45, "spe":20},
@@ -1644,71 +1655,84 @@
    "abilities":["Pressure","Multiscale"]
 },
 {
+    "id": "Ho-Oh",
     "name":"Ho-Oh",
     "types":["Fire","Flying"],
    "baseStats":{"hp":106, "atk":130,"def":90, "spa":110, "spd":154, "spe":90},
    "abilities":["Pressure","Regenerator"]
 },
 {
+    "id": "Celebi",
     "name":"Celebi",
     "types":["Psychic","Grass"],
    "baseStats":{"hp":100, "atk":100,"def":100, "spa":100, "spd":100, "spe":100},
    "abilities":["Natural Cure"]
-},{
+},
+{
+    "id": "Treecko",
     "name":"Treecko",
     "types":["Grass"],
    "baseStats":{"hp":40, "atk":45,"def":35, "spa":65, "spd":55, "spe":70},
    "abilities":["Overgrow","Unburden"]
 },
 {
+    "id": "Grovyle",
     "name":"Grovyle",
     "types":["Grass"],
    "baseStats":{"hp":50, "atk":65,"def":45, "spa":85, "spd":65, "spe":95},
    "abilities":["Overgrow","Unburden"]
 },
 {
+    "id": "Sceptile",
     "name":"Sceptile",
     "types":["Grass"],
    "baseStats":{"hp":70, "atk":85,"def":65, "spa":105, "spd":85, "spe":120},
    "abilities":["Overgrow","Unburden"]
 },
 {
+    "id": "Torchic",
     "name":"Torchic",
     "types":["Fire"],
    "baseStats":{"hp":45, "atk":60,"def":40, "spa":70, "spd":50, "spe":45},
    "abilities":["Blaze","speed Boost"]
 },
 {
+    "id": "Combusken",
     "name":"Combusken",
     "types":["Fire","Fighting"],
    "baseStats":{"hp":60, "atk":85,"def":60, "spa":85, "spd":60, "spe":55},
    "abilities":["Blaze","speed Boost"]
 },
 {
+    "id": "Blaziken",
     "name":"Blaziken",
     "types":["Fire","Fighting"],
    "baseStats":{"hp":80, "atk":120,"def":70, "spa":110, "spd":70, "spe":80},
    "abilities":["Blaze","speed Boost"]
 },
 {
+    "id": "Mudkip",
     "name":"Mudkip",
     "types":["Water"],
    "baseStats":{"hp":50, "atk":70,"def":50, "spa":50, "spd":50, "spe":40},
    "abilities":["Torrent","Damp"]
 },
 {
+    "id": "Marshtomp",
     "name":"Marshtomp",
     "types":["Water","Ground"],
    "baseStats":{"hp":70, "atk":85,"def":70, "spa":60, "spd":70, "spe":50},
    "abilities":["Torrent","Damp"]
 },
 {
+    "id": "Swampert",
     "name":"Swampert",
     "types":["Water","Ground"],
    "baseStats":{"hp":100, "atk":110,"def":90, "spa":85, "spd":90, "spe":60},
    "abilities":["Torrent","Damp"]
 },
 {
+    "id": "Poochyena",
     "name":"Poochyena",
     "types":["Dark"],
    "baseStats":{"hp":35, "atk":55,"def":35, "spa":30, "spd":30, "spe":35},
@@ -2459,65 +2483,76 @@
    "abilities":["Serene Grace"]
 },
 {
+    "id": "Deoxys",
     "name":"Deoxys",
     "types":["Psychic"],
    "baseStats":{"hp":50, "atk":150,"def":50, "spa":150, "spd":50, "spe":150},
    "abilities":["Pressure"]
 },{
+    "id": "Turtwig",
     "name":"Turtwig",
     "types":["Grass"],
    "baseStats":{"hp":55, "atk":68,"def":64, "spa":45, "spd":55, "spe":31},
    "abilities":["Overgrow","Shell Armor"]
 },
 {
+    "id": "Grotle",
     "name":"Grotle",
     "types":["Grass"],
    "baseStats":{"hp":75, "atk":89,"def":85, "spa":55, "spd":65, "spe":36},
    "abilities":["Overgrow","Shell Armor"]
 },
 {
+    "id": "Torterra",
     "name":"Torterra",
     "types":["Grass","Ground"],
    "baseStats":{"hp":95, "atk":109,"def":105, "spa":75, "spd":85, "spe":56},
    "abilities":["Overgrow","Shell Armor"]
 },
 {
+    "id": "Chimchar",
     "name":"Chimchar",
     "types":["Fire"],
    "baseStats":{"hp":44, "atk":58,"def":44, "spa":58, "spd":44, "spe":61},
    "abilities":["Blaze","Iron Fist"]
 },
 {
+    "id": "Monferno",
     "name":"Monferno",
     "types":["Fire","Fighting"],
    "baseStats":{"hp":64, "atk":78,"def":52, "spa":78, "spd":52, "spe":81},
    "abilities":["Blaze","Iron Fist"]
 },
 {
+    "id": "Infernape",
     "name":"Infernape",
     "types":["Fire","Fighting"],
    "baseStats":{"hp":76, "atk":104,"def":71, "spa":104, "spd":71, "spe":108},
    "abilities":["Blaze","Iron Fist"]
 },
 {
+    "id": "Piplup",
     "name":"Piplup",
     "types":["Water"],
    "baseStats":{"hp":53, "atk":51,"def":53, "spa":61, "spd":56, "spe":40},
    "abilities":["Torrent","defiant"]
 },
 {
+    "id": "Prinplup",
     "name":"Prinplup",
     "types":["Water"],
    "baseStats":{"hp":64, "atk":66,"def":68, "spa":81, "spd":76, "spe":50},
    "abilities":["Torrent","defiant"]
 },
 {
+    "id": "Empoleon",
     "name":"Empoleon",
     "types":["Water","Steel"],
    "baseStats":{"hp":84, "atk":86,"def":88, "spa":111, "spd":101, "spe":60},
    "abilities":["Torrent","defiant"]
 },
 {
+    "id": "Starly",
     "name":"Starly",
     "types":["Normal","Flying"],
    "baseStats":{"hp":40, "atk":55,"def":30, "spa":30, "spd":30, "spe":60},
@@ -2962,6 +2997,7 @@
    "abilities":["Leaf Guard","Chlorophyll"]
 },
 {
+    "id": "Glaceon",
     "name":"Glaceon",
     "types":["Ice"],
    "baseStats":{"hp":65, "atk":60,"def":110, "spa":130, "spd":95, "spe":65},
@@ -3094,6 +3130,7 @@
    "abilities":["Natural Cure"]
 },
 {
+    "id": "Arceus",
     "name":"Arceus",
     "types":["Normal"],
    "baseStats":{"hp":120, "atk":120,"def":120, "spa":120, "spd":120, "spe":120},
@@ -3106,54 +3143,63 @@
    "abilities":["Victory Star"]
 },
 {
+    "id": "Snivy",
     "name":"Snivy",
     "types":["Grass"],
    "baseStats":{"hp":45, "atk":45,"def":55, "spa":45, "spd":55, "spe":63},
    "abilities":["Overgrow","Contrary"]
 },
 {
+    "id": "Servine",
     "name":"Servine",
     "types":["Grass"],
    "baseStats":{"hp":60, "atk":60,"def":75, "spa":60, "spd":75, "spe":83},
    "abilities":["Overgrow","Contrary"]
 },
 {
+    "id": "Serperior",
     "name":"Serperior",
     "types":["Grass"],
    "baseStats":{"hp":75, "atk":75,"def":95, "spa":75, "spd":95, "spe":113},
    "abilities":["Overgrow","Contrary"]
 },
 {
+    "id": "Tepig",
     "name":"Tepig",
     "types":["Fire"],
    "baseStats":{"hp":65, "atk":63,"def":45, "spa":45, "spd":45, "spe":45},
    "abilities":["Blaze","Thick Fat"]
 },
 {
+    "id": "Pignite",
     "name":"Pignite",
     "types":["Fire","Fighting"],
    "baseStats":{"hp":90, "atk":93,"def":55, "spa":70, "spd":55, "spe":55},
    "abilities":["Blaze","Thick Fat"]
 },
 {
+    "id": "Emboar",
     "name":"Emboar",
     "types":["Fire","Fighting"],
    "baseStats":{"hp":110, "atk":123,"def":65, "spa":100, "spd":65, "spe":65},
    "abilities":["Blaze","Reckless"]
 },
 {
+    "id": "Oshawott",
     "name":"Oshawott",
     "types":["Water"],
    "baseStats":{"hp":55, "atk":55,"def":45, "spa":63, "spd":45, "spe":45},
    "abilities":["Torrent","Shell Armor"]
 },
 {
+    "id": "Dewott",
     "name":"Dewott",
     "types":["Water"],
    "baseStats":{"hp":75, "atk":75,"def":60, "spa":83, "spd":60, "spe":60},
    "abilities":["Torrent","Shell Armor"]
 },
 {
+    "id": "Samurott",
     "name":"Samurott",
     "types":["Water"],
    "baseStats":{"hp":95, "atk":100,"def":85, "spa":108, "spd":70, "spe":70},
@@ -4024,6 +4070,7 @@
    "abilities":["Serene Grace"]
 },
 {
+    "id": "Genesect",
     "name":"Genesect",
     "types":["Bug","Steel"],
    "baseStats":{"hp":71, "atk":120,"def":95, "spa":120, "spd":95, "spe":99},
