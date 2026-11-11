@@ -484,13 +484,13 @@ img.site-logo {
     list-style-type: none;
 }
 
-#editBox {
+#editBox, #enemyEditBox {
     display: none;
     height: 300px;
     background: rgb(220, 220, 220);
 }
 
-#editBox.open{
+#editBox.open, #enemyEditBox.open{
     display: unset;
     display: flex;
     border: 3px solid #222;

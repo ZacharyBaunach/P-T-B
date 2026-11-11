@@ -150,7 +150,7 @@
         <!-- Popover modal dialog used for searching and adding Pokémon -->
         <div popover id="pokemonPopup">
             <!-- Search box: calls pokeSearch() as you type -->
-            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <input id= "pokeSearchBar", onkeyup=pokeSearch(pokeSearchBar) type = "text", placeholder="Search..">
             <!-- Adds the first search result to the team (calls pokeAdd()) -->
             <button onclick="pokeAdd(pokemonPopup)">Add Pokemon</button>
             <p id="popupText">Team Popup</p>
@@ -159,7 +159,7 @@
         <!-- enemey Team popup -->
         <div popover id="enemyPokemonPopup">
             <!-- Search box: calls pokeSearch() as you type -->
-            <input id= "pokeSearch", onkeyup=pokeSearch() type = "text", placeholder="Search..">
+            <input id= "enemyPokeSearchBar", onkeyup=pokeSearch(enemyPokeSearchBar) type = "text", placeholder="Search..">
             <!-- Adds the first search result to the team (calls pokeAdd()) -->
             <button onclick="pokeAdd(enemyPokemonPopup)">Add Pokemon</button>
             <p id="enemyPopupText">Enemy Team Popup</p>
@@ -495,57 +495,59 @@
                 var i = 1
                 // Loop through each cloned slot and rename/wire it up for the popup
                 for (const node of clone.children) {
-                    const actionNode = node.children[0]
-                    actionNode.removeAttribute('popovertarget')
-                    actionNode.setAttribute('id', `pokeEntry${i}mirror`)
-                    actionNode.setAttribute('onclick', `displayEntry(undefined, ${i})`)
-                    actionNode.setAttribute('class', 'closed')
+                    const actionNode = node.children[0];
+                    actionNode.removeAttribute('popovertarget');
+                    actionNode.setAttribute('id', `pokeEntry${i}mirror`);
+                    actionNode.setAttribute('onclick', `displayEntry(${undefined}, ${i})`);
+                    actionNode.setAttribute('class', 'closed');
                     i += 1
-                }
+                };
                 //append selection box mirror to popup
-                teambox.appendChild(clone)
+                teambox.appendChild(clone);
                 //then add hidden editbox
-                const editbox = document.createElement('div')
-                editbox.setAttribute('id', 'editBox')
-                editbox.setAttribute('class', 'hidden')
-                teambox.appendChild(editbox)
+                const editbox = document.createElement('div');
+                editbox.setAttribute('id', 'editBox');
+                editbox.setAttribute('class', 'hidden');
+                teambox.appendChild(editbox);
 
                 //creating enemy team popup
-                const enemyTeamContainer = document.querySelector(".enemyTeamContainer")
-                const enemyClone = enemyTeamContainer.cloneNode(true)
-                enemyClone.setAttribute('id','enemyTeamBox')
-                const enemyTeambox = document.getElementById("enemyPokemonPopup")
-                var i = 1
+                const enemyTeamContainer = document.querySelector(".enemyTeamContainer");
+                const enemyClone = enemyTeamContainer.cloneNode(true);
+                enemyClone.setAttribute('id','enemyTeamBox');
+                const enemyTeambox = document.getElementById("enemyPokemonPopup");
+                var i = 1;
                 // Loop through each cloned slot and rename/wire it up for the popup
+                const tag = 'enemy'
                 for (const node of enemyClone.children) {
-                    const actionNode = node.children[0]
-                    actionNode.removeAttribute('enemyPopovertarget')
-                    actionNode.setAttribute('id', `enemyPokeEntry${i}mirror`)
-                    actionNode.setAttribute('onclick', `displayEntry(${i})`)
-                    actionNode.setAttribute('class', 'closed')
-                    i += 1
-                }
+                    const actionNode = node.children[0];
+                    actionNode.removeAttribute('enemyPopovertarget');
+                    actionNode.setAttribute('id', `enemyPokeEntry${i}mirror`);
+                    actionNode.setAttribute('onclick', `displayEntry(\'enemy\', ${i})`);
+                    actionNode.setAttribute('class', 'closed');
+                    i += 1;
+                };
                 //append selection box mirror to popup
-                enemyTeambox.appendChild(enemyClone)
+                enemyTeambox.appendChild(enemyClone);
                 //then add hidden editbox
-                const enemyEditbox = document.createElement('div')
-                enemyEditbox.setAttribute('id', 'enemyEditBox')
-                enemyEditbox.setAttribute('class', 'hidden')
-                enemyTeambox.appendChild(enemyEditbox)
+                const enemyEditbox = document.createElement('div');
+                enemyEditbox.setAttribute('id', 'enemyEditBox');
+                enemyEditbox.setAttribute('class', 'hidden');
+                enemyTeambox.appendChild(enemyEditbox);
             };
 
             // ---- SEARCH ----
             //search funtion
             // Filters Pokedex data entries based on user input search queries
             // Holds the Pokemon that match the current search text
-            function pokeSearch(){
+            function pokeSearch(bar){
+                console.log(bar)
                 // Read what the user typed
-                const search = document.getElementById('pokeSearch').value
+                let name = bar.value
                 pokeSearchList = []
-                console.log(search)
+                console.log(name)
                 // Keep every Pokemon whose name starts with the search text
                 for (const pokemon of pokeData) {
-                    if (pokemon["name"].toLowerCase().startsWith(search)) {
+                    if (pokemon["name"].toLowerCase().startsWith(name)) {
                         pokeSearchList.push(pokemon)
                     }
                 }
@@ -616,11 +618,13 @@
             // ---- DISPLAY ENTRY DETAILS ----
             //this is for display of popup to adjust evs not complete at moment
             // Displays detailed stats or configuration options when clicking a team entry
-            function displayEntry(element, num) {
+            function displayEntry(element = document.querySelector('.teamContainer'), num) {
                 console.log('num:')
                 console.log(num)
-                if (element == null) {
-                    element = document.querySelector('.teamContainer')
+                console.log(element)
+                if (element == 'enemy') {
+                    element = document.querySelector('.enemyTeamContainer')
+                    console.log(element)
                 }
                 // Find the popup team box and the clicked slot
                 const displayContainer = document.querySelectorAll(`.${element.className}`)[1]
@@ -633,29 +637,39 @@
                     prevBaseOpen.setAttribute('class', 'closed')
                 }
 
-                const entry = document.querySelector(`#pokeEntry${num}mirror`)
+                let entry = ''
+                let entryBase = ''
+                if (element.className == 'enemyTeamContainer') {
+                    entry = document.querySelector(`#enemyPokeEntry${num}mirror`)
+                    entryBase = document.querySelector(`#enemyPokeEntry${num}`)
+                } else {
+                    entry = document.querySelector(`#pokeEntry${num}mirror`)
+                    entryBase = document.querySelector(`#pokeEntry${num}`)
+                }
                 entry.setAttribute('class', 'open')
-                const entryBase = document.querySelector(`#pokeEntry${num}`)
                 entryBase.setAttribute('class', 'open')
 
-
-                const pokemonEntry = entry.entry
+                console.log(entryBase)
+                const pokemonEntry = entryBase.entry
+                console.log(pokemonEntry)
+                
 
                 //display pokemon data
                 // Show name, abilities and base stats under the clicked slot
 
                 //main stat edit box
-                console.log(displayContainer)
-                const editBox = displayContainer.parentNode.querySelector('#editBox');
+                const editBox = displayContainer.parentNode.childNodes[12];
                 editBox.innerHTML = '';
+                console.log(editBox)
 
                 //text stat box
+                console.log('progress1')
                 const textbox = document.createElement("div");
                 textbox.setAttribute('id','pokeDisplayStats');
                 textbox.innerHTML = `${pokemonEntry.name}`;
 
-
                 //creates the ability selection
+                console.log('progress1.5')
                 const abilityBox = document.createElement('select');
                 abilityBox.setAttribute('class', `selectAbilityBox`);
                 abilityBox.setAttribute('id', 'ability');
@@ -677,6 +691,7 @@
                 };
 
                 //sets up the four move selection boxes
+                console.log('progress2')
                 const moveBox = document.createElement("div");
                 moveBox.setAttribute('id',"moveBox");
 
@@ -785,12 +800,13 @@
 
 
                 //append all stats to editBox
+                console.log('appending to editbox')
                 statBox.appendChild(statTextContainer);
                 statBox.appendChild(statvalueContainer)
                 statBox.appendChild(statSliderContainer);
-                statBox.appendChild(statTrueValueContainer)
-                editBox.appendChild(statBox);
+                statBox.appendChild(statTrueValueContainer);
                 editBox.setAttribute('class', 'open');
+                editBox.appendChild(statBox);
                 editBox.appendChild(textbox);
                 editBox.appendChild(abilityBox);
                 editBox.appendChild(moveBox);
