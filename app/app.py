@@ -33,6 +33,8 @@ def getPokeMoves():
 def pokemonProfile(id):
     with open('db/Pokedex.json', 'r', encoding='utf-8') as file:
         pokedex = json.load(file)
+
+    LASTPOKEMONID = 644
     
     pd = pokedex[int(id)-1]
 
@@ -45,7 +47,11 @@ def pokemonProfile(id):
 
     prevID = int(id)-1
 
-    nextPkm = pokedex[int(id)]
+    
+    if id == LASTPOKEMONID:
+        nextPkm = pokedex[0]
+    else:
+        nextPkm = pokedex[int(id)]
 
     nextID = int(id)+1
     
