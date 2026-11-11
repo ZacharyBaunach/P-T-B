@@ -482,7 +482,6 @@
         }
 
         
-
             // ---- POPUP TEAM MIRROR ----
             //intial clone for popup box
             // Clones main team container to build the popup selection mirror interface
@@ -517,10 +516,9 @@
                 const enemyTeambox = document.getElementById("enemyPokemonPopup");
                 var i = 1;
                 // Loop through each cloned slot and rename/wire it up for the popup
-                const tag = 'enemy'
                 for (const node of enemyClone.children) {
                     const actionNode = node.children[0];
-                    actionNode.removeAttribute('enemyPopovertarget');
+                    actionNode.removeAttribute('popovertarget');
                     actionNode.setAttribute('id', `enemyPokeEntry${i}mirror`);
                     actionNode.setAttribute('onclick', `displayEntry(\'enemy\', ${i})`);
                     actionNode.setAttribute('class', 'closed');
@@ -557,10 +555,7 @@
             // ---- ADD POKEMON ----
             //adds pokemon data to each pokemon entry
             // Adds selected Pokémon sprites and data attributes into active team slots
-            function pokeAdd(element, num = 7){
-                console.log(element)
-                console.log('num:')
-                console.log(num)
+            function pokeAdd(element, num = 13){
                 if (element == null || element.id == 'pokemonPopup') {
                     element = document.querySelector('.teamContainer')
                 } else {
@@ -571,6 +566,8 @@
                 const pokemon = pokeSearchList[0];
                 const name = pokemon.name.toLowerCase();
                 pokemon.moves = pokeMoves[`${name}`];
+                //sets up starting ability as default
+                pokemon.activeAbility = pokemon.abilities[0]
 
                 //locating team areas
                 //main team locaitons
@@ -588,11 +585,12 @@
 
                 //find location to insert new pokemon (may overwrite)
                 let location = teamArea[num % TEAM_LIMIT].childNodes[1]
+                console.log(location)
                 let mirrorLocation = popupTeamArea[num % TEAM_LIMIT].childNodes[1]
-                if (num == 7 ) {
-                    location = document.querySelector('.open');
+                if (num == 13) {
+                    location = element.querySelector('.open');
                     mirrorLocation = popupArea.querySelector('.open');
-                };
+                }
 
                 //clean up old image
                 // (index % TEAM_LIMIT wraps around so slots cycle 1-6)
@@ -603,7 +601,11 @@
                 location.appendChild(pokeImage);
 
                 // update session storage
-                const locationID = (location.id.at(-1))
+                let locationID = (location.id.at(-1))
+                if (element.className == 'enemyTeamContainer') {
+                    locationID = String(Number(location.id.at(-1))+6)
+                    console.log(locationID)
+                }
                 sessionStorage.setItem(`${locationID}`, JSON.stringify(pokemon));
                 
                 //update popup
@@ -619,9 +621,7 @@
             //this is for display of popup to adjust evs not complete at moment
             // Displays detailed stats or configuration options when clicking a team entry
             function displayEntry(element = document.querySelector('.teamContainer'), num) {
-                console.log('num:')
-                console.log(num)
-                console.log(element)
+                num = num % TEAM_LIMIT
                 if (element == 'enemy') {
                     element = document.querySelector('.enemyTeamContainer')
                     console.log(element)
@@ -630,16 +630,20 @@
                 const displayContainer = document.querySelectorAll(`.${element.className}`)[1]
                 console.log(displayContainer)
 
-                if (displayContainer.querySelector('.open')) {
-                    const prevOpen = displayContainer.querySelector('.open')
-                    prevOpen.setAttribute('class', 'closed')
-                    const prevBaseOpen = document.querySelector(`.open`)
-                    prevBaseOpen.setAttribute('class', 'closed')
+                //close all .open nodes
+                try {
+                    const list = document.querySelectorAll('.open')
+                    for (let node of list)
+                        if (node.id != 'editBox' && node.id != 'enemyTeamBox')
+                            node.setAttribute('class', 'closed')
+                } catch (error) {
                 }
 
+                //identify selected nodes (base and mirror popup)
                 let entry = ''
                 let entryBase = ''
                 if (element.className == 'enemyTeamContainer') {
+                    console.log(num)
                     entry = document.querySelector(`#enemyPokeEntry${num}mirror`)
                     entryBase = document.querySelector(`#enemyPokeEntry${num}`)
                 } else {
@@ -649,15 +653,24 @@
                 entry.setAttribute('class', 'open')
                 entryBase.setAttribute('class', 'open')
 
-                console.log(entryBase)
-                const pokemonEntry = entryBase.entry
-                console.log(pokemonEntry)
+                //pull out pokedata for display
+                let pokemonEntry = ''
+                try {
+                    pokemonEntry = entryBase.entry
+                    console.log('pokemon entry data:')
+                    console.log(pokemonEntry)
+                } catch (error){
+                    console.log(error)
+                }
                 
 
                 //display pokemon data
                 // Show name, abilities and base stats under the clicked slot
 
+                try {
                 //main stat edit box
+                console.log('editBox')
+                console.log(displayContainer.parentNode.childNodes[12])
                 const editBox = displayContainer.parentNode.childNodes[12];
                 editBox.innerHTML = '';
                 console.log(editBox)
@@ -810,6 +823,9 @@
                 editBox.appendChild(textbox);
                 editBox.appendChild(abilityBox);
                 editBox.appendChild(moveBox);
+                } catch (error) {
+                    console.log(error)
+                }
             };
 
             //funtion to be attached to pokemon moves to make sure double moves are impossible and attaches values to entry

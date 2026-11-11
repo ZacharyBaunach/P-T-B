@@ -469,7 +469,7 @@ img.site-logo {
     list-style-type: none;
 }
 
-.teamContainer li button.open {
+.teamContainer li button.open, .enemyTeamContainer li button.open {
     border: unset;
     border: 3px solid rgb(178, 52, 52);
 }

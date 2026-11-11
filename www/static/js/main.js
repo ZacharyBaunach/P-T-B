@@ -21,11 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
 // Restores previously saved team selections from browser session storage on load
 // Check each of the 6 slots for saved data and re-add it
 async function loadTeam() {
-    for (let p = 1; p <= TEAM_LIMIT; p++) {
+    for (let p = 1; p <= TEAM_LIMIT*2; p++) {
         if (sessionStorage[p]){
             pokeSearchList.push(JSON.parse(sessionStorage.getItem(p)))
             console.log(`loading index ${p}`)
-            pokeAdd(undefined,p-1)
+            if (p<=TEAM_LIMIT) {
+                pokeAdd(undefined,p-1)
+            } else {
+                pokeAdd('enemy',p-1)
+            }
             pokeSearchList.pop()
         }   else {
             console.log(`empty session storage of index ${p}`)
