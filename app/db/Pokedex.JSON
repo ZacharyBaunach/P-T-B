@@ -3388,114 +3388,133 @@
    "abilities":["Torrent","Shell Armor"]
 },
 {
+    "id": "Patrat",
     "name":"Patrat",
     "types":["Normal"],
    "baseStats":{"hp":45, "atk":55,"def":39, "spa":35, "spd":39, "spe":42},
    "abilities":["Run Away","Keen Eye","Analytic"]
 },
 {
+    "id": "Watchog",
     "name":"Watchog",
     "types":["Normal"],
    "baseStats":{"hp":60, "atk":85,"def":69, "spa":60, "spd":69, "spe":77},
    "abilities":["Illuminate","Keen Eye","Analytic"]
 },
 {
+    "id": "Lillipup",
     "name":"Lillipup",
     "types":["Normal"],
    "baseStats":{"hp":45, "atk":60,"def":45, "spa":25, "spd":45, "spe":55},
    "abilities":["Vital Spirit","Pickup","Run Away"]
 },
 {
+    "id": "Herdier",
     "name":"Herdier",
     "types":["Normal"],
    "baseStats":{"hp":65, "atk":80,"def":65, "spa":35, "spd":65, "spe":60},
    "abilities":["Imtimidate","Sand Rush","Scrappy"]
 },
 {
+    "id": "Stoutland",
     "name":"Stoutland",
     "types":["Normal"],
    "baseStats":{"hp":85, "atk":110,"def":90, "spa":45, "spd":90, "spe":80},
    "abilities":["Imtimidate","Sand Rush","Scrappy"]
 },
 {
+    "id": "Purrloin",
     "name":"Purrloin",
     "types":["Dark"],
    "baseStats":{"hp":41, "atk":50,"def":37, "spa":50, "spd":37, "spe":66},
    "abilities":["Limber","Unburden","Prankster"]
 },
 {
+    "id": "Liepard",
     "name":"Liepard",
     "types":["Dark"],
    "baseStats":{"hp":64, "atk":88,"def":50, "spa":88, "spd":50, "spe":106},
    "abilities":["Limber","Unburden","Prankster"]
 },
 {
+    "id": "Pansage",
     "name":"Pansage",
     "types":["Grass"],
    "baseStats":{"hp":50, "atk":53,"def":48, "spa":53, "spd":48, "spe":64},
    "abilities":["Gluttony","Overgrow"]
 },
 {
+    "id": "Simisage",
     "name":"Simisage",
     "types":["Grass"],
    "baseStats":{"hp":75, "atk":98,"def":63, "spa":98, "spd":63, "spe":101},
    "abilities":["Gluttony","Overgrow"]
 },
 {
+    "id": "Pansear",
     "name":"Pansear",
     "types":["Fire"],
    "baseStats":{"hp":50, "atk":53,"def":48, "spa":53, "spd":48, "spe":64},
    "abilities":["Gluttony","Blaze"]
 },
 {
+    "id": "Simisear",
     "name":"Simisear",
     "types":["Fire"],
    "baseStats":{"hp":75, "atk":98,"def":63, "spa":98, "spd":63, "spe":101},
    "abilities":["Gluttony","Blaze"]
 },
 {
+    "id": "Panpour",
     "name":"Panpour",
     "types":["Water"],
    "baseStats":{"hp":50, "atk":53,"def":48, "spa":53, "spd":48, "spe":64},
    "abilities":["Gluttony","Torrent"]
 },
 {
+    "id": "Simipour",
     "name":"Simipour",
     "types":["Water"],
    "baseStats":{"hp":75, "atk":98,"def":63, "spa":98, "spd":63, "spe":101},
    "abilities":["Gluttony","Torrent"]
 },
 {
+    "id": "Munna",
     "name":"Munna",
     "types":["Psychic"],
    "baseStats":{"hp":76, "atk":25,"def":45, "spa":67, "spd":55, "spe":24},
    "abilities":["Forewarn","Synchronize","Telepathy"]
 },
 {
+    "id": "Musharna",
     "name":"Musharna",
     "types":["Psychic"],
    "baseStats":{"hp":116, "atk":55,"def":85, "spa":107, "spd":95, "spe":29},
    "abilities":["Forewarn","Synchronize","Telepathy"]
 },
 {
+    "id": "Pidove",
     "name":"Pidove",
     "types":["Normal","Flying"],
    "baseStats":{"hp":50, "atk":55,"def":50, "spa":36, "spd":30, "spe":43},
    "abilities":["Big Pecks","Super Luck","Rivalry"]
 },
 {
+    "id": "Tranquill",
     "name":"Tranquill",
     "types":["Normal","Flying"],
    "baseStats":{"hp":62, "atk":77,"def":62, "spa":50, "spd":42, "spe":65},
    "abilities":["Big Pecks","Super Luck","Rivalry"]
 },
 {
+    "id": "Unfezant",
     "name":"Unfezant",
     "types":["Normal","Flying"],
    "baseStats":{"hp":80, "atk":115,"def":80, "spa":65, "spd":55, "spe":93},
    "abilities":["Big Pecks","Super Luck","Rivalry"]
 },
 {
+    "id": "Blitzle",
     "name":"Blitzle",
     "types":["Electric"],
    "baseStats":{"hp":45, "atk":60,"def":32, "spa":50, "spd":32, "spe":76},
@@ -4234,18 +4253,21 @@
    "abilities":["Sand Force","Sheer Force"]
 },
 {
+    "id": "Kyurem",
     "name":"Kyurem",
     "types":["Dragon","Ice"],
    "baseStats":{"hp":125, "atk":120,"def":90, "spa":170, "spd":100, "spe":95},
    "abilities":["Pressure"]
 },
 {
+    "id": "Keldeo",
     "name":"Keldeo",
     "types":["Water","Fighting"],
    "baseStats":{"hp":91, "atk":72,"def":90, "spa":129, "spd":90, "spe":108},
    "abilities":["Justified"]
 },
 {
+    "id": "Meloetta",
     "name":"Meloetta",
     "types":["Normal","Psychic"],
    "baseStats":{"hp":100, "atk":77,"def":77, "spa":128, "spd":128, "spe":90},

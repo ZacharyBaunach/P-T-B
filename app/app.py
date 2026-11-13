@@ -34,7 +34,8 @@ def pokemonProfile(id):
     with open('db/Pokedex.json', 'r', encoding='utf-8') as file:
         pokedex = json.load(file)
 
-    LASTPOKEMONID = 644
+    FIRSTPOKEMON = 0
+    LASTPOKEMON = 646
     
     pd = pokedex[int(id)-1]
 
@@ -43,16 +44,21 @@ def pokemonProfile(id):
 
     ms = pokeMoves[str(pd['name'].lower())]
     
-    prevPkm = pokedex[int(id)-2]
+    if int(id) <= FIRSTPOKEMON:
+        prevPkm = pokedex[LASTPOKEMON]
+        prevID = LASTPOKEMON 
+    else:
+        prevPkm = pokedex[int(id)-2]
 
-    prevID = int(id)-1
+        prevID = int(id)-1
 
     
-    if id == LASTPOKEMONID:
-        nextPkm = pokedex[0]
+    if int(id) > LASTPOKEMON:
+        nextPkm = pokedex[FIRSTPOKEMON]
+        nextID = 1
     else:
         nextPkm = pokedex[int(id)]
-
-    nextID = int(id)+1
+        nextID = int(id)+1
+    
     
     return render_template('pokemon.html', pokedex=pd, pokeMoves=ms, prevPkm=prevPkm, nextPkm=nextPkm, prevID=prevID, nextID=nextID)
