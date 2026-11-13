@@ -79,14 +79,13 @@
                         <div id="move8" class="ActiveMoveE" onclick="enemyMoveHighlight(move8)">Move</div>
                     </div>
                 </li>
-
+                
                 <li class="PSpriteE">
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div><img class="Sprite" src="static/img/Pokeball.png" alt="Sprite"></div>
-                        
+                    <div class="entry", id="slot2", onclick="toSwap(slot2)"><img class="Sprite", id="img2", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot3", onclick="toSwap(slot3)"><img class="Sprite", id="img3", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot4", onclick="toSwap(slot4)"><img class="Sprite", id="img4", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot5", onclick="toSwap(slot5)"><img class="Sprite", id="img5", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slot6", onclick="toSwap(slot6)"><img class="Sprite", id="img6", src="static/img/Pokeball.png" alt="Sprite"></div>
                 </li>
             
         </ul>
@@ -231,27 +230,43 @@
             }
 
             //adds pokemon data to each pokemon entry
-            function pokeAdd(){
+            function pokeAdd(element){
+                if(element == 'enemy') {
+                    index = TEAM_LIMIT
+                }
+                console.log(index)
                 //init pokmeon to add
                 const pokemon = pokeSearchList[0]
                 //create pokemon img element
                 const pokeImage = image(pokemon["name"])
                 pokeImage.entry = pokemon
 
-                if(index == 0) {
-                    const ActivePkmon = document.querySelector(".ActiveSpriteA")
-                    pokeImage.setAttribute('id', 'activePokemon')
-                    console.log(pokeImage)
-                    ActivePkmon.appendChild(pokeImage)
+                if(index % 6 == 0) {
+                    if (element == 'enemy') {
+                        const ActiveEPkmon = document.querySelector(".ActiveSpriteE")
+                        pokeImage.setAttribute('id', 'activePokemon')
+                        ActiveEPkmon.appendChild(pokeImage)
+                    } else {
+                        const ActivePkmon = document.querySelector(".ActiveSpriteA")
+                        pokeImage.setAttribute('id', 'activePokemon')
+                        ActivePkmon.appendChild(pokeImage)
+                    }
                 } else {
 
                 //main team locaiton
-                const MainArea = document.querySelector(".PSpriteA")
-                const teamArea = MainArea.querySelectorAll(".entry")
+                let mainArea
+                let teamArea
+                if (element == 'enemy') {
+                    mainArea = document.querySelector(".PSpriteA")
+                    teamArea = mainArea.querySelectorAll(".entry")
+                } else {
+                    mainArea = document.querySelector(".PSpriteE")
+                    teamArea = mainArea.querySelectorAll(".entry")
+                }
 
                 //attaches pokemon data/pic to entry
                 pokeImage.setAttribute('id', `teamid${index%6+1}`)
-                teamArea[index % 6 -1].appendChild(pokeImage)
+                teamArea[index % 6].appendChild(pokeImage)
                 }
                 index += 1
             };
