@@ -44,13 +44,13 @@ def pokemonProfile(id):
 
     ms = pokeMoves[str(pd['name'].lower())]
     
-    if int(id) <= FIRSTPOKEMON:
-        prevPkm = pokedex[LASTPOKEMON]
-        prevID = LASTPOKEMON 
-    else:
-        prevPkm = pokedex[int(id)-2]
+    #if int(id)  < FIRSTPOKEMON:
+        #prevPkm = pokedex[LASTPOKEMON]
+        #prevID = LASTPOKEMON 
+    #else:
+    prevPkm = pokedex[int(id)-2]
 
-        prevID = int(id)-1
+    prevID = int(id)-1
 
     
     if int(id) > LASTPOKEMON:
