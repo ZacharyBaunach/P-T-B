@@ -778,3 +778,41 @@ img.site-logo {
     background: #ff2d2d;
 }
 .statTotal { font-size: 0.7rem; }
+
+/* Feedback page submit button */
+.feedbackSubmit {
+    display: block;
+    margin: 25px auto;
+    padding: 16px 28px; 
+
+    font-family: "Press Start 2P", system-ui;
+    font-size: 11px;
+    line-height: 1.7;
+
+    color: #222;
+    background-color: #ff2c2c;
+
+    border: 5px solid #222;
+
+    cursor: pointer;
+    box-shadow: 0 5px 0 #222;
+
+    transition: background-color 0.15s ease,
+                transform 0.15s ease,
+                box-shadow 0.15s ease;
+}
+
+/* Click effect */
+.feedbackSubmit:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #222;
+}
+
+/*this is for the feedback page submit button to make it smaller on mobile devices */
+@media screen and (max-width: 600px) {
+    .feedbackSubmit {
+        max-width: 100%;
+        padding: 14px 18px;
+        font-size: 9px;
+    }
+}
