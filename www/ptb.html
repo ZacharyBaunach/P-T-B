@@ -23,7 +23,7 @@
 
         <script>
             let loadMorePokemon = 15
-            const LASTPOKEMONID = 1000
+            const LASTPOKEMONID = 641
             const GEN1 = 15
             const GEN2 = 166
             const GEN3 = 266
@@ -218,7 +218,7 @@
         </ul>
 
         
-        <div id="loadPkmButton" class="loadPkm" onclick="showMorePokemon(loadMorePokemon)">
+        <div id="loadPkm" class="loadPkm" onclick="showMorePokemon(loadMorePokemon)">
             Load More
         </div>
         
@@ -445,24 +445,27 @@
                 let i = id
 
                 //Hides the load more button once all pokemon are loaded
-                if (id+15 > LASTPOKEMONID) {
+                if (id > LASTPOKEMONID) {
 
-                    //displays 151th Pokemon
-                    const template = document.createElement('a')
-                    template.setAttribute('href', `Pokemon/${i+1}`)
-                    template.className='pokemonImageLink'
-                    const image = document.createElement('img')
-                    image.setAttribute('class', 'pokemonImage')
-                    image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
-                    image.setAttribute('alt', `${pokeData[i].name}`)
-                    template.appendChild(image)
-                    templateContainer.appendChild(template)
+                    
 
-                    let loadPokemonButton = document.getElementById('loadPkmButton')
+                    let loadPokemonButton = document.getElementById('loadPkm')
 
                     
                     loadPokemonButton.className = "allPkmLoaded"
 
+                    loadMorePokemon = id+15
+                    for (i; i < loadMorePokemon; i++) {
+                        const template = document.createElement('a')
+                        template.setAttribute('href', `Pokemon/${i+1}`)
+                        template.className='pokemonImageLink'
+                        const image = document.createElement('img')
+                        image.setAttribute('class', 'pokemonImage')
+                        image.setAttribute('src', `static/img/pokemon_collection/${pokeData[i].name}.webp`)
+                        image.setAttribute('alt', `${pokeData[i].name}`)
+                        template.appendChild(image)
+                        templateContainer.appendChild(template)
+                    }
                     return
                 }
                 loadMorePokemon = id+15
