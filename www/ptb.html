@@ -624,7 +624,6 @@
                 num = num % TEAM_LIMIT
                 if (element == 'enemy') {
                     element = document.querySelector('.enemyTeamContainer')
-                    console.log(element)
                 }
                 // Find the popup team box and the clicked slot
                 const displayContainer = document.querySelectorAll(`.${element.className}`)[1]
@@ -657,8 +656,6 @@
                 let pokemonEntry = ''
                 try {
                     pokemonEntry = entryBase.entry
-                    console.log('pokemon entry data:')
-                    console.log(pokemonEntry)
                 } catch (error){
                     console.log(error)
                 }
@@ -669,8 +666,6 @@
 
                 try {
                 //main stat edit box
-                console.log('editBox')
-                console.log(displayContainer.parentNode.childNodes[12])
                 const editBox = displayContainer.parentNode.childNodes[12];
                 editBox.innerHTML = '';
                 console.log(editBox)

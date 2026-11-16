@@ -81,11 +81,11 @@
                 </li>
                 
                 <li class="PSpriteE">
-                    <div class="entry", id="slot2", onclick="toSwap(slot2)"><img class="Sprite", id="img2", src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry", id="slot3", onclick="toSwap(slot3)"><img class="Sprite", id="img3", src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry", id="slot4", onclick="toSwap(slot4)"><img class="Sprite", id="img4", src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry", id="slot5", onclick="toSwap(slot5)"><img class="Sprite", id="img5", src="static/img/Pokeball.png" alt="Sprite"></div>
-                    <div class="entry", id="slot6", onclick="toSwap(slot6)"><img class="Sprite", id="img6", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slotE2", onclick="toSwap(slotE2)"><img class="Sprite", id="img2", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slotE3", onclick="toSwap(slotE3)"><img class="Sprite", id="img3", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slotE4", onclick="toSwap(slotE4)"><img class="Sprite", id="img4", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slotE5", onclick="toSwap(slotE5)"><img class="Sprite", id="img5", src="static/img/Pokeball.png" alt="Sprite"></div>
+                    <div class="entry", id="slotE6", onclick="toSwap(slotE6)"><img class="Sprite", id="img6", src="static/img/Pokeball.png" alt="Sprite"></div>
                 </li>
             
         </ul>
@@ -185,8 +185,8 @@
 
                 //unhighlights selected pokemon
                 try {
-                    const activePokemon = document.querySelector('#activePokemonHighlight');
-                    activePokemon.setAttribute('id', 'activePokemon');
+                    const activePokemon = document.querySelector('#activePokemonHighlightA');
+                    activePokemon.setAttribute('id', 'activePokemonA');
                     const selectedPokemon = document.querySelector(`.activeEntry`);
                     selectedPokemon.setAttribute('class', `entry`);
                 } catch (error) {
@@ -200,34 +200,28 @@
             //Highlight function for enemy team//
 
             function enemyMoveHighlight(moveid){
-                let firstMove = document.getElementById("move5");
-                let secondMove = document.getElementById("move6");
-                let thirdMove = document.getElementById("move7");
-                let fourthMove = document.getElementById("move8");
+                //Unhighlights move if selected
+                try {
+                    const activeMoveList = document.querySelector('.MovesE')
+                    const selectedMove = activeMoveList.querySelector('.selectedMove');
+                    selectedMove.setAttribute('class', 'ActiveMoveE');
+                } catch (error) {
+                    console.log(error);
+                };
 
-                //Unhighlights all moves//
+                //unhighlights selected pokemon
+                try {
+                    const activePokemon = document.querySelector('#activePokemonHighlightE');
+                    activePokemon.setAttribute('id', 'activePokemonE');
+                    const selectedPokemon = document.querySelector(`.activeEntry`);
+                    selectedPokemon.setAttribute('class', `entry`);
+                } catch (error) {
+                    console.log(error);
+                };
 
-                firstMove.className= "ActiveMoveA";
-                secondMove.className= "ActiveMoveA";
-                thirdMove.className= "ActiveMoveA";
-                fourthMove.className= "ActiveMoveA";
-
-                //Decides which move to highlight based on user click//
-
-                if (moveid == move5) {
-                    firstMove.className= "selectedMove"
-                } 
-                else if (moveid == move6) {
-                    secondMove.className= "selectedMove"
-                }
-                else if (moveid == move7) {
-                    thirdMove.className= "selectedMove"
-                } 
-                
-                else {
-                    fourthMove.className= "selectedMove"
-                }
-            }
+                //highlights selected move
+                moveid.setAttribute('class', 'selectedMove');
+            };
 
             //adds pokemon data to each pokemon entry
             function pokeAdd(element){
