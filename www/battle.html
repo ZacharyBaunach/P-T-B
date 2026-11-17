@@ -226,9 +226,10 @@
             //adds pokemon data to each pokemon entry
             function pokeAdd(element){
                 if(element == 'enemy') {
-                    index = TEAM_LIMIT
+                    if (index < TEAM_LIMIT) {
+                        index = TEAM_LIMIT
+                    }
                 }
-                console.log(index)
                 //init pokmeon to add
                 const pokemon = pokeSearchList[0]
                 //create pokemon img element
@@ -251,16 +252,16 @@
                 let mainArea
                 let teamArea
                 if (element == 'enemy') {
-                    mainArea = document.querySelector(".PSpriteA")
+                    mainArea = document.querySelector(".PSpriteE")
                     teamArea = mainArea.querySelectorAll(".entry")
                 } else {
-                    mainArea = document.querySelector(".PSpriteE")
+                    mainArea = document.querySelector(".PSpriteA")
                     teamArea = mainArea.querySelectorAll(".entry")
                 }
 
                 //attaches pokemon data/pic to entry
                 pokeImage.setAttribute('id', `teamid${index%6+1}`)
-                teamArea[index % 6].appendChild(pokeImage)
+                teamArea[index % 6 - 1].appendChild(pokeImage)
                 }
                 index += 1
             };
@@ -272,31 +273,23 @@
                     activePokemonLoc = document.querySelector('#activePokemonHighlight')
                 } else {
                     activePokemonLoc = document.querySelector('#activePokemon')
-                    console.log(activePokemonLoc)
                 }
                 const pokemonEntry = activePokemonLoc.entry
-                console.log('adding moves')
                 const pokemonMoves = document.querySelectorAll('.ActiveMoveA')
                 for (i = 0; i < MOVE_LIMIT; i++) {
-                    console.log(`adding move ${i+1}`)
-                    console.log(pokemonEntry)
                     pokemonMoves[i].innerHTML = `${pokemonEntry.selectedMoves[i]}`
                 }
             }
 
             function toSwap(toSwap) {
                 //grabs pokemon to swap
-                console.log(toSwap)
 
                 //grabs active pokemon
                 let activePokemonloc = ''
                 if (activePokemonloc = document.querySelector('#activePokemon') == null){
-                    console.log('highlighted')
                     activePokemonloc = document.querySelector('#activePokemonHighlight')
-                    console.log(activePokemonloc)
                 } else {
                     activePokemonloc = document.querySelector('#activePokemon')
-                    console.log('normal')
                 }
 
                 //unhighlights old pokemon if already chosen previously
@@ -330,7 +323,6 @@
                     activePokemonloc = document.querySelector('#activePokemonHighlight');
                     activePokemon = activePokemonloc.entry;
                 }
-                console.log(activePokemonloc);
                 //grabs enemy pokemon entry
                 // const activeEPokemonloc = document.querySelector('#activeEPokemon')
                 // const enemyPokemon = activeEPokemonloc.entry
@@ -353,7 +345,6 @@
                     const activeEntry = activePokemon.entry
                     const selectedEntry = selectedPokemon.entry
 
-                    console.log('progress')
                     //apply new entries to DOM nodes
                     activePokemon.entry = selectedEntry
                     selectedPokemon.entry = activeEntry
