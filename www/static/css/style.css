@@ -818,23 +818,26 @@ img.site-logo {
 }
 
 /* =========================================
-   SHARED NAVIGATION & GENERATION BUTTON FIX
+   MATCH TOP NAVIGATION WITH GENERATION BAR
    ========================================= */
 
 @media screen and (min-width: 931px) {
 
-    /* Both navigation bars */
+    /* Outer navigation bars */
     .nav,
-    
     .generationFilter {
         display: flex;
         justify-content: stretch;
         align-items: stretch;
         gap: 0;
         padding: 0;
+        background-color: #222;
+        border: 6px solid #ff2c2c;
+        border-radius: 60px;
+        box-sizing: border-box;
     }
 
-    /* Both sets of buttons */
+    /* Individual navigation buttons */
     .nav_list,
     .pokemonFilterItems {
         display: flex;
@@ -843,10 +846,14 @@ img.site-logo {
         justify-content: center;
         align-items: center;
         margin: 0;
+        padding: 0;
+        border: 5px solid #222;
+        border-radius: 60px;
+        background-color: #84dbf0;
         box-sizing: border-box;
     }
 
-    /* Both sets of button text/links */
+    /* Button text */
     .nav_link,
     .genLoad {
         display: flex;
@@ -854,8 +861,15 @@ img.site-logo {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 14px 8px;
-        box-sizing: border-box;
+        padding: 14px 6px;
+        font-size: clamp(10px, 1.1vw, 14px);
         white-space: nowrap;
+        box-sizing: border-box;
+    }
+
+    /* Hover effect */
+    .nav_list:hover,
+    .pokemonFilterItems:hover {
+        background-color: #65cbe4;
     }
 }
