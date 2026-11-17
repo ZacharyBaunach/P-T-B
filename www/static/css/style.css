@@ -816,3 +816,46 @@ img.site-logo {
         font-size: 9px;
     }
 }
+
+/* =========================================
+   SHARED NAVIGATION & GENERATION BUTTON FIX
+   ========================================= */
+
+@media screen and (min-width: 931px) {
+
+    /* Both navigation bars */
+    .nav,
+    
+    .generationFilter {
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Both sets of buttons */
+    .nav_list,
+    .pokemonFilterItems {
+        display: flex;
+        flex: 1 1 0;
+        min-width: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Both sets of button text/links */
+    .nav_link,
+    .genLoad {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 14px 8px;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+}
